@@ -1,4 +1,4 @@
-name := "DHClouderaHadoop"
+name := "data_engineer_should_know"
 
 version := "0.1"
 
