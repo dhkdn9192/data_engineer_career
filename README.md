@@ -9,7 +9,7 @@
 
 ### 2. Hadoop Ecosystem
 
-- [HDFS](hdfs/)
+- [HDFS](hadoop_ecosystem/hdfs/)
 - Hadoop
 - Kafka
 - HBase
@@ -28,10 +28,8 @@
 
 ### 4. Interview
 
-- [Data Engineer](interview/data_engineer.md)
+- [Data Engineer](interview/data_engineer/)
 - ML/Data Science
-
-### 5. Articles
 
 ### Reference
 
