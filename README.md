@@ -1,16 +1,13 @@
-# DH Cloudera Hadoop
+# 데이터 엔지니어가 알아야 할 것들
 
-클라우데라 하둡의 설치부터 운영, 유지보수를 위한 모든 것들
+빅데이터, 머신러닝 등 데이터 엔지니어가 알아야 할 기본 지식과 노하우를 정리해보자
 
-- 참조: '실무로 배우는 빅데이터 기술', 김강원 지음, 위키북스
-
-
-### 1. Set Up
+### 1. Set Up CDH
 
 - [Set Up VirtualBox for CDH](setup/01_setup_virtual_box.md)
 - [Install Cloudera Manager](setup/02_install_cloudera_manager.md)
 
-### 2. CDH Basic
+### 2. Hadoop Ecosystem
 
 - [HDFS](hdfs/01_hdfs.md)
 - Hadoop
@@ -27,3 +24,8 @@
 
 - [Data Engineer](interview/data_engineer.md)
 - ML/Data Science
+
+### Reference
+
+- 도서
+  - '실무로 배우는 빅데이터 기술', 김강원 지음, 위키북스
