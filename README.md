@@ -8,7 +8,8 @@
 
 ### 2. Hadoop Ecosystem
 
-- [HDFS](hadoop_ecosystem/hdfs/)
+- [Spark](hadoop_ecosystem/spark)
+- [HDFS](hadoop_ecosystem/hdfs)
 - Hadoop
 - Kafka
 - HBase
@@ -17,7 +18,6 @@
 - Yarn
 - Hive
 - Sqoop
-- Spark
 
 ### 3. Elastic Stack
 
