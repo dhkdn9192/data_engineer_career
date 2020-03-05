@@ -4,7 +4,7 @@
 
 ### 1. Cloudera Hadoop
 
-- [How to set up CDH](cloudera/how_to_setup_cdh/)
+- [How to set up CDH](cloudera/how_to_setup_cdh)
 
 ### 2. Hadoop Ecosystem
 
@@ -21,12 +21,12 @@
 
 ### 3. Elastic Stack
 
-- Elasticsearch
-- Logstash
+- [Elasticsearch](elk_stack/elasticsearch)
+- [Logstash](elk_stack/logstash)
 - Kibana
 
 ### 4. Interview
 
-- [Data Engineer](interview/data_engineer/)
+- [Data Engineer](interview/data_engineer)
 - ML/Data Science
 - Algorithm
