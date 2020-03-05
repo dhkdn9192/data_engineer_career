@@ -2,10 +2,9 @@
 
 빅데이터, 머신러닝 등 데이터 엔지니어가 알아야 할 기본 지식과 노하우를 정리해보자
 
-### 1. Set Up CDH
+### 1. Cloudera Hadoop
 
-- [Set Up VirtualBox for CDH](setup/01_setup_virtual_box.md)
-- [Install Cloudera Manager](setup/02_install_cloudera_manager.md)
+- [How to set up CDH](cloudera/how_to_setup_cdh/)
 
 ### 2. Hadoop Ecosystem
 
@@ -31,8 +30,3 @@
 - [Data Engineer](interview/data_engineer/)
 - ML/Data Science
 - Algorithm
-
-### Reference
-
-- 도서
-  - '실무로 배우는 빅데이터 기술', 김강원 지음, 위키북스
