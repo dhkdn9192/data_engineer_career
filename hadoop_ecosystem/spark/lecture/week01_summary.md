@@ -8,7 +8,6 @@ DDP의 경우 여러 노드/머신에 나눠서 처리함. DDP의 경우 네트�
 ```
 
 2. 분산처리 프레임워크 Hadoop의 Fault Tolerance는 DDP의 어떤 문제를 해결했나요?
-
   Hadoop의 Fault Tolerance는 DDP의 문제 중 Partial Failure를 해결했음. 
   여러 노드 중 한 노드에 이상이 생겨도, 다른 노드로 같은 데이터를 전달시킨 후 작업시켜서 성공할때까지 시도함으로써, 작업의 안정성을 보장함
   - Partial Failure : crash failures of a subset of the machines involved in a distributed computation
