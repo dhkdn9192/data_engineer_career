@@ -27,5 +27,4 @@
 
 ### 4. Interview
 
-- [Data Engineer](interview/data_engineer)
-- [Algorithm](interview/algorithm)
+- [Data engineer interview](interview/data_engineer)
