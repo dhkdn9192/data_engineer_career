@@ -33,5 +33,5 @@ Coursera 강좌 중 Heather Miller 교수님의 "<b>Big Data Analysis with Scala
 
 ## Reference
 
-- [coursera link](https://www.coursera.org/learn/scala-spark-big-data/home/welcome)
+- https://www.coursera.org/learn/scala-spark-big-data/home/welcome
 
