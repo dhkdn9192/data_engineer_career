@@ -1,4 +1,4 @@
-# Set Up VirtualBox for CDH
+# Set up Virtualbox for CDH
 
 Virtualbox를 이용하여 가상 linux 서버들을 구성하고 그 위에 CDH를 설치한다. 필요한 준비물은 다음과 같다
 
