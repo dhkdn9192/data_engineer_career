@@ -23,7 +23,7 @@
 - 단일 장애점(Single point of failure)이 없는 구조
 
 ## Edureka's Top Hadoop Interview Questions
-- Top 50 Hadoop Interview Questions You Must Prepare In 2020
+- [Top 50 Hadoop Interview Questions You Must Prepare In 2020](articles/top_50_hadoop_interview_questions_in_2020.md)
 - Top Hadoop Interview Questions To Prepare In 2020 – HDFS
 - Hadoop MapReduce Interview Questions In 2020
 - Hadoop Interview Questions For 2020 – Setting Up Hadoop Cluster
