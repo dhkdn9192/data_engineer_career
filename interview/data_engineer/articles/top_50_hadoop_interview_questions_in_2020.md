@@ -2,7 +2,7 @@
 
 follow this [link](https://www.edureka.co/blog/interview-questions/top-50-hadoop-interview-questions-2016/) for details.
 
-
+----
 ### 1. What are the basic differences between relational database and HDFS?
 
 |                         | RDBMS   | Hadoop  |
@@ -12,12 +12,12 @@ follow this [link](https://www.edureka.co/blog/interview-questions/top-50-hadoop
 |Schema on Read Vs. Write |RDBMS is based on ‘schema on write’ where schema validation is done before loading the data.|On the contrary, Hadoop follows the schema on read policy.|
 |Read/Write Speed         |In RDBMS, reads are fast because the schema of the data is already known.|The writes are fast in HDFS because no schema validation happens during HDFS write.|
 
-
+----
 ### 3. What is Hadoop and its components. 
 - Storage unit : <b>HDFS</b> (NameNode, DataNode)
 - Processing framework : <b>YARN</b> (ResourceManager, NodeManager)
 
-
+----
 ### 4. What are HDFS and YARN?
 
 <b>HDFS</b> (Hadoop Distributed File System) is the storage unit of Hadoop. 
@@ -33,7 +33,7 @@ which manages resources and provides an execution environment to the processes.
 - <b>ResourceManager</b>: It receives the processing requests, and then passes the parts of requests to corresponding NodeManagers accordingly, where the actual processing takes place. It allocates resources to applications based on the needs.
 - <b>NodeManager</b>: NodeManager is installed on every DataNode and it is responsible for the execution of the task on every single DataNode.
 
-
+----
 ### 5. Tell me about the various Hadoop daemons and their roles in a Hadoop cluster.
 - <b>NameNode</b>: It is the master node which is responsible for storing the metadata of all the files and directories. It has information about blocks, that make a file, and where those blocks are located in the cluster.
 - <b>Datanode</b>: It is the slave node that contains the actual data.
@@ -42,7 +42,7 @@ which manages resources and provides an execution environment to the processes.
 - <b>NodeManager</b>: It runs on slave machines, and is responsible for launching the application's containers (where applications execute their part), monitoring their resource usage (CPU, memory, disk, network) and reporting these to the ResourceManager.
 - <b>JobHistoryServer</b>: It maintains information about MapReduce jobs after the Application Master terminates.
 
-
+----
 ### 7. List the difference between Hadoop 1 and Hadoop 2.
 
 |                   | Hadoop 1.x                                  | Hadoop 2.x                                      |
@@ -50,7 +50,7 @@ which manages resources and provides an execution environment to the processes.
 | Passive NameNode  |NameNode is a <b>Single Point of Failure</b> |Active & Passive NameNode                        |
 | Processing        |MRV1 (Job Tracker & Task Tracker)            |MRV2/<b>YARN</b> (ResourceManager & NodeManager) |
 
-
+----
 ### 9. Why does one remove or add nodes in a Hadoop cluster frequently?
 
 Attractive features of the Hadoop framework <b>leads to frequent DataNode crashes</b> in a Hadoop cluster.
@@ -60,7 +60,7 @@ Attractive features of the Hadoop framework <b>leads to frequent DataNode crashe
 Because of these two reasons, one of the most common task of a Hadoop administrator is 
 to <b>commission (Add)</b> and <b>decommission (Remove)</b> "Data Nodes" in a Hadoop Cluster.
 
-
+----
 ### 10. What happens when two clients try to access the same file in the HDFS?
 
 HDFS supports <b>exclusive writes only</b>.
@@ -71,7 +71,7 @@ When the second client tries to open the same file for writing,
 the "NameNode" will notice that the lease for the file is already granted to another client, 
 and will reject the open request for the second client.
 
-
+----
 ### 11. How does NameNode tackle DataNode failures?
 NameNode periodically receives a <b>Heartbeat</b> (signal) from each of the DataNode in the cluster, 
 which implies DataNode is functioning properly.
@@ -81,5 +81,17 @@ If a DataNode fails to send a heartbeat message, after a specific period of time
 
 The NameNode replicates the blocks of dead node to another DataNode using the replicas created earlier.
 
+
+----
+### 12. What will you do when NameNode is down?
+The NameNode recovery process:
+- Use the file system metadata replica (FsImage) to start a new NameNode. 
+- Then, configure the DataNodes and clients so that they can acknowledge this new NameNode, that is started.
+- Now the new NameNode will start serving the client after it has completed loading the last checkpoint FsImage 
+(for metadata information) and received enough block reports from the DataNodes. 
+
+Whereas, on large Hadoop clusters this NameNode recovery process may consume a lot of time 
+and this becomes even a greater challenge in the case of the routine maintenance. 
+Therefore, we have HDFS High Availability Architecture.
 
 
