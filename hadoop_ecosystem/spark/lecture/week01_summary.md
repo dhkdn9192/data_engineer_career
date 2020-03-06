@@ -1,15 +1,17 @@
 # Week02 - Summary
 
-### 1. Shared Memory Data Parallelism (SDP)와 Distributed Data Parallelism (DDP)의 공통점과 차이점은 무엇인가?
+1. Shared Memory Data Parallelism (SDP)와 Distributed Data Parallelism (DDP)의 공통점과 차이점은 무엇인가?
 
+```
 데이터를 병렬적으로 처리한다는 점은 동일하나, SDP의 경우 단일 머신의 메모리 안에서(멀티코어/멀티프로세서) 병렬 처리가 이루어지고, 
 DDP의 경우 여러 노드/머신에 나눠서 처리함. DDP의 경우 네트워크 비용이 발생하게 되며, latency를 해결해야 함
+```
 
-### 2. 분산처리 프레임워크 Hadoop의 Fault Tolerance는 DDP의 어떤 문제를 해결했나요?
+2. 분산처리 프레임워크 Hadoop의 Fault Tolerance는 DDP의 어떤 문제를 해결했나요?
 
-Hadoop의 Fault Tolerance는 DDP의 문제 중 Partial Failure를 해결했음. 
-여러 노드 중 한 노드에 이상이 생겨도, 다른 노드로 같은 데이터를 전달시킨 후 작업시켜서 성공할때까지 시도함으로써, 작업의 안정성을 보장함
-- Partial Failure : crash failures of a subset of the machines involved in a distributed computation
+  Hadoop의 Fault Tolerance는 DDP의 문제 중 Partial Failure를 해결했음. 
+  여러 노드 중 한 노드에 이상이 생겨도, 다른 노드로 같은 데이터를 전달시킨 후 작업시켜서 성공할때까지 시도함으로써, 작업의 안정성을 보장함
+  - Partial Failure : crash failures of a subset of the machines involved in a distributed computation
 
 ### 3. Spark가 하둡과 달리 데이터를 메모리에 저장하면서 개선한 것 무엇이고, 왜 메모리에 저장하면 그것이 개선이 되나요?
 
