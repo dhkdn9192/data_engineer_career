@@ -1,6 +1,6 @@
 # Data Engineer Interview
 
-- 파티셔닝과 샤딩의 차이
+- [파티셔닝과 샤딩의 차이](articles/partitioning_vs_sharding.md)
 - 해싱의 개념과 해싱 테이블
 - HDFS의 디폴트 블록 수를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?
 - 페이지 방식과 버퍼 방식의 차이
