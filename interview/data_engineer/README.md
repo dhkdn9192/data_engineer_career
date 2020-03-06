@@ -30,5 +30,6 @@
 - Hadoop Interview Questions On HBase In 2020
 - Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive
 
-## Reference
-- https://www.edureka.co/blog/interview-questions/hadoop-interview-questions-hdfs-2/
+## References
+- [Edureka Interview Questions](https://www.edureka.co/blog/interview-questions/hadoop-interview-questions-hdfs-2/)
+- [Github-Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
