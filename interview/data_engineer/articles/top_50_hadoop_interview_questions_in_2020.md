@@ -51,13 +51,6 @@ which manages resources and provides an execution environment to the processes.
 | Processing        |MRV1 (Job Tracker & Task Tracker)            |MRV2/<b>YARN</b> (ResourceManager & NodeManager) |
 
 
-### 8. What are active and passive "NameNodes"? 
-
-In HA (High Availability) architecture, we have two NameNodes – Active "NameNode" and Passive "NameNode".
-- Active "NameNode" is the "NameNode" which works and runs in the cluster.
-- Passive "NameNode" is a standby "NameNode", which has similar data as active "NameNode".
-
-
 ### 9. Why does one remove or add nodes in a Hadoop cluster frequently?
 
 Attractive features of the Hadoop framework <b>leads to frequent DataNode crashes</b> in a Hadoop cluster.
