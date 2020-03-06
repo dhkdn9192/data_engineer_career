@@ -28,5 +28,4 @@
 ### 4. Interview
 
 - [Data Engineer](interview/data_engineer)
-- ML/Data Science
 - Algorithm
