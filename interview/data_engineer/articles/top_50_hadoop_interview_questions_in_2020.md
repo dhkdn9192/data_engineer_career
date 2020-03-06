@@ -14,11 +14,22 @@
 - Storage unit– HDFS (NameNode, DataNode)
 - Processing framework– YARN (ResourceManager, NodeManager)
 
-4. What are HDFS and YARN?
+### 4. What are HDFS and YARN?
 
-- HDFS
-  - HDFS (Hadoop Distributed File System) is the storage unit of Hadoop. It is responsible for storing different kinds of data as blocks in a distributed environment. It follows master and slave topology.
+#### HDFS
+HDFS (Hadoop Distributed File System) is the storage unit of Hadoop. 
+It is responsible for storing different kinds of data as blocks in a distributed environment. 
+It follows <b>master and slave topology</b>.
 
+- NameNode: NameNode is the master node in the distributed environment and it maintains the metadata information for the blocks of data stored in HDFS like block location, replication factors etc.
+- DataNode: DataNodes are the slave nodes, which are responsible for storing data in the HDFS. NameNode manages all the DataNodes.
+
+#### YARN
+YARN (Yet Another Resource Negotiator) is the processing framework in Hadoop, 
+which manages resources and provides an execution environment to the processes.
+
+- ResourceManager: It receives the processing requests, and then passes the parts of requests to corresponding NodeManagers accordingly, where the actual processing takes place. It allocates resources to applications based on the needs.
+- NodeManager: NodeManager is installed on every DataNode and it is responsible for the execution of the task on every single DataNode.
 
 
 
