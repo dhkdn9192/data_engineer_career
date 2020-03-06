@@ -1,9 +1,6 @@
 # Big Data Analysis with Scala and Spark
 
-Coursera 강좌 중 "Big Data Analysis with Scala and Spark"를 수강하며 학습한 내용을 정리하였습니다.
-
-- instructor: Prof. Heather Miller
-- [coursera link](https://www.coursera.org/learn/scala-spark-big-data/home/welcome)
+Coursera 강좌 중 Heather Miller 교수님의 "<b>Big Data Analysis with Scala and Spark</b>"를 수강하며 학습한 내용을 정리하였습니다.
 
 
 ## week 01
@@ -32,3 +29,9 @@ Coursera 강좌 중 "Big Data Analysis with Scala and Spark"를 수강하며 학
 3. Optimizing with Partitioners
 4. Wide vs Narrow Dependencies
 5. [Weekly Summary](lecture/week03_summary.md)
+
+
+## Reference
+
+- [coursera link](https://www.coursera.org/learn/scala-spark-big-data/home/welcome)
+
