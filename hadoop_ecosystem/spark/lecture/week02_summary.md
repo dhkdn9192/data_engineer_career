@@ -17,7 +17,6 @@ pair RDD는 이미 생성된 non-pair RDD에 map을 적용하여 각 row를 Tupl
 ```
 
 3. groupByKey()와 mapValues()를 통해 나온 결과를 reduce()를 사용해서도 똑같이 만들 수 있습니다. 그렇지만 reduceByKey를 쓴는 것이 더 효율적인 이유는 무엇일까요?
-
   - groupByKey와 reduce를 사용하는 경우
   ```
   groupByKey는 같은 키를 갖는 데이터들을 한 노드로 이동시키는 Shuffling이 일어난다.
@@ -26,7 +25,6 @@ pair RDD는 이미 생성된 non-pair RDD에 map을 적용하여 각 row를 Tupl
   즉 <b>같은 키의 데이터들을 같은 노드로 이동</b>시키는 비용과
   <b>모든 데이터를 한 노드로 이동</b>시키는 비용이 발생한다.
   ```
-  
   - reduceByKey를 사용하는 경우
   ```
   반면 reduceByKey는 groupByKey를 따로 사용하지 않는다.
