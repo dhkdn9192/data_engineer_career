@@ -10,6 +10,11 @@
 - 자바의 메모리 누수 현상의 원인
 - 자바의 장점
 - LRU 방식의 문제점
+- sync와 async, blocking과 non-blocking
+
+## Algorithm
+- 이진탐색트리
+- 정렬알고리즘
 
 ## Hadoop and Bigdata ecosystem
 - HDFS의 디폴트 블록 수를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?
