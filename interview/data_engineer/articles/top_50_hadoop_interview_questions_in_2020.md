@@ -11,29 +11,32 @@
 
 
 ### 3. What is Hadoop and its components. 
-- Storage unit– HDFS (NameNode, DataNode)
-- Processing framework– YARN (ResourceManager, NodeManager)
+- Storage unit : <b>HDFS</b> (NameNode, DataNode)
+- Processing framework : <b>YARN</b> (ResourceManager, NodeManager)
 
 ### 4. What are HDFS and YARN?
 
-#### HDFS
-HDFS (Hadoop Distributed File System) is the storage unit of Hadoop. 
+<b>HDFS</b> (Hadoop Distributed File System) is the storage unit of Hadoop. 
 It is responsible for storing different kinds of data as blocks in a distributed environment. 
 It follows <b>master and slave topology</b>.
 
-- NameNode: NameNode is the master node in the distributed environment and it maintains the metadata information for the blocks of data stored in HDFS like block location, replication factors etc.
-- DataNode: DataNodes are the slave nodes, which are responsible for storing data in the HDFS. NameNode manages all the DataNodes.
+- <b>NameNode</b>: NameNode is the master node in the distributed environment and it maintains the metadata information for the blocks of data stored in HDFS like block location, replication factors etc.
+- <b>DataNode</b>: DataNodes are the slave nodes, which are responsible for storing data in the HDFS. NameNode manages all the DataNodes.
 
-#### YARN
-YARN (Yet Another Resource Negotiator) is the processing framework in Hadoop, 
+<b>YARN</b> (Yet Another Resource Negotiator) is the processing framework in Hadoop, 
 which manages resources and provides an execution environment to the processes.
 
-- ResourceManager: It receives the processing requests, and then passes the parts of requests to corresponding NodeManagers accordingly, where the actual processing takes place. It allocates resources to applications based on the needs.
-- NodeManager: NodeManager is installed on every DataNode and it is responsible for the execution of the task on every single DataNode.
+- <b>ResourceManager</b>: It receives the processing requests, and then passes the parts of requests to corresponding NodeManagers accordingly, where the actual processing takes place. It allocates resources to applications based on the needs.
+- <b>NodeManager</b>: NodeManager is installed on every DataNode and it is responsible for the execution of the task on every single DataNode.
 
 
-
-
+### 5. Tell me about the various Hadoop daemons and their roles in a Hadoop cluster.
+- <b>NameNode</b>: It is the master node which is responsible for storing the metadata of all the files and directories. It has information about blocks, that make a file, and where those blocks are located in the cluster.
+- <b>Datanode</b>: It is the slave node that contains the actual data.
+- <b>Secondary NameNode</b>: It periodically merges the changes (edit log) with the FsImage (Filesystem Image), present in the NameNode. It stores the modified FsImage into persistent storage, which can be used in case of failure of NameNode.
+- <b>ResourceManager</b>: It is the central authority that manages resources and schedule applications running on top of YARN.
+- <b>NodeManager</b>: It runs on slave machines, and is responsible for launching the application’s containers (where applications execute their part), monitoring their resource usage (CPU, memory, disk, network) and reporting these to the ResourceManager.
+- <b>JobHistoryServer</b>: It maintains information about MapReduce jobs after the Application Master terminates.
 
 
 
