@@ -59,6 +59,6 @@ chaining과 달리 한 버킷당 들어갈 수 있는 엔트리가 하나뿐인 
 H에서 무작위로 뽑은 해시함수가 주어졌을 때 임의의 키값을 임의의 해시값에 매핑할 확률을 1/m로 만드려는 것이 목적입니다. 
 
 
-### Reference
+## Reference
 - https://ratsgo.github.io/data%20structure&algorithm/2017/10/25/hash/
 - https://en.wikipedia.org/wiki/Hash_table
