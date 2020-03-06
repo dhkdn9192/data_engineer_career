@@ -1,6 +1,6 @@
 # Top 50 Hadoop Interview Questions In 2020
 
-1. What are the basic differences between relational database and HDFS?
+### 1. What are the basic differences between relational database and HDFS?
 
 |                         | RDBMS   | Hadoop  |
 | :---:                   | :---    | :---    |
@@ -10,7 +10,7 @@
 |Read/Write Speed         |In RDBMS, reads are fast because the schema of the data is already known.|The writes are fast in HDFS because no schema validation happens during HDFS write.|
 
 
-3. What is Hadoop and its components. 
+### 3. What is Hadoop and its components. 
 - Storage unit– HDFS (NameNode, DataNode)
 - Processing framework– YARN (ResourceManager, NodeManager)
 
