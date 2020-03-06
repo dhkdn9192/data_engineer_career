@@ -1,6 +1,7 @@
 # Top 50 Hadoop Interview Questions In 2020
 
-https://www.edureka.co/blog/interview-questions/top-50-hadoop-interview-questions-2016/
+follow this [link](https://www.edureka.co/blog/interview-questions/top-50-hadoop-interview-questions-2016/) for details.
+
 
 ### 1. What are the basic differences between relational database and HDFS?
 
@@ -15,6 +16,7 @@ https://www.edureka.co/blog/interview-questions/top-50-hadoop-interview-question
 ### 3. What is Hadoop and its components. 
 - Storage unit : <b>HDFS</b> (NameNode, DataNode)
 - Processing framework : <b>YARN</b> (ResourceManager, NodeManager)
+
 
 ### 4. What are HDFS and YARN?
 
@@ -37,7 +39,7 @@ which manages resources and provides an execution environment to the processes.
 - <b>Datanode</b>: It is the slave node that contains the actual data.
 - <b>Secondary NameNode</b>: It periodically merges the changes (edit log) with the FsImage (Filesystem Image), present in the NameNode. It stores the modified FsImage into persistent storage, which can be used in case of failure of NameNode.
 - <b>ResourceManager</b>: It is the central authority that manages resources and schedule applications running on top of YARN.
-- <b>NodeManager</b>: It runs on slave machines, and is responsible for launching the application’s containers (where applications execute their part), monitoring their resource usage (CPU, memory, disk, network) and reporting these to the ResourceManager.
+- <b>NodeManager</b>: It runs on slave machines, and is responsible for launching the application's containers (where applications execute their part), monitoring their resource usage (CPU, memory, disk, network) and reporting these to the ResourceManager.
 - <b>JobHistoryServer</b>: It maintains information about MapReduce jobs after the Application Master terminates.
 
 
@@ -47,6 +49,44 @@ which manages resources and provides an execution environment to the processes.
 | :---              | :---                                        | :---                                            |
 | Passive NameNode  |NameNode is a <b>Single Point of Failure</b> |Active & Passive NameNode                        |
 | Processing        |MRV1 (Job Tracker & Task Tracker)            |MRV2/<b>YARN</b> (ResourceManager & NodeManager) |
+
+
+### 8. What are active and passive "NameNodes"? 
+
+In HA (High Availability) architecture, we have two NameNodes – Active "NameNode" and Passive "NameNode".
+- Active "NameNode" is the "NameNode" which works and runs in the cluster.
+- Passive "NameNode" is a standby "NameNode", which has similar data as active "NameNode".
+
+
+### 9. Why does one remove or add nodes in a Hadoop cluster frequently?
+
+Attractive features of the Hadoop framework <b>leads to frequent DataNode crashes</b> in a Hadoop cluster.
+- <b>utilization of commodity hardware</b>: 상용 제품 활용성이 높음
+- <b>ease of scale in accordance with the rapid growth in data volume</b>: 데이터양 급증에 따른 스케일 조정이 용이함
+
+Because of these two reasons, one of the most common task of a Hadoop administrator is 
+to <b>commission (Add)</b> and <b>decommission (Remove)</b> "Data Nodes" in a Hadoop Cluster.
+
+
+### 10. What happens when two clients try to access the same file in the HDFS?
+
+HDFS supports <b>exclusive writes only</b>.
+
+When the first client contacts the "NameNode" to open the file for writing, 
+the "NameNode" grants a lease to the client to create this file. 
+When the second client tries to open the same file for writing, 
+the "NameNode" will notice that the lease for the file is already granted to another client, 
+and will reject the open request for the second client.
+
+
+### 11. How does NameNode tackle DataNode failures?
+NameNode periodically receives a <b>Heartbeat</b> (signal) from each of the DataNode in the cluster, 
+which implies DataNode is functioning properly.
+
+A block report contains a list of all the blocks on a DataNode. 
+If a DataNode fails to send a heartbeat message, after a specific period of time it is marked dead.
+
+The NameNode replicates the blocks of dead node to another DataNode using the replicas created earlier.
 
 
 
