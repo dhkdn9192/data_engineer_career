@@ -1,5 +1,7 @@
 # Top 50 Hadoop Interview Questions In 2020
 
+https://www.edureka.co/blog/interview-questions/top-50-hadoop-interview-questions-2016/
+
 ### 1. What are the basic differences between relational database and HDFS?
 
 |                         | RDBMS   | Hadoop  |
@@ -39,11 +41,12 @@ which manages resources and provides an execution environment to the processes.
 - <b>JobHistoryServer</b>: It maintains information about MapReduce jobs after the Application Master terminates.
 
 
+### 7. List the difference between Hadoop 1 and Hadoop 2.
 
-
-
-
-
+|                   | Hadoop 1.x                                  | Hadoop 2.x                                      |
+| :---              | :---                                        | :---                                            |
+| Passive NameNode  |NameNode is a <b>Single Point of Failure</b> |Active & Passive NameNode                        |
+| Processing        |MRV1 (Job Tracker & Task Tracker)            |MRV2/<b>YARN</b> (ResourceManager & NodeManager) |
 
 
 
