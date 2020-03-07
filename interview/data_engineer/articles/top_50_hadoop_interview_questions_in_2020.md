@@ -191,8 +191,58 @@ It receives the input from the "mapper" on a particular "node" and sends the out
 로컬 노드에서 conbiner가 mini-reduce를 수행한 뒤 reducer로 보내는 것이다.
 
 
+----
+### 38. What is "SerDe" in "Hive"?
+Apache Hive is a <b>data warehouse system built on top of Hadoop</b> 
+and is used for analyzing structured and semi-structured data developed by Facebook. 
+Hive abstracts the complexity of Hadoop MapReduce.
+
+The "<b>SerDe<b>" interface allows you to instruct "Hive" about how a record should be processed. 
+A "SerDe" is a combination of a "Serializer" and a "Deserializer". 
+<b>"Hive" uses "SerDe" (and "FileFormat") to read and write the table's row</b>.
 
 
+----
+### 39. Can the default "Hive Metastore" be used by multiple users (processes) at the same time?
+"Derby database" is the default "Hive Metastore". 
+Multiple users (processes) cannot access it at the same time. 
+It is mainly used to perform unit tests.
+
+Upgrade your hive metastore to either MySQL, PostgreSQL to support multiple concurrent connections to Hive.
+
+
+----
+### 41. What is Apache HBase?
+- HBase is an open source, multidimensional, distributed, scalable and a <b>NoSQL database</b> written in Java. 
+- HBase runs on top of HDFS and provides BigTable (Google) like capabilities to Hadoop. 
+- Designed to provide a <b>fault-tolerant</b> way of storing the large collection of sparse data sets. 
+- HBase achieves <b>high throughput and low latency</b> by providing faster Read/Write Access on huge datasets.
+
+
+----
+### 42. What are the components of Apache HBase?
+- <b>Region Server</b>: A table can be divided into several regions. A group of regions is served to the clients by a Region Server.
+- <b>HMaster</b>: It coordinates and manages the Region Server (similar as NameNode manages DataNode in HDFS).
+- <b>ZooKeeper</b>: Zookeeper acts like as a coordinator inside HBase distributed environment. It helps in maintaining server state inside the cluster by communicating through sessions.
+
+
+----
+### 43. What are the components of Region Server?
+- <b>WAL</b>: Write Ahead Log (WAL) is a file attached to every Region Server inside the distributed environment. The WAL stores the new data that hasn't been persisted or committed to the permanent storage. It is used in case of failure to recover the data sets
+- <b>Block Cache</b>: Block Cache resides in the top of Region Server. It stores the frequently read data in the memory.
+- <b>MemStore</b>: It is the write cache. It stores all the incoming data before committing it to the disk or permanent memory. There is <b>one MemStore for each column family in a region</b>.
+- <b>HFile</b>: HFile is stored in HDFS. It stores the actual cells on the disk.
+
+
+----
+### 45. Mention the differences between “HBase” and “Relational Databases”?
+|HBase                                    |Relational Database                                              |
+|:---                                     |:---                                                             |
+|It is schema-less                        | It is schema-based database                                     |
+|It is column-oriented data store         | It is row-oriented data store                                   |
+|It is used to store de-normalized data   |It is used to store normalized data                              |
+|It contains sparsely populated tables    |It contains thin tables                                          |
+|Automated partitioning is done in HBase  |There is no such provision or built-in support for partitioning  |
 
 
 
