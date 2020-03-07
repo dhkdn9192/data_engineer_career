@@ -197,7 +197,7 @@ Apache Hive is a <b>data warehouse system built on top of Hadoop</b>
 and is used for analyzing structured and semi-structured data developed by Facebook. 
 Hive abstracts the complexity of Hadoop MapReduce.
 
-The "<b>SerDe<b>" interface allows you to instruct "Hive" about how a record should be processed. 
+The "<b>SerDe</b>" interface allows you to instruct "Hive" about how a record should be processed. 
 A "SerDe" is a combination of a "Serializer" and a "Deserializer". 
 <b>"Hive" uses "SerDe" (and "FileFormat") to read and write the table's row</b>.
 
