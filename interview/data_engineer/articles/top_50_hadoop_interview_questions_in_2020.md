@@ -245,4 +245,31 @@ Upgrade your hive metastore to either MySQL, PostgreSQL to support multiple conc
 |Automated partitioning is done in HBase  |There is no such provision or built-in support for partitioning  |
 
 
+----
+### 46. What is Apache Spark?
+Apache Spark is a framework for <b>real-time</b> data analytics in a <b>distributed</b> computing environment. 
+It executes <b>in-memory</b> computations to increase the speed of data processing.
 
+----
+### 47. Features of Apache Spark
+- <b>in-memory</b>: Hadoop MapReduce는 iteration마다 filesystem을 쓰는 반면, Spark은 in-memory 기반으로 10~100배 빠르다.
+- <b>persist/cache</b>: persist(), cache()를 사용하면 failure가 발생해도 lineage의 cache 지점부터 수행 가능하다.
+- <b>immutable</b>: 데이터가 메모리에 immutable로 저장되므로 failure가 생겨도 functional transformation을 재수행하기만 하면 <b>fault tolerance</b>가 확보된다.
+- <b>Lazy execution</b>: Eager execution은 바로 실행(빈번한 반복연산)되는데 반해, Lazy execution은 Action을 호출하기 전까지는 Transformation의 계산을 실제로 실행하지 않으므로 IO를 줄이고 네트워크 병목현상을 피할 수 있다.
+
+
+----
+### 48. Define RDD.
+RDD(Resilient Distribution Datasets) is a <b>fault-tolerant</b> collection of operational elements that <b>run parallel</b>. 
+The partitioned data in RDD are <b>immutable</b> and <b>distributed</b>, which is a key component of Apache Spark.
+
+
+----
+### 49. What is Apache ZooKeeper and Apache Oozie?
+<b>ZooKeeper</b> coordinates with various services in a distributed environment. 
+It saves a lot of time by performing synchronization, configuration maintenance, grouping and naming.
+
+<b>Oozie</b> is a scheduler which schedules Hadoop jobs and binds them together as one logical work. 
+There are two kinds of Oozie jobs:
+- Oozie Workflow: These are the sequential set of actions to be executed. You can assume it as a relay race. Where each athlete waits for the last one to complete his part.
+- Oozie Coordinator: These are the Oozie jobs which are triggered when the data is made available to it. Think of this as the response-stimuli system in our body. In the same manner, as we respond to an external stimulus, an Oozie coordinator responds to the availability of data and it rests otherwise.
