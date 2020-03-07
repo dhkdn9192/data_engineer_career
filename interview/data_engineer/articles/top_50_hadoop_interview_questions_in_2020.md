@@ -100,6 +100,7 @@ Therefore, we have HDFS High Availability Architecture.
 <b>Checkpointing</b> is a process that takes an FsImage, edit log and compacts them into a new FsImage. 
 Thus, instead of replaying an edit log, the NameNode can <b>load the final in-memory state directly from the FsImage</b>. 
 This is a far more efficient operation and reduces NameNode startup time. 
+
 Checkpointing is performed by <b>Secondary NameNode</b>.
 
 
@@ -109,6 +110,7 @@ When data is stored over HDFS, NameNode <b>replicates</b> the data to several Da
 The default replication factor is 3. You can change the configuration factor as per your need. 
 If a DataNode goes down, the NameNode will automatically copy the data to another node from the replicas 
 and make the data available. 
+
 This provides <b>fault tolerance</b> in HDFS.
 
 
