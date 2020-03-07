@@ -31,5 +31,5 @@
 - Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive
 
 ## References
-- [Edureka Interview Questions](https://www.edureka.co/blog/interview-questions/hadoop-interview-questions-hdfs-2/)
-- [Github-Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
+- https://www.edureka.co/blog/interview-questions/hadoop-interview-questions-hdfs-2/
+- https://github.com/JaeYeopHan/Interview_Question_for_Beginner
