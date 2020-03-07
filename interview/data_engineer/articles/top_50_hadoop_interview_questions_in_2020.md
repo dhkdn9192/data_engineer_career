@@ -273,3 +273,8 @@ It saves a lot of time by performing synchronization, configuration maintenance,
 There are two kinds of Oozie jobs:
 - Oozie Workflow: These are the sequential set of actions to be executed. You can assume it as a relay race. Where each athlete waits for the last one to complete his part.
 - Oozie Coordinator: These are the Oozie jobs which are triggered when the data is made available to it. Think of this as the response-stimuli system in our body. In the same manner, as we respond to an external stimulus, an Oozie coordinator responds to the availability of data and it rests otherwise.
+
+
+----
+### Reference
+- https://www.edureka.co/blog/interview-questions/top-50-hadoop-interview-questions-2016/
