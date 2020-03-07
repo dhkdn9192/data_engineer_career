@@ -1,7 +1,6 @@
 # HDFS Block Replication and Fault Tolerance
 
-HDFS에서 block replication 개수를 3에서 5로 변경했을때, 몇 번의 장애까지 견딜 수 있을까? 
-이 질문에 관련된 자료들을 모아봤다.
+HDFS에서 block replication 개수를 3에서 5로 변경했을때, 몇 번의 장애까지 견딜 수 있을까? 이 질문의 답과 관련된 정보들을 모았습니다.
 
 ## 1. Replication Mechanism
 Before Hadoop 3, <b>fault tolerance</b> in Hadoop HDFS was achieved by creating <b>replicas</b>. 
@@ -42,3 +41,7 @@ Erasure coding reduces the storage overhead to 50%.
   |1개 파일당 디스크 사용량 | x3            | x1.5              |
 
 
+## Reference
+- https://data-flair.training/blogs/learn-hadoop-hdfs-fault-tolerance/
+- https://gerardnico.com/db/hadoop/hdfs/replication#replication_factor_31
+- https://www.samsungsds.com/global/ko/support/insights/Hadoop3-coding.html
