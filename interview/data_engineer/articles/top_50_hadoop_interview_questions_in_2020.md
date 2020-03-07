@@ -114,10 +114,45 @@ and make the data available.
 This provides <b>fault tolerance</b> in HDFS.
 
 
+----
+### 16. Why do we use HDFS for applications having large data sets and not when there are a lot of small files? 
+HDFS is more suitable for <b>large amounts of data sets in a single file</b> as compared to 
+<b>small amount of data spread across multiple files</b>. 
+As you know, the NameNode stores the metadata information regarding the file system in the RAM. 
+Therefore, the amount of memory produces a limit to the number of files in my HDFS file system. 
+In other words, too many files will lead to the generation of too much metadata. 
+And, <b>storing these metadata in the RAM will become a challenge</b>. 
+As a thumb rule, metadata for a file, block or directory takes 150 bytes. 
 
 
+----
+### 17. How do you define “block” in HDFS? What is the default block size in Hadoop 1 and in Hadoop 2? Can it be changed? 
+Blocks are the nothing but the smallest continuous location on your hard drive where data is stored. 
+HDFS stores each as blocks, and distribute it across the Hadoop cluster. 
+Files in HDFS are broken down into block-sized chunks, which are stored as independent units.
+- Hadoop 1 default block size: 64 MB
+- Hadoop 2 default block size: 128 MB
+
+Yes, blocks can be configured. 
+The dfs.block.size parameter can be used in the hdfs-site.xml file to set the size of a block in a Hadoop environment.
 
 
+---- 
+### 18. What does ‘jps’ command do? 
+The 'jps' command helps us to <b>check if the Hadoop daemons are running or not</b>. 
+It shows all the Hadoop daemons i.e namenode, datanode, resourcemanager, nodemanager etc. that are running on the machine.
+
+
+----
+### 19. How do you define “Rack Awareness” in Hadoop?
+<b>Rack Awareness</b> is the algorithm in which the "NameNode" decides how blocks and their replicas are placed, 
+based on rack definitions to minimize network traffic between "DataNodes" within the same rack. 
+
+For Example, consider replication factor 3 (default), 
+"for every block of data, two copies will exist in one rack, third copy in a different rack"
+
+- <b>To improve the network performance</b>: greater network bandwidth between machines in the same rack than the machines residing in different rack.
+- <b>To prevent loss of data</b>: even if an entire rack fails because of the switch failure or power failure.
 
 
 
