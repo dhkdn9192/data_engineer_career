@@ -22,6 +22,7 @@
 - 하둡, HDFS의 신규 버전의 문제점
 - HDFS의 컨센서스
 - 단일 장애점(Single point of failure)이 없는 구조
+- major compaction과 minor compaction의 차이
 
 ## Edureka's Top Hadoop Interview Questions
 - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](articles/top_50_hadoop_interview_questions_in_2020.md)
