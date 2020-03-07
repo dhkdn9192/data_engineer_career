@@ -155,5 +155,24 @@ For Example, consider replication factor 3 (default),
 - <b>To prevent loss of data</b>: even if an entire rack fails because of the switch failure or power failure.
 
 
+----
+### 20. What is "speculative execution" in Hadoop? 
+<b>speculative execution</b>: If a node appears to be executing a task slower, 
+the master node can redundantly execute another instance of the same task on another node. 
+Then, the task which finishes first will be accepted and the other one is killed. 
+
+
+----
+### 28. Explain “Distributed Cache” in a “MapReduce Framework”.
+<b>Distributed Cache</b> is a facility provided by the MapReduce framework to cache files needed by applications. 
+Once you have cached a file for your job, Hadoop framework will make it available on each and every data nodes 
+where you map/reduce tasks are running. 
+Then you can access the cache file as a local file in your Mapper or Reducer job.
+
+If the file is present on "hdfs://" or "http://" urls, the user mentions it to be a cache file to the distributed cache. 
+<b>MapReduce job will copy the cache file on all the nodes before starting of tasks on those nodes</b>.
+
+
+
 
 
