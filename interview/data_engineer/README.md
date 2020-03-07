@@ -18,7 +18,7 @@
 - 정렬알고리즘
 
 ## Hadoop and Bigdata ecosystem
-- HDFS의 디폴트 블록 수를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?
+- [HDFS의 디폴트 블록 수를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](articles/hdfs_replication_and_fault_tolerance.md)
 - 하둡, HDFS의 신규 버전의 문제점
 - HDFS의 컨센서스
 - 단일 장애점(Single point of failure)이 없는 구조
