@@ -173,6 +173,26 @@ If the file is present on "hdfs://" or "http://" urls, the user mentions it to b
 <b>MapReduce job will copy the cache file on all the nodes before starting of tasks on those nodes</b>.
 
 
+----
+### 30. What does a “MapReduce Partitioner” do?
+A "<b>MapReduce Partitioner</b>" makes sure that all the values of a single key go to <b>the same "reducer"</b>, 
+thus allowing even distribution of the map output over the "reducers". 
+It redirects the "mapper output" to the "reducer" by determining which "reducer" is responsible for the particular key.
+
+즉, partitioner는 같은 키를 갖는 값들이 같은 reducer로 가도록 해준다.
+
+
+----
+### 32. What is a “Combiner”? 
+A "Combiner" is a mini "reducer" that performs the local "reduce" task. 
+It receives the input from the "mapper" on a particular "node" and sends the output to the "reducer".
+
+모든 mapper output이 네트워크로 shuffle되면 과다 트래픽이 발생하므로,
+로컬 노드에서 conbiner가 mini-reduce를 수행한 뒤 reducer로 보내는 것이다.
+
+
+
+
 
 
 
