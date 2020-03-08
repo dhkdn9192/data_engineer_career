@@ -136,6 +136,42 @@ or
 hadoop fsck /sample/test.xml -files
 ```
 
+---
+### 24. What is a rack awareness algorithm and why is it used in Hadoop?
+<b>Rack Awareness</b> algorithm in Hadoop ensures that all the block replicas are not stored on the same rack or a single rack. 
+There are two reasons for using Rack Awareness:
+- <b>To improve the network performance</b>: In general, you will find greater network bandwidth between machines in the same rack than the machines residing in different rack. So, the Rack Awareness helps to reduce write traffic in between different racks and thus provides a better write performance. 
+- <b>To prevent loss of data</b>: I don't have to worry about the data even if an entire rack fails because of the switch failure or power failure. And if one thinks about it, it will make sense, as it is said that never put all your eggs in the same basket.
 
 
+---
+### 25. How data or a file is written into HDFS?
+Suppose a client wants to write a file into HDFS. 
+So, the following steps will be performed internally during the whole HDFS write process:
+- the client will divide the files into blocks and will send a write request to the NameNode.
+- For each block, the NameNode will provide the client a list containing the IP address of DataNodes (depending on replication factor, 3 by default) where the data block has to be copied eventually.
+- The client will copy the first block into the first DataNode and then the other copies of the block will be replicated by the DataNodes themselves in a sequential manner.
 
+
+---
+### 30. Define Data Integrity? How does HDFS ensure data integrity of data blocks stored in HDFS?
+- HDFS creates the <b>checksum</b> for all the data written to it and verifies the data with the checksum during read operation by default. 
+- Also, each DataNode runs a <b>block scanner</b> periodically, which verifies the correctness of the data blocks stored in the HDFS.
+- HDFS follows <b>Write Once Read Many</b> model
+
+
+---
+### 32. Define Hadoop Archives? What is the command for archiving a group of files in HDFS.
+<b>Hadoop Archive</b> was introduced to cope up with the problem of increasing memory usage of the NameNode 
+for storing the metadata information because of too many small files. 
+Basically, it allows us to <b>pack a number of small HDFS files into a single archive file</b> 
+and therefore, reducing the metadata information. 
+The final archived file follows the .har extension and one can consider it as a layered file system on top of HDFS. 
+
+
+---
+### 33. How will you perform the inter cluster data copying work in HDFS?
+클러스터 간의 데이터 복사는 다음 명령어로 수횅할 수 있다.
+```
+hadoop distcp hdfs://<source NameNode> hdfs://<target NameNode>
+```
