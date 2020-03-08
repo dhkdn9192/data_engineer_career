@@ -175,3 +175,7 @@ The final archived file follows the .har extension and one can consider it as a 
 ```
 hadoop distcp hdfs://<source NameNode> hdfs://<target NameNode>
 ```
+
+---
+### Reference
+- https://www.edureka.co/blog/interview-questions/hadoop-interview-questions-hdfs-2/
