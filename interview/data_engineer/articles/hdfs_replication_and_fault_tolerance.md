@@ -1,6 +1,6 @@
 # HDFS Block Replication and Fault Tolerance
 
-HDFS에서 block replication 개수를 3에서 5로 변경했을때, 몇 번의 장애까지 견딜 수 있을까? 이 질문의 답과 관련된 정보들을 모았습니다.
+HDFS에서 block replication 개수를 3에서 5로 변경했을때, 몇 번의 장애까지 견딜 수 있을까?
 
 ## 1. Replication Mechanism
 Before Hadoop 3, <b>fault tolerance</b> in Hadoop HDFS was achieved by creating <b>replicas</b>. 
