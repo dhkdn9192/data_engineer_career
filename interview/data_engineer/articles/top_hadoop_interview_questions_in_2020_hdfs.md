@@ -71,6 +71,71 @@ A Secondary NameNode is a helper daemon that performs <b>checkpointing</b> in HD
 - It prevent the Edit Logs from becoming too large.
 
 
+---
+### 12. What do you mean by meta data in HDFS? List the files associated with metadata.
+- <b>FsImage</b>: It contains the complete state of the file system namespace since the start of the NameNode.
+- <b>EditLogs</b>: It contains all the recent modifications made to the file system with respect to the recent FsImage.
+
+
+---
+### 13. What is the problem in having lots of small files in HDFS?
+NameNode stores the metadata information regarding file system in the <b>RAM</b>. 
+Therefore, the amount of memory produces a limit to the number of files in my HDFS file system. 
+Too much of files will lead to the generation of too much meta data and <b>storing these meta data in the RAM will become a challenge</b>. 
+As a thumb rule, metadata for a file, block or directory takes 150 bytes.  
+
+
+---
+### 14. What is a heartbeat in HDFS?
+Heartbeats in HDFS are the signals that are sent by DataNodes to the NameNode to indicate that it is functioning properly (alive). 
+By default, the heartbeat interval is 3 seconds, which can be configured using dfs.heartbeat.interval in hdfs-site.xml.
+
+
+---
+### 16. What is a block?
+Blocks are the smallest continuous location on your hard drive where data is stored. 
+HDFS stores each file as blocks, and distribute it across the Hadoop cluster. 
+The default size of a block in HDFS is 128 MB (Hadoop 2.x) and 64 MB (Hadoop 1.x) 
+which is much larger as compared to the Linux system where the block size is 4KB. 
+<b>The reason of having this huge block size is to minimize the cost of seek and reduce the meta data information generated per block</b>.
+
+
+---
+### 17. Suppose there is file of size 514 MB stored in HDFS (Hadoop 2.x) using default block size configuration and default replication factor. Then, how many blocks will be created in total and what will be the size of each block?
+Default block size in Hadoop 2.x is 128 MB. So, a file of size 514 MB will be divided into 5 blocks ( 514 MB/128 MB) where the first four blocks will be of 128 MB and the last block will be of 2 MB only. Since, we are using the default replication factor i.e. 3, each block will be replicated thrice. Therefore, we will have 15 blocks in total where 12 blocks will be of size 128 MB each and 3 blocks of size 2 MB each.
+
+
+---
+### 20. What is a block scanner in HDFS?
+<b>Block scanner</b> runs periodically on every DataNode to verify whether the data blocks stored are correct or not. 
+The following steps will occur when a corrupted data block is detected by the block scanner:
+
+- First, the DataNode will report about the corrupted block to the NameNode.
+- Then, NameNode will start the process of creating a new replica using the correct replica of the corrupted block present in other DataNodes.
+- The corrupted data block will not be deleted until the replication count of the correct replicas matches with the replication factor (3 by default).
+
+This whole process allows HDFS to maintain the integrity of the data when a client performs a read operation. 
+One can check the block scanner report using the DataNode’s web interface- localhost:50075/blockScannerReport
+
+
+---
+### 23. Can we have different replication factor of the existing files in HDFS?
+Yes, one can have different replication factor for the files existing in HDFS. 
+Suppose, I have a file named test.xml stored within the sample directory in my HDFS with the replication factor set to 1. 
+Now, the command for changing the replication factor of text.xml file to 3 is:
+```
+hadoop fs -setrwp -w 3 /sample/test.xml
+```
+
+Finally, I can check whether the replication factor has been changed or not by using following command:
+```
+hadoop fs -ls /sample
+```
+or 
+```
+hadoop fsck /sample/test.xml -files
+```
+
 
 
 
