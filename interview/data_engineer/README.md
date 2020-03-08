@@ -26,7 +26,7 @@
 
 ## Edureka's Top Hadoop Interview Questions
 - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](articles/top_50_hadoop_interview_questions_in_2020.md)
-- Top Hadoop Interview Questions To Prepare In 2020 – HDFS
+- [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](articles/top_hadoop_interview_questions_in_2020_hdfs.md)
 - Hadoop MapReduce Interview Questions In 2020
 - Hadoop Interview Questions For 2020 – Setting Up Hadoop Cluster
 - Hadoop Interview Questions On HBase In 2020
