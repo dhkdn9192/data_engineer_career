@@ -27,11 +27,11 @@
 ## Top Hadoop and Bigdata Ecosystem Questions
 - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](articles/top_50_hadoop_interview_questions_in_2020.md)
 - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](articles/top_hadoop_interview_questions_in_2020_hdfs.md)
+- [Top 20 Apache Spark Interview Questions 2019](top_20_apache_spark_interview_questions_2019.md)
 - Hadoop MapReduce Interview Questions In 2020
 - Hadoop Interview Questions For 2020 – Setting Up Hadoop Cluster
 - Hadoop Interview Questions On HBase In 2020
 - Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive
-- Top 20 Apache Spark Interview Questions 2019
 
 ## References
 - https://www.edureka.co/blog/interview-questions/hadoop-interview-questions-hdfs-2/
