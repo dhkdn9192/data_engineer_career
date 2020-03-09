@@ -65,11 +65,30 @@ Transformations create new RDD’s from existing RDD and these transformations a
 
 
 ---
-### 8 What is partition?
+### 8. What is partition?
 RDD는 여러개의 partition들로 구성되며 partition의 개수는 클러스터의 CPU 코어 수에 따라 결정된다. 즉, <b>partition 개수만큼 parallel 수행</b>이 이뤄진다.
 - coalesce()와 repartition()
   - 파티션의 개수를 줄일 경우 coalesce()를 사용하며 parallelism은 감소하지만 shuffle은 일어나지 않는다. 주로 HDFS 등에 저장할 때 사용.
   - 파티션의 개수를 늘릴 경우 repartition()을 사용하며 parallelism은 증가하지만 shuffle가 일어난다.
+
+
+---
+### 9. What is data locality in Spark?
+Data Locality는 데이터와 코드가 얼마나 가까이에 있는지를 나타내는 Spark job 퍼포먼스의 중대한 요소 중 하나이다. 
+Spark은 locality를 위해 데이터가 위치한 서버의 CPU가 사용 가능한 상태가 될 때까지 일정시간(default 3초) 대기한다.
+대기시간 만료 후엔 가용 CPU 서버로 데이터를 이동시킨다.
+
+locality level은 프로세스>노드>랙>Any 순으로 속도가 빠르다.
+- PROCESS_LOCAL: 데이터가 실행되고 있는 코드의 JVM 과 함께 위치해 있는 경우. 가장 실행 속도가 빠름
+- NODE_LOCAL: 데이터가 같은 노드에 있는 경우. data 가 process 들 간에 이동해야하기 때문에 PROCESS_LOCAL 보다는 조금 느림
+- RACK_LOCAL: 데이터가 같은 Rack 의 다른 서버에 존재하지만, 단순하게 Switch 쪽을 통한 Network 비용만이 발생함
+- ANY: 데이터가 같은 Rack 이 아닌 다른 네트워크 상에 존재하는 경우. 가장 속도가 느림
+
+locality를 맞추기 위한 대기시간은 다음 옵션으로 설정할 수 있다. 
+해당 시간이 만료되면 locality를 희생하고 원격 서버에 job을 할당한다.
+```
+spark.locality.wait
+```
 
 
 ---
@@ -82,8 +101,60 @@ you can take the advantage of Cache or Persist.
 - <b>cache()</b>: it is like persist() function only, where the <b>storage level</b> is set to <b>memory only</b>.
 
 
+---
+### 11. What are Accumulators?
+- <b>write only variables</b> 
+- <b>initialized once and sent to the workers</b>.
+- These workers will update based on the logic written and sent back to the driver which will aggregate or process based on the logic.
+- Only driver can access the accumulator’s value. For tasks, Accumulators are write-only. 
+- For example, it is used to <b>count the number errors</b> seen in RDD across workers.
 
-  
+
+---
+### 12. What are Broadcast Variables?
+- <b>read-only shared variables</b>. 
+- For case of a set of data which may have to be <b>used multiple times</b> in the workers at <b>different phases</b>
+- <b>shared to the workers</b> from the driver and every machine can read them.
+
+
+---
+### 13. What are the optimizations that developer can make while working with spark?
+Spark is memory intensive, whatever you do it does in memory.
+- <b>locality</b>: how long spark will wait before it times out on each of the phases of data locality (data local –> process local –> node local –> rack local –> Any).
+- <b>shuffle</b>: Filter out data as early as possible. 
+- <b>caching</b>: with cache() or persist(), choose wisely from various storage levels.
+- <b>partition</b>: Tune the number of partitions in spark for parallelism.
+- <b>broadcast and accumulator</b>: use read-only, write-only varables.
+
+
+---
+### 14. What is Spark SQL?
+<b>Spark SQL</b> is a module for structured data processing where we take <b>advantage of SQL queries</b> running on the datasets.
+
+
+---
+### 15. What is a Data Frame?
+A data frame is like a table, it got some named columns which organized into columns. 
+You can create a data frame from a file or from tables in hive, external databases SQL or NoSQL or existing RDD’s. 
+It is analogous to a table.
+
+
+---
+### 19. What is Spark Streaming?
+Whenever there is <b>data flowing continuously</b> and you want to process the data as early as possible, 
+in that case you can take the advantage of Spark Streaming. 
+It is the <b>API for stream processing of live data</b>.
+
+Data can flow for Kafka, Flume or from TCP sockets, Kenisis etc., and you can do complex processing on the data 
+before you pushing them into their destinations. 
+Destinations can be file systems or databases or any other dashboards.
+
+
+---
+### 20. What is Sliding Window?
+Basically, any Spark window operation requires specifying two parameters.
+- <b>Window length</b>: It defines the duration of the window.
+- <b>Sliding interval</b>: It defines the interval at which the window operation is performed.
 
 
 ### Reference
