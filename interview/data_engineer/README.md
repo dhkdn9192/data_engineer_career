@@ -11,7 +11,7 @@
 - 자바의 메모리 누수 현상의 원인
 - 자바의 장점
 - LRU 방식의 문제점
-- sync와 async, blocking과 non-blocking
+- [sync와 async, blocking과 non-blocking](articles/sync_async_block_nonblock.md)
 
 ## Algorithm
 - 이진탐색트리
