@@ -157,5 +157,6 @@ Basically, any Spark window operation requires specifying two parameters.
 - <b>Sliding interval</b>: It defines the interval at which the window operation is performed.
 
 
+---
 ### Reference
 - https://acadgild.com/blog/top-20-apache-spark-interview-questions-2019
