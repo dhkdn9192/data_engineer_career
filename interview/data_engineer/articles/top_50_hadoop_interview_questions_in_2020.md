@@ -191,6 +191,16 @@ It receives the input from the "mapper" on a particular "node" and sends the out
 로컬 노드에서 conbiner가 mini-reduce를 수행한 뒤 reducer로 보내는 것이다.
 
 
+---
+### 33. What is "Hive"?
+하이브는 HDFS 등 하둡 호환 저장시스템에 저장된 데이터를 처리하고 분석하기 위해 SQL-like language를 제공하는 데이터 웨어하우스 소프트웨어다.
+SQL은 가장 널리 사용되는 데이터 처리 언어이므로 맵리듀스 등 하둡 데이터 처리 프로그램에 비해 접근성이 높다.
+즉, 하이브는 하둡을 위해 SQL의 단순성을 차용하여 넓은 사용자 층이 접근할 수 있도록 해준다.
+
+하이브는 HiveQL이라는 SQL-like 언어를 제공하여 쿼리를 수행할 수 있다.
+HiveQL 쿼리는 내부적으로 맵리듀스 잡으로 변환된다.
+
+
 ----
 ### 38. What is "SerDe" in "Hive"?
 Apache Hive is a <b>data warehouse system built on top of Hadoop</b> 
@@ -235,7 +245,7 @@ Upgrade your hive metastore to either MySQL, PostgreSQL to support multiple conc
 
 
 ----
-### 45. Mention the differences between “HBase” and “Relational Databases”?
+### 45. Mention the differences between "HBase" and "Relational Databases"?
 |HBase                                    |Relational Database                                              |
 |:---                                     |:---                                                             |
 |It is schema-less                        | It is schema-based database                                     |
