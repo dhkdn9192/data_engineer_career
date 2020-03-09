@@ -171,7 +171,7 @@ The final archived file follows the .har extension and one can consider it as a 
 
 ---
 ### 33. How will you perform the inter cluster data copying work in HDFS?
-클러스터 간의 데이터 복사는 다음 명령어로 수횅할 수 있다.
+클러스터 간의 데이터 복사는 다음 명령어로 수행할 수 있다.
 ```
 hadoop distcp hdfs://<source NameNode> hdfs://<target NameNode>
 ```
