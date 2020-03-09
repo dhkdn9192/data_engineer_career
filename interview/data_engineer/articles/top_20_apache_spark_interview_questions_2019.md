@@ -140,6 +140,23 @@ It is analogous to a table.
 
 
 ---
+### 16. What is Serialization?
+- <b>Serialization</b>: 메모리에 존재하는 데이터를 디스크 또는 네트워크로 보내기 위해 (바이트코드 형태로) 변환하는 작업을 직렬화라 한다.
+- <b>Deserialization</b>: 반대로 디스크나 네트워크에서 데이터를 읽어 메모리에 올리는 역처리 과정을 역직렬화라 한다.
+
+데이터는 CSV, XML, JSON 및 binary 등 다양한 형태로 직렬화될 수 있다.
+
+
+---
+### 17. What is Parquet?
+파퀘이는 하둡 생태계를 위해 설계된 칼럼 기반 저장 방식이다. 
+맵리듀스, 스파크 등 어떤 종류의 데이터 처리 프레임워크와도 함께 사용할 수 있다.
+- 복잡한 중첩 데이터 구조 지원
+- 다양한 데이터 인코딩 방식, 압축 기술 지원
+- 각 칼럼에 대한 특정 압축 스키마 사용
+
+
+---
 ### 19. What is Spark Streaming?
 Whenever there is <b>data flowing continuously</b> and you want to process the data as early as possible, 
 in that case you can take the advantage of Spark Streaming. 
