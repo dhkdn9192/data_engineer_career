@@ -30,6 +30,10 @@ Coursera 강좌 중 Heather Miller 교수님의 "[Big Data Analysis with Scala a
 4. Wide vs Narrow Dependencies
 5. [Weekly Summary](lecture/week03_summary.md)
 
+## week 04
+
+1. [Weekly Summary](lecture/week04_summary.md)
+
 
 ## Reference
 
