@@ -32,6 +32,7 @@
 - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](articles/top_50_hadoop_interview_questions_in_2020.md)
 - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](articles/top_hadoop_interview_questions_in_2020_hdfs.md)
 - [Top 20 Apache Spark Interview Questions 2019](articles/top_20_apache_spark_interview_questions_2019.md)
+- [Top 62 Data Engineer Interview Questions & Answers](articles/top_62_data_engineer_interview_questions.md)
 - Hadoop MapReduce Interview Questions In 2020
 - Hadoop Interview Questions For 2020 – Setting Up Hadoop Cluster
 - Hadoop Interview Questions On HBase In 2020
