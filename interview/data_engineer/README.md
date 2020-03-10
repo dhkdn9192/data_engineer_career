@@ -19,7 +19,7 @@
 
 ## Algorithm
 - 이진탐색트리
-- 정렬알고리즘
+- [정렬알고리즘](articles/sorting_algorithm.md)
 
 ## Hadoop and Bigdata ecosystem
 - [HDFS의 디폴트 블록 수를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](articles/hdfs_replication_and_fault_tolerance.md)
