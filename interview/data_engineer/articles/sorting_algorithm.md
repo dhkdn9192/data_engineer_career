@@ -1,4 +1,4 @@
-# Sort Algorithm
+# Sorting Algorithm
 
 ## Merge Sort
 
