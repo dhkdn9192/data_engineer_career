@@ -1,6 +1,5 @@
 # Understanding Memory Leaks in Java
 
-## 1. Introduction
 One of the core benefits of Java is the automated memory management 
 with the help of the built-in <b>Garbage Collector</b> (or GC for short). 
 The GC implicitly takes care of <b>allocating and freeing up memory</b> 
@@ -10,7 +9,7 @@ The GC doesn't guarantee a foolproof solution to memory leaking.
 Memory leaks can sneak up.
 
 
-## 2. What Is a Memory Leak
+## What Is a Memory Leak
 A Memory Leak is a situation when there are objects present in the heap that are no longer used, 
 but the <b>garbage collector is unable to remove them</b> from memory and, 
 thus they are unnecessarily maintained.
@@ -30,7 +29,7 @@ This is where memory leaks can occur:
 ![memory_leak_in_java_heap](img/memory_leak_in_java_heap.png)
 
 
-## 3. Symptoms of a Memory Leak
+## Symptoms of a Memory Leak
 - <b>Severe performance degradation</b> when the application is continuously running for a long time
 - <b>OutOfMemoryError</b> heap error in the application
 - Spontaneous and strange <b>application crashes</b>
