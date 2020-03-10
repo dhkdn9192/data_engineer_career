@@ -10,7 +10,10 @@
 - 캐시 메모리와 버퍼 메모리
 - 자바의 메모리 누수 현상의 원인
 - 자바의 장점
+- 파이썬의 GIL
 - LRU 방식의 문제점
+- CPU 스케줄링 알고리즘
+- 데드락의 조건과 세마포어
 - [sync와 async, blocking과 non-blocking](articles/sync_async_block_nonblock.md)
 
 ## Algorithm
