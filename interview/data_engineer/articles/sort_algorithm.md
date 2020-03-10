@@ -4,7 +4,7 @@
 
 merge sort의 과정은 배열을 매 재귀마다 둘로 나누므로 이진 트리를 형성하게 된다. 
 merge sort의 계산복잡도는 ```이진 트리의 높이```와 각 ```단계의 원소 수```의 곱으로 나타낼 수 있다.
-즉, O(n $$$log n$$$)
+즉, O(n $\log n$)
 
 ```python
 def merge_sort(ary):
