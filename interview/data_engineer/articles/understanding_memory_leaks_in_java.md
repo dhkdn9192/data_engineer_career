@@ -36,6 +36,10 @@ This is where memory leaks can occur:
 - The application is occasionally <b>running out of connection</b> objects
 
 
+## JVM Memory Leak 해결하기
+- 원인분석: heapdump 분석 (eclipse memory analyzer 등)
+- memory 점유율이 높은 object부터 분석 (당연하지만 말처럼 쉽지 않음...)
+
 
 ## 힙 메모리(heap memory)
 프로그램을 사용할 수 있는 자유 메모리이다. 
@@ -47,3 +51,4 @@ This is where memory leaks can occur:
 ## Reference
 - https://www.baeldung.com/java-memory-leaks
 - https://www.scienceall.com/%ED%9E%99-%EB%A9%94%EB%AA%A8%EB%A6%ACheap-memory/
+- https://woowabros.github.io/tools/2019/05/24/jvm_memory_leak.html
