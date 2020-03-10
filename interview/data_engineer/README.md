@@ -8,7 +8,7 @@
 - 직렬화와 역직렬화
 - 페이지 방식과 버퍼 방식의 차이
 - [캐시 메모리와 버퍼 메모리](articles/difference_between_cache_and_buffer.md)
-- 자바의 메모리 누수 현상의 원인
+- [자바 메모리 누수 현상의 원인](articles/understanding_memory_leaks_in_java.md)
 - [페이징과 세그먼테이션](articles/paging_segmentation.md)
 - 자바의 장점
 - 파이썬의 GIL
