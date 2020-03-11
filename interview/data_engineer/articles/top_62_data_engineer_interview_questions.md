@@ -38,7 +38,39 @@ to maintain data integrity and reduce client errors.
 - <b>Block report</b>
 - <b>Heartbeats</b>
 
+---
+### 42) Why Hadoop uses Context object?
+Hadoop uses <b>Context object</b> with Mapper to interact with rest of the system.
+
+<b>Context object gets the configuration of the system and job in its constructor</b>.
+We use Context object to pass the information in setup(), cleanup() and map() methods.
+
+This is an important object that makes the important information available during the map operations.
+
+---
+### 45) What do you mean Data Locality in Hadoop?
+In a Big Data system, the size of data is huge, and that is why it does not make sense to move data across the network. 
+Now, Hadoop tries to move computation closer to data. 
+This way, the data remains local to the stored location.
+
+---
+### 46) Define Balancer in HDFS
+In HDFS, the <b>balancer</b> is an administrative used by admin staff to 
+rebalance data across DataNodes and moves blocks <b>from overutilized to underutilized nodes</b>.
+
+---
+### 48) What is the importance of Distributed Cache in Apache Hadoop?
+Hadoop has a useful utility feature so-called <b>Distributed Cache</b> 
+which improves the performance of jobs by caching the files utilized by applications. 
+An application can specify a file for the cache using JobConf configuration.
+
+Hadoop framework makes replica of these files to the nodes one which a task has to be executed. 
+This is done <b>before the execution</b> of task starts. 
+Distributed Cache supports the distribution of <b>read only files</b> as well as zips, and jars files.
 
 
+
+---
 ### Reference
 - https://www.guru99.com/data-engineer-interview-questions.html
+- https://www.quora.com/What-is-the-use-of-Context-object-in-Hadoop
