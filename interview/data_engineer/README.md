@@ -6,6 +6,8 @@
 - [파티셔닝과 샤딩의 차이](articles/partitioning_vs_sharding.md)
 - [해싱의 개념과 해싱 테이블](articles/hash_table.md)
 - 직렬화와 역직렬화
+- 멀티스레드와 멀티프로세스
+- Critical Section과 Deadlock
 - 페이지 방식과 버퍼 방식의 차이
 - [캐시 메모리와 버퍼 메모리](articles/difference_between_cache_and_buffer.md)
 - [자바 메모리 누수 현상의 원인](articles/understanding_memory_leaks_in_java.md)
