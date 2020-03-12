@@ -13,7 +13,7 @@
 - [자바 메모리 누수 현상의 원인](articles/understanding_memory_leaks_in_java.md)
 - [페이징과 세그먼테이션](articles/paging_segmentation.md)
 - 자바의 장점
-- 폴링과 
+- 폴링과 인터럽트
 - 파이썬의 GIL
 - LRU 방식의 문제점
 - CPU 스케줄링 알고리즘
