@@ -3,7 +3,7 @@
 Coursera 강좌 중 Heather Miller 교수님의 "[Big Data Analysis with Scala and Spark](https://www.coursera.org/learn/scala-spark-big-data/home/welcome)"를 수강하며 학습한 내용을 정리하였습니다.
 
 
-## week 01
+## Week 01
 
 1. Data-Parallel to Distributed Data-Parallel
 2. Latency
@@ -14,7 +14,7 @@ Coursera 강좌 중 Heather Miller 교수님의 "[Big Data Analysis with Scala a
 7. [Weekly Summary](lecture/week01_summary.md)
 
 
-## week 02
+## Week 02
 
 1. [Reduction Operations](lecture/week02_Reduction_Operations.md)
 2. [Pair RDDs](lecture/week02_Pair_RDDs.md)
@@ -22,7 +22,7 @@ Coursera 강좌 중 Heather Miller 교수님의 "[Big Data Analysis with Scala a
 4. Joins
 5. [Weekly Summary](lecture/week02_summary.md)
 
-## week 03
+## Week 03
 
 1. [Shuffling: What it is and why it's important](lecture/week03_shuffling.md)
 2. [Partitioning](lecture/week03_partitioning.md)
@@ -30,7 +30,7 @@ Coursera 강좌 중 Heather Miller 교수님의 "[Big Data Analysis with Scala a
 4. Wide vs Narrow Dependencies
 5. [Weekly Summary](lecture/week03_summary.md)
 
-## week 04
+## Week 04
 
 1. [Weekly Summary](lecture/week04_summary.md)
 
@@ -38,4 +38,3 @@ Coursera 강좌 중 Heather Miller 교수님의 "[Big Data Analysis with Scala a
 ## Reference
 
 - https://www.coursera.org/learn/scala-spark-big-data/home/welcome
-
