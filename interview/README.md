@@ -40,7 +40,7 @@
 - LRU 방식의 문제점
 - CPU 스케줄링 알고리즘
 - 데드락의 조건과 세마포어
-- [sync와 async, blocking과 non-blocking](computer_science/sync_async_block_nonblock.md)
+- [Sync와 Async, Blocking과 Non-blocking](computer_science/sync_async_block_nonblock.md)
 
 ## Algorithm
 - 이진 탐색 트리
