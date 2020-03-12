@@ -6,28 +6,28 @@
 
 
 ## 1. Cloudera Hadoop
-
 - [Set up CDH](cloudera)
 
-## 2. Hadoop Ecosystem
 
+## 2. Hadoop Ecosystem
+- [Hadoop](hadoop_ecosystem/hadoop)
+    - HDFS
+    - YARN
+    - MapReduce
 - [Spark](hadoop_ecosystem/spark)
-- [HDFS](hadoop_ecosystem/hdfs)
-- Hadoop
-- Kafka
 - HBase
+- Hive
+- Kafka
 - Zookeeper
 - Oozie
-- Yarn
-- Hive
 - Sqoop
 
-## 3. Elastic Stack
 
+## 3. Elastic Stack
 - [Elasticsearch](elk_stack/elasticsearch)
 - [Logstash](elk_stack/logstash)
 - Kibana
 
-## 4. Interview
 
+## 4. Interview
 - [Data Engineer Interview](interview)
