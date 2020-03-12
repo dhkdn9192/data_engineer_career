@@ -4,7 +4,7 @@
 
 
 ## Hadoop Ecosystem
-- [HDFS의 디폴트 블록 수를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](hadoop/hdfs_replication_and_fault_tolerance.md)
+- [HDFS의 block replication factor를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](hadoop/hdfs_replication_and_fault_tolerance.md)
 - 하둡, HDFS의 신규 버전의 문제점
 - HDFS의 컨센서스
 - [손상된 블록의 탐지와 처리과정](hadoop/hdfs_block_scanner.md)
