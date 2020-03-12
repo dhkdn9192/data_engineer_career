@@ -5,11 +5,11 @@
 각 문서 별로 하단에 출처를 명시하였으니 참조하시기 바랍니다.
 
 
-### 1. Cloudera Hadoop
+## 1. Cloudera Hadoop
 
-- [How to set up CDH](cloudera/how_to_setup_cdh)
+- [Set up CDH](cloudera)
 
-### 2. Hadoop Ecosystem
+## 2. Hadoop Ecosystem
 
 - [Spark](hadoop_ecosystem/spark)
 - [HDFS](hadoop_ecosystem/hdfs)
@@ -22,12 +22,12 @@
 - Hive
 - Sqoop
 
-### 3. Elastic Stack
+## 3. Elastic Stack
 
 - [Elasticsearch](elk_stack/elasticsearch)
 - [Logstash](elk_stack/logstash)
 - Kibana
 
-### 4. Interview
+## 4. Interview
 
-- [Data engineer interview](interview/data_engineer)
+- [Data engineer interview](interview)
