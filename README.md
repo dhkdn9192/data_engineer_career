@@ -21,6 +21,7 @@
 - Zookeeper
 - Oozie
 - Sqoop
+- [Fluentd](hadoop_ecosystem/fluentd)
 
 
 ## 3. Elastic Stack
