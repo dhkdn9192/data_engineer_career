@@ -13,6 +13,7 @@
 - [RDD, DataFrame, Dataset의 차이점](hadoop/rdd_df_ds.md)
 - [SparkContext와 SparkSession](hadoop/sparkcontext_sparksession.md)
 - [파퀘이와 칼럼 기반 스토리지](hadoop/parquet_and_column_based_storage.md)
+- (작성중)[Standby Namenode vs Secondary Namenode](hadoop/standbynn_secondarynn.md)
 - 과제: On-premise 하둡 아키텍처 설계하기
 
 ## Top Bigdata Questions
