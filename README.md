@@ -10,7 +10,7 @@
 
 
 ## 2. Hadoop Ecosystem
-- [Hadoop](hadoop_ecosystem/hadoop)
+- (작성중)[Hadoop](hadoop_ecosystem/hadoop)
     - HDFS
     - YARN
     - MapReduce
@@ -21,7 +21,7 @@
 - Zookeeper
 - Oozie
 - Sqoop
-- [Fluentd](hadoop_ecosystem/fluentd)
+- (작성중)[Fluentd](hadoop_ecosystem/fluentd)
 
 
 ## 3. Elastic Stack
