@@ -37,7 +37,7 @@
 - [페이징과 세그먼테이션](computer_science/paging_segmentation.md)
 - 자바의 장점
 - 폴링과 인터럽트
-- 데이터베이스의 
+- 데이터베이스의 인덱스란
 - 파이썬의 GIL
 - LRU 방식의 문제점
 - CPU 스케줄링 알고리즘
