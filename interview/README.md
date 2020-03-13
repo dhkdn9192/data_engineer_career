@@ -8,7 +8,7 @@
 - 하둡, HDFS의 신규 버전의 문제점
 - (작성중)[HDFS의 컨센서스](hadoop/hdfs_consensus.md)
 - [손상된 블록의 탐지와 처리과정](hadoop/hdfs_block_scanner.md)
-- (작성중)[단일 장애지점과 고가용성](hadoop/hadoop_ha.md)
+- (작성중)[HDFS의 단일 고장지점과 고가용성](hadoop/hadoop_ha.md)
 - [Major Compaction과 Minor Compaction](hadoop/hbase_compaction.md)
 - [RDD, DataFrame, Dataset의 차이점](hadoop/rdd_df_ds.md)
 - [SparkContext와 SparkSession](hadoop/sparkcontext_sparksession.md)
