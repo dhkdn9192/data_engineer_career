@@ -37,11 +37,27 @@ Erasure coding reduces the storage overhead to 50%.
 - Repliaction과 Erasure coding 비교 (replica factor는 3, perity cell 수는 블록 수의 절반일 때)
   |                       |N-replication  |(N, M)Reed-solomon|
   |:---                   |:---:           |:---:              |
-  |Fault-tolerance 보장    | N-1          | M                 |
+  |Fault-tolerance 보장    | <b>N-1</b>          | M                 |
   |1개 파일당 디스크 사용량 | x3            | x1.5              |
 
+
+## (Tip) 파일 혹은 디렉토리별 Replication 설정
+
+HDFS의 특정 디렉토리나 파일을 지정하여 replication 수를 지정할 수 있다.
+
+
+You can change the replication factor of a file using command:
+```
+hdfs dfs –setrep –w 3 /user/hdfs/file.txt 
+```
+
+You can also change the replication factor of a directory using command:
+```
+hdfs dfs -setrep -R 2 /user/hdfs/test
+```
 
 ## Reference
 - https://data-flair.training/blogs/learn-hadoop-hdfs-fault-tolerance/
 - https://gerardnico.com/db/hadoop/hdfs/replication#replication_factor_31
 - https://www.samsungsds.com/global/ko/support/insights/Hadoop3-coding.html
+- https://stackoverflow.com/questions/30558217/to-change-replication-factor-of-a-directory-in-hadoop/30558916
