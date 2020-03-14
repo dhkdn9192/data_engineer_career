@@ -1,6 +1,6 @@
 # HDFS HA and Consensus
 
-- 핵심키워드: ```Active-Standby NameNode```, ```JournalNode```, ```QuorumJournalManager```, ```ZKFC```, ```Failover```
+- 핵심키워드: ```Active NameNode```, ```Standby NameNode```, ```JournalNode```, ```QuorumJournalManager```, ```ZKFC```, ```Failover```
 
 (작성 예정)
 
