@@ -81,10 +81,34 @@ Zookeeper는 leader-folower 구조를 갖는다.
 ## 3. HDFS HA
 
 ### 3.1. DataNode HA
+Hadoop은 블록 단위의 replication으로 데이터 가용성을 보장한다.
+덕분에 일부 DataNode가 고장나더라도 데이터 처리를 계속할 수 있다.
+클라이언트가 HDFS의 파일에 접근할 때 NameNode로부터 블록을 보유한 DataNode 리스트를 받으므로,
+DataNode로부터 블록 취득에 실패하더라도 다른 DataNode에 재시도할 수 있다.
+
+즉, 사용자가 DataNode의 가용성 향상을 위해 추가적인 작업을 할 필요가 없다.
 
 
 ### 3.2. NameNode HA
+NameNode가 고장날 경우, HDFS의 모든 데이터 처리 CRUD가 불가능해진다. 또한 HDFS에 의존하는 MapReduce 잡도 실행할 수 없게 된다.
+때문에 Hadoop 2.x에서는 내장 HA가 제공된다.
 
+NameNode HA에선 standby-NameNode가 가동되며, 블록 리포트는 active-NameNode와 standby-NameNode 양쪽에 전송된다.
+이를 통해 Failover 시간을 단축시킬 수 있다.
+
+#### JournalNode
+NameNode의 파일 시스템 메타데이터를 이중화하기 위해 JournalNode라는 프로세스가 도입되었다.
+```QuorumJournalManager``` 모듈을 통해 NameNode는 JournalNode로 edit logs를 전송한다.
+
+1. NameNode가 파일 시스템 메타데이터를 갱신할 때, 저널 로그를 각 JournalNode에 전송
+2. JournalNode는 전송된 edits를 기록하고 NameNode에 응답을 반환
+3. NameNode는 과반수의 응답을 받으면 기록 처리가 성공한 것으로 간주한다. (즉, 모든 노드들이 똑같은 edits를 기록 -> consensus)
+
+standby-NameNode는 지속적으로 JournalNode로부터 edits 파일을 취득하여 메모리 상의 파일 시스템 메타데이터를 갱신한다.
+또한, 디스크 상의 fsimage 파일을 edits 적용 후의 내용으로 갱신하고, 교체할 checkpoint 처리도 담당한다.
+즉, standby-NameNode로 HA를 구성한 경우엔 Secondary NameNode를 사용하지 않는다.
+
+![quorum journal manager](img/quorum-journal-manager.png)
 
 
 ## Reference
