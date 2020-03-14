@@ -52,12 +52,27 @@ Hadoop에선 ZKFC(Zookeeper Failover Controller)가 펜싱을 수행한다.
 
 Zookeeper는 Hadoop HA 구성에서 노드 감시와 격리제어를 수행한다.
 복수의 노드로 구성된 클러스터 구조이다.
-작은 크기으 ㅣ데이터를 저장하기 위해 분산 파일 시스템과 같은 기능을 제공한다.
+작은 크기의 데이터를 저장하기 위해 분산 파일 시스템과 같은 기능을 제공한다.
 <b>이중화</b>와 <b>일관성</b>을 둘 다 갖는 구조이다.
 
+#### Zookeeper 구조
+![zookeeper architecture](img/zookeeper_architecture.png)
+* 이미지 출처: https://cwiki.apache.org/confluence/display/ZOOKEEPER/ProjectDescription
 
- 
+#### Consensus 절차
 
+1. 클라이언트가 특정 follower에게 데이터 갱신을 요청
+2. follower는 leader에게 요청을 전송
+3. leader는 갱신 처리에 트랜잭션 ID를 부여하고, 모든 노드에게 요청을 전송
+4. 각 노드는 갱신 데이터를 저널 로그에 기록하고 leader에게 응답을 반환
+5. leader는 과반수 이상의 노드로부터 응답이 돌아온 시점에서 기록 처리가 성공한 것으로 간주하고 클라이언트에게 commit 명령을 반환
+
+핵심은 Zookeeper 클러스터 시작 시, 한 대의 노드를 leader로 선출하고 리더가 트랜잭션 ID를 부여한다는 점이다.
+각 노드에서 기록처리는 반드기 트랜잭션 ID 순서로 이뤄져야한다는 제약이 있으므로,
+각 노드가 가진 데이터가 일치되는 것을 보장한다.
+
+또한, 전체 처리 속도를 위해 전체의 응답이 아닌 과반수의 응답이 확인된 시점에 기록을 커밋한다.
+이러한 이유로 Zookeeper 클러스터는 홀수로 구성된다.
 
 
 ## 2. HDFS HA
