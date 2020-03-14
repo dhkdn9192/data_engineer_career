@@ -109,6 +109,18 @@ standby-NameNode는 지속적으로 JournalNode로부터 edits 파일을 취득�
 즉, standby-NameNode로 HA를 구성한 경우엔 Secondary NameNode를 사용하지 않는다.
 
 ![quorum journal manager](img/quorum-journal-manager.png)
+* 이미지 출처: https://hadoopabcd.wordpress.com/2015/02/19/hdfs-cluster-high-availability/
+
+
+#### ZKFC (Zookeeper Failover Controller)
+HA 클러스터 운영을 위해서는 클러스터 상태를 감시하여 장애 시 Failover를 수행할 기능이 필요하다.
+이 기능을 수행하는 것이 ZKFC이다.
+
+ZKFC는 NameNode를 정기적으로 감시하여 상황에 따라 active-standby를 교체하여 Failover를 발생시킨다.
+NameNode의 API 호출 방식으로 헬스 체크와 상태 변경을 수행하며, API 호출로도 active 노드가 정상적으로 정지되지 않으면 Fencing 처리를 수행한다.
+
+![zkfc_for_namnode_ha](img/zkfc_for_namnode_ha.png)
+* 이미지 출처: https://hadoopabcd.wordpress.com/2015/02/19/hdfs-cluster-high-availability/
 
 
 ## Reference
