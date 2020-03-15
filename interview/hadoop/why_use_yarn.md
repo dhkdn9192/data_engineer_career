@@ -6,6 +6,7 @@ Hadoop 2.x부턴 클러스터 리소스를 다른 분산 처리 프레임워크�
 
 
 ## YARN 도입 배경
+
 YARN이 도입되기 전 Hadoop/MapReduce에서 JobTracker, TaskTracker의 역할은 다음과 같았다.
 - <b>JobTrcker</b>
   - 리소스 관리 : job 우선순위, user별 리소스 할당, Map슬롯/Reduce슬롯에 task 할당 등
@@ -23,6 +24,7 @@ YARN이 도입되기 전 Hadoop/MapReduce에서 JobTracker, TaskTracker의 역�
 
 ## YARN 아키텍처
 
+### MapReduce와 YARN의 기능 대응
 기존 MapReduce에 대응되는 YARN의 기능들을 표로 나타내면 다음과 같다.
 
 | 기존 Hadoop/MapReduce | MapReduce/YARN                                         |
@@ -35,10 +37,11 @@ YARN이 도입되기 전 Hadoop/MapReduce에서 JobTracker, TaskTracker의 역�
 - JobTracker의 이력 관리 : <b>JobHistoryServer</b>로 분리. AM으로부터 job 진행 상황을 보고받으며, job 이력 정보를 대시보드로 시각화해준다.
 - TaskTracker : <b>NodeManager</b >로 분리. NM은 슬롯이 아닌 컨테이너 단위로 해당 서버의 리소스를 관리한다. NM은 RM에 서버 리소스를 보고한다.
 
-
-YARN의 ResourceManager로 인해 클러스터 리소스가 일괄관리 되므로 모든 분산 처리 프레임워크들은 RM에게 리소스를 할당받아야 한다.
+### YARN의 리소스 일괄 관리
+YARN의 ResourceManager로 인해 클러스터 리소스가 일괄 관리되므로 모든 분산 처리 프레임워크들은 RM에게 리소스를 할당받아야 한다.
 ![yarn_before_after](img/yarn_before_after.png)
 
+### YARN의 job 실행 흐름
 YARN에서 job이 실행되는 흐름을 구조적으로 보여주면 다음과 같다.
 ![yarn_job_flow](img/yarn_job_flow.png)
 
