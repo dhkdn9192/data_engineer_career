@@ -40,12 +40,14 @@ YARN이 도입되기 전 Hadoop/MapReduce에서 JobTracker, TaskTracker의 역�
 - TaskTracker : <b>NodeManager</b >로 분리. NM은 슬롯이 아닌 컨테이너 단위로 해당 서버의 리소스를 관리한다. NM은 RM에 서버 리소스를 보고한다.
 
 ### 2.2. YARN의 리소스 일괄 관리
-YARN의 ResourceManager로 인해 클러스터 리소스가 일괄 관리되므로 모든 분산 처리 프레임워크들은 RM에게 리소스를 할당받아야 한다.
+YARN의 ResourceManager로 클러스터 리소스를 일괄 관리하므로 분산 처리 프레임워크들은 RM에게 리소스를 할당받는다.
 ![yarn_before_after](img/yarn_before_after.png)
+* 이미지 출처 : https://www.quora.com/What-is-Apache-Hadoop-YARN
 
 ### 2.3. YARN의 job 실행 흐름
 YARN에서 job이 실행되는 흐름을 구조적으로 보여주면 다음과 같다.
 ![yarn_job_flow](img/yarn_job_flow.png)
+* 이미지 출처 : https://www.quora.com/What-is-Apache-Hadoop-YARN
 
 1. 클라이언트가 job을 실행하기 위해 ResourceManager에 요청한다.
 2. ResourceManager는 ApplicationMaster를 실행하기 위해, NodeManager에 요청하여 컨테이너를 할당한다.
@@ -56,16 +58,20 @@ YARN에서 job이 실행되는 흐름을 구조적으로 보여주면 다음과 
 ### 2.4. YARN의 구조
 
 ![yarn_architecture](img/yarn_architecture.png)
+* 이미지 출처 : https://www.quora.com/What-is-Apache-Hadoop-YARN
 
 ### 2.5. YARN의 가용성
 
 - ApplicationMaster
-  - AM은 job 단위로 가동하므로 매우 큰 job이 아닌 이상, 스케줄링에 병목 현상이 발생하지 않는다.
-  - AM은 실행 중인 job 상태를 체크포인트로 HDFS에 저장한다. 덕분에 AM이 다운되더라도 계산을 다시 할 필요가 없다.
+  - AM은 job 단위로 가동하므로 매우 큰 job이 아닌 이상, 스케줄링에 <b>병목 현상이 발생하지 않는다</b>.
+  - AM은 실행 중인 job 상태를 체크포인트로 HDFS에 저장한다. 덕분에 <b>AM이 다운되더라도 계산을 다시 할 필요가 없다</b>.
   - AM은 job 진행 상황을 JobHistoryServer에 계속 보고하며, JobHistoryServer는 이 정보를 대시보드로 보여줄 수 있다.
 - Container
-  - AM은 실행 중인 job 컨테이너를 감시하며, 각 NodeManger는 ResourceManager가 감시한다(heartbeat).
+  - 컨테이너는 AM의 감시를 받는다. (각 NodeManger는 ResourceManager가 heartbeat로 감시한다)
   - 컨테이너는 실행 중인 task에 장애가 발생하면 AM에 알린다.
-  - 이 경우, AM은 다시 컨테이너를 ResourceManager에 요구하여 재할당 받고 관련 task를 재실행한다.
+  - 이 경우, AM은 다시 컨테이너를 <b>ResourceManager에 요구하여 재할당</b> 받고 관련 task를 재실행한다.
 
 
+## Reference
+- 도서 "빅데이터 시대의 하둡 완벽 입문", 제이펍, 오오타 카스기 외 다수
+- https://www.quora.com/What-is-Apache-Hadoop-YARN
