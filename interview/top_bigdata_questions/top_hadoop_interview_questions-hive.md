@@ -31,6 +31,46 @@ Metastore in Hive stores the <b>meta data information using RDBMS</b>
 and an open source ORM (Object Relational Model) layer called Data Nucleus 
 which converts the object representation into relational schema and vice versa.
 
+
+---
+### 5. Why Hive does not store metadata information in HDFS?
+Hive stores metadata information in the metastore using RDBMS instead of HDFS. 
+The reason for choosing RDBMS is <b>to achieve low latency</b> as HDFS read/write operations are time consuming processes.
+
+
+---
+### 6. What is the difference between local and remote metastore?
+
+#### Local Metastore:
+
+In local metastore configuration, the metastore service runs in the same JVM in which the Hive service is running and connects to a database running in a separate JVM, either on the same machine or on a remote machine.
+
+
+#### Remote Metastore:
+
+In the remote metastore configuration, the metastore service runs on its own separate JVM and not in the Hive service JVM. Other processes communicate with the metastore server using Thrift Network APIs. You can have one or more metastore servers in this case to provide more availability.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Reference
 - https://www.edureka.co/blog/interview-questions/hive-interview-questions/
 - https://www.edureka.co/blog/hive-tutorial/
