@@ -40,7 +40,7 @@
 - 데이터베이스의 인덱스란
 - 파이썬의 GIL
 - TCP와 UDP
-- Big-endian, Little-endian
+- [Big-endian, Little-endian](computer_science/big_endian_little_endian.md)
 - LRU 방식의 문제점
 - CPU 스케줄링 알고리즘
 - 데드락의 조건과 세마포어
