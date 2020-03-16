@@ -23,7 +23,7 @@
 - Hadoop MapReduce Interview Questions In 2020
 - Hadoop Interview Questions For 2020 – Setting Up Hadoop Cluster
 - Hadoop Interview Questions On HBase In 2020
-- Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive
+- (작성중)[Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](top_bigdata_questions/top_hadoop_interview_questions-hive.md)
 
 ## Computer Science
 - [파티셔닝과 샤딩의 차이](computer_science/partitioning_vs_sharding.md)
