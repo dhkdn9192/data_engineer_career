@@ -51,23 +51,99 @@ In local metastore configuration, the metastore service runs in the same JVM in 
 
 In the remote metastore configuration, the metastore service runs on its own separate JVM and not in the Hive service JVM. Other processes communicate with the metastore server using Thrift Network APIs. You can have one or more metastore servers in this case to provide more availability.
 
+The main advantage of using remote metastore is <b>you do not need to share JDBC login credential with each Hive user to access the metastore database</b>.
+
 ![hive_remote_metastore](img/hive_remote_metastore.png)
 
+---
+### 7. What is the default database provided by Apache Hive for metastore?
+By default, Hive provides an embedded <b>Derby database</b> instance backed by the local disk for the metastore. 
+This is called the embedded metastore configuration.
+
+In this case, <b>only one user can connect to metastore database at a time</b>. 
+If you start a second instance of Hive driver, you will get an error. 
+This is good for unit testing, but not for the practical solutions.
+
+![hive_embedded_metastore](img/hive_embedded_metastore.png)
 
 
+---
+### 9. What is the difference between external table and managed table?
+
+#### Managed Table
+In case of managed table, If one drops a managed table, the metadata information along with the table data is deleted from the Hive warehouse directory.
+
+#### External Table
+On the contrary, in case of an external table, Hive <b>just deletes the metadata</b> information regarding the table and <b>leaves the table data present in HDFS untouched</b>. 
 
 
+---
+### 11. When should we use SORT BY instead of ORDER BY?
+
+| SORT BY | ORDER BY |
+| :---: | :---: |
+|sorts the data using <b>multiple reducers</b>|sorts all of the data together using a <b>single reducer</b>|
+
+We should use <b>SORT BY instead of ORDER BY when we have to sort huge datasets</b> 
+because SORT BY clause sorts the data using multiple reducers 
+whereas ORDER BY sorts all of the data together using a single reducer. 
+Therefore, using ORDER BY against a large number of inputs will take a lot of time to execute. 
 
 
+---
+### 12. What is a partition in Hive?
+Hive organizes tables into partitions for <b>grouping similar type of data together</b> based on a <b>column or partition key</b>. 
+Each Table can have one or more partition keys to identify a particular partition. 
+Physically, a partition is nothing but a sub-directory in the table directory.
+
+```WHERE``` 구를 지정해서 특정 조건의 데이터를 추출할 때, 대량의 데이터 중에서 극히 일부의 데이터만 사용하게 된다.
+따라서 데이터를 특정 조건으로 분할해서 물리적으로 저장하면 효율적으로 원하는 데이터를 추출할 수 있다.
+이를 "파티셔닝"이라 하며, 분할된 개별 단위는 "파티션"이라 한다.
+
+Hive는 ```CREATE TABLE``` 구문 안에서 ```PARTITIONED BY```를 이용하여 파티션에 사용할 칼럼명, 데이터형을 지정할 수 있다.
 
 
+---
+### 13. Why do we perform partitioning in Hive?
+Partitioning provides granularity in a Hive table and 
+therefore, <b>reduces the query latency</b> by scanning <b>only relevant partitioned data</b> instead of the whole data set.
+
+For example, we can partition a transaction log of an e – commerce website based on month like Jan, February, etc. So, any analytics regarding a particular month, say Jan, will have to scan the Jan partition (sub – directory) only instead of the whole table data.
 
 
+---
+### 14. What is dynamic partitioning and when is it used?
+In dynamic partitioning values for partition columns are known in the runtime, i.e. 
+It is known during loading of the data into a Hive table. 
+
+One may use dynamic partition in following two cases:
+
+- Loading data from an existing non-partitioned table to improve the sampling and therefore, decrease the query latency. 
+- When one <b>does not know all the values of the partitions</b> before hand and therefore, finding these partition values manually from a huge data sets is a tedious task. 
+
+#### 정적 파티션
+정적 파티션은 data 삽입을 위해서 partition의 값을 명시적으로 입력해야 한다. 
+```
+insert into table salesdata partition (date_of_sale='10-27-2017')
+```
+
+#### 동적 파티션
+파티션 칼럼의 값을 기반으로 hive engine 이 동적으로 파티션을 수행할 수 있도록 하는 방식이 있다.
+```
+set hive.exec.dynamic.partition.mode=nonstrict;
+```
+```
+hive> insert into table salesdata partition (date_of_sale)
+select salesperson_id,product_id,date_of_sale from salesdata_source ;
+```
 
 
-
-
-
+---
+### 16. How can you add a new partition for the month December in the above partitioned table?
+For adding a new partition in the above table partitioned_transaction, we will issue the command give below:
+```
+ALTER TABLE partitioned_transaction ADD PARTITION (month='Dec') LOCATION  '/partitioned_transaction';
+```
 
 
 
