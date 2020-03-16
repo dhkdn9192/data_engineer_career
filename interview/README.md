@@ -55,3 +55,4 @@
 - https://www.edureka.co/blog/interview-questions/hadoop-interview-questions-hdfs-2/
 - https://acadgild.com/blog/top-20-apache-spark-interview-questions-2019
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner
+- https://wikidocs.net/23683
