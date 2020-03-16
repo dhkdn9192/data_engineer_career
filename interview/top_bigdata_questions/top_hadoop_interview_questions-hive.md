@@ -111,15 +111,28 @@ therefore, <b>reduces the query latency</b> by scanning <b>only relevant partiti
 For example, we can partition a transaction log of an e – commerce website based on month like Jan, February, etc. So, any analytics regarding a particular month, say Jan, will have to scan the Jan partition (sub – directory) only instead of the whole table data.
 
 
+#### Hive Partitioning Advantages
+
+- Partitioning in Hive <b>distributes execution load horizontally</b>.
+- In partition <b>faster execution of queries</b> with the low volume of data takes place. For example, search population from Vatican City returns very fast instead of searching entire world population.
+
+#### Hive Partitioning Disadvantages
+
+- There is the possibility of <b>too many small partition creations</b>- too many directories.
+- Partition is effective for low volume data. But there some queries like <b>group by on high volume of data take a long time</b> to execute. For example, grouping population of China will take a long time as compared to a grouping of the population in Vatican City.
+- There is no need for searching entire table column for a <b>single record</b>.
+
+
 ---
 ### 14. What is dynamic partitioning and when is it used?
 In dynamic partitioning values for partition columns are known in the runtime, i.e. 
 It is known during loading of the data into a Hive table. 
 
-One may use dynamic partition in following two cases:
+One may use <b>dynamic partition</b> in following two cases:
 
-- Loading data from an existing non-partitioned table to improve the sampling and therefore, decrease the query latency. 
+- <b>Loading data from an existing non-partitioned table</b> to improve the sampling and therefore, decrease the query latency. 
 - When one <b>does not know all the values of the partitions</b> before hand and therefore, finding these partition values manually from a huge data sets is a tedious task. 
+
 
 #### 정적 파티션
 정적 파티션은 data 삽입을 위해서 partition의 값을 명시적으로 입력해야 한다. 
@@ -131,6 +144,9 @@ insert into table salesdata partition (date_of_sale='10-27-2017')
 파티션 칼럼의 값을 기반으로 hive engine 이 동적으로 파티션을 수행할 수 있도록 하는 방식이 있다.
 ```
 set hive.exec.dynamic.partition.mode=nonstrict;
+```
+```
+set hive.exec.max.dynamic.partitions=10000;
 ```
 ```
 hive> insert into table salesdata partition (date_of_sale)
@@ -146,8 +162,21 @@ ALTER TABLE partitioned_transaction ADD PARTITION (month='Dec') LOCATION  '/part
 ```
 
 
+---
+### 22. What is indexing and why do we need it?
+One of the Hive query optimization methods is Hive index. 
+Hive index is used to <b>speed up the access of a column or set of columns</b> in a Hive database 
+because with the use of index the database system does not need to read all rows in the table to find the data that one has selected.
+
+
+---
+### 23. What is Bucketing?
+
+- <b>Partitioning</b> : Apache Hive organizes tables into partitions for grouping same type of data together based on a column or partition key. Each table in the hive can have one or more partition keys to identify a particular partition. Using partition we can make it faster to do queries on slices of the data.
+- <b>Bucketing</b> : In Hive Tables or partition are subdivided into buckets based on the hash function of a column in the table to give extra structure to the data that may be used for more efficient queries.
 
 
 ## Reference
 - https://www.edureka.co/blog/interview-questions/hive-interview-questions/
 - https://www.edureka.co/blog/hive-tutorial/
+- https://github.com/HomoEfficio/dev-tips/blob/master/Hive%20Dynamic%20Partition%20Insert.md
