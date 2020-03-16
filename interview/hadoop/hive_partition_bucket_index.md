@@ -38,6 +38,11 @@ SELECT name
 hdfs://[tbl 테이블 로케이션]/yymmdd=20180510/
 ```
 
+query with partition -> ```WHERE```
+```
+SELECT * FROM tb1 WHERE yymmdd='20180510' and name = 'hong';
+```
+
 ### 1.2. Dynamic Partitioning
 - Single insert to partition table is known as a dynamic partition.
 - Usually, dynamic partition <b>loads the data from the non-partitioned table</b>.
