@@ -76,6 +76,97 @@ Therefore, for a 100 MB size buffer the spilling will start after the content of
 a process of copying the data from memory buffer to disc when the content of the buffer reaches a certain threshold size
 
 
+---
+### 7. What is a distributed cache in MapReduce Framework?
+Distributed Cache is a facility provided by the MapReduce framework to cache files needed by applications.
+Once you have cached a file for your job, Hadoop framework will make it available on each and every data nodes 
+where you map/reduce tasks are running. 
+Therefore, one can access the cache file as a local file in your Mapper or Reducer job.
+
+
+---
+### 8. What is a combiner and where you should use it?
+Combiner is like a mini reducer function that allow us to perform a local aggregation of map output 
+before it is transferred to reducer phase. 
+Basically, it is used to optimize the network bandwidth usage during a MapReduce task 
+by cutting down the amount of data that is transferred from a mapper to the reducer.
+
+
+---
+### 9. Why the output of map tasks are stored (spilled ) into local disc and not in HDFS?
+The outputs of map task are the intermediate key-value pairs 
+which is then processed by reducer to produce the final aggregated result. 
+<b>Once a MapReduce job is completed, there is no need of the intermediate output produced by map tasks</b>. 
+Therefore, storing these intermediate output into HDFS and replicate it will create unnecessary overhead.
+
+
+---
+### 10. What happens when the node running the map task fails before the map output has been sent to the reducer?
+In this case, <b>map task will be assigned a new node</b> and whole task will be <b>run again</b> to re-create the map output.  
+
+---
+### 11. What is the role of a MapReduce Partitioner?
+A partitioner divides the intermediate key-value pairs produced by map tasks into partition. 
+<b>The total number of partition is equal to the number of reducers</b> 
+where each partition is processed by the corresponding reducer. 
+The partitioning is done using the hash function based on a single key or group of keys. 
+The default partitioner available in Hadoop is ```HashPartitioner```.
+
+
+---
+### 12. How can we assure that the values regarding a particular key goes to the same reducer?
+<b>By using a partitioner</b> we can control that a particular key – value goes to the same reducer for processing. 
+
+
+---
+### 17. What are the various configuration parameters required to run a MapReduce job?
+- Job's input locations in the distributed file system
+- Job's output location in the distributed file system
+- Input format of data (default: String)
+- Output format of data
+- Class containing the map function
+- Class containing the reduce function
+- JAR file containing the mapper, reducer and driver classes
+
+
+---
+### 20. What is a map side join?
+Map side join is a process where <b>two data sets are joined by the mapper</b>.
+
+
+---
+### 21. What are the advantages of using map side join in MapReduce?
+- Map-side join helps in minimizing the cost that is incurred for <b>sorting and merging in the shuffle and reduce stages</b>.
+- Map-side join also helps in improving the performance of the task by <b>decreasing the time to finish the task</b>.
+
+
+---
+### 24. Is it legal to set the number of reducer task to zero? Where the output will be stored in this case?
+Yes, It is legal to set the number of reduce-tasks to zero if there is no need for a reducer. 
+In this case the outputs of the map task is directly stored into the HDFS which is specified in the setOutputPath(Path). 
+
+
+---
+### 27. How will you submit extra files or data ( like jars, static files, etc. ) for a MapReduce job during runtime?
+The <b>distributed cache</b> is used to distribute large read-only files that are needed by map/reduce jobs to the cluster. 
+The framework will copy the necessary files from a URL on to the slave node 
+before any tasks for the job are executed on that node. 
+The files are only copied once per job and so should not be modified by the application.
+
+
+---
+### 29. How do reducers communicate with each other?
+This is a tricky question. 
+The "MapReduce" programming model does not allow "reducers" to communicate with each other. 
+"Reducers" run in isolation.
+
+
+---
+### 30. Define Speculative Execution
+If a node appears to be executing a task slower than expected, 
+the master node can redundantly execute another instance of the same task on another node. 
+Then, the task which finishes first will be accepted whereas other tasks will be killed. 
+This process is called <b>speculative execution</b>.
 
 
 ## Reference
