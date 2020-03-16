@@ -45,12 +45,13 @@ The reason for choosing RDBMS is <b>to achieve low latency</b> as HDFS read/writ
 
 In local metastore configuration, the metastore service runs in the same JVM in which the Hive service is running and connects to a database running in a separate JVM, either on the same machine or on a remote machine.
 
+![hive_local_metastore](img/hive_local_metastore.png)
 
 #### Remote Metastore:
 
 In the remote metastore configuration, the metastore service runs on its own separate JVM and not in the Hive service JVM. Other processes communicate with the metastore server using Thrift Network APIs. You can have one or more metastore servers in this case to provide more availability.
 
-
+![hive_remote_metastore](img/hive_remote_metastore.png)
 
 
 
