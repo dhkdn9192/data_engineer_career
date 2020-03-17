@@ -41,7 +41,7 @@
 - [페이징과 세그먼테이션](computer_science/paging_segmentation.md)
 - 자바의 장점
 - [Polling과 Interrupt](computer_science/polling_and_interrupt.md)
-- 데이터베이스의 인덱스란
+- [데이터베이스 인덱스](computer_science/database_index.md)
 - 파이썬의 GIL
 - TCP와 UDP
 - [Big-endian, Little-endian](computer_science/big_endian_little_endian.md)
