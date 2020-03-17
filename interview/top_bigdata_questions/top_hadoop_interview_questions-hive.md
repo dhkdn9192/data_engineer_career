@@ -102,6 +102,13 @@ Physically, a partition is nothing but a sub-directory in the table directory.
 
 Hive는 ```CREATE TABLE``` 구문 안에서 ```PARTITIONED BY```를 이용하여 파티션에 사용할 칼럼명, 데이터형을 지정할 수 있다.
 
+example
+```
+create table salesdata (
+    salesperson_id int,
+    product_id int
+) partitioned by (date_of_sale string)
+```
 
 ---
 ### 13. Why do we perform partitioning in Hive?
