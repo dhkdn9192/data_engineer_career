@@ -40,7 +40,7 @@
 - [자바 메모리 누수 현상의 원인](computer_science/understanding_memory_leaks_in_java.md)
 - [페이징과 세그먼테이션](computer_science/paging_segmentation.md)
 - 자바의 장점
-- 폴링과 인터럽트
+- [Polling과 Interrupt](computer_science/polling_and_interrupt.md)
 - 데이터베이스의 인덱스란
 - 파이썬의 GIL
 - TCP와 UDP
