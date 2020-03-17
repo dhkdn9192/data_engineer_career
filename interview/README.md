@@ -15,6 +15,7 @@
 - [Standby Namenode vs Secondary Namenode](hadoop/standbynn_secondarynn.md)
 - [Hive의 Partition, Bucket, Index의 차이점](hadoop/hive_partition_bucket_index.md)
 - MapReduce의 spilling이란?
+- Hadoop ecosystem 구성요소별 partition의 의미
 - 과제: On-premise 하둡 아키텍처 설계하기
 
 ## Top Bigdata Questions
