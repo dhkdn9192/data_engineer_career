@@ -51,7 +51,7 @@
 - [Sync와 Async, Blocking과 Non-blocking](computer_science/sync_async_block_nonblock.md)
 
 ## Algorithm
-- 이진 탐색 트리
+- [이진 탐색 트리](algorithm/binary_search_tree.md)
 - [정렬 알고리즘](algorithm/sorting_algorithm.md)
 
 ## Reference
