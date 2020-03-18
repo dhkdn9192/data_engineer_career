@@ -78,7 +78,12 @@ or require access modifiers other than public (such as protected and private).
 - You want to specify the behavior of a particular data type, but not concerned about who implements its behavior.
 
 
+## 다형성 (Polymorphism)
+다형성이란 같은 자료형에 여러 가지 객체를 대입하여 다양한 결과를 얻어내는 성질을 의미한다. 
+대표적으로 오버로딩이 있다.
+
 
 ## Reference
 - https://wikidocs.net/217
 - https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/
+- https://m.blog.naver.com/PostView.nhn?blogId=heartflow89&logNo=220979244668&proxyReferer=https%3A%2F%2Fwww.google.com%2F
