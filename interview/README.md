@@ -49,6 +49,7 @@
 - Java의 Primitive type, Reference type, Wrapper class
 - CPU 스케줄링 알고리즘
 - 데드락의 조건과 세마포어
+- (작성중)[Java 인터페이스와 추상클래스의 차이](computer_science/interface_vs_abstract_class.md)
 - (작성중)[JVM](computer_science/jvm.md)
 - [Sync와 Async, Blocking과 Non-blocking](computer_science/sync_async_block_nonblock.md)
 
