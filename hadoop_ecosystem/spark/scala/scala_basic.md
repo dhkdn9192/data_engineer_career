@@ -106,7 +106,7 @@ val addh = (x: Int) => x + 100
 클로저는 환경 변수를 사용할 수 있는 리터럴함수다.
 
 다음 예시에서 encode 메소드는 환경변수인 seed를 입력으로 받는 리터럴함수이므로 클로저이다.
-```scalan
+```scala
 def encodeWithSeed(num: Int, seed: Int): Long = {
   
   def encode(x: Int, f: (Int) => Long): Long = {
