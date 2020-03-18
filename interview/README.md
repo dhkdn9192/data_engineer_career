@@ -46,6 +46,7 @@
 - TCP와 UDP
 - [Big-endian, Little-endian](computer_science/big_endian_little_endian.md)
 - LRU 방식의 문제점
+- Java의 Primitive type, Reference type, Wrapper class
 - CPU 스케줄링 알고리즘
 - 데드락의 조건과 세마포어
 - (작성중)[JVM](computer_science/jvm.md)
