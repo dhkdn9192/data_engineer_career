@@ -88,13 +88,15 @@ class BinarySearchTree(object):
         return False
 ```
 
-delete 메소드 구현
+delete 메소드 구현. 제거 대상 노드의 양쪽 자식이 모두 존재할 경우, 오른쪽 서브트리의 가장 왼쪽 노드를 가져와서 대체해야 한다.
 ```Python
 class BinarySearchTree(object):
     ...
     def delete(self, data):
         (생략)
 ```
+
+이하 [노트북](bst.ipynb) 참조
 
 ## Reference
 - https://www.geeksforgeeks.org/binary-search-tree-data-structure/
