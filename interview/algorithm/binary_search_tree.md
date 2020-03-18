@@ -78,10 +78,10 @@ class BinarySearchTree(object):
         while child is not None:
             child = parent.left if data <= parent.data else parent.right
             
-            if child.data == data:
-                return True
-            elif child is None:
+            if child is None:
                 return False
+            elif child.data == data:
+                return True
             else:
                 parent = child
                 
