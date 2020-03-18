@@ -96,7 +96,7 @@ class BinarySearchTree(object):
         (생략)
 ```
 
-이하 [노트북](bst.ipynb) 참조
+코드 구현 및 실행은 [노트북](bst.ipynb) 참조
 
 ## Reference
 - https://www.geeksforgeeks.org/binary-search-tree-data-structure/
