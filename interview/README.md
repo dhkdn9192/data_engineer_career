@@ -56,7 +56,7 @@
 ## Algorithm
 - [이진 탐색 트리](algorithm/binary_search_tree.md)
 - [정렬 알고리즘](algorithm/sorting_algorithm.md)
-- 힙 
+- 힙 구조
 
 ## Reference
 - https://www.edureka.co/blog/interview-questions/hadoop-interview-questions-hdfs-2/
