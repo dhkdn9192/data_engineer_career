@@ -70,7 +70,7 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 
 ### 1-4. Algorithm
 - [이진 탐색 트리](interview/algorithm/binary_search_tree.ipynb)
-- [정렬 알고리즘](interview/algorithm/sorting_algorithm.md)
+- [정렬 알고리즘](interview/algorithm/sorting_algorithm.ipynb)
 - 힙 구조
 
 ## 2. Bigdata Components
