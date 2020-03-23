@@ -78,6 +78,9 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 - [Hadoop Ecosystem](bigdata_components/hadoop_ecosystem)
 - [Elastic Stack](bigdata_components/elk_stack)
 
+</br>
+</br>
+
 ## Reference
 - https://www.edureka.co/blog/interview-questions/hadoop-interview-questions-hdfs-2/
 - https://acadgild.com/blog/top-20-apache-spark-interview-questions-2019
