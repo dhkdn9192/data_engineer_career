@@ -5,16 +5,16 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 분야까지 광범위하게 다룹니다.
 자료 출처는 각 파일의 하단을 참조하시기 바랍니다.
 
-- [1. Interview](#interview)
-  - [1.1. Hadoop Ecosystem](#1.1. Hadoop Ecosystem)
-  - 1.2. Top Bigdata Questions
-  - 1.3. Computer Science
-  - 1.4. Algorithm
-- 2. Bigdata Components
+1. [Interview](#interview)
+  1. [Hadoop Ecosystem](#hadoop-ecosystem)
+  2. [Top Bigdata Questions](#top-bigdata-questions)
+  3. [Computer Science](#computer-science)
+  4. [Algorithm](#algorithm)
+2. [Bigdata Components](#bigdata-components)
 
 ## Interview
 
-### 1.1. Hadoop Ecosystem
+### Hadoop Ecosystem
 - [HDFS의 block replication factor를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
 - [YARN이 도입된 이유와 구조](interview/hadoop/why_use_yarn.md)
 - [HDFS HA와 컨센서스](interview/hadoop/hdfs_ha_and_consensus.md)
@@ -30,7 +30,7 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 - [Kafka의 partition 수는 많을 수록 좋은가?](interview/hadoop/kafka_too_many_partitions.md)
 - 과제: On-premise 하둡 아키텍처 설계하기
 
-### 1.2. Top Bigdata Questions
+### Top Bigdata Questions
 - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
 - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
 - [Top 20 Apache Spark Interview Questions 2019](interview/top_bigdata_questions/top_20_apache_spark_interview_questions_2019.md)
@@ -40,7 +40,7 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 - Hadoop Interview Questions On HBase In 2020
 - [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](interview/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
 
-### 1.3. Computer Science
+### Computer Science
 - [파티셔닝과 샤딩의 차이](interview/computer_science/partitioning_vs_sharding.md)
 - [해싱의 개념과 해싱 테이블](interview/computer_science/hash_table.md)
 - 직렬화와 역직렬화
@@ -64,17 +64,17 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 - (작성중)[JVM](interview/computer_science/jvm.md)
 - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
 
-### 1.4. Algorithm
+### Algorithm
 - [이진 탐색 트리](interview/algorithm/binary_search_tree.ipynb)
 - [정렬 알고리즘](interview/algorithm/sorting_algorithm.md)
 - 힙 구조
 
-## 2. Bigdata Components
+## Bigdata Components
 - [Cloudera Hadoop](bigdata_components/cloudera)
 - [Hadoop Ecosystem](bigdata_components/hadoop_ecosystem)
 - [Elastic Stack](bigdata_components/elk_stack)
 
-### Reference
+## Reference
 - https://www.edureka.co/blog/interview-questions/hadoop-interview-questions-hdfs-2/
 - https://acadgild.com/blog/top-20-apache-spark-interview-questions-2019
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner
