@@ -5,12 +5,15 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 분야까지 광범위하게 다룹니다.
 자료 출처는 각 파일의 하단을 참조하시기 바랍니다.
 
+## index
 - [Interview](#interview)
   - [Hadoop Ecosystem](#hadoop-ecosystem)
   - [Top Bigdata Questions](#top-bigdata-questions)
   - [Computer Science](#computer-science)
   - [Algorithm](#algorithm)
 - [Bigdata Components](#bigdata-components)
+
+---
 
 ## Interview
 
