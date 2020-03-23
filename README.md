@@ -6,12 +6,12 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 자료 출처는 각 파일의 하단을 참조하시기 바랍니다.
 
 ## Table of Contents
-- [Interview](#1.-interview)
-  - [Hadoop Ecosystem](#1-1.-hadoop-ecosystem)
-  - [Top Bigdata Questions](#top-bigdata-questions)
-  - [Computer Science](#computer-science)
-  - [Algorithm](#algorithm)
-- [Bigdata Components](#bigdata-components)
+- [Interview](#1-interview)
+  - [Hadoop Ecosystem](#1-1-hadoop-ecosystem)
+  - [Top Bigdata Questions](#1-2-top-bigdata-questions)
+  - [Computer Science](#1-3-computer-science)
+  - [Algorithm](#1-4-algorithm)
+- [Bigdata Components](#2-bigdata-components)
 
 ---
 
@@ -33,7 +33,7 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 - [Kafka의 partition 수는 많을 수록 좋은가?](interview/hadoop/kafka_too_many_partitions.md)
 - 과제: On-premise 하둡 아키텍처 설계하기
 
-### Top Bigdata Questions
+### 1-2. Top Bigdata Questions
 - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
 - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
 - [Top 20 Apache Spark Interview Questions 2019](interview/top_bigdata_questions/top_20_apache_spark_interview_questions_2019.md)
@@ -43,7 +43,7 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 - Hadoop Interview Questions On HBase In 2020
 - [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](interview/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
 
-### Computer Science
+### 1-3. Computer Science
 - [파티셔닝과 샤딩의 차이](interview/computer_science/partitioning_vs_sharding.md)
 - [해싱의 개념과 해싱 테이블](interview/computer_science/hash_table.md)
 - 직렬화와 역직렬화
@@ -67,12 +67,12 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 - (작성중)[JVM](interview/computer_science/jvm.md)
 - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
 
-### Algorithm
+### 1-4. Algorithm
 - [이진 탐색 트리](interview/algorithm/binary_search_tree.ipynb)
 - [정렬 알고리즘](interview/algorithm/sorting_algorithm.md)
 - 힙 구조
 
-## Bigdata Components
+## 2. Bigdata Components
 - [Cloudera Hadoop](bigdata_components/cloudera)
 - [Hadoop Ecosystem](bigdata_components/hadoop_ecosystem)
 - [Elastic Stack](bigdata_components/elk_stack)
