@@ -5,14 +5,14 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 분야까지 광범위하게 다룹니다.
 자료 출처는 각 파일의 하단을 참조하시기 바랍니다.
 
-- [1. Interview](#1.-interview)
+- [1. Interview](#interview)
   - [1.1. Hadoop Ecosystem](#1.1. Hadoop Ecosystem)
   - 1.2. Top Bigdata Questions
   - 1.3. Computer Science
   - 1.4. Algorithm
 - 2. Bigdata Components
 
-## 1. Interview
+## Interview
 
 ### 1.1. Hadoop Ecosystem
 - [HDFS의 block replication factor를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
