@@ -6,12 +6,12 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 자료 출처는 각 파일의 하단을 참조하시기 바랍니다.
 
 ## Table of Contents
-- [Interview](#1-interview)
-  - [Hadoop Ecosystem](#1-1-hadoop-ecosystem)
-  - [Top Bigdata Questions](#1-2-top-bigdata-questions)
-  - [Computer Science](#1-3-computer-science)
-  - [Algorithm](#1-4-algorithm)
-- [Bigdata Components](#2-bigdata-components)
+- [1. Interview](#1-interview)
+  - [1-1. Hadoop Ecosystem](#1-1-hadoop-ecosystem)
+  - [1-2. Top Bigdata Questions](#1-2-top-bigdata-questions)
+  - [1-3. Computer Science](#1-3-computer-science)
+  - [1-4. Algorithm](#1-4-algorithm)
+- [2. Bigdata Components](#2-bigdata-components)
 
 ---
 
