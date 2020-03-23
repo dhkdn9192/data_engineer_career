@@ -13,7 +13,8 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
   - [1-4. Algorithm](#1-4-algorithm)
 - [2. Bigdata Components](#2-bigdata-components)
 
----
+</br>
+</br>
 
 ## 1. Interview
 
