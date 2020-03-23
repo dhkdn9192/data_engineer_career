@@ -58,7 +58,7 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
 
 ### 1.4. Algorithm
-- [이진 탐색 트리](interview/algorithm/binary_search_tree.md)
+- [이진 탐색 트리](interview/algorithm/binary_search_tree.ipynb)
 - [정렬 알고리즘](interview/algorithm/sorting_algorithm.md)
 - 힙 구조
 
