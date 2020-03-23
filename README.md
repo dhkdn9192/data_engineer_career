@@ -6,8 +6,8 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 자료 출처는 각 파일의 하단을 참조하시기 바랍니다.
 
 ## Table of Contents
-- [Interview](#interview)
-  - [Hadoop Ecosystem](#1-1-hadoop-ecosystem)
+- [Interview](#1.-interview)
+  - [Hadoop Ecosystem](#1-1.-hadoop-ecosystem)
   - [Top Bigdata Questions](#top-bigdata-questions)
   - [Computer Science](#computer-science)
   - [Algorithm](#algorithm)
@@ -15,9 +15,9 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 
 ---
 
-## Interview
+## 1. Interview
 
-### 1-1 Hadoop Ecosystem
+### 1-1. Hadoop Ecosystem
 - [HDFS의 block replication factor를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
 - [YARN이 도입된 이유와 구조](interview/hadoop/why_use_yarn.md)
 - [HDFS HA와 컨센서스](interview/hadoop/hdfs_ha_and_consensus.md)
