@@ -13,8 +13,7 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
   - [1-4. Algorithm](#1-4-algorithm)
 - [2. Bigdata Components](#2-bigdata-components)
 
-</br>
-</br>
+<br>
 
 ## 1. Interview
 
@@ -73,13 +72,14 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 - [정렬 알고리즘](interview/algorithm/sorting_algorithm.ipynb)
 - 힙 구조
 
+<br>
+
 ## 2. Bigdata Components
 - [Cloudera Hadoop](bigdata_components/cloudera)
 - [Hadoop Ecosystem](bigdata_components/hadoop_ecosystem)
 - [Elastic Stack](bigdata_components/elk_stack)
 
-</br>
-</br>
+<br>
 
 ---
 
