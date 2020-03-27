@@ -21,18 +21,18 @@
 
 ### 1-1. Hadoop Ecosystem
 - [HDFS의 block replication factor를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
-- [YARN이 도입된 이유와 구조](interview/hadoop/why_use_yarn.md)
-- [HDFS HA와 컨센서스](interview/hadoop/hdfs_ha_and_consensus.md)
+- [YARN이 도입된 이유](interview/hadoop/why_use_yarn.md)
+- [HDFS의 HA 구성 컨센서스](interview/hadoop/hdfs_ha_and_consensus.md)
 - [손상된 블록의 탐지와 처리과정](interview/hadoop/hdfs_block_scanner.md)
 - [Major Compaction과 Minor Compaction](interview/hadoop/hbase_compaction.md)
 - [RDD, DataFrame, Dataset의 차이점](interview/hadoop/rdd_df_ds.md)
-- [SparkContext와 SparkSession](interview/hadoop/sparkcontext_sparksession.md)
-- [파퀘이와 칼럼 기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
+- [SparkContext와 SparkSession의 차이점](interview/hadoop/sparkcontext_sparksession.md)
+- [Parquet와 칼럼 기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
 - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
 - [Hive의 Partition, Bucket, Index의 차이점](interview/hadoop/hive_partition_bucket_index.md)
 - MapReduce의 spilling이란?
 - Hadoop ecosystem 구성요소별 partition의 의미
-- [Kafka의 partition 수는 많을 수록 좋은가?](interview/hadoop/kafka_too_many_partitions.md)
+- [Kafka의 partition 수는 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
 - 과제: On-premise 하둡 아키텍처 설계하기
 
 ### 1-2. Top Bigdata Questions
