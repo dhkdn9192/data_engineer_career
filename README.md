@@ -1,9 +1,9 @@
 # 데이터 엔지니어가 알아야 할 모든 것
 
-데이터 엔지니어 면접 질문들과 기본 개념들을 정리했습니다.
-Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리즘 등 컴퓨터 사이언스
-분야까지 광범위하게 다룹니다.
-자료 출처는 각 파일의 하단을 참조하시기 바랍니다.
+
+데이터 엔지니어 기술면접 질문과 기본적인 개념들을 정리했습니다.
+자료 출처는 각 문서의 하단을 참조하시기 바랍니다.
+
 
 ## Table of Contents
 - [1. Interview](#1-interview)
@@ -12,10 +12,12 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
   - [1-3. Computer Science](#1-3-computer-science)
   - [1-4. Algorithm](#1-4-algorithm)
 - [2. Bigdata Components](#2-bigdata-components)
+- [3. Fields of Study](#3-fields-of-study)
 
 <br>
 
 ## 1. Interview
+데이터 엔지니어가 알아야 할 기술 면접 질문
 
 ### 1-1. Hadoop Ecosystem
 - [HDFS의 block replication factor를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
@@ -68,16 +70,28 @@ Hadoop, Spark 등 빅데이터 플랫폼 요소들부터 운영체제, 알고리
 - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
 
 ### 1-4. Algorithm
-- [이진 탐색 트리](interview/algorithm/binary_search_tree.ipynb)
-- [정렬 알고리즘](interview/algorithm/sorting_algorithm.ipynb)
-- 힙 구조
+- [Binary Search Tree](interview/algorithm/binary_search_tree.ipynb)
+- [Sorting](interview/algorithm/sorting_algorithm.ipynb)
+- Heap
 
 <br>
 
 ## 2. Bigdata Components
+하둡, 엘라스틱 등 빅데이터 인프라 관련 컴포넌트 학습 정리
+
 - [Cloudera Hadoop](bigdata_components/cloudera)
 - [Hadoop Ecosystem](bigdata_components/hadoop_ecosystem)
 - [Elastic Stack](bigdata_components/elk_stack)
+
+<br>
+
+## 3. Fields of Study
+머신러닝, 데이터분석 등 관심있는 연구 분야와 수행 프로젝트 정리
+
+- [Anomaly Detection](fields_of_study/anomaly_detection)
+- Churn Prediction
+- NLP
+- Recommender System
 
 <br>
 
