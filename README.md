@@ -12,6 +12,9 @@
   - [1-3. Computer Science](#1-3-computer-science)
   - [1-4. Algorithm](#1-4-algorithm)
 - [2. Bigdata Components](#2-bigdata-components)
+  - [2-1. Cloudera Hadoop](#2-1-cloudera-hadoop)
+  - [2-2. Hadoop Ecosystem](#2-2-hadoop-ecosystem)
+  - [2-3. Elastic Stack](#2-3-elastic-stack)
 - [3. Fields of Study](#3-fields-of-study)
 
 <br>
@@ -79,9 +82,21 @@
 ## 2. Bigdata Components
 하둡, 엘라스틱 등 빅데이터 인프라 관련 컴포넌트 학습 정리
 
-- [Cloudera Hadoop](bigdata_components/cloudera)
-- [Hadoop Ecosystem](bigdata_components/hadoop_ecosystem)
-- [Elastic Stack](bigdata_components/elk_stack)
+### 2-1. Cloudera Hadoop
+- [Set up Virtual Box](bigdata_components/cloudera/setup_virtual_box.md)
+- [Install Cloudera Manager](bigdata_components/cloudera/install_cloudera_manager.md)
+
+### 2-2. Hadoop Ecosystem
+- [Spark](bigdata_components/hadoop_ecosystem/spark)
+- Hadoop
+- HBase
+- Kafka
+- Hive
+
+### 2-3. Elastic Stack
+- [Elasticsearch](bigdata_components/elk_stack/elasticsearch)
+- [Logstash](bigdata_components/elk_stack/logstash)
+- Kibana
 
 <br>
 
