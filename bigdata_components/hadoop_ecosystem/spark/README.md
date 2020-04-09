@@ -37,7 +37,7 @@ Coursera 강좌 중 Heather Miller 교수님의 "[Big Data Analysis with Scala a
 1. (작성중)[Scala basic](scala/scala_basic.md)
 2. Scala vs Python in Apache Spark
 3. Set up Scala
-
+4. (작성중)[Set up Apache Zeppelin](scala/set_up_apache_zeppelin.md)
 
 ## Reference
 - https://www.coursera.org/learn/scala-spark-big-data/home/welcome
