@@ -11,6 +11,6 @@ JDK 1.8 이상이라면 SBT version은 at least 0.13.13 이어야 한다.
 | package | version |
 | :--- | :--- |
 | JDK | 1.8 |
-| Scala | 2.12 |
+| Scala | 2.12.11 |
 | Spark | 2.4.5 |
 | SBT | 1.3.2 |
