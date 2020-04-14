@@ -39,7 +39,7 @@ Coursera 강좌 중 Heather Miller 교수님의 "[Big Data Analysis with Scala a
 3. Set up Scala
 
 ## Set Up
-1. [Scala and SBT](setup/scala_and_sbt.md)
+1. [Scala and Spark Version](setup/scala_and_spark_version.md)
 2. [Apache Zeppelin](setup/set_up_apache_zeppelin.md)
 3. Jupyter Notebook
 
