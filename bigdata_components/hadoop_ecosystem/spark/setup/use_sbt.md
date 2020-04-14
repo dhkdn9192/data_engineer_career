@@ -6,6 +6,7 @@ SBT(Simple Build Tool)는 scala를 빌드하기 위한 도구다.
   - [Scala 홈페이지의 SBT 튜토리얼](https://docs.scala-lang.org/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html)
   - [Scala school의 SBT 튜토리얼](https://twitter.github.io/scala_school/ko/sbt.html)
   - [howtousesbt](https://joswlv.github.io/2017/08/06/howtousesbt/)
+  - [명령어 보기](https://webcache.googleusercontent.com/search?q=cache:FaC-GDaQXLoJ:https://www.scala-sbt.org/1.x/docs/Command-Line-Reference.html+&cd=3&hl=ko&ct=clnk&gl=kr)
 
 
 
@@ -79,6 +80,10 @@ fat jar 파일을 생성한다. 본 명령어를 사용하려면 published plugi
   - ```[error] deduplicate: different file contents found in the following:``` 오류 발생 시
     - build.sbt에서 libraryDependencies에 추가되는 라이브러리들을 "provided"로 설정해준다.
     - ```libraryDependencies += "org.apache.spark" %% "spark-core" % "2.4.5" % "provided" ```
+
+
+### ```sbt update```
+Resolves and retrieves external dependencies as described in library dependencies.
 
 
 ### ```sbt clean```
