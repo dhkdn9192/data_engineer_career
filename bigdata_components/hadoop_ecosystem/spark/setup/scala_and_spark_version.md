@@ -12,9 +12,10 @@ JDK 1.8 이상이라면 SBT version은 at least 0.13.13 이어야 한다.
 | package | version |
 | :--- | :--- |
 | JDK | 1.8 |
-| Scala | 2.12.11 |
+| Scala | 2.11.12 |
 | Spark | 2.4.5 |
 | SBT | 1.3.2 |
+\* scala 2.12를 썼으나, spark-streaming-kafka가 2.12에서 호환성 문제가 있어서 downgrade함
 
 
 ### Dependencies
@@ -29,6 +30,6 @@ JDK 1.8 이상이라면 SBT version은 at least 0.13.13 이어야 한다.
     
     | Source | Artifact |
     | :--- | :--- |
-    | Kafka | spark-streaming-kafka-0-10_2.12|
+    | Kafka | spark-streaming-kafka-0-10_2.11-2.4.5|
 
 https://spark.apache.org/docs/latest/streaming-programming-guide.html#linking
