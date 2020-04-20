@@ -22,14 +22,9 @@ JDK 1.8 이상이라면 SBT version은 at least 0.13.13 이어야 한다.
 
 - Spark Streaming
   - Spark 2.4.5에서 Spark Streaming을 사용할 경우
-    - sbt 설정
-    ```scala
-    libraryDependencies += "org.apache.spark" % "spark-streaming_2.12" % "2.4.5" % "provided"
-    ```
-    - data source
-    
+  
     | Source | Artifact |
     | :--- | :--- |
     | Kafka | spark-streaming-kafka-0-10_2.11-2.4.5|
 
-https://spark.apache.org/docs/latest/streaming-programming-guide.html#linking
+  - 참조 : https://spark.apache.org/docs/latest/streaming-programming-guide.html#linking
