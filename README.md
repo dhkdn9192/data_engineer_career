@@ -38,7 +38,9 @@
 - MapReduce의 spilling이란?
 - Hadoop ecosystem 구성요소별 partition의 의미
 - [Kafka의 partition 수는 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
-- scala의 map과 flatMap의 차이점
+- Scala의 map과 flatMap의 차이점
+- Spark의 map과 mapPartitions의 차이점
+- Spark의 ML 패키지와 MLlib 패키지의 차이점
 - 과제: On-premise 하둡 아키텍처 설계하기
 
 ### 1-2. Top Bigdata Questions
