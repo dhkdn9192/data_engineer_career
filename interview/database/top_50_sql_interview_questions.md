@@ -80,18 +80,18 @@ Sample of constraint are.
 주로 데이터에 적용되는 연산에 제한을 두어 데이터의 무결성을 유지한다. 
 데이터베이스에서 말하는 무결성에는 다음과 같은 4가지 종류가 있다.
 
-1) 개체 무결성 (Entity integrity)
+- 개체 무결성 (Entity integrity)
   - 모든 테이블이 기본 키 (primary key)로 선택된 필드 (column)를 가져야 한다. 
-  기본 키로 선택된 필드는 고유한 값을 가져야 하며, 빈 값은 허용하지 않는다.
+  - 기본 키로 선택된 필드는 고유한 값을 가져야 하며, 빈 값은 허용하지 않는다.
 
-2) 참조 무결성 (Referential integrity)
+- 참조 무결성 (Referential integrity)
   - 참조 관계에 있는 두 테이블의 데이터가 항상 일관된 값을 갖도록 유지되는 것을 말한다.
   
-3) 도메인 무결성 (Domain integrity)
+- 도메인 무결성 (Domain integrity)
   - 필드의 무결성을 보장하기 위한 것으로 필드의 타입, NULL값의 허용 등에 대한 사항을 정의하고, 
   올바른 데이터의 입력 되었는지를 확인하는 것이다.
-  
-4) 무결성 규칙 (Integrity rule)
+ 
+- 무결성 규칙 (Integrity rule)
 
 - reference: https://untitledtblog.tistory.com/123
 
