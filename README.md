@@ -85,7 +85,7 @@
 
 ### 1-5. Database
 - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
-- [Top 50+ Database Interview Questions](interview/database/top_50_database_interview_questions.md)
+- (작성중)[Top 50+ Database Interview Questions](interview/database/top_50_database_interview_questions.md)
 
 <br>
 
