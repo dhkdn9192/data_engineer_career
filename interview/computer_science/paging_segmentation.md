@@ -36,7 +36,12 @@
 
 ## 단편화
 - <b>내부 단편화(Internal Fragmentation)</b>: 실제 필요한 크기보다 메모리를 더 할당하여 프로세스에 필요한 메모리 공간이 낭비되는 상태
+
+![internal_fragmentation](img/internal_fragmentation.jpeg)
+
 - <b>외부 단편화(External Fragmentation)</b>: 주메모리의 여유공간이 충분하지만 작은 조각들로 나누어져 있어 할당을 할 수 없는 상태
+
+![external_fragmentation](img/external_fragmentation.jpeg)
 
 
 ## Reference
