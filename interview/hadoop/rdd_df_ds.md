@@ -27,6 +27,12 @@
 - DataFrame: a distributed collection of data organized into named columns. It is conceptually equal to a table in a relational database.
 - DataSet: an extension of DataFrame API that provides the functionality of <b>type-safe</b>, <b>object-oriented</b> programming interface of the RDD API and performance benefits of the <b>Catalyst query optimizer</b> and <b>off heap storage mechanism</b> of a DataFrame API.
 
+## Summary
+DataFrame이 Spark 1.3에서 등장한 이후, 1.6에서 이를 더욱 확장한 Dataset이 나오게 되었다.
+둘 다 schema를 갖는 구조화/반구조화된 데이터를 다룰 수 있으며 catalyst를 통한 최적화가 가능하다.
+데이터를 표현하는 방법에서 Dataset이 Row로 데이터들을 감싼다는 점에서 차이가 있으며 Spark 2.0에선 이 둘이 통합되어
+DataFrame = Dataset\[Row\] 로 나타낼 수 있다.
+다만 Dataset의 api들은 최근까지도 Python, R 등의 언어로는 제공이 되지 않는다.
 
 ## Reference
 - https://data-flair.training/blogs/apache-spark-rdd-vs-dataframe-vs-dataset/
