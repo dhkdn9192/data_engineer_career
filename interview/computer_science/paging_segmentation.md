@@ -48,3 +48,4 @@
 - https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EB%A9%94%EB%AA%A8%EB%A6%AC
 - https://sycho-lego.tistory.com/10
 - https://jupiny.com/2017/03/28/paging-segmentation/
+- https://m.blog.naver.com/rbdi3222/220623825770
