@@ -79,9 +79,29 @@
 - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
 
 ### 1-4. Algorithm
-- [Binary Search Tree](interview/algorithm/binary_search_tree.ipynb)
-- [Sorting](interview/algorithm/sorting_algorithm.ipynb)
+- Array vs Linked List
+- Stack and Queue
+- Tree
+  - Binary Tree
+  - [Binary Search Tree](interview/algorithm/binary_search_tree.ipynb)
 - Heap
+- Hash Table
+  - Hash Function
+  - Resolve Collision
+    - Open Addressing
+    - Separate Chaining
+  - Resize
+- Graph
+- [Sorting](interview/algorithm/sorting_algorithm.ipynb)
+  - Bubble Sort
+  - Selection Sort
+  - Insertion Sort
+  - Merge Sort
+  - Heap Sort
+  - Quick Sort
+- Recursion
+- Dynamic Programming and Memoization
+
 
 ### 1-5. Database
 - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
