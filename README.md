@@ -1,7 +1,7 @@
 # 데이터 엔지니어가 알아야 할 모든 것
 
 
-데이터 엔지니어 기술면접 질문과 기본적인 개념들을 정리했습니다.
+데이터 엔지니어링 기본 질문과 기본적인 개념들을 정리했습니다.
 자료 출처는 각 문서의 하단을 참조하시기 바랍니다.
 
 
@@ -23,7 +23,7 @@
 <br>
 
 ## 1. Interview
-데이터 엔지니어가 알아야 할 기술 면접 질문
+데이터 엔지니어가 알아야 할 기술 질문
 
 ### 1-1. Hadoop Ecosystem
 - [HDFS의 block replication factor를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
