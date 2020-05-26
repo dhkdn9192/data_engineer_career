@@ -38,10 +38,14 @@
   - vm.swappiness와 하둡 데몬의 실행 시간 초과 문제
 - Apache HBase
   - [Major Compaction과 Minor Compaction](interview/hadoop/hbase_compaction.md)
+  - Region Server의 구성도
 - Apache Hive
   - [Hive의 Partition, Bucket, Index의 차이점](interview/hadoop/hive_partition_bucket_index.md)
+  - 메타스토어는 왜 hdfs에 없는가?
+  - HiveQL에서 SORT BY와 ORDER BY 중 어느것이 더 빠른가?
 - Apache Kafka
   - [Kafka의 partition 수는 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
+  - Kafka에서 zookeeper의 역할
 - Apache Spark
   - [RDD, DataFrame, Dataset의 차이점](interview/hadoop/rdd_df_ds.md)
   - [SparkContext와 SparkSession이란?](interview/hadoop/sparkcontext_sparksession.md)
@@ -73,7 +77,7 @@
   - 페이지 방식과 버퍼 방식의 차이
   - [Polling과 Interrupt](interview/computer_science/polling_and_interrupt.md)
   - [페이징과 세그먼테이션](interview/computer_science/paging_segmentation.md)
-  - 멀티스레드와 멀티프로세스
+  - 멀티스레드와 멀티프로세스, 문맥 교환
   - Critical Section과 Deadlock
   - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
 - Programming Language
@@ -116,6 +120,7 @@
 - (작성중)[Top 50+ Database Interview Questions](interview/database/top_50_database_interview_questions.md)
 - [데이터베이스 인덱스](interview/computer_science/database_index.md)
 - [파티셔닝과 샤딩의 차이](interview/computer_science/partitioning_vs_sharding.md)
+
 <br>
 
 ## 2. Bigdata Components
