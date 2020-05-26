@@ -13,7 +13,7 @@
   - [1-4. Algorithm & Data Structure](#1-4-algorithm-and-data-structure)
   - [1-5. Database](#1-5-database)
 - [2. Bigdata Components](#2-bigdata-components)
-  - [2-1. Cloudera Hadoop](#2-1-cloudera-hadoop)
+  - [2-1. Set up with Cloudera](#2-1-set-up-with-cloudera)
   - [2-2. Hadoop Ecosystem](#2-2-hadoop-ecosystem)
   - [2-3. Elastic Stack](#2-3-elastic-stack)
 - [3. Fields of Study](#3-fields-of-study)
@@ -126,7 +126,7 @@
 ## 2. Bigdata Components
 하둡, 엘라스틱 등 빅데이터 인프라 관련 컴포넌트 학습 정리
 
-### 2-1. Cloudera Hadoop
+### 2-1. Set up with Cloudera
 - [Set up Virtual Box](bigdata_components/cloudera/setup_virtual_box.md)
 - [Install Cloudera Manager](bigdata_components/cloudera/install_cloudera_manager.md)
 
