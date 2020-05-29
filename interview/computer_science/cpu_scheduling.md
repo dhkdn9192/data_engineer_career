@@ -48,5 +48,12 @@
   - 다단계 피드백 큐 스케줄링(Multilevel Feedback Queue Scheduling)
   - RM 스케줄링(Rate Monotonic Scheduling)
   - EDF 스케줄링(Earliest Deadline First Scheduling)
-  
-  
+
+
+
+
+
+<br>
+
+## Reference
+- https://ko.wikipedia.org/wiki/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81_(%EC%BB%B4%ED%93%A8%ED%8C%85)
