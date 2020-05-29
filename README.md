@@ -123,6 +123,8 @@
 - (작성중)[Top 50+ Database Interview Questions](interview/database/top_50_database_interview_questions.md)
 - [데이터베이스 인덱스](interview/computer_science/database_index.md)
 - [파티셔닝과 샤딩의 차이](interview/computer_science/partitioning_vs_sharding.md)
+- CRUD와 ACID
+- DDL/DML/DCL/TCL
 
 <br>
 
