@@ -70,15 +70,16 @@
   - TCP와 UDP
 - Operation System
   - [데드락의 조건과 세마포어, 뮤텍스](interview/computer_science/deadlock.md)
+    - Critical Section과 Deadlock
   - [CPU 스케줄링 알고리즘](interview/computer_science/cpu_scheduling.md)
-  - LRU 방식의 문제점
+  - 페이지 교체 알고리즘
+    - [페이징과 세그먼테이션](interview/computer_science/paging_segmentation.md)
+    - LRU 방식의 문제점
   - [Big-endian, Little-endian](interview/computer_science/big_endian_little_endian.md)
   - [캐시 메모리와 버퍼 메모리](interview/computer_science/difference_between_cache_and_buffer.md)
-  - 페이지 방식과 버퍼 방식의 차이
-  - [Polling과 Interrupt](interview/computer_science/polling_and_interrupt.md)
-  - [페이징과 세그먼테이션](interview/computer_science/paging_segmentation.md)
-  - 멀티스레드와 멀티프로세스, 문맥 교환
-  - Critical Section과 Deadlock
+    - 페이지 방식과 버퍼 방식의 차이
+  - [Polling과 Interrupt](interview/computer_science/polling_and_interrupt.md)  
+  - 멀티스레드와 멀티프로세스
   - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
   - [Context Switching이 진행되는 단계](interview/computer_science/context_switching.md)
 - Programming Language
