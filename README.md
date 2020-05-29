@@ -69,7 +69,8 @@
 - Network
   - TCP와 UDP
 - Operation System
-  - [데드락의 조건과 세마포어, 뮤텍스](interview/computer_science/deadlock.md)
+  - [데드락의 발생조건](interview/computer_science/deadlock.md)
+    - [세마포어와 뮤텍스](interview/computer_science/semaphore_and_mutex.md)
     - Critical Section과 Deadlock
   - [CPU 스케줄링 알고리즘](interview/computer_science/cpu_scheduling.md)
   - 페이지 교체 알고리즘
