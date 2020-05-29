@@ -10,9 +10,8 @@
 ## Table of Contents
 - [1. Interview](#1-interview)
   - [1-1. Hadoop Ecosystem](#1-1-hadoop-ecosystem)
-  - [1-2. Computer Science](#1-3-computer-science)
-  - [1-3. Algorithm & Data Structure](#1-4-algorithm-and-data-structure)
-  - [1-4. Database](#1-5-database)
+  - [1-2. Computer Science](#1-2-computer-science)
+  - [1-3. Algorithm & Data Structure](#1-3-algorithm-and-data-structure)
 - [2. Bigdata Components](#2-bigdata-components)
   - [2-1. Set up with Cloudera](#2-1-set-up-with-cloudera)
   - [2-2. Hadoop Ecosystem](#2-2-hadoop-ecosystem)
@@ -37,6 +36,13 @@
   - Hadoop ecosystem 구성요소별 partition의 의미
   - MapReduce의 spilling이란?
   - vm.swappiness와 하둡 데몬의 실행 시간 초과 문제
+- Apache Spark
+  - [RDD, DataFrame, Dataset의 차이점](interview/hadoop/rdd_df_ds.md)
+  - [SparkContext와 SparkSession이란?](interview/hadoop/sparkcontext_sparksession.md)
+  - Scala의 map과 flatMap의 차이점
+  - Spark의 map과 mapPartitions의 차이점
+  - Spark의 ML 패키지와 MLlib 패키지의 차이점
+  - RDD 함수 중 groupByKey와 reduceByKey 중 어느것이 더 빠른가?
 - Apache HBase
   - [Major Compaction과 Minor Compaction](interview/hadoop/hbase_compaction.md)
   - Region Server의 구성도
@@ -47,13 +53,6 @@
 - Apache Kafka
   - [Kafka의 partition 수는 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
   - Kafka에서 zookeeper의 역할
-- Apache Spark
-  - [RDD, DataFrame, Dataset의 차이점](interview/hadoop/rdd_df_ds.md)
-  - [SparkContext와 SparkSession이란?](interview/hadoop/sparkcontext_sparksession.md)
-  - Scala의 map과 flatMap의 차이점
-  - Spark의 map과 mapPartitions의 차이점
-  - Spark의 ML 패키지와 MLlib 패키지의 차이점
-  - RDD 함수 중 groupByKey와 reduceByKey 중 어느것이 더 빠른가?
 - Top Bigdata Questions
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
@@ -67,8 +66,6 @@
 
 
 ### 1-2. Computer Science
-- Network
-  - TCP와 UDP
 - Operation System
   - [데드락의 발생조건](interview/computer_science/deadlock.md)
   - (작성중)[세마포어와 뮤텍스](interview/computer_science/semaphore_and_mutex.md)
@@ -83,6 +80,13 @@
   - 멀티스레드와 멀티프로세스
   - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
   - [Context Switching이 진행되는 단계](interview/computer_science/context_switching.md)
+- Database
+  - (작성중)[데이터베이스 인덱스](interview/database/database_index.md)
+  - [파티셔닝과 샤딩의 차이](interview/database/partitioning_vs_sharding.md)
+  - [CRUD와 ACID](interview/database/crud_acid.md)
+  - [DDL / DML / DCL / TCL](interview/database/ddl_dml_dcl_tcl.md)
+  - [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
+  - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
 - Programming Language
   - (작성중)[Java 인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
   - (작성중)[JVM](interview/computer_science/jvm.md)
@@ -91,8 +95,10 @@
   - 자바의 장점
   - [자바 메모리 누수 현상의 원인](interview/computer_science/understanding_memory_leaks_in_java.md)
   - 직렬화와 역직렬화
-
-
+- Network
+  - TCP와 UDP
+  
+  
 ### 1-3. Algorithm and Data Structure
 - Array vs Linked List
 - Stack and Queue
@@ -104,15 +110,6 @@
 - Recursion
 - Dynamic Programming
 
-
-### 1-4. Database
-- [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
-- (작성중)[Top 50+ Database Interview Questions](interview/database/top_50_database_interview_questions.md)
-- [데이터베이스 인덱스](interview/database/database_index.md)
-- [파티셔닝과 샤딩의 차이](interview/database/partitioning_vs_sharding.md)
-- [CRUD와 ACID](interview/database/crud_acid.md)
-- [DDL / DML / DCL / TCL](interview/database/ddl_dml_dcl_tcl.md)
-- [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
 
 <br>
 
