@@ -70,15 +70,14 @@
   - TCP와 UDP
 - Operation System
   - [데드락의 발생조건](interview/computer_science/deadlock.md)
-    - [세마포어와 뮤텍스](interview/computer_science/semaphore_and_mutex.md)
-    - Critical Section과 Deadlock
-  - [CPU 스케줄링 알고리즘](interview/computer_science/cpu_scheduling.md)
-  - [페이지 교체 알고리즘](interview/computer_science/page_replacement_algorithm.md)
-    - [페이징과 세그먼테이션](interview/computer_science/paging_segmentation.md)
-    - LRU 방식의 문제점
+  - (작성중)[세마포어와 뮤텍스](interview/computer_science/semaphore_and_mutex.md)
+  - Critical Section과 Deadlock
+  - (작성중)[CPU 스케줄링 알고리즘](interview/computer_science/cpu_scheduling.md)
+  - (작성중)[페이지 교체 알고리즘](interview/computer_science/page_replacement_algorithm.md)
+  - [페이징과 세그먼테이션](interview/computer_science/paging_segmentation.md)
   - [Big-endian, Little-endian](interview/computer_science/big_endian_little_endian.md)
   - [캐시 메모리와 버퍼 메모리](interview/computer_science/difference_between_cache_and_buffer.md)
-    - 페이지 방식과 버퍼 방식의 차이
+  - 페이지 방식과 버퍼 방식의 차이
   - [Polling과 Interrupt](interview/computer_science/polling_and_interrupt.md)  
   - 멀티스레드와 멀티프로세스
   - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
@@ -121,10 +120,10 @@
 ### 1-5. Database
 - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
 - (작성중)[Top 50+ Database Interview Questions](interview/database/top_50_database_interview_questions.md)
-- [데이터베이스 인덱스](interview/computer_science/database_index.md)
-- [파티셔닝과 샤딩의 차이](interview/computer_science/partitioning_vs_sharding.md)
-- CRUD와 ACID
-- DDL/DML/DCL/TCL
+- [데이터베이스 인덱스](interview/database/database_index.md)
+- [파티셔닝과 샤딩의 차이](interview/database/partitioning_vs_sharding.md)
+- (작성중)[CRUD와 ACID](interview/database/crud_acid.md)
+- (작성중)[DDL/DML/DCL/TCL](interview/database/ddl_dml_dcl_tcl.md)
 
 <br>
 
