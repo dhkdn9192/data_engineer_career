@@ -50,10 +50,12 @@
   - EDF 스케줄링(Earliest Deadline First Scheduling)
 
 <br>
+
 ### FCFS (First Come First Served) Scheduling
 먼저 자원 사용을 요청한 프로세스에게 자원을 할당해 주는 방식의 스케줄링 알고리즘
 
 <br>
+
 ### SJF (Shortest Job First) Scheduling
 평균 대기 시간을 최소화하기 위해 CPU 점유 시간이 가장 짧은 프로세스에 CPU를 먼저 할당하는 방식.
 요구 시간이 긴 프로세스는 기아 상태가 발생할 수 있으며, 
@@ -63,6 +65,7 @@
 이 알고리즘은 비선점형와 선점형 모두에 적용될 수 있는데, *선점형에 적용되는 SJF 스케줄링을 특별히 SRTF 스케줄링*이라 한다.
 
 <br>
+
 ### HRRN (Highest Response Ratio Next) Scheduling
 프로세스 처리의 우선 순위를 *CPU 처리 기간*과 해당 프로세스의 *대기 시간*을 동시에 고려해 선정하는 스케줄링 알고리즘이다. 
 SJF 스케줄링의 문제점을 보완해 개발된 스케줄링이다.
@@ -71,6 +74,7 @@ SJF 스케줄링의 문제점을 보완해 개발된 스케줄링이다.
 ```
 
 <br>
+
 ### RR (Round Robin) Scheduling
 시분할 시스템을 위한 선점형 스케줄링 방식. 
 프로세스들 사이에 우선순위를 두지 않고, 순서대로 시간단위(Time Quantum)로 CPU를 할당하는 방식의 CPU 스케줄링 알고리즘이다.
@@ -80,12 +84,14 @@ SJF 스케줄링의 문제점을 보완해 개발된 스케줄링이다.
 *문맥 전환의 오버헤드가 큰 반면, 응답시간이 짧아지는 장점*이 있어 실시간 시스템에 유리하다.
 
 <br>
+
 ### SRTF (Shortest Remaining Time First) Scheduling
 SJF 스케줄링을 선점 형태로 수정한 방식. 
 현재 작업 중인 프로세스를 중단시키고 최단 잔여시간 프로세스의 처리를 시작하는 방식이다. 
 *선점형 SJF 스케줄링* 또는 SRT (Shortest Remaining Time) 스케줄링이라고도 한다.
 
 <br>
+
 ### Multilevel Queue Scheduling
 커널 내의 준비 큐를 여러 개의 큐로 분리하여 큐 사이에도 우선순위를 부여하는 스케줄링 알고리즘이다.
 또한, 각각의 큐에 대해 다른 스케줄링 알고리즘을 적용하기도 한다.
@@ -93,6 +99,7 @@ SJF 스케줄링을 선점 형태로 수정한 방식.
 프로세스들은 조건에 맞는 큐에 영구적으로 할당된다.
 
 <br>
+
 ### Multilevel Feedback Queue Scheduling
 다단계 큐 스케줄링에서 한 단계 발전된 방식. 
 다단계 큐 스케줄링에서는 프로세스가 하나의 큐에 영구적으로 할당되지만, 
