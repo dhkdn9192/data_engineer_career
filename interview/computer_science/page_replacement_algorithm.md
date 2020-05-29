@@ -84,3 +84,5 @@ LFU와 MFU는 실제 사용에 잘 쓰이지 않는다.
 - https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%EA%B5%90%EC%B2%B4_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
 - https://medium.com/pocs/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B5%90%EC%B2%B4-page-replacement-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-650d58ae266b
 - https://en.wikipedia.org/wiki/Page_replacement_algorithm#Clock
+- http://www.datanet.co.kr/news/articleView.html?idxno=115592
+- https://books.google.co.kr/books?id=EcMqBh5MDQIC&pg=PA277&lpg=PA277&dq=LRU-K+%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98&source=bl&ots=UPpNGusj94&sig=ACfU3U3Nvu3LZIB1wu7mGw9DI47DiQmxuQ&hl=ko&sa=X&ved=2ahUKEwjGl93Py9jpAhUGVN4KHYMXBrsQ6AEwB3oECAcQAQ#v=onepage&q=LRU-K&f=false (도서 "운영 체제와 정보기술의 원리")
