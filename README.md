@@ -122,8 +122,9 @@
 - (작성중)[Top 50+ Database Interview Questions](interview/database/top_50_database_interview_questions.md)
 - [데이터베이스 인덱스](interview/database/database_index.md)
 - [파티셔닝과 샤딩의 차이](interview/database/partitioning_vs_sharding.md)
-- (작성중)[CRUD와 ACID](interview/database/crud_acid.md)
-- (작성중)[DDL/DML/DCL/TCL](interview/database/ddl_dml_dcl_tcl.md)
+- [CRUD와 ACID](interview/database/crud_acid.md)
+- [DDL/DML/DCL/TCL](interview/database/ddl_dml_dcl_tcl.md)
+- [DELETE와 TRUNCATE](interview/database/delete_truncate.md)
 
 <br>
 
