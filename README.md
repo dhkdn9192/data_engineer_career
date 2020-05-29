@@ -8,10 +8,9 @@
 ## Table of Contents
 - [1. Interview](#1-interview)
   - [1-1. Hadoop Ecosystem](#1-1-hadoop-ecosystem)
-  - [1-2. Top Bigdata Questions](#1-2-top-bigdata-questions)
-  - [1-3. Computer Science](#1-3-computer-science)
-  - [1-4. Algorithm & Data Structure](#1-4-algorithm-and-data-structure)
-  - [1-5. Database](#1-5-database)
+  - [1-2. Computer Science](#1-3-computer-science)
+  - [1-3. Algorithm & Data Structure](#1-4-algorithm-and-data-structure)
+  - [1-4. Database](#1-5-database)
 - [2. Bigdata Components](#2-bigdata-components)
   - [2-1. Set up with Cloudera](#2-1-set-up-with-cloudera)
   - [2-2. Hadoop Ecosystem](#2-2-hadoop-ecosystem)
@@ -55,17 +54,17 @@
   - RDD 함수 중 groupByKey와 reduceByKey 중 어느것이 더 빠른가?
 - 과제: On-premise 하둡 아키텍처 설계하기
 
-### 1-2. Top Bigdata Questions
-- [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
-- [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
-- [Top 20 Apache Spark Interview Questions 2019](interview/top_bigdata_questions/top_20_apache_spark_interview_questions_2019.md)
-- [Top 62 Data Engineer Interview Questions & Answers](interview/top_bigdata_questions/top_62_data_engineer_interview_questions.md)
-- [Hadoop MapReduce Interview Questions In 2020](interview/top_bigdata_questions/hadoop_mapreduce_interview_questions_in_2020.md)
-- Hadoop Interview Questions For 2020 – Setting Up Hadoop Cluster
-- Hadoop Interview Questions On HBase In 2020
-- [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](interview/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
+- Top Bigdata Questions
+  - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
+  - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
+  - [Top 20 Apache Spark Interview Questions 2019](interview/top_bigdata_questions/top_20_apache_spark_interview_questions_2019.md)
+  - [Top 62 Data Engineer Interview Questions & Answers](interview/top_bigdata_questions/top_62_data_engineer_interview_questions.md)
+  - [Hadoop MapReduce Interview Questions In 2020](interview/top_bigdata_questions/hadoop_mapreduce_interview_questions_in_2020.md)
+  - Hadoop Interview Questions For 2020 – Setting Up Hadoop Cluster
+  - Hadoop Interview Questions On HBase In 2020
+  - [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](interview/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
 
-### 1-3. Computer Science
+### 1-2. Computer Science
 - Network
   - TCP와 UDP
 - Operation System
@@ -92,7 +91,7 @@
   - 직렬화와 역직렬화
 
 
-### 1-4. Algorithm and Data Structure
+### 1-3. Algorithm and Data Structure
 - Array vs Linked List
 - Stack and Queue
 - (작성중)[Tree](interview/algorithm/binary_search_tree.ipynb)
@@ -104,7 +103,7 @@
 - Dynamic Programming
 
 
-### 1-5. Database
+### 1-4. Database
 - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
 - (작성중)[Top 50+ Database Interview Questions](interview/database/top_50_database_interview_questions.md)
 - [데이터베이스 인덱스](interview/database/database_index.md)
