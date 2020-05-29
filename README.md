@@ -70,7 +70,7 @@
   - TCP와 UDP
 - Operation System
   - [데드락의 조건과 세마포어, 뮤텍스](interview/computer_science/deadlock.md)
-  - CPU 스케줄링 알고리즘
+  - [CPU 스케줄링 알고리즘](interview/computer_science/cpu_scheduling.md)
   - LRU 방식의 문제점
   - [Big-endian, Little-endian](interview/computer_science/big_endian_little_endian.md)
   - [캐시 메모리와 버퍼 메모리](interview/computer_science/difference_between_cache_and_buffer.md)
