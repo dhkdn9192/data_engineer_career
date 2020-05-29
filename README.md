@@ -73,7 +73,7 @@
     - [세마포어와 뮤텍스](interview/computer_science/semaphore_and_mutex.md)
     - Critical Section과 Deadlock
   - [CPU 스케줄링 알고리즘](interview/computer_science/cpu_scheduling.md)
-  - 페이지 교체 알고리즘
+  - [페이지 교체 알고리즘](interview/computer_science/page_replacement_algorithm.md)
     - [페이징과 세그먼테이션](interview/computer_science/paging_segmentation.md)
     - LRU 방식의 문제점
   - [Big-endian, Little-endian](interview/computer_science/big_endian_little_endian.md)
