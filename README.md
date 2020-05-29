@@ -123,8 +123,8 @@
 - [데이터베이스 인덱스](interview/database/database_index.md)
 - [파티셔닝과 샤딩의 차이](interview/database/partitioning_vs_sharding.md)
 - [CRUD와 ACID](interview/database/crud_acid.md)
-- [DDL/DML/DCL/TCL](interview/database/ddl_dml_dcl_tcl.md)
-- [DELETE와 TRUNCATE](interview/database/delete_truncate.md)
+- [DDL / DML / DCL / TCL](interview/database/ddl_dml_dcl_tcl.md)
+- [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
 
 <br>
 
