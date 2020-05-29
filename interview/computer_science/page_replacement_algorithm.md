@@ -16,6 +16,7 @@ Page Fault가 발생 하여 새로운 페이지를 할당하기 위해 현재 �
 - LFU (Least Frequently Used)
 - MFU (Most Frequently Used)
 
+<br>
 
 ### FIFO (First In First Out)
 가장 간단한 알고리즘으로, 메모리에 올라온 지 가장 오래된 페이지를 교체한다. 
@@ -82,3 +83,4 @@ LFU와 MFU는 실제 사용에 잘 쓰이지 않는다.
 ## Reference
 - https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%EA%B5%90%EC%B2%B4_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
 - https://medium.com/pocs/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B5%90%EC%B2%B4-page-replacement-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-650d58ae266b
+- https://en.wikipedia.org/wiki/Page_replacement_algorithm#Clock
