@@ -95,26 +95,13 @@
 ### 1-4. Algorithm and Data Structure
 - Array vs Linked List
 - Stack and Queue
-- Tree
-  - Binary Tree
-  - [Binary Search Tree](interview/algorithm/binary_search_tree.ipynb)
+- (작성중)[Tree](interview/algorithm/binary_search_tree.ipynb)
 - Heap
 - [Hash Table](interview/computer_science/hash_table.md)
-  - Hash Function
-  - Resolve Collision
-    - Open Addressing
-    - Separate Chaining
-  - Resize
 - Graph
 - [Sorting](interview/algorithm/sorting_algorithm.ipynb)
-  - Bubble Sort
-  - Selection Sort
-  - Insertion Sort
-  - Merge Sort
-  - Heap Sort
-  - Quick Sort
 - Recursion
-- Dynamic Programming and Memoization
+- Dynamic Programming
 
 
 ### 1-5. Database
