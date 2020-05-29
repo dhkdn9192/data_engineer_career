@@ -52,8 +52,6 @@
   - Spark의 map과 mapPartitions의 차이점
   - Spark의 ML 패키지와 MLlib 패키지의 차이점
   - RDD 함수 중 groupByKey와 reduceByKey 중 어느것이 더 빠른가?
-- 과제: On-premise 하둡 아키텍처 설계하기
-
 - Top Bigdata Questions
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
@@ -63,6 +61,8 @@
   - Hadoop Interview Questions For 2020 – Setting Up Hadoop Cluster
   - Hadoop Interview Questions On HBase In 2020
   - [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](interview/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
+- 과제: On-premise 하둡 아키텍처 설계하기
+
 
 ### 1-2. Computer Science
 - Network
@@ -98,7 +98,7 @@
 - Heap
 - [Hash Table](interview/computer_science/hash_table.md)
 - Graph
-- [Sorting](interview/algorithm/sorting_algorithm.ipynb)
+- (작성중)[Sorting](interview/algorithm/sorting_algorithm.ipynb)
 - Recursion
 - Dynamic Programming
 
