@@ -12,8 +12,8 @@ Page Fault가 발생 하여 새로운 페이지를 할당하기 위해 현재 �
 - FIFO (First In First Out)
 - LRU (Least Recently Used)
 - LRU-K (Least Recently Used K-th)
-- Clock
-- Enhanced Clock
+- Clock Algorithm
+- Enhanced Clock Algorithm
 - LFU (Least Frequently Used)
 - MFU (Most Frequently Used)
 
@@ -60,7 +60,7 @@ LRU는 각 페이지에 대해 가장 최근에 참조된 시간을 기준으로
 
 
 
-### Clock
+### Clock Algorithm
 LRU를 근사화시킨 방식으로, 각 페이지가 최근에 참조되었는지 여부를 활용한다.
 1bit짜리 reference bit에 사용했는지 여부를 기록한다.
 시간을 일정한 time interval로 나누고, 그 범위 안에서 사용 여부를 비교하는 방식이다.
@@ -75,8 +75,12 @@ clock hand가 빠르게 돌고 있다면 OS가 과부하 상태일 수 있다.
 
 대표적인 LRU 계열의 알고리즘으로, UNIX OS에서 많이 사용하는 방식이다.
 
+<p align="center">
+  <img src="img/clock_algorithm.png" alt="clock_algorithm" width="70%">
+</p>
 
-### Enhanced Clock
+
+### Enhanced Clock Algorithm
 reference bit 뿐만 아니라 dirty bit(페이지 수정 여부 기록)도 고려하여 페이지 교체를 결정하는 방식이다.
 reference bit와 dirty bit 모두 1이면 보존하고 둘 다 0이면 우선적으로 교체 대상이 된다.
 교체 대상 우선순위는 아래와 같다.
@@ -119,3 +123,4 @@ LFU와 MFU는 실제 사용에 잘 쓰이지 않는다.
 - http://www.datanet.co.kr/news/articleView.html?idxno=115592
 - https://books.google.co.kr/books?id=EcMqBh5MDQIC&pg=PA277&lpg=PA277&dq=LRU-K+%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98&source=bl&ots=UPpNGusj94&sig=ACfU3U3Nvu3LZIB1wu7mGw9DI47DiQmxuQ&hl=ko&sa=X&ved=2ahUKEwjGl93Py9jpAhUGVN4KHYMXBrsQ6AEwB3oECAcQAQ#v=onepage&q=LRU-K&f=false (도서 "운영 체제와 정보기술의 원리")
 - https://jennysgap.tistory.com/entry/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EC%9D%98-%EA%B8%B0%EC%B4%88-18-Demand-Paging-2
+- https://kouzie.github.io/operatingsystem/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC/#clock-algorithm
