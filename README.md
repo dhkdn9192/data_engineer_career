@@ -71,7 +71,7 @@
   - (작성중)[세마포어와 뮤텍스](interview/computer_science/semaphore_and_mutex.md)
   - Critical Section과 Deadlock
   - (작성중)[CPU 스케줄링 알고리즘](interview/computer_science/cpu_scheduling.md)
-  - (작성중)[페이지 교체 알고리즘](interview/computer_science/page_replacement_algorithm.md)
+  - [페이지 교체 알고리즘](interview/computer_science/page_replacement_algorithm.md)
   - [페이징과 세그먼테이션, 그리도 단편화](interview/computer_science/paging_segmentation.md)
   - [Big-endian, Little-endian](interview/computer_science/big_endian_little_endian.md)
   - [캐시 메모리와 버퍼 메모리](interview/computer_science/difference_between_cache_and_buffer.md)
