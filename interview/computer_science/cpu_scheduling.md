@@ -49,7 +49,6 @@
   - RM 스케줄링(Rate Monotonic Scheduling)
   - EDF 스케줄링(Earliest Deadline First Scheduling)
 
-<br>
 
 ### FCFS (First Come First Served) Scheduling
 먼저 자원 사용을 요청한 프로세스에게 자원을 할당해 주는 방식의 스케줄링 알고리즘
