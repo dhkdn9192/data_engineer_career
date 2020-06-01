@@ -62,81 +62,62 @@ class BinarySearchTree(object):
 ```
 
 
-### insert
-
+### find
+이진탐색트리의 탐색 시간은 트리의 높이 h만큼 소요된다. 즉 O(h)이다.
 ```Python
-class BinarySearchTree(object):
-    ...
-    def insert(self, data):        
-        # root가 None일 경우 data를 root로
-        if self.root is None:
-            self.root = Node(data)
-            return True
-        
-        # 트리를 탐색하다 leaf 노드에 도달하면 자식을 추가하고 True 반환
-        parent = self.root
-        child = -1
-        while child is not None:
-            child = parent.left if data <= parent.data else parent.right
-            
-            if child is None:
-                if data <= parent.data:
-                    parent.left = Node(data)
-                else:
-                    parent.right = Node(data)
-            else:
-                parent = child
-                
+def find(self, data):
+    return self.find_node(self.root, data)
+
+def find_node(self, node, data):
+    if node is None:  # 리프노드 도달
+        return False
+    elif node.data == data:  # 현재 노드값이 찾는 값이라면 True
         return True
+    elif node.data > data:  # 왼쪽 자식으로 넘어가기
+        return self.find_node(node.left, data)
+    else:  # 오른쪽 자식으로 넘어가기
+        return self.find_node(node.right, data)
 ```
 
 
-### find
-
+### insert
+트리를 탐색하여 마지막 리프노드에 값을 입력해주므로 시간복잡도는 find와 마찬가지로 O(h)이다.
+insert로 리프노드가 추가되어도 트리의 속성이 깨지지 않는다.
+트리의 맨 왼쪽과 맨 오른쪽 노드는 각각 최소값과 최대값을 갖는다.
 ```Python
-class BinarySearchTree(object):
-    ...
-    def find(self, data):
-        # root가 None일 경우
-        if self.root is None:
-            return False
-        
-        # root가 찾는 노드일 경우
-        if self.root.data == data:
-            return True
-        
-        # 트리를 탐색하다 찾으면 True, 없으면 False 반환
-        parent = self.root
-        child = -1
-        while child is not None:
-            child = parent.left if data <= parent.data else parent.right
-            
-            if child is None:
-                return False
-            elif child.data == data:
-                return True
-            else:
-                parent = child
-                
-        return False
+def insert(self, data):
+    if self.root is None:  # 루트가 없다면 본 데이터로 루트를 만들어준다.
+        self.root = Node(data)
+    else:   # 루트부터 탐색하여 데이터 입력
+        self.insert_node(self.root, data)
+
+def insert_node(self, node, data):            
+    if node.data > data:
+        if node.left is None:
+            node.left = Node(data)
+        else:
+            self.insert_node(node.left, data)
+    elif node.data < data:
+        if node.right is None:
+            node.right = Node(data)
+        else:
+            self.insert_node(node.right, data)
+    # 현재 노드값이 data와 같을경우, 이미 트리에 값이 있으므로 아무것도 안 함
+    #else:
+    #    pass
+
 ```
 
 
 ### delete
 제거 대상 노드의 양쪽 자식이 모두 존재할 경우, 오른쪽 서브트리의 가장 왼쪽 노드를 가져와서 대체해야 한다.
 
-```Python
-class BinarySearchTree(object):
-    ...
-    def delete(self, data):
-        (생략)
-```
 
 
 
 ## AVL Tree
 
-이진탐색트리의 단점 보완
+이진탐색트리의 단점 보완한 트리.
 
 그 외 힙이 있음
 
@@ -147,3 +128,4 @@ class BinarySearchTree(object):
 ## Reference
 - https://www.geeksforgeeks.org/binary-search-tree-data-structure/
 - https://geonlee.tistory.com/72
+- https://ratsgo.github.io/data%20structure&algorithm/2017/10/22/bst/
