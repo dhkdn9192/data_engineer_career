@@ -18,22 +18,42 @@ sync와 async는 요청한 작업의 완료 여부를 신경쓰는 주체가 어
 
 
 ## IBM I/O Model
-![ibm_io_model](img/ibm_io_model_matrix.png)
+<p align="center">
+  <img src="img/ibm_io_model_matrix.png" alt="ibm_io_model_matrix" width="50%">
+</p>
+
 
 ## 1. Synchronous Blocking
-![sync_block](img/sync_block.png)
+<p align="center">
+  <img src="img/sync_block.png" alt="sync_block" width="50%">
+</p>
+
 
 ## 2. Synchronous Non-Blocking
-![sync_nonblock](img/sync_nonblock.png)
+<p align="center">
+  <img src="img/sync_nonblock.png" alt="sync_nonblock" width="50%">
+</p>
+
 
 ## 3. Asynchronous Blocking
-![async_block](img/async_block.png)
+<p align="center">
+  <img src="img/async_block.png" alt="async_block" width="50%">
+</p>
+
 
 ## 4. Asynchronous Non-Blocking
-![async_nonblock](img/async_nonblock.png)
+<p align="center">
+  <img src="img/async_nonblock.png" alt="async_nonblock" width="50%">
+</p>
+
 
 ## Final matrix
-![final_matrix](img/sync_async_block_nonblock_matrix.png)
+<p align="center">
+  <img src="img/sync_async_block_nonblock_matrix.png" alt="sync_async_block_nonblock_matrix" width="60%">
+</p>
+
+<br>
+
 
 ## References
 - https://homoefficio.github.io/2017/02/19/Blocking-NonBlocking-Synchronous-Asynchronous/
