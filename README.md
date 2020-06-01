@@ -103,7 +103,8 @@
 - Array vs Linked List
 - Stack and Queue
 - (작성중)[Tree](interview/algorithm/binary_search_tree.ipynb)
-- Heap
+  - (작성중)[Binary Search Tree](interview/algorithm/binary_search_tree.md)
+  - Heap Tree
 - [Hash Table](interview/computer_science/hash_table.md)
 - Graph
 - (작성중)[Sorting](interview/algorithm/sorting_algorithm.ipynb)
