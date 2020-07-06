@@ -142,6 +142,9 @@
 - Churn Prediction
 - NLP
 - Recommender System
+- 개발 아이디어
+  - PySpark 클러스터 환경에서 각 노드별 python package 일괄 관리 툴
+  - Apache Nutch의 streaming 버전, Spark 기반의 웹 크롤러
 
 <br>
 
