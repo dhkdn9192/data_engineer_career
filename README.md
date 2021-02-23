@@ -46,6 +46,8 @@
 - Apache HBase
   - [Major Compaction과 Minor Compaction](interview/hadoop/hbase_compaction.md)
   - Region Server의 구성도
+  - 시계열 Row key 설계: Salting, Empty region
+  - Region의 locality
 - Apache Hive
   - [Hive의 Partition, Bucket, Index의 차이점](interview/hadoop/hive_partition_bucket_index.md)
   - 메타스토어는 왜 hdfs에 없는가?
