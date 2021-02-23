@@ -88,13 +88,15 @@
   - [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
   - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
 - Programming Language
-  - (작성중)[Java 인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
-  - (작성중)[JVM](interview/computer_science/jvm.md)
-  - Java의 Primitive type, Reference type, Wrapper class
-  - 파이썬의 GIL
+  - (작성중)[(Java) 인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
+  - (작성중)[(Java) JVM](interview/computer_science/jvm.md)
+  - (Java) Primitive type, Reference type, Wrapper class
+  - (Java) thread-safe와 synchronized
+  - Singleton pattern을 사용하는 이유와 단점
+  - [(Java) 메모리 누수 현상의 원인](interview/computer_science/understanding_memory_leaks_in_java.md)  
   - 자바의 장점
-  - [자바 메모리 누수 현상의 원인](interview/computer_science/understanding_memory_leaks_in_java.md)
   - 직렬화와 역직렬화
+  - (Python) GIL
 - Network
   - TCP와 UDP
   
