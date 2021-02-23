@@ -53,6 +53,8 @@
 - Apache Kafka
   - [Kafka의 partition 수는 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
   - Kafka에서 zookeeper의 역할
+  - ISR (In Sync Replica)
+  - At least once delivery, Exactly once delivery
 - Top Bigdata Questions
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
@@ -99,6 +101,8 @@
   - (Python) GIL
 - Network
   - TCP와 UDP
+- 기타
+  - 멱등성(idempotence)
   
   
 ### 1-3. Algorithm and Data Structure
