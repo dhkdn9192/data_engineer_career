@@ -57,6 +57,7 @@
   - Kafka에서 zookeeper의 역할
   - ISR (In Sync Replica)
   - At least once delivery, Exactly once delivery
+  - Kafka를 이용한 람다 
 - Top Bigdata Questions
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
