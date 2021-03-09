@@ -105,6 +105,7 @@
   - TCP와 UDP
 - 기타
   - 멱등성(idempotence)
+  - [람다 아키텍처](https://ko.wikipedia.org/wiki/%EB%9E%8C%EB%8B%A4_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98)
   
   
 ### 1-3. Algorithm and Data Structure
