@@ -5,6 +5,8 @@
 
 데이터 엔지니어가 알아야 할 모든 것들을 정리합니다.
 자료 출처는 각 문서의 하단을 참조하시기 바랍니다.
+<br>
+It organizes everything a data engineer needs to know. Please refer to the bottom of each document for the source of the data.
 
 
 ## Table of Contents
@@ -24,40 +26,54 @@
 
 ## 1. Interview
 데이터 엔지니어가 알아야 할 기술 질문
+<br>
+Technical questions data engineers need to know
 
 ### 1-1. Hadoop Ecosystem
 - Apache Hadoop
   - [HDFS의 block replication factor를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
+    - By increasing the block replication factor of HDFS to 3->5, how many failures can it withstand?
   - [YARN이 도입된 이유](interview/hadoop/why_use_yarn.md)
+    - Why YARN?
   - [HDFS의 HA 구성 컨센서스](interview/hadoop/hdfs_ha_and_consensus.md)
+    - HA consensus of HDFS
   - [손상된 블록의 탐지와 처리과정](interview/hadoop/hdfs_block_scanner.md)
+    - The process of detecting and handling damaged blocks
   - [Parquet와 칼럼 기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
+    - Parquet and column-based strage
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
   - Hadoop ecosystem 구성요소별 partition의 의미
-  - MapReduce의 spilling이란?
+    - What is "partition" in Hadoop ecosystem?
+  - What is MapReduce spilling?
   - vm.swappiness와 하둡 데몬의 실행 시간 초과 문제
+    - vm.swappiness and Hadoop daemon run timeout issue
 - Apache Spark
-  - [RDD, DataFrame, Dataset의 차이점](interview/hadoop/rdd_df_ds.md)
-  - [SparkContext와 SparkSession이란?](interview/hadoop/sparkcontext_sparksession.md)
-  - Scala의 map과 flatMap의 차이점
-  - Spark의 map과 mapPartitions의 차이점
-  - Spark의 ML 패키지와 MLlib 패키지의 차이점
+  - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
+  - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
+  - Difference between "map" and "flatMap" in Scala
+  - Difference between "map" and "mapPartitions" in Scala
+  - Difference between "ML" package and "MLlib" package in Spark
   - RDD 함수 중 groupByKey와 reduceByKey 중 어느것이 더 빠른가?
+    - Which of the RDD functions is faster, groupByKey or reduceByKey?
 - Apache HBase
-  - [Major Compaction과 Minor Compaction](interview/hadoop/hbase_compaction.md)
-  - Region Server의 구성도
-  - 시계열 Row key 설계: Salting, Empty region
-  - Region의 locality
+  - [Major Compaction and Minor Compaction](interview/hadoop/hbase_compaction.md)
+  - Region Server architecture
+  - Time series Row key design: Salting, Empty region
+  - Region's locality
 - Apache Hive
-  - [Hive의 Partition, Bucket, Index의 차이점](interview/hadoop/hive_partition_bucket_index.md)
+  - [Partition, Bucket, Index](interview/hadoop/hive_partition_bucket_index.md)
   - 메타스토어는 왜 hdfs에 없는가?
+    - Why isn't the metastore in hdfs?
   - HiveQL에서 SORT BY와 ORDER BY 중 어느것이 더 빠른가?
+    - Which is faster, SORT BY or ORDER BY in HiveQL?
 - Apache Kafka
   - [Kafka의 partition 수는 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
-  - Kafka에서 zookeeper의 역할
+    - Is it better to have more partitions in Kafka?
+  - zookeeper's role in Kafka
   - ISR (In Sync Replica)
   - At least once delivery, Exactly once delivery
   - Kafka를 이용한 람다 아키텍처
+    - Lambda architecture with Kafka
 - Top Bigdata Questions
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
@@ -67,7 +83,7 @@
   - Hadoop Interview Questions For 2020 – Setting Up Hadoop Cluster
   - Hadoop Interview Questions On HBase In 2020
   - [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](interview/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
-- 과제: On-premise 하둡 아키텍처 설계하기
+- 과제: On-premise 하둡 아키텍처 설계하기 (Challenge: designing an on-premise Hadoop architecture)
 
 
 ### 1-2. Computer Science
