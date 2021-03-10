@@ -49,7 +49,6 @@ Technical questions data engineers need to know
   - Difference between "map" and "mapPartitions" in Scala
   - Difference between "ML" package and "MLlib" package in Spark
   - Which of the RDD functions is faster, "groupByKey" or "reduceByKey"?
-    - 
 - Apache HBase
   - [Major Compaction and Minor Compaction](interview/hadoop/hbase_compaction.md)
   - Region Server architecture
