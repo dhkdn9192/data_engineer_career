@@ -31,16 +31,11 @@ Technical questions data engineers need to know
 
 ### 1-1. Hadoop Ecosystem
 - Apache Hadoop
-  - [HDFS의 block replication factor를 3->5로 늘리면 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
-    - By increasing the block replication factor of HDFS to 3->5, how many failures can it withstand?
-  - [YARN이 도입된 이유](interview/hadoop/why_use_yarn.md)
-    - Why YARN?
-  - [HDFS의 HA 구성 컨센서스](interview/hadoop/hdfs_ha_and_consensus.md)
-    - HA consensus of HDFS
-  - [손상된 블록의 탐지와 처리과정](interview/hadoop/hdfs_block_scanner.md)
-    - The process of detecting and handling damaged blocks
-  - [Parquet와 칼럼 기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
-    - Parquet and column-based strage
+  - [By increasing the block replication factor of HDFS to 3->5, how many failures can it withstand?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
+  - [Why YARN is introduced?](interview/hadoop/why_use_yarn.md)
+  - [HA consensus of HDFS](interview/hadoop/hdfs_ha_and_consensus.md)
+  - [The process of detecting and handling damaged blocks](interview/hadoop/hdfs_block_scanner.md)
+  - [Parquet and column-based strage](interview/hadoop/parquet_and_column_based_storage.md)
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
   - Hadoop ecosystem 구성요소별 partition의 의미
     - What is "partition" in Hadoop ecosystem?
@@ -53,8 +48,8 @@ Technical questions data engineers need to know
   - Difference between "map" and "flatMap" in Scala
   - Difference between "map" and "mapPartitions" in Scala
   - Difference between "ML" package and "MLlib" package in Spark
-  - RDD 함수 중 groupByKey와 reduceByKey 중 어느것이 더 빠른가?
-    - Which of the RDD functions is faster, groupByKey or reduceByKey?
+  - Which of the RDD functions is faster, "groupByKey" or "reduceByKey"?
+    - 
 - Apache HBase
   - [Major Compaction and Minor Compaction](interview/hadoop/hbase_compaction.md)
   - Region Server architecture
@@ -62,18 +57,14 @@ Technical questions data engineers need to know
   - Region's locality
 - Apache Hive
   - [Partition, Bucket, Index](interview/hadoop/hive_partition_bucket_index.md)
-  - 메타스토어는 왜 hdfs에 없는가?
-    - Why isn't the metastore in hdfs?
-  - HiveQL에서 SORT BY와 ORDER BY 중 어느것이 더 빠른가?
-    - Which is faster, SORT BY or ORDER BY in HiveQL?
+  - Why isn't the metastore in hdfs?
+  - Which is faster, SORT BY or ORDER BY in HiveQL?
 - Apache Kafka
-  - [Kafka의 partition 수는 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
-    - Is it better to have more partitions in Kafka?
+  - [Is it better to have more partitions in Kafka?](interview/hadoop/kafka_too_many_partitions.md)
   - zookeeper's role in Kafka
   - ISR (In Sync Replica)
   - At least once delivery, Exactly once delivery
-  - Kafka를 이용한 람다 아키텍처
-    - Lambda architecture with Kafka
+  - Lambda architecture with Kafka
 - Top Bigdata Questions
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
@@ -114,15 +105,15 @@ Technical questions data engineers need to know
   - (Java) Primitive type, Reference type, Wrapper class
   - (Java) thread-safe와 synchronized
   - Singleton pattern을 사용하는 이유와 단점
-  - [(Java) 메모리 누수 현상의 원인](interview/computer_science/understanding_memory_leaks_in_java.md)  
-  - 자바의 장점
-  - 직렬화와 역직렬화
+  - [(Java) Cause of Java memory leak](interview/computer_science/understanding_memory_leaks_in_java.md)  
+  - Benefit of Java
+  - Serialization and Deserialization
   - (Python) GIL
 - Network
-  - TCP와 UDP
-- 기타
-  - 멱등성(idempotence)
-  - [람다 아키텍처](https://ko.wikipedia.org/wiki/%EB%9E%8C%EB%8B%A4_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98)
+  - TCP and UDP
+- Etc
+  - idempotence(멱등성)
+  - [Lambda architecture](https://ko.wikipedia.org/wiki/%EB%9E%8C%EB%8B%A4_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98)
   
   
 ### 1-3. Algorithm and Data Structure
@@ -142,6 +133,8 @@ Technical questions data engineers need to know
 
 ## 2. Bigdata Components
 하둡, 엘라스틱 등 빅데이터 인프라 관련 컴포넌트 학습 정리
+<br>
+About big data components such as Hadoop and Elastic
 
 ### 2-1. Set up with Cloudera
 - [Set up Virtual Box](bigdata_components/cloudera/setup_virtual_box.md)
@@ -163,12 +156,14 @@ Technical questions data engineers need to know
 
 ## 3. Fields of Study
 머신러닝, 데이터분석 등 관심있는 연구 분야와 수행 프로젝트 정리
+<br>
+Research fields and projects of interest such as machine learning and data analysis
 
 - [Anomaly Detection](fields_of_study/anomaly_detection)
 - Churn Prediction
 - NLP
 - Recommender System
-- 개발 아이디어
+- ideas
   - PySpark 클러스터 환경에서 각 노드별 python package 일괄 관리 툴
   - Apache Nutch의 streaming 버전, Spark 기반의 웹 크롤러
 
