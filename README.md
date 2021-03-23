@@ -58,6 +58,7 @@ Technical questions data engineers need to know
   - [Partition, Bucket, Index](interview/hadoop/hive_partition_bucket_index.md)
   - Why isn't the metastore in hdfs?
   - Which is faster, SORT BY or ORDER BY in HiveQL?
+  - What is HCatalog?
 - Apache Kafka
   - [Is it better to have more partitions in Kafka?](interview/hadoop/kafka_too_many_partitions.md)
   - zookeeper's role in Kafka
