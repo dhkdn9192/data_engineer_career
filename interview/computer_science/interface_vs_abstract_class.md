@@ -61,6 +61,20 @@ Both abstract class and interface are used for abstraction.
 - <b>Accessibility of Data Members</b>: Members of a Java interface are public by default. A Java abstract class can have class members like private, protected, etc.
 
 
+## 공통점/차이점 정리
+
+- 공통점
+    - 추상클래스와 인터페이스는 선언만 존재하고 구현 내용이 없다
+    - 인스턴스화할 수 없다
+    - 추상클래스의 경우 extends로 상속, 인터페이스의 경우 implements로 구현한 자식 클래스만이 객체를 인스턴스화할 수 있다.
+
+- 차이점
+    - 추상클래스는 일반메소드와 추상메소드를 모두 가질 수 있지만 인터페이스는 추상메소드만 가질 수 있다
+    - 인터페이스는 다중상속(한 클래스가 여러 인터페이스를 동시에 implements) 가능하지만 추상클래스는 단일상속만 가능하다
+    - 추상클래스의 목적은 상속을 받아서 기능을 확장시키는 것이다 (동일한 부모를 갖는 클래스들을 묶어서 상속받도록 함)
+    - 인터페이스의 목적은 구현하는 클래스에 대해 특정 메소드가 반드시 존재하도록 강제하는 역할을 하는 것이다
+
+
 ## When to use?
 
 ### Abstract Class
@@ -87,3 +101,4 @@ or require access modifiers other than public (such as protected and private).
 - https://wikidocs.net/217
 - https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/
 - https://m.blog.naver.com/PostView.nhn?blogId=heartflow89&logNo=220979244668&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+- https://cbw1030.tistory.com/47
