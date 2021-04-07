@@ -80,6 +80,7 @@ Technical questions data engineers need to know
 ### 1-2. Computer Science
 - Operation System
   - [데드락의 발생조건](interview/computer_science/deadlock.md)
+  - [다익스트라의 은행원 알고리즘](interview/computer_science/banker_algorithm.md)
   - (작성중)[세마포어와 뮤텍스](interview/computer_science/semaphore_and_mutex.md)
   - Critical Section과 Deadlock
   - [CPU 스케줄링 알고리즘](interview/computer_science/cpu_scheduling.md)
