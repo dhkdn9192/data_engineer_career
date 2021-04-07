@@ -100,8 +100,8 @@ Technical questions data engineers need to know
   - [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
   - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
 - Programming Language
-  - (작성중)[(Java) 인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
-  - (작성중)[(Java) JVM](interview/computer_science/jvm.md)
+  - [(Java) 인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
+  - [(Java) JVM](interview/computer_science/jvm.md)
   - (Java) Primitive type, Reference type, Wrapper class
   - (Java) thread-safe와 synchronized
   - Singleton pattern을 사용하는 이유와 단점
