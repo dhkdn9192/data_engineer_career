@@ -120,7 +120,7 @@ Technical questions data engineers need to know
 - Array vs Linked List
 - Stack and Queue
 - Tree
-  - (작성중)[Binary Search Tree](interview/algorithm/binary_search_tree.md)
+  - [Binary Search Tree](interview/algorithm/binary_search_tree.md)
   - Heap Tree
 - [Hash Table](interview/computer_science/hash_table.md)
 - Graph
