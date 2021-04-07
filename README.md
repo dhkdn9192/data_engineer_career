@@ -125,7 +125,7 @@ Technical questions data engineers need to know
 - [Hash Table](interview/computer_science/hash_table.md)
 - Graph
   - Dijkstra algorithm (최단 경로 찾기)
-- (작성중)[Sorting](interview/algorithm/sorting_algorithm.ipynb)
+- [Sorting](interview/algorithm/sorting_algorithm.ipynb)
 - Recursion
 - Dynamic Programming
 
