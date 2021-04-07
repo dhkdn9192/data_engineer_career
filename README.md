@@ -6,7 +6,7 @@
 데이터 엔지니어가 알아야 할 모든 것들을 정리합니다.
 자료 출처는 각 문서의 하단을 참조하시기 바랍니다.
 <br>
-It organizes everything a data engineer needs to know. Please refer to the bottom of each document for the source of the data.
+It organizes everything a data engineer needs to know. Please refer to the bottom of each document for the source of the content.
 
 
 ## Table of Contents
