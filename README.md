@@ -93,6 +93,7 @@ Technical questions data engineers need to know
   - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
   - [Context Switching이 진행되는 단계](interview/computer_science/context_switching.md)
 - Database
+  - [데이터 무결성 (Data Integrity)](interview/database/data_integrity.md)
   - (작성중)[데이터베이스 인덱스](interview/database/database_index.md)
   - [파티셔닝과 샤딩의 차이](interview/database/partitioning_vs_sharding.md)
   - [CRUD와 ACID](interview/database/crud_acid.md)
