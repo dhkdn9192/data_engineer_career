@@ -108,7 +108,7 @@ Technical questions data engineers need to know
   - [(Java) Cause of Java memory leak](interview/computer_science/understanding_memory_leaks_in_java.md)  
   - Benefit of Java
   - Serialization and Deserialization
-  - (Python) GIL
+  - [(Python) GIL](interview/computer_science/python_gil.md)
 - Network
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
   - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
