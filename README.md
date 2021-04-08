@@ -112,9 +112,10 @@ Technical questions data engineers need to know
 - Network
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
   - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
-- Etc
+- etc
   - idempotence(멱등성)
   - [Lambda architecture](https://ko.wikipedia.org/wiki/%EB%9E%8C%EB%8B%A4_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98)
+  - [MVC Pattern](interview/computer_science/mvc_pattern.md)
   
   
 ### 1-3. Algorithm and Data Structure
