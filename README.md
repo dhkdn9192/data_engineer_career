@@ -37,17 +37,13 @@ Technical questions data engineers need to know
   - [The process of detecting and handling damaged blocks](interview/hadoop/hdfs_block_scanner.md)
   - [Parquet and column-based strage](interview/hadoop/parquet_and_column_based_storage.md)
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
-  - Hadoop ecosystem 구성요소별 partition의 의미
-    - What is "partition" in Hadoop ecosystem?
   - What is MapReduce spilling?
-  - vm.swappiness와 하둡 데몬의 실행 시간 초과 문제
-    - vm.swappiness and Hadoop daemon run timeout issue
+  - vm.swappiness and Hadoop daemon run timeout issue
 - Apache Spark
   - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
   - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
-  - Difference between "map" and "flatMap" in Scala
-  - Difference between "map" and "mapPartitions" in Scala
-  - Difference between "ML" package and "MLlib" package in Spark
+  - Scala's functions: "map" and "flatMap" 
+  - Spark's functions: "map" and "mapPartitions"
   - Which of the RDD functions is faster, "groupByKey" or "reduceByKey"?
 - Apache HBase
   - [Major Compaction and Minor Compaction](interview/hadoop/hbase_compaction.md)
@@ -61,7 +57,7 @@ Technical questions data engineers need to know
   - What is HCatalog?
 - Apache Kafka
   - [Is it better to have more partitions in Kafka?](interview/hadoop/kafka_too_many_partitions.md)
-  - zookeeper's role in Kafka
+  - Zookeeper's role in Kafka
   - ISR (In Sync Replica)
   - At least once delivery, Exactly once delivery
   - Lambda architecture with Kafka
@@ -94,7 +90,7 @@ Technical questions data engineers need to know
   - [Context Switching이 진행되는 단계](interview/computer_science/context_switching.md)
 - Database
   - [데이터 무결성 (Data Integrity)](interview/database/data_integrity.md)
-  - (작성중)[데이터베이스 인덱스](interview/database/database_index.md)
+  - [데이터베이스 인덱스](interview/database/database_index.md)
   - [파티셔닝과 샤딩의 차이](interview/database/partitioning_vs_sharding.md)
   - [CRUD와 ACID](interview/database/crud_acid.md)
   - [DDL / DML / DCL / TCL](interview/database/ddl_dml_dcl_tcl.md)
@@ -114,7 +110,7 @@ Technical questions data engineers need to know
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
   - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
 - etc
-  - idempotence(멱등성)
+  - Idempotence(멱등성)
   - [Lambda architecture](https://ko.wikipedia.org/wiki/%EB%9E%8C%EB%8B%A4_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98)
   - [MVC Pattern](interview/computer_science/mvc_pattern.md)
   
@@ -127,7 +123,7 @@ Technical questions data engineers need to know
   - Heap Tree
 - [Hash Table](interview/computer_science/hash_table.md)
 - Graph
-  - Dijkstra algorithm (최단 경로 찾기)
+  - Dijkstra algorithm
 - [Sorting](interview/algorithm/sorting_algorithm.md)
 - Recursion
 - Dynamic Programming
