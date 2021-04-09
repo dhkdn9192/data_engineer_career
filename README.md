@@ -75,7 +75,8 @@ Technical questions data engineers need to know
 
 ### 1-2. Computer Science
 - Operation System
-  - [데드락의 발생조건](interview/computer_science/deadlock.md)
+  - [멀티스레드와 멀티프로세스](interview/computer_science/multithread_multiprocess.md)
+  - [교착상태(deadlock)의 발생조건](interview/computer_science/deadlock.md)
   - [다익스트라의 은행원 알고리즘](interview/computer_science/banker_algorithm.md)
   - [세마포어와 뮤텍스](interview/computer_science/semaphore_and_mutex.md)
   - [CPU 스케줄링 알고리즘](interview/computer_science/cpu_scheduling.md)
@@ -85,7 +86,6 @@ Technical questions data engineers need to know
   - [캐시 메모리와 버퍼 메모리](interview/computer_science/difference_between_cache_and_buffer.md)
   - 페이지 방식과 버퍼 방식의 차이
   - [Polling과 Interrupt](interview/computer_science/polling_and_interrupt.md)  
-  - 멀티스레드와 멀티프로세스
   - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
   - [Context Switching이 진행되는 단계](interview/computer_science/context_switching.md)
 - Database
