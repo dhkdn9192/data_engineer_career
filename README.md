@@ -93,7 +93,7 @@ Technical questions data engineers need to know
   - [데이터베이스 인덱스](interview/database/database_index.md)
   - [데이터베이스 정규화](interview/database/normalization.md)
   - [파티셔닝과 샤딩의 차이](interview/database/partitioning_vs_sharding.md)
-  - [CRUD와 ACID](interview/database/crud_acid.md)
+  - [트랜잭션과 ACID](interview/database/transaction_acid.md)
   - [DDL / DML / DCL / TCL](interview/database/ddl_dml_dcl_tcl.md)
   - [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
   - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
