@@ -71,7 +71,7 @@ JIT 컴파일러는 두 가지의 방식을 혼합한 방식으로 생각할 수
 ## Java Heap Memory
 Java Heap 영역은 크게 Young Generation, Old Generation으로 구분된다.
 
-![java_heap_architectur](img/java_heap_architecture.png)
+![java_heap_architectur](img/JVM-memory-structure2.png)
 
 ### Young Generation
 새롭게 생성된 객체들이 위치하는 곳이다. Eden 영역 1개와 Survivor 영역 2개로 구성된다. Eden 영역이 꽉 차면 객체 참조 여부에 따라 Survivor 영역으로 옮기며 이 때 발생하는 GC를 **Minor GC**라 한다.
@@ -93,3 +93,5 @@ Young 영역에서 계속 살아 남은 객체가 복사되는 영역이다. You
 - https://ko.wikipedia.org/wiki/JIT_%EC%BB%B4%ED%8C%8C%EC%9D%BC
 - https://velog.io/@litien/JVM-%EA%B5%AC%EC%A1%B0
 - https://asfirstalways.tistory.com/158
+- https://shinjekim.github.io/java/2020/01/06/%EC%9E%90%EB%B0%94%EC%9D%98-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0/
+- https://www.betsol.com/blog/java-memory-management-for-java-virtual-machine-jvm/
