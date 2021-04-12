@@ -20,7 +20,7 @@
 
 ## DCL (Data Control Language)
 데이터 제어어
-- <b>CRANT</b> : DB에 접근하고 객체들을 사용하도록 권한을 주는 명령어
+- <b>GRANT</b> : DB에 접근하고 객체들을 사용하도록 권한을 주는 명령어
 - <b>REVOKE</b> : 권한을 회수하는 명령어
 
 
