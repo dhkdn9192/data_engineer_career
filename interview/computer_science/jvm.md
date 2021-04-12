@@ -67,6 +67,23 @@ JIT 컴파일러는 두 가지의 방식을 혼합한 방식으로 생각할 수
 *핵심: class 파일로 컴파일된 바이트코드는 인터프리터에 의해 기계어 코드로 변환되어 실행되고, JIT 컴파일러는 반복적으로 사용되는 코드들에 대해서 매번 인터프리터에 의해 기계어로 변환되지 않고 바로 사용할 수 있도록 캐싱하여 수행시간에 최적화를 제공한다.*
 
 
+
+## Java Heap Memory
+Java Heap 영역은 크게 Young Generation, Old Generation으로 구분된다.
+
+![java_heap_architectur](img/java_heap_architecture.png)
+
+### Young Generation
+새롭게 생성된 객체들이 위치하는 곳이다. Eden 영역 1개와 Survivor 영역 2개로 구성된다. Eden 영역이 꽉 차면 객체 참조 여부에 따라 Survivor 영역으로 옮기며 이 때 발생하는 GC를 **Minor GC**라 한다.
+- Eden : 객체가 heap 상에서 최초로 할당되는 곳으로 이 곳이 꽉 차면 객체를 Survivor로 보낸다.
+- Survivor1, Survivor2 : 두 곳 중 하나는 비어있는 상태를 유지한다.
+- Minor GC : young generation에서 수행되는 GC를 Minor GC라 하며 참조 여부에 따라 Survivor, Old Generation으로 넘긴다.
+
+### Old Generation
+Young 영역에서 계속 살아 남은 객체가 복사되는 영역이다. Young 영역보가 크게 할당되고, Major GC가 이뤄진다.
+
+
+
 <br>
 
 
