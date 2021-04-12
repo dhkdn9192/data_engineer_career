@@ -125,7 +125,7 @@ Technical questions data engineers need to know
   - Heap Tree
 - [Hash Table](interview/computer_science/hash_table.md)
 - Graph
-  - [Dijkstra algorithm](interview/computer_science/dijkstra_shortest_path.md))
+  - [Dijkstra algorithm](interview/algorithm/dijkstra_shortest_path.md)
 - [Sorting](interview/algorithm/sorting_algorithm.md)
 - Recursion
 - Dynamic Programming
