@@ -4,12 +4,12 @@ JVM, 자바 가상 머신은 자바 어플리케이션을 클래스 로더로 �
 JVM은 Java와 OS 사이의 중재자 역할을 하며,  **Java가 OS에 상관없이 동작할 수 있도록 해준다.**
 스택 기반의 가상머신이며, 메모리 관리(Garbage Collection)를 수행한다.
 
-- 주요 키워드 :  ```Class Loader```, ```Execution Engine```, ```JIT Compiler ```, ```Garbage Collector```,  ```Runtime Data Area```, ```Heap```,  ```Java Native Interface``` 
+- 주요 키워드 :  ```Class Loader```, ```Execution Engine```, ```JIT```, ```GC```,  ```Runtime Data Area```, ```Heap```,  ```JNI``` 
 
 
 ## JVM 구조
 
-JVM은 크게 ```Class Loader```,  ```Execution Engine```, ```Runtime Data Area```, ```Java Native Interface``` 로 구성된다.
+JVM은 크게 Class Loader, Execution Engine, Runtime Data Area, Java Native Interface 로 구성된다.
 
 ![jvm-architecture](img/jvm-architecture.png)
 
