@@ -7,13 +7,11 @@ JVM은 Java와 OS 사이의 중재자 역할을 하며,  **Java가 OS에 상관�
 - 주요 키워드 :  ```Class Loader```, ```Execution Engine```, ```JIT Compiler ```, ```Garbage Collector```,  ```Runtime Data Area```, ```Heap```,  ```Java Native Interface``` 
 
 
-![write-once-run-anywhere-jvm](img/write-once-run-anywhere-jvm.png)
-
-
 ## JVM 구조
 
 JVM은 크게 ```Class Loader```,  ```Execution Engine```, ```Runtime Data Area```, ```Java Native Interface``` 로 구성된다.
 
+![jvm-architecture](img/jvm-architecture.png)
 
 
 ### Class Loader
@@ -55,7 +53,6 @@ Runtime Data Area 메모리에 적재된 클래스들을 실행 가능한 기계
 4. 로딩된 바이트코드(.class)는 Execution Engine을 통해 해석된다.
 5. 해석된 바이트코드(.class)는 Runtime Data Area에 배치되어 실질적으로 수행된다.
 
-![jvm-architecture](img/jvm-architecture.png)
 
 
 ## JIT Compiler
@@ -77,3 +74,5 @@ JIT 컴파일러는 두 가지의 방식을 혼합한 방식으로 생각할 수
 - https://asfirstalways.tistory.com/158
 - https://javatutorial.net/jvm-explained
 - https://ko.wikipedia.org/wiki/JIT_%EC%BB%B4%ED%8C%8C%EC%9D%BC
+- https://velog.io/@litien/JVM-%EA%B5%AC%EC%A1%B0
+- https://asfirstalways.tistory.com/158
