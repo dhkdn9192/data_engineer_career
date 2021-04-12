@@ -16,33 +16,33 @@ JVM은 크게 ```Class Loader```,  ```Execution Engine```, ```Runtime Data Area`
 
 
 
-#### Class Loader
+### Class Loader
 
 Java compiler에 의해 .class 파일(바이트코드)이 생성되면 Class loader가 파일을 읽어 Runtime Data Area 메모리에 적재한다.
 
 
 
-#### Execution Engine
+### Execution Engine
 
 Runtime Data Area 메모리에 적재된 클래스들을 실행 가능한 기계어로 변환 및 실행한다. 명령어를 하나 하나 실행하는 **인터프리터 방식**과 반복적으로 사용되는 코드를 캐싱하여 사용하는 **JIT 컴파일러** 방식이 있다. 
 
-- **Interpreter** : 바이트코드를 명령어 단위로 읽어서 실행한다. 한 줄씩 실행하므로 느리다
-- **JIT Compiler (Just-In-Time)** : 인터프리터의 단점을 보완하기 위해 반복 사용되는 코드들은 캐싱하여 속도를 높인다.
-- **Garbage Collector (GC)** : Heap 메모리에서 사용되지 않는 객체를 제거한다. Heap에만 있고 Stack에서 참조할 수 없는 객체를 제거한다.
+- Interpreter : 바이트코드를 명령어 단위로 읽어서 실행한다. 한 줄씩 실행하므로 느리다
+- JIT Compiler (Just-In-Time) : 인터프리터의 단점을 보완하기 위해 반복 사용되는 코드들은 캐싱하여 속도를 높인다.
+- Garbage Collector (GC) : Heap 메모리에서 사용되지 않는 객체를 제거한다. Heap에만 있고 Stack에서 참조할 수 없는 객체를 제거한다.
 
 
 
-#### Runtime Data Area
+### Runtime Data Area
 
-- **Method Area** : 클래스 멤버 변수, 메소드 정보, 클래스 타입 정보, static/final 변수 등이 생성된다
-- **Heap Area** : 동적으로 생성된 객체, 배열이 저장되는 곳으로 GC 대상이 되는 곳
-- **Stack Area** : 변수, 객체 등은 실제 객체가 Heap에 저장되고 레퍼런스만 Stack에 저장된다. Stack은 스레드별로 할당된다
-- **PC Register** : 실행 중인 스레드의 주소와 명령을 저장한다
-- **Native Method Stack** : 자바 외 언어로 작성된 네이티브 코드를 저장하는 메모리 영역
+- Method Area : 클래스 멤버 변수, 메소드 정보, 클래스 타입 정보, static/final 변수 등이 생성된다
+- Heap Area : 동적으로 생성된 객체, 배열이 저장되는 곳으로 GC 대상이 되는 곳
+- Stack Area : 변수, 객체 등은 실제 객체가 Heap에 저장되고 레퍼런스만 Stack에 저장된다. Stack은 스레드별로 할당된다
+- PC Register : 실행 중인 스레드의 주소와 명령을 저장한다
+- Native Method Stack : 자바 외 언어로 작성된 네이티브 코드를 저장하는 메모리 영역
 
 
 
-#### Java Native Interface (JNI)
+### Java Native Interface (JNI)
 
 자바 네이티브 인터페이스(Java Native Interface, JNI)는 자바 가상 머신(JVM)위에서 실행되고 있는 자바코드가 네이티브 응용 프로그램(하드웨어와 운영 체제 플랫폼에 종속된 프로그램들) 그리고 C, C++ 그리고 어샘블리 같은 다른 언어들로 작성된 라이브러리들을 호출하거나 반대로 호출되는 것을 가능하게 하는 프로그래밍 프레임워크이다.
 
