@@ -10,21 +10,24 @@ It organizes everything a data engineer needs to know. Please refer to the botto
 
 
 ## Table of Contents
-- [1. Interview](#1-interview)
+- [1. Data Engineering](#1-data-engineering)
   - [1-1. Hadoop Ecosystem](#1-1-hadoop-ecosystem)
-  - [1-2. Computer Science](#1-2-computer-science)
-  - [1-3. Algorithm & Data Structure](#1-3-algorithm-and-data-structure)
-- [2. Bigdata Components](#2-bigdata-components)
-  - [2-1. Set up with Cloudera](#2-1-set-up-with-cloudera)
-  - [2-2. Hadoop Ecosystem](#2-2-hadoop-ecosystem)
-  - [2-3. Elastic Stack](#2-3-elastic-stack)
+  - [1-2. ELK Stack](#1-2-elk-stack)
+  - [1-3. Kubernetes and Docker](#1-3-kubernetes-and-docker)
+- [2. Computer Science](#2-computer-science)
+  - [2-1. Operation System](#2-1-operation-system)
+  - [2-2. Database](#2-2-database)
+  - [2-3. Programming Language](#2-3-programming-language)
+  - [2-4. Network](#2-4-network)
+  - [2-5. Data Structure and Algorithm](#2-5-data-structure-and-algorithm)
+  - [2-6. common sense](#2-6-common-sense)
 - [3. Fields of Study](#3-fields-of-study)
-
 
 
 <br>
 
-## 1. Interview
+
+## 1. Data Engineering
 데이터 엔지니어가 알아야 할 기술 질문
 <br>
 Technical questions data engineers need to know
@@ -39,7 +42,7 @@ Technical questions data engineers need to know
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
   - What is MapReduce spilling?
   - vm.swappiness and Hadoop daemon run timeout issue
-- Apache Spark
+- [Apache Spark](bigdata_components/hadoop_ecosystem/spark)
   - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
   - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
   - Scala's functions: "map" and "flatMap" 
@@ -61,7 +64,10 @@ Technical questions data engineers need to know
   - ISR (In Sync Replica)
   - At least once delivery, Exactly once delivery
   - Lambda architecture with Kafka
-- Top Bigdata Questions
+- CDH setup
+  - [Set up Virtual Box](bigdata_components/cloudera/setup_virtual_box.md)
+  - [Install Cloudera Manager](bigdata_components/cloudera/install_cloudera_manager.md)
+- Common Questions
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
   - [Top 20 Apache Spark Interview Questions 2019](interview/top_bigdata_questions/top_20_apache_spark_interview_questions_2019.md)
@@ -70,11 +76,25 @@ Technical questions data engineers need to know
   - Hadoop Interview Questions For 2020 – Setting Up Hadoop Cluster
   - Hadoop Interview Questions On HBase In 2020
   - [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](interview/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
-- 과제: On-premise 하둡 아키텍처 설계하기 (Challenge: designing an on-premise Hadoop architecture)
+  - [Lambda architecture](https://gyrfalcon.tistory.com/entry/%EB%9E%8C%EB%8B%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-Lambda-Architecture)
 
 
-### 1-2. Computer Science
-- Operation System
+### 1-2. ELK Stack
+- [Elasticsearch](bigdata_components/elk_stack/elasticsearch)
+- [Logstash](bigdata_components/elk_stack/logstash)
+- Kibana
+
+
+### 1-3. Kubernetes and Docker
+
+
+
+<br>
+
+
+## 2. Computer Science
+
+### 2-1. Operation System
   - [멀티스레드와 멀티프로세스](interview/computer_science/multithread_multiprocess.md)
   - [교착상태(deadlock)의 발생조건](interview/computer_science/deadlock.md)
   - [다익스트라의 은행원 알고리즘](interview/computer_science/banker_algorithm.md)
@@ -88,7 +108,7 @@ Technical questions data engineers need to know
   - [Polling과 Interrupt](interview/computer_science/polling_and_interrupt.md)  
   - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
   - [Context Switching이 진행되는 단계](interview/computer_science/context_switching.md)
-- Database
+### 2-2. Database
   - [데이터 무결성 (Data Integrity)](interview/database/data_integrity.md)
   - [데이터베이스 인덱스](interview/database/database_index.md)
   - [데이터베이스 정규화](interview/database/normalization.md)
@@ -97,7 +117,7 @@ Technical questions data engineers need to know
   - [DDL / DML / DCL / TCL](interview/database/ddl_dml_dcl_tcl.md)
   - [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
   - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
-- Programming Language
+### 2-3. Programming Language
   - [(Java) 인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
   - [(Java) JVM](interview/computer_science/jvm.md)
   - (Java) Primitive type, Reference type, Wrapper class
@@ -107,54 +127,30 @@ Technical questions data engineers need to know
   - Benefit of Java
   - Serialization and Deserialization
   - [(Python) GIL](interview/computer_science/python_gil.md)
-- Network
+### 2-4. Network
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
   - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
   - [HTTP 요청 메소드: GET과 POST의 차이](interview/computer_science/http_request_method.md)
-- etc
+### 2-5. Data Structure and Algorithm
+  - Array vs Linked List
+  - Stack and Queue
+    - Stack으로 Queue 구현하기
+  - Tree
+    - [Binary Search Tree (BST)](interview/algorithm/binary_search_tree.md)
+    - Heap
+  - [Hash Table](interview/computer_science/hash_table.md)
+  - Graph
+    - [Dijkstra algorithm](interview/algorithm/dijkstra_shortest_path.md)
+  - [Sorting](interview/algorithm/sorting_algorithm.md)
+  - Recursion
+  - Dynamic Programming
+### 2-6. common sense
   - Idempotence(멱등성)
-  - [Lambda architecture](https://ko.wikipedia.org/wiki/%EB%9E%8C%EB%8B%A4_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98)
   - [MVC Pattern](interview/computer_science/mvc_pattern.md)
-  
-  
-### 1-3. Algorithm and Data Structure
-- Array vs Linked List
-- Stack and Queue
-- Tree
-  - [Binary Search Tree](interview/algorithm/binary_search_tree.md)
-  - Heap Tree
-- [Hash Table](interview/computer_science/hash_table.md)
-- Graph
-  - [Dijkstra algorithm](interview/algorithm/dijkstra_shortest_path.md)
-- [Sorting](interview/algorithm/sorting_algorithm.md)
-- Recursion
-- Dynamic Programming
 
 
 <br>
 
-## 2. Bigdata Components
-하둡, 엘라스틱 등 빅데이터 인프라 관련 컴포넌트 학습 정리
-<br>
-About big data components such as Hadoop and Elastic
-
-### 2-1. Set up with Cloudera
-- [Set up Virtual Box](bigdata_components/cloudera/setup_virtual_box.md)
-- [Install Cloudera Manager](bigdata_components/cloudera/install_cloudera_manager.md)
-
-### 2-2. Hadoop Ecosystem
-- [Spark](bigdata_components/hadoop_ecosystem/spark)
-- Hadoop
-- HBase
-- Kafka
-- Hive
-
-### 2-3. Elastic Stack
-- [Elasticsearch](bigdata_components/elk_stack/elasticsearch)
-- [Logstash](bigdata_components/elk_stack/logstash)
-- Kibana
-
-<br>
 
 ## 3. Fields of Study
 머신러닝, 데이터분석 등 관심있는 연구 분야와 수행 프로젝트 정리
