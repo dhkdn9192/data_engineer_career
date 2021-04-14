@@ -69,18 +69,43 @@ JIT 컴파일러는 두 가지의 방식을 혼합한 방식으로 생각할 수
 
 
 ## Java Heap Memory
-Java Heap 영역은 크게 Young Generation, Old Generation으로 구분된다.
 
 ![java_heap_architectur](img/JVM-memory-structure2.png)
+
+### Generation GCs
+메모리에 올라가는 객체들은 대부분 짧은 기간 동안만 살아있다가 제거되며, 일부는 오래 생존하다가 제거된다. 이러한 두 가지 유형의 객체들을 효율적으로 GC 처리하기 위해 HotSpot VM에서는 메모리를 Youn/Old 두 개의 물리적인 공간으로 나누었다. 이를 Generational GC 방식의 운영이라 한다.
 
 ### Young Generation
 새롭게 생성된 객체들이 위치하는 곳이다. Eden 영역 1개와 Survivor 영역 2개로 구성된다. Eden 영역이 꽉 차면 객체 참조 여부에 따라 Survivor 영역으로 옮기며 이 때 발생하는 GC를 **Minor GC**라 한다.
 - Eden : 객체가 heap 상에서 최초로 할당되는 곳으로 이 곳이 꽉 차면 객체를 Survivor로 보낸다.
-- Survivor1, Survivor2 : 두 곳 중 하나는 비어있는 상태를 유지한다.
-- Minor GC : young generation에서 수행되는 GC를 Minor GC라 하며 참조 여부에 따라 Survivor, Old Generation으로 넘긴다.
+- Survivor1, Survivor2 : 두 곳 중 하나는 비어있는 상태를 유지한다. Minor GC가 수행되면 Eden, Survivor(from)의 참조 객체를 비어있는 Survivor(to)로 옮기고 Eden, Survivor(from)를 clear한다. 오래 생존한 객체는 Old Generation으로 넘긴다.
 
 ### Old Generation
 Young 영역에서 계속 살아 남은 객체가 복사되는 영역이다. Young 영역보가 크게 할당되고, Major GC가 이뤄진다.
+- Major GC : Old에서 수행되는 GC.
+
+
+
+## Garbage Collection
+malloc으로 메모리를 해제해야하는 C 언어와는 달리, Java 애플리케이션에서는 코드 상에서 명시적으로 메모리를 직접 해제하지 않는다. JVM의 Garbage Collector가 사용되지 않는 인스턴스를 찾아 메모리에서 제거해주기 때문이다.
+
+### Stop-the-world
+Garbage Collection(GC)가 수행되면 GC thread를 제외한 모든 thread를 멈춰야 한다. 이를 stop-the-world라 한다. 성능 개선을 위한 GC 튜닝은 stop-the-world의 시간을 단축하는 것을 목표로 한다.
+
+### Minor GC
+- Young generation의 Eden 영역이 가득차면 발생한다.
+- Eden, Survivor(from) 영역을 비운다. 참조되는 객체는 비우기 전에 다른 Survivor(to)로 옮긴다.
+- Minor GC로도 stop-the-world가 발생할 수 있다.
+- 보통 1초 이내로 빠르고 효율적으로 수행된다
+
+### Major GC
+- Old generation에서 수행되는 GC
+- Young generation이 모두 꽉차면 가용 메모리 확보를 위해 Major GC가 수행된다
+
+### Full GC
+- Young, Old 전체 영역에 대한 GC
+- 속도가 매우 느리다
+- stop-the-world에 의해 Java 애플리케이션이 상대적으로 길게 멈추므로 성능과 안정성에 큰 영향을 준다
 
 
 
