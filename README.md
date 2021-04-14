@@ -86,7 +86,11 @@ Technical questions data engineers need to know
 
 
 ### 1-3. Kubernetes and Docker
-
+- k8s Pod
+- k8s Replica Set
+- k8s Deployment
+- k8s Service
+- k8s 
 
 
 <br>
@@ -137,6 +141,7 @@ Technical questions data engineers need to know
     - Stack으로 Queue 구현하기
   - [Tree](interview/algorithm/tree.md)
     - [Binary Search Tree (BST)](interview/algorithm/binary_search_tree.md)
+    - AVL Tree
     - Heap
   - [Hash Table](interview/computer_science/hash_table.md)
   - Graph
