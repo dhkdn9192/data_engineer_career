@@ -82,8 +82,9 @@ JIT 컴파일러는 두 가지의 방식을 혼합한 방식으로 생각할 수
 
 ### Old Generation
 Young 영역에서 계속 살아 남은 객체가 복사되는 영역이다. Young 영역보가 크게 할당되고, Major GC가 이뤄진다.
-- Major GC : Old에서 수행되는 GC.
 
+### Perm
+코드가 올라가는 영역으로 일정한 수준을 유지한다. Young/Old의 객체가 Perm으로 옮겨지지는 않는다.
 
 
 ## Garbage Collection
