@@ -135,7 +135,7 @@ Technical questions data engineers need to know
   - Array vs Linked List
   - Stack and Queue
     - Stack으로 Queue 구현하기
-  - Tree
+  - [Tree](interview/algorithm/tree.md)
     - [Binary Search Tree (BST)](interview/algorithm/binary_search_tree.md)
     - Heap
   - [Hash Table](interview/computer_science/hash_table.md)
