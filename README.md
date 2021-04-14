@@ -86,11 +86,13 @@ Technical questions data engineers need to know
 
 
 ### 1-3. Kubernetes and Docker
+- Docker
+- Kubernetes Cluster
 - k8s Pod
 - k8s Replica Set
 - k8s Deployment
 - k8s Service
-- k8s 
+- k8s Namespace
 
 
 <br>
