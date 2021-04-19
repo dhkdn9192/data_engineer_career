@@ -40,14 +40,20 @@ Technical questions data engineers need to know
   - [The process of detecting and handling damaged blocks](interview/hadoop/hdfs_block_scanner.md)
   - [Parquet and column-based strage](interview/hadoop/parquet_and_column_based_storage.md)
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
+  - YARN's 3 schedulers: "FIFO Scheduler", "Capacity Scheduler", "Fair Scheduler"
+  - Difference between "RDBMS's SQL" and "MapReduce"
   - What is MapReduce spilling?
   - vm.swappiness and Hadoop daemon run timeout issue
 - [Apache Spark](bigdata_components/hadoop_ecosystem/spark)
   - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
   - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
+  - Difference between "repartition" and "coalesce"
+  - Efficient join strategy: "broadcast hash join", "shuffle hash join", etc
+  - What happens if you allocate too much memory or CPU to Spark Job?
   - Scala's functions: "map" and "flatMap" 
   - Spark's functions: "map" and "mapPartitions"
   - Which of the RDD functions is faster, "groupByKey" or "reduceByKey"?
+  - How do you monitor Spark Job's log?
 - Apache HBase
   - [Major Compaction and Minor Compaction](interview/hadoop/hbase_compaction.md)
   - Region Server architecture
@@ -87,6 +93,8 @@ Technical questions data engineers need to know
 
 ### 1-3. Kubernetes and Docker
 - Docker
+  - Difference between Docker and VM
+  - Difference between Docker and process
 - Kubernetes Cluster
 - k8s Pod
 - k8s Replica Set
@@ -127,10 +135,11 @@ Technical questions data engineers need to know
 ### 2-3. Programming Language
   - [(Java) 인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
   - [(Java) JVM](interview/computer_science/jvm.md)
+  - [(Java) Cause of Java memory leak](interview/computer_science/understanding_memory_leaks_in_java.md)  
+  - 두 JVM 언어 Java와 Scala의 차이점과 장단점
   - (Java) Primitive type, Reference type, Wrapper class
   - (Java) thread-safe와 synchronized
   - Singleton pattern을 사용하는 이유와 단점
-  - [(Java) Cause of Java memory leak](interview/computer_science/understanding_memory_leaks_in_java.md)  
   - Benefit of Java
   - Serialization and Deserialization
   - [(Python) GIL](interview/computer_science/python_gil.md)
@@ -155,6 +164,8 @@ Technical questions data engineers need to know
 ### 2-6. common sense
   - Idempotence(멱등성)
   - [MVC Pattern](interview/computer_science/mvc_pattern.md)
+  - 테스트 도구와 절차
+  - 트래픽/트랜잭션량 측정
 
 
 <br>
