@@ -53,6 +53,7 @@ Technical questions data engineers need to know
   - Scala's functions: "map" and "flatMap" 
   - Spark's functions: "map" and "mapPartitions"
   - Which of the RDD functions is faster, "groupByKey" or "reduceByKey"?
+  - Spark execution plan with "explain" api
   - How do you monitor Spark Job's log?
 - Apache HBase
   - [Major Compaction and Minor Compaction](interview/hadoop/hbase_compaction.md)
@@ -69,6 +70,7 @@ Technical questions data engineers need to know
   - Zookeeper's role in Kafka
   - ISR (In Sync Replica)
   - At least once delivery, Exactly once delivery
+  - Kafka Stream vs Spark Streaming
   - Lambda architecture with Kafka
 - CDH setup
   - [Set up Virtual Box](bigdata_components/cloudera/setup_virtual_box.md)
