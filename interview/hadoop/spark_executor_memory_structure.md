@@ -45,7 +45,9 @@ Spark 1.6 이상부턴 메모리 관리가 ```UnifiedMemoryManager``` class에 �
 3. Storage Memory가 점유한 Execution Memory 블록은 Execution이 요청할 경우, **강제로 추방될 수 있다**.
 4. Execution Memory가 점유한 Storage Memory 블록은 Storage가 요청하더라도, **강제로 추방될 수 없다**. (Spark이 Execution의 블록을 release할 때까지 기다려야 한다.)
 
-즉, 블록 추방 우선도는 Storage Memory < Execution Memory라 할 수 있다.
+
+*즉, 블록 추방 우선도는 Storage Memory < Execution Memory라 할 수 있다.*
+
 
 
 ## Executor 메모리 할당 예시
@@ -59,11 +61,11 @@ Executor 메모리 설정이 다음 표와 같을 경우, 각 메모리 영역�
 | spark.memory.storageFraction | 0.5 |
 
 
-- Reserved Memory : 300MB
-- User Memory : (4096MB - 300MB) * (1 - 0.75) = 949MB
-- Spark Memory : (4096MB - 300MB) * 0.75 = 2847MB
-- Storage Memory : (4096MB - 300MB) * 0.75 * 0.5 = 1423MB
-- Execution Memory : (4096MB - 300MB) * 0.75 * (1 - 0.5) = 1423MB
+- Reserved Memory : **300MB**
+- User Memory : (4096MB - 300MB) * (1 - 0.75) = **949MB**
+- Spark Memory : (4096MB - 300MB) * 0.75 = **2847MB**
+- Storage Memory : (4096MB - 300MB) * 0.75 * 0.5 = **1423MB**
+- Execution Memory : (4096MB - 300MB) * 0.75 * (1 - 0.5) = **1423MB**
 
 
 
