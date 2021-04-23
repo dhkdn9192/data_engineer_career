@@ -38,7 +38,7 @@ Technical questions data engineers need to know
   - [Why YARN is introduced?](interview/hadoop/why_use_yarn.md)
   - [HA consensus of HDFS](interview/hadoop/hdfs_ha_and_consensus.md)
   - [The process of detecting and handling damaged blocks](interview/hadoop/hdfs_block_scanner.md)
-  - [Parquet and column-based strage](interview/hadoop/parquet_and_column_based_storage.md)
+  - [Parquet와 칼럼기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
   - [YARN scheduler](interview/hadoop/yarn_scheduler.md)
   - Difference between "RDBMS's SQL" and "MapReduce"
