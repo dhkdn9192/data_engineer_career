@@ -5,8 +5,6 @@
 
 데이터 엔지니어가 알아야 할 모든 것들을 정리합니다.
 자료 출처는 각 문서의 하단을 참조하시기 바랍니다.
-<br>
-It organizes everything a data engineer needs to know. Please refer to the bottom of each document for the source of the content.
 
 
 ## Table of Contents
@@ -29,8 +27,6 @@ It organizes everything a data engineer needs to know. Please refer to the botto
 
 ## 1. Data Engineering
 데이터 엔지니어가 알아야 할 기술 질문
-<br>
-Technical questions data engineers need to know
 
 ### 1-1. Hadoop Ecosystem
 - Apache Hadoop
@@ -178,8 +174,6 @@ Technical questions data engineers need to know
 
 ## 3. Fields of Study
 머신러닝, 데이터분석 등 관심있는 연구 분야와 수행 프로젝트 정리
-<br>
-Research fields and projects of interest such as machine learning and data analysis
 
 - [Anomaly Detection](fields_of_study/anomaly_detection)
 - Churn Prediction
