@@ -34,15 +34,15 @@ Technical questions data engineers need to know
 
 ### 1-1. Hadoop Ecosystem
 - Apache Hadoop
-  - [By increasing the block replication factor of HDFS to 3->5, how many failures can it withstand?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
-  - [Why YARN is introduced?](interview/hadoop/why_use_yarn.md)
+  - [HDFS의 replication-factor를 3->5로 변경하면 최대 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
+  - [YARN이 도입된 이유](interview/hadoop/why_use_yarn.md)
   - [HA consensus of HDFS](interview/hadoop/hdfs_ha_and_consensus.md)
-  - [The process of detecting and handling damaged blocks](interview/hadoop/hdfs_block_scanner.md)
-  - [Parquet와 칼럼기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
+  - [손상된 블록을 탐지하고 처리하는 프로세스](interview/hadoop/hdfs_block_scanner.md)
+  - [Parquet와 칼럼 기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
   - [YARN scheduler](interview/hadoop/yarn_scheduler.md)
   - Difference between "RDBMS's SQL" and "MapReduce"
-  - What is MapReduce spilling?
+  - MapReduce spilling
   - vm.swappiness and Hadoop daemon run timeout issue
 - [Apache Spark](bigdata_components/hadoop_ecosystem/spark)
   - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
@@ -57,7 +57,7 @@ Technical questions data engineers need to know
   - Spark execution plan with "explain" api
   - How do you monitor Spark Job's log?
 - Apache HBase
-  - [Major Compaction and Minor Compaction](interview/hadoop/hbase_compaction.md)
+  - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
   - Region Server architecture
   - Time series Row key design: Salting, Empty region
   - Region's locality
@@ -67,8 +67,8 @@ Technical questions data engineers need to know
   - Which is faster, SORT BY or ORDER BY in HiveQL?
   - What is HCatalog?
 - Apache Kafka
-  - [Is it better to have more partitions in Kafka?](interview/hadoop/kafka_too_many_partitions.md)
-  - Zookeeper's role in Kafka
+  - [Kafka의 partition은 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
+  - Kafka에서 Zookeeper의 역할
   - ISR (In Sync Replica)
   - At least once delivery, Exactly once delivery
   - Kafka Stream vs Spark Streaming
@@ -145,10 +145,9 @@ Technical questions data engineers need to know
     - Primitive type, Reference type, Wrapper class
     - thread-safe와 synchronized
     - Singleton pattern을 사용하는 이유와 단점
-    - Benefit of Java
     - Serialization and Deserialization
   - Python
-    - [GIL](interview/computer_science/python_gil.md)
+    - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
 ### 2-4. Network
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
   - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
