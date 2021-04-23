@@ -136,16 +136,19 @@ Technical questions data engineers need to know
   - [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
   - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
 ### 2-3. Programming Language
-  - [(Java) 인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
-  - [(Java) JVM](interview/computer_science/jvm.md)
-  - [(Java) Cause of Java memory leak](interview/computer_science/understanding_memory_leaks_in_java.md)  
-  - 두 JVM 언어 Java와 Scala의 차이점과 장단점
-  - (Java) Primitive type, Reference type, Wrapper class
-  - (Java) thread-safe와 synchronized
-  - Singleton pattern을 사용하는 이유와 단점
-  - Benefit of Java
-  - Serialization and Deserialization
-  - [(Python) GIL](interview/computer_science/python_gil.md)
+  - Java
+    - [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
+    - [JVM](interview/computer_science/jvm.md)
+    - [Cause of Java memory leak](interview/computer_science/understanding_memory_leaks_in_java.md)
+    - [On-heap과 Off-heap](interview/computer_science/java_onheap_offheap.md)
+    - 두 JVM 언어 Java와 Scala의 차이점과 장단점
+    - Primitive type, Reference type, Wrapper class
+    - thread-safe와 synchronized
+    - Singleton pattern을 사용하는 이유와 단점
+    - Benefit of Java
+    - Serialization and Deserialization
+  - Python
+    - [GIL](interview/computer_science/python_gil.md)
 ### 2-4. Network
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
   - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
