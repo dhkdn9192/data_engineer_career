@@ -40,7 +40,7 @@ Technical questions data engineers need to know
   - [The process of detecting and handling damaged blocks](interview/hadoop/hdfs_block_scanner.md)
   - [Parquet and column-based strage](interview/hadoop/parquet_and_column_based_storage.md)
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
-  - YARN's 3 schedulers: "FIFO Scheduler", "Capacity Scheduler", "Fair Scheduler"
+  - [YARN scheduler](interview/hadoop/yarn_scheduler.md)
   - Difference between "RDBMS's SQL" and "MapReduce"
   - What is MapReduce spilling?
   - vm.swappiness and Hadoop daemon run timeout issue
