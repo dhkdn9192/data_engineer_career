@@ -132,8 +132,8 @@
 ### 2-3. Programming Language
   - Java
     - [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
-    - [JVM](interview/computer_science/jvm.md)
-    - [Cause of Java memory leak](interview/computer_science/understanding_memory_leaks_in_java.md)
+    - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
+    - [Java 메모리 누수](interview/computer_science/understanding_memory_leaks_in_java.md)
     - [On-heap과 Off-heap](interview/computer_science/java_onheap_offheap.md)
     - 두 JVM 언어 Java와 Scala의 차이점과 장단점
     - Primitive type, Reference type, Wrapper class
