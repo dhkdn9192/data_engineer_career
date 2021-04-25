@@ -44,7 +44,7 @@
   - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
   - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
   - [Spark Executor의 메모리 구조](interview/hadoop/spark_executor_memory_structure.md)
-  - Difference between "repartition" and "coalesce"
+  - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
   - Efficient join strategy: "broadcast hash join", "shuffle hash join", etc
   - What happens if you allocate too much memory or CPU to Spark Job?
   - Scala's functions: "map" and "flatMap" 
