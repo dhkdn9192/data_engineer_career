@@ -65,6 +65,7 @@
 - Apache Kafka
   - [Kafka의 partition은 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
   - [Kafka Streams Topology](interview/hadoop/kafka_streams_topology.md)
+  - [Kafka + Spark Streaming 통합하는 방법](interview/hadoop/kafka_sparkstreaming_integration.md)
   - Kafka에서 Zookeeper의 역할
   - ISR (In Sync Replica)
   - At least once delivery, Exactly once delivery
