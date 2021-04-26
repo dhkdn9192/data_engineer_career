@@ -47,7 +47,7 @@
   - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
   - [PySpark에서 UDF를 효율적으로 사용하려면](interview/hadoop/pyspark_udf.md)
   - [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
-  - Efficient join strategy: "broadcast hash join", "shuffle hash join", etc
+  - [효율적인 Join 전략](interview/hadoop/spark_join_strategy.md)
   - What happens if you allocate too much memory or CPU to Spark Job?
   - Scala's functions: "map" and "flatMap" 
   - Spark's functions: "map" and "mapPartitions"
