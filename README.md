@@ -64,11 +64,10 @@
   - What is HCatalog?
 - Apache Kafka
   - [Kafka의 partition은 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
+  - [Kafka Streams Topology](interview/hadoop/kafka_streams_topology.md)
   - Kafka에서 Zookeeper의 역할
   - ISR (In Sync Replica)
   - At least once delivery, Exactly once delivery
-  - Kafka Stream vs Spark Streaming
-  - Lambda architecture with Kafka
 - CDH setup
   - [Set up Virtual Box](bigdata_components/cloudera/setup_virtual_box.md)
   - [Install Cloudera Manager](bigdata_components/cloudera/install_cloudera_manager.md)
