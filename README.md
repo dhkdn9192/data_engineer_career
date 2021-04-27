@@ -65,9 +65,9 @@
 - Apache Kafka
   - [Kafka의 partition은 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
   - [Kafka Streams Topology](interview/hadoop/kafka_streams_topology.md)
-  - [Kafka + Spark Streaming 통합하는 방법](interview/hadoop/kafka_sparkstreaming_integration.md)
   - [Kafka에서 Zookeeper의 역할](interview/hadoop/zookeeper_role_in_kafka.md)
-  - [Kafka + Spark Streaming 연동에서 파티션수와 컨슈머수 정하기](interview/hadoop/kafka_partitions_and_consumers.md)
+  - [Kafka + Spark Streaming : 2가지 Integration 방법 비교](interview/hadoop/kafka_sparkstreaming_integration.md)
+  - [Kafka + Spark Streaming : 파티션 수와 컨슈머 수 정하기](interview/hadoop/kafka_partitions_and_consumers.md)
   - ISR (In Sync Replica)
   - At least once delivery, Exactly once delivery
 - CDH setup
