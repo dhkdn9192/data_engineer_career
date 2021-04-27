@@ -15,8 +15,8 @@
 - [2. Computer Science](#2-computer-science)
   - [2-1. Operation System](#2-1-operation-system)
   - [2-2. Database](#2-2-database)
-  - [2-3. Programming Language](#2-3-programming-language)
-  - [2-4. Network](#2-4-network)
+  - [2-3. Network](#2-3-network)
+  - [2-4. Programming Language](#2-4-programming-language)
   - [2-5. Data Structure and Algorithm](#2-5-data-structure-and-algorithm)
   - [2-6. common sense](#2-6-common-sense)
 - [3. Fields of Study](#3-fields-of-study)
@@ -119,6 +119,7 @@
   - [Polling과 Interrupt](interview/computer_science/polling_and_interrupt.md)  
   - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
   - [Context Switching이 진행되는 단계](interview/computer_science/context_switching.md)
+
 ### 2-2. Database
   - [데이터 무결성 (Data Integrity)](interview/database/data_integrity.md)
   - [데이터베이스 인덱스](interview/database/database_index.md)
@@ -128,7 +129,13 @@
   - [DDL / DML / DCL / TCL](interview/database/ddl_dml_dcl_tcl.md)
   - [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
   - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
-### 2-3. Programming Language
+
+### 2-3. Network
+  - [TCP and UDP](interview/computer_science/tcp_udp.md)
+  - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
+  - [HTTP 요청 메소드: GET과 POST의 차이](interview/computer_science/http_request_method.md)
+
+### 2-4. Programming Language
   - Java
     - [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
     - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
@@ -141,10 +148,7 @@
     - Serialization and Deserialization
   - Python
     - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
-### 2-4. Network
-  - [TCP and UDP](interview/computer_science/tcp_udp.md)
-  - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
-  - [HTTP 요청 메소드: GET과 POST의 차이](interview/computer_science/http_request_method.md)
+
 ### 2-5. Data Structure and Algorithm
   - Array vs Linked List
   - Stack and Queue
@@ -159,6 +163,7 @@
   - [Sorting](interview/algorithm/sorting_algorithm.md)
   - Recursion
   - Dynamic Programming
+
 ### 2-6. common sense
   - Idempotence(멱등성)
   - [MVC Pattern](interview/computer_science/mvc_pattern.md)
