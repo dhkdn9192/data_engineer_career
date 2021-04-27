@@ -49,9 +49,8 @@
   - [언어에 따른 Spark API 성능 차이](interview/hadoop/spark_scala_vs_python.md)
   - [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
   - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
+  - [RDD Aggregation: groupByKey vs reduceByKey](interview/hadoop/spark_join_strategy.md)
   - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
-  - groupByKey와 reduceByKey의 성능 차이
-  - How do you monitor Spark Job's log?
 - Apache HBase
   - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
   - Region Server architecture
