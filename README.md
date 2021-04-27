@@ -48,6 +48,7 @@
   - [PySpark에서 UDF를 효율적으로 사용하려면](interview/hadoop/pyspark_udf.md)
   - [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
   - [효율적인 Join 전략](interview/hadoop/spark_join_strategy.md)
+  - [Scala와 Python 성능 비교](interview/hadoop/spark_scala_vs_python.md)
   - What happens if you allocate too much memory or CPU to Spark Job?
   - Scala's functions: "map" and "flatMap" 
   - Spark's functions: "map" and "mapPartitions"
