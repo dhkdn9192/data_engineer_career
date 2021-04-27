@@ -1,6 +1,6 @@
 # Spark Join Strategy
 
-Spark에서 join을 수행하는 경우는 크게 두 가지로 나눌 수 있다. *큰 테이블과 작은 테이블을 조인*, *큰 테이블과 큰 테이블을 조인*. Spark은 join을 수행하기 위해 Sort Merge Join, Broadcast Join, Shuffle Hash Join 등의 방법을 제공한다. 
+Spark에서 join을 수행하는 경우는 크게 두 가지로 나눌 수 있다. (1) *큰 테이블과 작은 테이블을 조인* 또는 (2) *큰 테이블과 큰 테이블을 조인*. Spark은 join을 수행하기 위해 Sort Merge Join, Broadcast Join, Shuffle Hash Join 등의 방법을 제공한다. 
 
 - 핵심 키워드 : ```sort merge join```, ```shuffle hash join```, ```broadcast join```, ```straggler``` 
 
