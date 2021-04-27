@@ -45,15 +45,12 @@
   - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
   - [Spark Executor의 메모리 구조](interview/hadoop/spark_executor_memory_structure.md)
   - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
-  - [Scala UDF / Python UDF 성능 차이](interview/hadoop/pyspark_udf.md)
-  - [Scala와 Python 성능 비교](interview/hadoop/spark_scala_vs_python.md)
+  - [PySpark에서 Scala UDF / Python UDF 성능 비교](interview/hadoop/pyspark_udf.md)
+  - [언어에 따른 Spark API 성능 차이](interview/hadoop/spark_scala_vs_python.md)
   - [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
   - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
-  - What happens if you allocate too much memory or CPU to Spark Job?
-  - Scala's functions: "map" and "flatMap" 
-  - Spark's functions: "map" and "mapPartitions"
-  - Which of the RDD functions is faster, "groupByKey" or "reduceByKey"?
-  - Spark execution plan with "explain" api
+  - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
+  - groupByKey와 reduceByKey의 성능 차이
   - How do you monitor Spark Job's log?
 - Apache HBase
   - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
@@ -88,7 +85,6 @@
 ### 1-2. ELK Stack
 - [Elasticsearch](bigdata_components/elk_stack/elasticsearch)
 - [Logstash](bigdata_components/elk_stack/logstash)
-- Kibana
 
 
 ### 1-3. Kubernetes and Docker
