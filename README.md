@@ -37,19 +37,19 @@
   - [Parquet와 칼럼 기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
   - [YARN scheduler](interview/hadoop/yarn_scheduler.md)
-  - Difference between "RDBMS's SQL" and "MapReduce"
+  - RDBMS의 SQL과 Hadoop MapReduce의 차이점
   - MapReduce spilling
-  - vm.swappiness and Hadoop daemon run timeout issue
+  - Hadoop 서버의 vm.swappiness 설정
 - [Apache Spark](bigdata_components/hadoop_ecosystem/spark)
   - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
   - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
   - [Spark Executor의 메모리 구조](interview/hadoop/spark_executor_memory_structure.md)
-  - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
   - [PySpark에서 Scala UDF / Python UDF 성능 비교](interview/hadoop/pyspark_udf.md)
   - [언어에 따른 Spark API 성능 차이](interview/hadoop/spark_scala_vs_python.md)
   - [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
-  - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
   - [RDD Aggregation: groupByKey vs reduceByKey](interview/hadoop/rdd_groupbykey_reducebykey.md)
+  - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
+  - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
   - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
 - Apache HBase
   - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
@@ -115,7 +115,7 @@
   - [페이징과 세그먼테이션, 그리도 단편화](interview/computer_science/paging_segmentation.md)
   - [Big-endian, Little-endian](interview/computer_science/big_endian_little_endian.md)
   - [캐시 메모리와 버퍼 메모리](interview/computer_science/difference_between_cache_and_buffer.md)
-  - 페이지 캐시와 버퍼 캐시
+  - [페이지 캐시와 버퍼 캐시](interview/computer_science/page_cache_and_buffer_cache.md)
   - [Polling과 Interrupt](interview/computer_science/polling_and_interrupt.md)  
   - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
   - [Context Switching이 진행되는 단계](interview/computer_science/context_switching.md)
