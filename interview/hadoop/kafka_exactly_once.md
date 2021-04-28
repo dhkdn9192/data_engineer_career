@@ -19,19 +19,9 @@ exactly-once가 가장 이상적인 메시지 처리 방식이지만 난이도�
 
 Kafka의 경우 Producer가 메시지를 전송하고 나서 Broker로부터 ack를 받는 수준을 조절함으로써 **at-least-once**를 보장할 수 있다.
 
-### ack=0
-- Producer가 메시지 전송 후, ack를 기다리지 않고 바로 다음 메시지를 전송한다. 
-- 만약 Broker가 다운된다면 이 기간 동안 전송된 메시지들은 모두 손실된다. 
-- 메시지가 손실되더라도 빠른 전송이 필요한 경우에 사용할 수 있다.
-
-### ack=1
-- Producer가 메시지 전송 후, partition leader로부터 일정시간 ack를 기다린다. 
-- 손실 가능성이 적고 적당한 전송 속도를 가지게 된다. 
-- ack 전송 직후 partition leader의 Broker가 follower들이 복사해가기 전에 다운되면 해당 메시지는 손실된다.
-
-### ack=all
-- Producer가 메시지 전송 후, partition의 leader, follower 모두로부터 ack를 기다린다. 
-- 손실이 없지만 전송 속도가 느리다.
+- **ack=0** : Producer가 메시지 전송 후, ack를 기다리지 않고 바로 다음 메시지를 전송한다. 만약 Broker가 다운된다면 이 기간 동안 전송된 메시지들은 모두 손실된다. 메시지가 손실되더라도 빠른 전송이 필요한 경우에 사용할 수 있다.
+- **ack=1** : Producer가 메시지 전송 후, partition leader로부터 일정시간 ack를 기다린다. 손실 가능성이 적고 적당한 전송 속도를 가지게 된다. ack 전송 직후 partition leader의 Broker가 follower들이 복사해가기 전에 다운되면 해당 메시지는 손실된다.
+- **ack=all** : Producer가 메시지 전송 후, partition의 leader, follower 모두로부터 ack를 기다린다. 손실이 없지만 전송 속도가 느리다.
 
 
 
@@ -51,12 +41,12 @@ Producer는 Kafka에 메시지를 입력하고, Consumer는 메시지를 읽어 
 
 위의 파이프라인에서 메시지가 중복 처리되는 경우, 즉 at-least-once에 해당하는 경우는 다음과 같이 2가지가 있다.
 
-### Producer-Broker 사이의 ack 소실
+### 3-1. Producer-Broker 사이의 ack 소실
 - Producer는 Broker에 메시지를 전송하고 ack를 수신받는다. 
 - 만약 네트워크 상에서 ack가 소실/지연되어 수신받는데에 실패할 경우, Producer는 메시지 전송이 실패했다고 판단하여 재전송하게 된다. 
 - 즉, 동일한 메시지가 중복 전송될 수 있다.
 
-### Consumer side의 offset 갱신 실패
+### 3-2. Consumer side의 offset 갱신 실패
 - Consumer가 메시지를 읽고 DB에 저장한 후에 offset을 갱신하기 전에 장애가 발생할 경우, Consumer는 재시작되었을 때 갱신되지 않은 offset을 기준으로 메시지를 읽어오게 된다. 
 - 즉, 이미 DB에 저장된 메시지를 중복으로 가져오게 된다. 
 - 예시) Spark Streaming의 Receiver 기반 모델에서 WAL을 사용하는 경우
