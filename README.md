@@ -89,7 +89,7 @@
 
 ### 1-3. Kubernetes and Docker
 - Docker
-  - Difference between Docker and VM
+  - [Container vs VM](interview/k8s_docker/container_vs_vm.md)
   - Difference between Docker and process
 - Kubernetes Cluster
 - k8s Pod
