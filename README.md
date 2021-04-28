@@ -37,6 +37,7 @@
   - [Parquet와 칼럼 기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
   - [YARN scheduler](interview/hadoop/yarn_scheduler.md)
+  - [HDFS의 read/write/replication 절차](interview/hadoop/hdfs_read_write_replication.md)
   - RDBMS의 SQL과 Hadoop MapReduce의 차이점
   - MapReduce spilling
   - Hadoop 서버의 vm.swappiness 설정
