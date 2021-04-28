@@ -67,8 +67,8 @@
   - [Kafka에서 Zookeeper의 역할](interview/hadoop/zookeeper_role_in_kafka.md)
   - [Kafka + Spark Streaming : 2가지 Integration 방법 비교](interview/hadoop/kafka_sparkstreaming_integration.md)
   - [Kafka + Spark Streaming : 파티션 수와 컨슈머 수 정하기](interview/hadoop/kafka_partitions_and_consumers.md)
+  - [Kafka의 exactly-once delivery](interview/hadoop/kafka_exactly_once.md)
   - ISR (In Sync Replica)
-  - At least once delivery, Exactly once delivery
 - CDH setup
   - [Set up Virtual Box](bigdata_components/cloudera/setup_virtual_box.md)
   - [Install Cloudera Manager](bigdata_components/cloudera/install_cloudera_manager.md)
