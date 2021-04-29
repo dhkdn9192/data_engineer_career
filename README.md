@@ -142,11 +142,9 @@
     - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
     - [Java 메모리 누수](interview/computer_science/understanding_memory_leaks_in_java.md)
     - [On-heap과 Off-heap](interview/computer_science/java_onheap_offheap.md)
-    - 두 JVM 언어 Java와 Scala의 차이점과 장단점
     - Primitive type, Reference type, Wrapper class
-    - thread-safe와 synchronized
-    - Singleton pattern을 사용하는 이유와 단점
-    - Serialization and Deserialization
+  - Scala
+    - [Scala의 함수형 프로그래밍 성질](interview/computer_science/scala_functional_programming.md)
   - Python
     - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
 
@@ -166,10 +164,13 @@
   - Dynamic Programming
 
 ### 2-6. common sense
-  - Idempotence(멱등성)
   - [MVC Pattern](interview/computer_science/mvc_pattern.md)
+  - Idempotence(멱등성)
   - 테스트 도구와 절차
   - 트래픽/트랜잭션량 측정
+  - Singleton 패턴을 사용하는 이유
+  - Serialization and Deserialization
+
 
 
 <br>
