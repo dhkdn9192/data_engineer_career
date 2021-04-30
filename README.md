@@ -52,6 +52,7 @@
   - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
   - Spark access first n rows: take() vs limit()
   - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
+  - Spark의 memoryOverhead 설정과 OutOfMemoryError
   - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
 - Apache HBase
   - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
