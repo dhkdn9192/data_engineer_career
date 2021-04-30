@@ -50,6 +50,7 @@
   - [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
   - [RDD Aggregation: groupByKey vs reduceByKey](interview/hadoop/rdd_groupbykey_reducebykey.md)
   - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
+  - Spark access first n rows: take() vs limit()
   - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
   - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
 - Apache HBase
