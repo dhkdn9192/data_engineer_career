@@ -35,9 +35,11 @@
   - [HA consensus of HDFS](interview/hadoop/hdfs_ha_and_consensus.md)
   - [손상된 블록을 탐지하고 처리하는 프로세스](interview/hadoop/hdfs_block_scanner.md)
   - [Parquet와 칼럼 기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
+  - Parquet의 압축 알고리즘
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
   - [YARN scheduler](interview/hadoop/yarn_scheduler.md)
   - [HDFS의 read/write/replication 절차](interview/hadoop/hdfs_read_write_replication.md)
+  - 클라이언트에서 hdfs write를 위한 옵션을 설정하려면 어떤 xml 설정파일을 수정해야될까?
   - RDBMS의 SQL과 Hadoop MapReduce의 차이점
   - MapReduce spilling
   - Hadoop 서버의 vm.swappiness 설정
@@ -53,6 +55,9 @@
   - Spark access first n rows: take() vs limit()
   - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
   - Spark의 memoryOverhead 설정과 OutOfMemoryError
+  - k8s에서 Spark Job을 수행한다면 종료 후 로그는 어떻게 확인해야될까?
+  - Spark의 Kryo 직렬화
+  - ORC, Parquet 등 Spark에서 사용할 수 있는 데이터 소스 포맷
   - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
 - Apache HBase
   - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
@@ -132,6 +137,7 @@
   - [DDL / DML / DCL / TCL](interview/database/ddl_dml_dcl_tcl.md)
   - [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
   - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
+  - PostgreSQL이 다른 DBMS와 차별화되는 점은 뭘까?
 
 ### 2-3. Network
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
@@ -142,8 +148,11 @@
   - Java
     - [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
     - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
+    - GC의 종류
     - [Java 메모리 누수](interview/computer_science/understanding_memory_leaks_in_java.md)
     - [On-heap과 Off-heap](interview/computer_science/java_onheap_offheap.md)
+    - String 대신 StringBuffer, StringBuilder를 쓰는 이유
+    - static 선언과 GC
     - Primitive type, Reference type, Wrapper class
   - Scala
     - [Scala의 함수형 프로그래밍 성질](interview/computer_science/scala_functional_programming.md)
