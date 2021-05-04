@@ -180,8 +180,6 @@
   - 테스트 도구와 절차
   - 트래픽/트랜잭션량 측정
   - Singleton 패턴을 사용하는 이유
-  - Serialization and Deserialization
-
 
 
 <br>
