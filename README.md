@@ -31,6 +31,7 @@
 ### 1-1. Hadoop Ecosystem
 - Apache Hadoop
   - [HDFS의 replication-factor를 3->5로 변경하면 최대 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
+  - Hadoop 3.x의 Erasure Coding
   - [YARN이 도입된 이유](interview/hadoop/why_use_yarn.md)
   - [HA consensus of HDFS](interview/hadoop/hdfs_ha_and_consensus.md)
   - [손상된 블록을 탐지하고 처리하는 프로세스](interview/hadoop/hdfs_block_scanner.md)
@@ -39,10 +40,10 @@
   - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
   - [YARN scheduler](interview/hadoop/yarn_scheduler.md)
   - [HDFS의 read/write/replication 절차](interview/hadoop/hdfs_read_write_replication.md)
-  - 클라이언트에서 hdfs write를 위한 옵션을 설정하려면 어떤 xml 설정파일을 수정해야될까?
   - RDBMS의 SQL과 Hadoop MapReduce의 차이점
   - MapReduce spilling
   - Hadoop 서버의 vm.swappiness 설정
+  - 클라이언트에서 hdfs write를 위한 옵션을 설정하려면 어떤 xml 설정파일을 수정해야될까?
 - [Apache Spark](bigdata_components/hadoop_ecosystem/spark)
   - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
   - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
@@ -55,10 +56,10 @@
   - Spark access first n rows: take() vs limit()
   - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
   - Spark의 memoryOverhead 설정과 OutOfMemoryError
-  - k8s에서 Spark Job을 수행한다면 종료 후 로그는 어떻게 확인해야될까?
-  - Spark의 Kryo 직렬화
+  - Kryo 직렬화
   - ORC, Parquet 등 Spark에서 사용할 수 있는 데이터 소스 포맷
-  - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
+  - k8s에서 Spark Job을 수행한다면 종료 후 로그는 어떻게 확인해야될까?
+  - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?  
 - Apache HBase
   - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
   - Region Server architecture
@@ -92,6 +93,7 @@
 
 ### 1-2. ELK Stack
 - [Elasticsearch](bigdata_components/elk_stack/elasticsearch)
+  - [성능 튜닝하기 : Shard, Replica의 개수와 사이즈 등](https://www.slideshare.net/deview/2d1elasticsearch)
 - [Logstash](bigdata_components/elk_stack/logstash)
 
 
