@@ -53,7 +53,7 @@
   - [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
   - [RDD Aggregation: groupByKey vs reduceByKey](interview/hadoop/rdd_groupbykey_reducebykey.md)
   - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
-  - Spark access first n rows: take() vs limit()
+  - [Spark access first n rows: take() vs limit()](interview/hadoop/spark_access_first_n_rows.md)
   - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
   - Spark의 memoryOverhead 설정과 OutOfMemoryError
   - Kryo 직렬화
