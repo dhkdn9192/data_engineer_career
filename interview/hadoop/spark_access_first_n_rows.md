@@ -50,7 +50,7 @@ Spark Dataset의 주요 함수 ```limit(n)```, ```head(n)```, ```first()```, ```
 - head(n)는 action 함수로 실제 데이터 배열을 반환한다.
 - limit(n)는 transformation 함수로 새로운 Dataset을 반환한다.
 - head(n)는 n이 과도하게 클 경우 driver 프로세스에서 ```OutOfMemory```가 발생할 수 있다.
-
+- head(n)은 limit(n)을 호출하여 Dataset을 생성한 후 collect한 결과를 반환한다.
 
 ### summary
 
