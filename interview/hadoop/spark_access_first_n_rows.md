@@ -13,11 +13,16 @@ Spark Dataset의 주요 함수 ```limit(n)```, ```head(n)```, ```first()```, ```
   df.limit(2)
   // res35: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [no: int, word: string]
   ```
+  
 
 ### head(n)
 - **상위 n개 Row를 반환**한다. (```Array[org.apache.spark.sql.Row]```)
 - 입력값이 없을 경우엔 단일 Row를 반환한다. (```org.apache.spark.sql.Row```)
 - 호출 즉시 연상이 수행되는 **action 함수**
+- **내부에서 limit(n)을 호출하여 Dataset을 만들고 collect하여 action을 수행한다.**
+  ```scala
+    def head(n: Int): Array[T] = withAction("head", limit(n).queryExecution)(collectFromPlan)
+  ```
 - 실행하면 내부적으로 head가 호출되는 함수: first(), take()
 - 예시
   ```scala
@@ -30,15 +35,15 @@ Spark Dataset의 주요 함수 ```limit(n)```, ```head(n)```, ```first()```, ```
   // res34: org.apache.spark.sql.Row = [1,hello]
   ```
 
+
 ### first()
 - 최상위 Row를 반환한다.
-- **head()와 동일**하다.
+- **head()와 동일하다.**
 
 
 ### take(n: Int)
 - 상위 n개 Row를 반환한다.
-- **head(n)과 동일**하다.
-
+- **head(n)과 동일하다.**
 
 
 ### limit(n) vs head(n)
