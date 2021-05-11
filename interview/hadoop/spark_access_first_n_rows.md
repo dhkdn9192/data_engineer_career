@@ -40,6 +40,13 @@ Spark Dataset의 주요 함수 ```limit(n)```, ```head(n)```, ```first()```, ```
 - **head(n)과 동일**하다.
 
 
+
+### limit(n) vs head(n)
+- head(n)는 action 함수로 실제 데이터 배열을 반환한다.
+- limit(n)는 transformation 함수로 새로운 Dataset을 반환한다.
+- head(n)는 n이 과도하게 클 경우 driver 프로세스에서 ```OutOfMemory```가 발생할 수 있다.
+
+
 ### summary
 
 | method | description |
@@ -48,14 +55,6 @@ Spark Dataset의 주요 함수 ```limit(n)```, ```head(n)```, ```first()```, ```
 | head(n) | return Array of Row |
 | first() | alias for head() |
 | take(n) | alias for head(n) |
-
-
-### limit(n) vs head(n)
-- head(n)는 action 함수로 실제 데이터 배열을 반환한다.
-- limit(n)는 transformation 함수로 새로운 Dataset을 반환한다.
-- head(n)는 n이 과도하게 클 경우 driver 프로세스에서 ```OutOfMemory```가 발생할 수 있다.
-
-
 
 
 <br>
