@@ -56,9 +56,11 @@
   - [Spark access first n rows: take() vs limit()](interview/hadoop/spark_access_first_n_rows.md)
   - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
   - Spark의 memoryOverhead 설정과 OutOfMemoryError
-  - Kryo 직렬화
-  - ORC, Parquet 등 Spark에서 사용할 수 있는 데이터 소스 포맷
-  - k8s에서 Spark Job을 수행한다면 종료 후 로그는 어떻게 확인해야될까?
+  - spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
+  - Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
+  - Java 직렬화 vs Kryo 직렬화
+  - ORC, Parquet 등 Spark에서 사용할 수 있는 데이터 소스 포맷과 압축 알고리즘
+  - k8s에서 Spark Job을 수행한다면 종료 후 로그는 어떻게 확인해야될까? (Spark History Server? AWS S3 logging?)
   - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?  
 - Apache HBase
   - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
