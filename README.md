@@ -72,6 +72,7 @@
   - Why isn't the metastore in hdfs?
   - Which is faster, SORT BY or ORDER BY in HiveQL?
   - What is HCatalog?
+  - Hive UDF란?
 - Apache Kafka
   - [Kafka의 partition은 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
   - [Kafka Streams Topology](interview/hadoop/kafka_streams_topology.md)
