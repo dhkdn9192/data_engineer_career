@@ -142,7 +142,8 @@
   - [DDL / DML / DCL / TCL](interview/database/ddl_dml_dcl_tcl.md)
   - [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
   - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
-  - PostgreSQL이 다른 DBMS와 차별화되는 점은 뭘까?
+  - PostgreSQL vs MariaDB
+  - MongoDB 고가용성 아키텍처
 
 ### 2-3. Network
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
