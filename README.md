@@ -49,7 +49,7 @@
   - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
   - [Spark Executor의 메모리 구조](interview/hadoop/spark_executor_memory_structure.md)
   - [PySpark에서 Scala UDF / Python UDF 성능 비교](interview/hadoop/pyspark_udf.md)
-  - [언어에 따른 Spark API 성능 차이](interview/hadoop/spark_scala_vs_python.md)
+  - [언어별 Spark API 성능 차이](interview/hadoop/spark_scala_vs_python.md)
   - [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
   - [RDD Aggregation: groupByKey vs reduceByKey](interview/hadoop/rdd_groupbykey_reducebykey.md)
   - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
@@ -105,11 +105,11 @@
   - [Container vs VM](interview/k8s_docker/container_vs_vm.md)
   - Difference between Docker and process
 - Kubernetes Cluster
-- k8s Pod
-- k8s Replica Set
-- k8s Deployment
-- k8s Service
-- k8s Namespace
+  - Pod
+  - Replica Set
+  - Deployment
+  - Service
+  - Namespace
 
 
 <br>
