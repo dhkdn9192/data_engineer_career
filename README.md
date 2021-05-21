@@ -157,7 +157,7 @@
     - (작성중)[GC 정리](interview/computer_science/gc.md)
     - [Java 메모리 누수](interview/computer_science/understanding_memory_leaks_in_java.md)
     - [On-heap과 Off-heap](interview/computer_science/java_onheap_offheap.md)
-    - String 대신 StringBuffer, StringBuilder를 쓰는 이유
+    - [String 대신 StringBuffer, StringBuilder를 쓰는 이유](interview/computer_science/java_string_stringbuffer_stringbuilder.md)
     - static 선언과 GC
     - Primitive type, Reference type, Wrapper class
   - Scala
