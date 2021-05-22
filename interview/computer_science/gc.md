@@ -174,15 +174,37 @@ JDK에선 아래와 같은 5가지 GC 방식을 지원한다.
 
 ### 5-5 G1GC
 
+- CMS 콜렉터를 대체하기 위해 개발된 GC이다.
+- G1GC는 Heap 메모리를 동일한 크기의 여러 region들로 나누고 가상의 바둑판 형태를 구성한다.
+- Young, Old 영역이 linear하게 구성되지 않으며 물리적으로 나누어져 있지도 않다.
+- G1의 Young GC는 다음과 같은 절차로 이뤄진다.
+    1. 몇 개 region들을 Young 영역으로 지정한다.
+    2. Young 영역에서 eden에 해당하는 곳에 객체가 저장된다.
+    3. Young 영역에 해당되는 region들이 가득 차면 GC를 수행한다.
+    4. GC를 수행하면서 살아있는 객체들은 survivor에 해당하는 region으로 옮긴다.
+    5. 오래 살아남은 객체는 Old 영역으로 이동된다.
+- G1의 Old GC는 다음과 같은 절차로 이뤄진다. (STW는 stop-the-world pause가 발생함을 의미)
+    1. Initial Mark (STW) : Survivor 영역(root region) 중 Old 영역을 참조하고 있는 객체들을 표시한다.
+    2. Root Region Scanning : Old 영역 참조를 위해 Survivor 영역을 스캔한다. 애플리케이션과 동시병렬로 수행되며 Young GC가 발생하기 전에 수행된다.
+    3. Concurrent Mark : 전체 Heap에 대해 살아있는 객체를 찾는다. 애플리케이션과 동시병렬로 수행되며 Young GC가 발생한다면 잠시 멈춘다.
+    4. Remark (STW) : Heap의 살아있는 객체에 대한 마킹을 완료한다. 이 때엔 snapshot-at-the-beginning (SATB)이라는 알고리즘을 사용하여 CMS보다 빠르게 동작한다.
+    5. Cleanup (STW) : 살아있는 객체와 비어있는 region을 식별하고, 비어있는 region을 초기화한다.
+    6. Copying (STW) : 살아있는 객체들을 비어있는 region으로 모은다.
+- CMS와 비교하여 다음과 같은 특징을 가진다.
+    - CMS와 마찬가지로 별도의 컴팩션 단계는 없지만 **살아있는 객체를 비어있는 region으로 모으는(copying) 과정에서 컴팩션을 수행하는 효과**를 얻을 수 있다.
+    - **region내 garbage 비율에 따라 우선도를 계산**함으로써 GC로 인한 pause를 예측할 수 있다.
+    - CMS처럼 Old GC의 일부 단계가 동시병렬 모드로 수행되므로 GC의 latency가 낮다.
+- Java 9부터 default로 G1GC를 사용하게 되었다.
 
+
+
+![g1gc_heap_layout](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/g1gc_heap_layout.png)
 
 
 
 
 
 <br>
-
-
 
 
 
@@ -193,4 +215,5 @@ JDK에선 아래와 같은 5가지 GC 방식을 지원한다.
 - https://d2.naver.com/helloworld/1329
 - https://d2.naver.com/helloworld/37111
 - https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/G1GettingStarted/index.html
+- https://docs.oracle.com/javase/9/gctuning/garbage-first-garbage-collector.htm#JSGCT-GUID-15921907-B297-43A4-8C48-DC88035BC7CF
 
