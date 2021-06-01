@@ -12,6 +12,7 @@
   - [1-1. Hadoop Ecosystem](#1-1-hadoop-ecosystem)
   - [1-2. ELK Stack](#1-2-elk-stack)
   - [1-3. Kubernetes and Docker](#1-3-kubernetes-and-docker)
+  - [1-4. AWS](#1-4-aws)
 - [2. Computer Science](#2-computer-science)
   - [2-1. Operation System](#2-1-operation-system)
   - [2-2. Database](#2-2-database)
@@ -110,6 +111,16 @@
   - Deployment
   - Service
   - Namespace
+
+
+### 1-4. AWS
+- [가상 프라이빗 클라우드 VPC](https://medium.com/harrythegreat/aws-%EA%B0%80%EC%9E%A5%EC%89%BD%EA%B2%8C-vpc-%EA%B0%9C%EB%85%90%EC%9E%A1%EA%B8%B0-71eef95a7098)
+  - VPN과 VPC
+  - 서브넷
+  - 라우팅 테이블
+  - 인터넷 게이트웨이
+  - 보안그룹과 네트워크ACL
+  - NAT 게이트웨이
 
 
 <br>
