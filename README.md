@@ -114,8 +114,11 @@
 
 
 ### 1-4. AWS
-- [VPC, Subnet, Network ACL, NAT Gateway](https://medium.com/harrythegreat/aws-%EA%B0%80%EC%9E%A5%EC%89%BD%EA%B2%8C-vpc-%EA%B0%9C%EB%85%90%EC%9E%A1%EA%B8%B0-71eef95a7098)
-- [Amazon Redshift가 지원하지 않는 것들](interview/aws/redshift_does_not_support.md)
+- Amazon EC2
+  - [VPC, Subnet, Network ACL, NAT Gateway](https://medium.com/harrythegreat/aws-%EA%B0%80%EC%9E%A5%EC%89%BD%EA%B2%8C-vpc-%EA%B0%9C%EB%85%90%EC%9E%A1%EA%B8%B0-71eef95a7098)
+  - [AMI](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/AMIs.html)
+- Amazon Redshift
+  - [Amazon Redshift가 지원하지 않는 것들](interview/aws/redshift_does_not_support.md)
 
 
 
