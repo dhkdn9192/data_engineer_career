@@ -114,13 +114,8 @@
 
 
 ### 1-4. AWS
-- [가상 프라이빗 클라우드 VPC](https://medium.com/harrythegreat/aws-%EA%B0%80%EC%9E%A5%EC%89%BD%EA%B2%8C-vpc-%EA%B0%9C%EB%85%90%EC%9E%A1%EA%B8%B0-71eef95a7098)
-  - VPN과 VPC
-  - 서브넷
-  - 라우팅 테이블
-  - 인터넷 게이트웨이
-  - 보안그룹과 네트워크ACL
-  - NAT 게이트웨이
+- [VPC, Subnet, Network ACL, NAT Gateway](https://medium.com/harrythegreat/aws-%EA%B0%80%EC%9E%A5%EC%89%BD%EA%B2%8C-vpc-%EA%B0%9C%EB%85%90%EC%9E%A1%EA%B8%B0-71eef95a7098)
+- [AWS Redshift는 partitioning을 지원하지 않는다](https://www.quora.com/Does-Amazon-Redshift-support-partitioning)
 
 
 <br>
