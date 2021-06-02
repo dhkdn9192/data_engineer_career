@@ -115,7 +115,8 @@
 
 ### 1-4. AWS
 - [VPC, Subnet, Network ACL, NAT Gateway](https://medium.com/harrythegreat/aws-%EA%B0%80%EC%9E%A5%EC%89%BD%EA%B2%8C-vpc-%EA%B0%9C%EB%85%90%EC%9E%A1%EA%B8%B0-71eef95a7098)
-- AWS Redshift는 [partition](https://www.quora.com/Does-Amazon-Redshift-support-partitioning)과 [index](https://popsql.com/learn-sql/redshift/how-to-create-an-index-in-redshift)를 지원하지 않는다.
+- [Amazon Redshift가 지원하지 않는 것들](interview/aws/redshift_does_not_support.md)
+
 
 
 <br>
