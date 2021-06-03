@@ -121,7 +121,8 @@
   - [S3 vs EFS vs EBS](https://seohyun0120.tistory.com/entry/AWS-EBS-vs-EFS-vs-S3-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EC%96%B4%EB%8A%90-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%EB%A5%BC-%EC%8D%A8%EC%95%BC%ED%95%A0%EA%B9%8C)
 - Amazon Redshift
   - [Amazon Redshift가 지원하지 않는 것들](interview/aws/redshift_does_not_support.md)
-
+- Amazon EMR
+  - Node Types: Master, Core, Task Nodes
 
 
 <br>
