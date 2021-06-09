@@ -123,7 +123,7 @@
 - Amazon Redshift
   - [Amazon Redshift가 지원하지 않는 것들](interview/aws/redshift_does_not_support.md)
 - Amazon EMR
-  - Node Types: Master, Core, Task Nodes
+  - [Node Types: Master, Core, Task Nodes](https://docs.aws.amazon.com/ko_kr/emr/latest/ManagementGuide/emr-master-core-task-nodes.html)
 
 
 <br>
