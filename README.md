@@ -82,6 +82,8 @@
   - [Kafka + Spark Streaming : 파티션 수와 컨슈머 수 정하기](interview/hadoop/kafka_partitions_and_consumers.md)
   - [Kafka의 exactly-once delivery](interview/hadoop/kafka_exactly_once.md)
   - ISR (In Sync Replica)
+- Apache Airflow
+  - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
 - CDH setup
   - [Set up Virtual Box](bigdata_components/cloudera/setup_virtual_box.md)
   - [Install Cloudera Manager](bigdata_components/cloudera/install_cloudera_manager.md)
