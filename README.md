@@ -150,6 +150,7 @@
   - [Polling과 Interrupt](interview/computer_science/polling_and_interrupt.md)  
   - [Sync와 Async, Blocking과 Non-blocking](interview/computer_science/sync_async_block_nonblock.md)
   - [Context Switching이 진행되는 단계](interview/computer_science/context_switching.md)
+  - 하이퍼스레딩과 코어 수
 
 ### 2-2. Database
   - [데이터 무결성 (Data Integrity)](interview/database/data_integrity.md)
