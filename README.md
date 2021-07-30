@@ -181,6 +181,7 @@
     - Primitive type, Reference type, Wrapper class
   - Scala
     - [Scala의 함수형 프로그래밍 성질](interview/computer_science/scala_functional_programming.md)
+    - [Scala의 pass-by-name](https://stackoverflow.com/questions/9508051/function-parameter-types-and)
   - Python
     - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
 
