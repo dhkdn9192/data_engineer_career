@@ -168,6 +168,7 @@
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
   - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
   - [HTTP 요청 메소드: GET과 POST의 차이](interview/computer_science/http_request_method.md)
+  - [웹 브라우저가 웹 페이지의 이미지를 보여주기까지의 과정](https://goodgid.github.io/HTTP-Communicate-Process/)
 
 ### 2-4. Programming Language
   - Java
