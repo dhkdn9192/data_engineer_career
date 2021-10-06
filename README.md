@@ -81,6 +81,7 @@
   - [Kafka + Spark Streaming : 2가지 Integration 방법 비교](interview/hadoop/kafka_sparkstreaming_integration.md)
   - [Kafka + Spark Streaming : 파티션 수와 컨슈머 수 정하기](interview/hadoop/kafka_partitions_and_consumers.md)
   - [Kafka의 exactly-once delivery](interview/hadoop/kafka_exactly_once.md)
+  - [Burrow와 Telegraf로 Kafka Lag 모니터링하기](https://blog.voidmainvoid.net/279)
   - ISR (In Sync Replica)
 - Apache Airflow
   - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
