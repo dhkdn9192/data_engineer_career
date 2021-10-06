@@ -102,6 +102,7 @@
 - [Elasticsearch](bigdata_components/elk_stack/elasticsearch)
   - [성능 튜닝하기 : Shard, Replica의 개수와 사이즈 등](https://www.slideshare.net/deview/2d1elasticsearch)
 - [Logstash](bigdata_components/elk_stack/logstash)
+- [es의 ingest pipeline을 이용한 전처리](https://danawalab.github.io/elastic/2020/09/04/ElasticSearch-IngestPipeLine.html)
 
 
 ### 1-3. Kubernetes and Docker
