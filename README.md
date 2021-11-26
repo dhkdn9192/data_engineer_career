@@ -83,6 +83,7 @@
   - [Kafka의 exactly-once delivery](interview/hadoop/kafka_exactly_once.md)
   - [Burrow와 Telegraf로 Kafka Lag 모니터링하기](https://blog.voidmainvoid.net/279)
   - ISR (In Sync Replica)
+  - Kafka의 Controller Broker(KafkaController)란 무엇인가?
 - Apache Airflow
   - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
   - Celery 개념과 Celery Excutor
