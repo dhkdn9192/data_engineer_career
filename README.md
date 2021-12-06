@@ -62,7 +62,8 @@
   - Java 직렬화 vs Kryo 직렬화
   - ORC, Parquet 등 Spark에서 사용할 수 있는 데이터 소스 포맷과 압축 알고리즘
   - k8s에서 Spark Job을 수행한다면 종료 후 로그는 어떻게 확인해야될까? (Spark History Server? AWS S3 logging?)
-  - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?  
+  - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
+  - Spark bucketing이란?
 - Apache HBase
   - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
   - Region Server architecture
