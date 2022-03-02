@@ -6,6 +6,8 @@
 데이터 엔지니어가 알아야 할 모든 것들을 정리합니다.
 자료 출처는 각 문서의 하단을 참조하시기 바랍니다.
 
+본 레포 문서는 기술블로그(https://dhkdn9192.github.io/)에서도 보실 수 있습니다.
+
 
 ## Table of Contents
 - [1. Data Engineering](#1-data-engineering)
