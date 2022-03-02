@@ -66,6 +66,11 @@
   - k8s에서 Spark Job을 수행한다면 종료 후 로그는 어떻게 확인해야될까? (Spark History Server? AWS S3 logging?)
   - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
   - Spark bucketing이란?
+- Apache Flink
+  - 배치처리와 스트림처리
+- Apache Druid
+  - Druid의 주요 특징
+  - Druid의 아키텍처
 - Apache HBase
   - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
   - Region Server architecture
@@ -87,6 +92,8 @@
   - [Burrow와 Telegraf로 Kafka Lag 모니터링하기](https://blog.voidmainvoid.net/279)
   - ISR (In Sync Replica)
   - Kafka의 Controller Broker(KafkaController)란 무엇인가?
+- Apache Oozie
+  - Oozie를 사용하면서 불편했던 점들
 - Apache Airflow
   - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
   - Celery 개념과 Celery Excutor
