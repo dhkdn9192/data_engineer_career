@@ -22,7 +22,8 @@
   - [2-4. Programming Language](#2-4-programming-language)
   - [2-5. Data Structure and Algorithm](#2-5-data-structure-and-algorithm)
   - [2-6. common sense](#2-6-common-sense)
-- [3. Fields of Study](#3-fields-of-study)
+- [3. Designing Data-Intensive Application](#3-designing-data-intensive-application)
+- [4. Fields of Study](#4-fields-of-study)
 
 
 <br>
@@ -224,8 +225,14 @@
 
 <br>
 
+## 3. Designing Data-Intensive Application
+데이터 중심 애플리케이션 설계
+  - OLTP와 OLAP
 
-## 3. Fields of Study
+<br>
+
+
+## 4. Fields of Study
 머신러닝, 데이터분석 등 관심있는 연구 분야와 수행 프로젝트 정리
 
 - [Anomaly Detection](fields_of_study/anomaly_detection)
