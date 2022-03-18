@@ -61,6 +61,7 @@
   - [Spark access first n rows: take() vs limit()](interview/hadoop/spark_access_first_n_rows.md)
   - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
   - Spark의 memoryOverhead 설정과 OutOfMemoryError
+  - memoryOverhead만 높여주면 해결 가능한 exceeding memory limits 문제 (parquet )
   - spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
   - Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
   - Java 직렬화 vs Kryo 직렬화
