@@ -15,7 +15,7 @@ Spark Streaming과 Kafka를 연동하는 방법에는 크게 2가지가 있다.
 
 1. Spark Executor에 존재하는 Receiver가 Kafka로부터 데이터를 consume한다. Kafka의 high-level consumer API를 사용한다.
 2. 수신된 데이터는 WAL에 저장된다(HDFS)
-3. WAL에 기록이 완료되면, Receiver는 Zookeeper 상의 Kafka offsetㅇ르 업데이트한다.
+3. WAL에 기록이 완료되면, Receiver는 Zookeeper 상의 Kafka offset 을 업데이트한다.
 4. 장애가 발생할 경우, WAL의 기록을 읽어 데이터가 손실되지 않도록 복구한다.
 
 
