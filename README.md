@@ -101,8 +101,8 @@
   - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
   - Celery 개념과 Celery Excutor
 - CDH setup
-  - [Set up Virtual Box](bigdata_components/cloudera/setup_virtual_box.md)
-  - [Install Cloudera Manager](bigdata_components/cloudera/install_cloudera_manager.md)
+  - [~~Set up Virtual Box~~](bigdata_components/cloudera/setup_virtual_box.md)
+  - [~~Install Cloudera Manager~~](bigdata_components/cloudera/install_cloudera_manager.md)
 - Common Questions
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
