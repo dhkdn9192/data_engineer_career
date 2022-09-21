@@ -95,6 +95,7 @@
   - [Burrow와 Telegraf로 Kafka Lag 모니터링하기](https://blog.voidmainvoid.net/279)
   - ISR (In Sync Replica)
   - Kafka의 Controller Broker(KafkaController)란 무엇인가?
+  - [dead letter queue](https://devidea.tistory.com/111)
 - Apache Oozie
   - Oozie를 사용하면서 불편했던 점들
 - Apache Airflow
