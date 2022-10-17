@@ -22,7 +22,7 @@
   - [2-4. Programming Language](#2-4-programming-language)
   - [2-5. Data Structure and Algorithm](#2-5-data-structure-and-algorithm)
   - [2-6. common sense](#2-6-common-sense)
-- [3. GoF Design Pattern](#3-gof-design-pattern)
+- [3. GoF Design Pattern and Architecture Pattern](#3-gof-design-pattern-and-architecture-pattern)
 - [4. Designing Data-Intensive Application](#4-designing-data-intensive-application)
 - [5. Fields of Study](#5-fields-of-study)
 
@@ -232,7 +232,7 @@
 
 <br>
 
-## 3. GoF Design Pattern
+## 3. GoF Design Pattern and Architecture Pattern
 GoF란 1995년에 출간된 "Design Patterns of Reusable Object-Oriented Software"라는 책의 저자들(Erich Gamma, Richard Helm, Ralph Johnson, John Vlissdes)를 의미한다.
 
 <br>
