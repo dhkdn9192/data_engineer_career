@@ -22,8 +22,9 @@
   - [2-4. Programming Language](#2-4-programming-language)
   - [2-5. Data Structure and Algorithm](#2-5-data-structure-and-algorithm)
   - [2-6. common sense](#2-6-common-sense)
-- [3. Designing Data-Intensive Application](#3-designing-data-intensive-application)
-- [4. Fields of Study](#4-fields-of-study)
+- [3. GoF Design Pattern](#3-gof-design-pattern)
+- [4. Designing Data-Intensive Application](#4-designing-data-intensive-application)
+- [5. Fields of Study](#5-fields-of-study)
 
 
 <br>
@@ -229,17 +230,21 @@
   - 트래픽/트랜잭션량 측정
   - Singleton 패턴을 사용하는 이유
 
+<br>
+
+## 3. GoF Design Pattern
+GoF란 1995년에 출간된 "Design Patterns of Reusable Object-Oriented Software"라는 책의 저자들(Erich Gamma, Richard Helm, Ralph Johnson, John Vlissdes)를 의미한다.
 
 <br>
 
-## 3. Designing Data-Intensive Application
+## 4. Designing Data-Intensive Application
 데이터 중심 애플리케이션 설계
   - OLTP와 OLAP
 
 <br>
 
 
-## 4. Fields of Study
+## 5. Fields of Study
 머신러닝, 데이터분석 등 관심있는 연구 분야와 수행 프로젝트 정리
 
 - [Anomaly Detection](fields_of_study/anomaly_detection)
