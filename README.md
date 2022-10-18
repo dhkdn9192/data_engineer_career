@@ -87,6 +87,8 @@
   - Which is faster, SORT BY or ORDER BY in HiveQL?
   - What is HCatalog?
   - Hive UDF란?
+- Apache Impala
+  - Impala with parquet에서 스키마 변경을 위한 PARQUET_FALLBACK_SCHEMA_RESOLUTION 옵션
 - Apache Kafka
   - [Kafka의 partition은 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
   - [Kafka Streams Topology](interview/hadoop/kafka_streams_topology.md)
