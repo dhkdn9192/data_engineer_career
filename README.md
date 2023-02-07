@@ -51,6 +51,7 @@
   - Hadoop 서버의 vm.swappiness 설정
   - 클라이언트에서 hdfs write를 위한 옵션을 설정하려면 어떤 xml 설정파일을 수정해야될까?
   - [클러스터로 구성된 서비스를 무중단으로 업데이트하려면?(Rolling Restart)](https://docs.cloudera.com/documentation/enterprise/5-16-x/topics/cm_mc_rolling_restart.html)
+  - [WebHDFS와 HttpFS의 차이점](https://stackoverflow.com/questions/31580832/hdfs-put-vs-webhdfs)
 - [Apache Spark](bigdata_components/hadoop_ecosystem/spark)
   - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
   - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
