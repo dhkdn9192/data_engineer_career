@@ -3,10 +3,9 @@
   <img src="img/banner.png" alt="banner" width="90%">
 </p>
 
-데이터 엔지니어가 알아야 할 모든 것들을 정리합니다.
-자료 출처는 각 문서의 하단을 참조하시기 바랍니다.
+데이터 엔지니어 직무와 관련된 지식, 기술질문 등을 정리한 레포입니다.
 
-본 레포 문서는 기술블로그(https://dhkdn9192.github.io) 에서도 보실 수 있습니다.
+기술블로그(https://dhkdn9192.github.io) 로도 올리고 있습니다.
 
 
 ## Table of Contents
@@ -24,14 +23,13 @@
   - [2-6. common sense](#2-6-common-sense)
 - [3. GoF Design Pattern and Architecture Pattern](#3-gof-design-pattern-and-architecture-pattern)
 - [4. Designing Data-Intensive Application](#4-designing-data-intensive-application)
-- [5. Fields of Study](#5-fields-of-study)
+- [5. ETC](#5-etc)
 
 
 <br>
 
 
 ## 1. Data Engineering
-데이터 엔지니어가 알아야 할 기술 질문
 
 ### 1-1. Hadoop Ecosystem
 - Apache Hadoop
@@ -247,8 +245,9 @@ GoF란 1995년에 출간된 "Design Patterns of Reusable Object-Oriented Softwar
 <br>
 
 
-## 5. Fields of Study
-머신러닝, 데이터분석 등 관심있는 연구 분야와 수행 프로젝트 정리
+## 5. ETC
+
+기타 읽을거리 및 관심있는 연구주제, 토이 프로젝트 등
 
 - [Anomaly Detection](fields_of_study/anomaly_detection)
 - Churn Prediction
@@ -257,6 +256,7 @@ GoF란 1995년에 출간된 "Design Patterns of Reusable Object-Oriented Softwar
 - ideas
   - PySpark 클러스터 환경에서 각 노드별 python package 일괄 관리 툴
   - Apache Nutch의 streaming 버전, Spark 기반의 웹 크롤러
+- [The future of the data engineer (part 1)](https://medium.com/@AnalyticsAtMeta/the-future-of-the-data-engineer-part-i-32bd125465be)
 
 <br>
 
