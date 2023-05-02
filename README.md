@@ -256,7 +256,7 @@ GoF란 1995년에 출간된 "Design Patterns of Reusable Object-Oriented Softwar
 - ideas
   - PySpark 클러스터 환경에서 각 노드별 python package 일괄 관리 툴
   - Apache Nutch의 streaming 버전, Spark 기반의 웹 크롤러
-- [The future of the data engineer (part 1)](https://medium.com/@AnalyticsAtMeta/the-future-of-the-data-engineer-part-i-32bd125465be)
+- [The future of the data engineer (part 1)](articles/the-future-of-the-data-engineer-part-i.md)
 
 <br>
 
