@@ -4,7 +4,8 @@ Spark 1.6 이상부턴 메모리 관리가 ```UnifiedMemoryManager``` class에 �
 
 ![executor_memory_distribution](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/spark_executor_memory_distribution.png)
 
-
+- 위 이미지에선 spark.memory.fraction이 0.75로 표기되나, 현재 Spark 2.x 및 3.x에선 0.6이 default 값이다.
+  - https://spark.apache.org/docs/latest/configuration.html#memory-management 
 
 ## 1. Reserved Memory
 - 시스템에 의해 관리되는 메모리 영역으로 크기가 300MB로 고정되어 있다.
@@ -57,15 +58,24 @@ Executor 메모리 설정이 다음 표와 같을 경우, 각 메모리 영역�
 | conf | value |
 | --- | --- |
 | spark.executor.memory | 4g |
-| spark.memory.fraction | 0.75 |
+| spark.memory.fraction | 0.6 |
 | spark.memory.storageFraction | 0.5 |
 
 
 - Reserved Memory : **300MB**
-- User Memory : (4096MB - 300MB) * (1 - 0.75) = **949MB**
-- Spark Memory : (4096MB - 300MB) * 0.75 = **2847MB**
-- Storage Memory : (4096MB - 300MB) * 0.75 * 0.5 = **1423MB**
-- Execution Memory : (4096MB - 300MB) * 0.75 * (1 - 0.5) = **1423MB**
+- User Memory : (4096MB - 300MB) * (1 - 0.6) = **1518MB**
+- Spark Memory : (4096MB - 300MB) * 0.6 = **2278MB**
+- Storage Memory : (4096MB - 300MB) * 0.6 * 0.5 = **1139MB**
+- Execution Memory : (4096MB - 300MB) * 0.75 * (1 - 0.5) = **1139MB**
+
+
+## memoryOverhead 옵션
+- `spark.executor.memory` 옵션으로 executor에 할당한 메모리와는 별개로 executor에 추가적으로 할당되는 메모리이다.
+- `spark.executor.memoryOverhead` 옵션으로 설정 가능하며 최소값이 384 MiB이다. (즉, 384 MiB보다 적게 설정한 경우 강제로 384 MiB로 설정됨)
+- VM overheads, interned strings, other native overheads 등을 위해 사용되는 메모리로 non heap에 해당한다. (즉, gc 대상이 아님, off-heap을 포함함)
+- parquet 등 서드파티 라이브러리에서 off-heap 영역을 사용하는 경우 off-heap이 부족하여 OOM이 발생, memoryOverhead를 늘리라는 에러로그가 남는 경우가 있다. 이 경우엔 상기 옵션으로 memoryOverhead를 늘려주는 것으로 조치 가능하다.
+- 관련 Configuration 설정
+  - https://spark.apache.org/docs/latest/configuration.html#application-properties
 
 
 
@@ -73,3 +83,4 @@ Executor 메모리 설정이 다음 표와 같을 경우, 각 메모리 영역�
 
 ## Reference
 - https://medium.com/analytics-vidhya/apache-spark-memory-management-49682ded3d42
+- http://jason-heo.github.io/bigdata/2020/10/24/understanding-spark-memoryoverhead-conf.html
