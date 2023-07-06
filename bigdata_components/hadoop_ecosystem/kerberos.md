@@ -38,7 +38,7 @@ principal은 다음과 같이 primary, instance, realm으로 구성된다. `prim
 2. AS는 ID,PW를 확인하여 인증을 수행, 인증될 경우 사용자에게 TGT(Ticket Granting Ticket)를 발행
 3. 사용자는 TGT와 인증정보를 KDC의 TGS(Ticket Granting Server)에 전송하여 티켓을 요청
 4. TGS는 TGT와 인증정보를 복호화하여 ID를 검증, 검증될 경우 SGT(Session Granting Ticket)를 발행
-5. 사용자는 통신하고자 하는 서버에 SGT와 인증정보를 전송, 서버측에선 SGT와 인증정보를 복호화하여 ID를 검증하는 것으로 인증을 확인하고 통신 수행
+5. 사용자는 통신하고자 하는 서버에 SGT와 인증정보를 전송, 서버측에선 SGT와 인증정보를 복호화하여 ID를 검증하는 것으로 인증을 확인하고 통신 수행
 
 
 ## 참고자료
