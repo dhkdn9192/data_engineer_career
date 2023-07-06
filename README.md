@@ -63,8 +63,7 @@
   - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
   - [Spark access first n rows: take() vs limit()](interview/hadoop/spark_access_first_n_rows.md)
   - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
-  - Spark의 memoryOverhead 설정과 OutOfMemoryError
-  - memoryOverhead만 높여주면 해결 가능한 exceeding memory limits 문제 (parquet )
+  - [Spark의 memoryOverhead 설정과 OutOfMemoryError](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/spark_executor_memory_structure.md#memoryoverhead-%EC%98%B5%EC%85%98)
   - spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
   - Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
   - Java 직렬화 vs Kryo 직렬화
