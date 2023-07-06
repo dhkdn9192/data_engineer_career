@@ -72,6 +72,7 @@ Executor 메모리 설정이 다음 표와 같을 경우, 각 메모리 영역�
 ## memoryOverhead 옵션
 - `spark.executor.memory` 옵션으로 executor에 할당한 메모리와는 별개로 executor에 추가적으로 할당되는 메모리이다.
 - `spark.executor.memoryOverhead` 옵션으로 설정 가능하며 최소값이 384 MiB이다. (즉, 384 MiB보다 적게 설정한 경우 강제로 384 MiB로 설정됨)
+- 즉, `spark.executor.memory` 값을 1g로 설정했다면 실제로 executor에 할당되는 메모리는 1g + 384MiB 이다.
 - VM overheads, interned strings, other native overheads 등을 위해 사용되는 메모리로 non heap에 해당한다. (즉, gc 대상이 아님, off-heap을 포함함)
 - parquet 등 서드파티 라이브러리에서 off-heap 영역을 사용하는 경우 off-heap이 부족하여 OOM이 발생, memoryOverhead를 늘리라는 에러로그가 남는 경우가 있다. 이 경우엔 상기 옵션으로 memoryOverhead를 늘려주는 것으로 조치 가능하다.
 - 관련 Configuration 설정
