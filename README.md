@@ -35,7 +35,7 @@
 - Apache Hadoop
   - [HDFS의 replication-factor를 3->5로 변경하면 최대 몇 번의 장애까지 견딜 수 있는가?](interview/hadoop/hdfs_replication_and_fault_tolerance.md)
   - JournalNode의 장애 허용 개수
-  - Hadoop 3.x의 Erasure Coding
+  - Hadoop 3.x의 Erasure Coding 원리 ([link](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=redhattt&logNo=221386458958))
   - [YARN이 도입된 이유](interview/hadoop/why_use_yarn.md)
   - [HA consensus of HDFS](interview/hadoop/hdfs_ha_and_consensus.md)
   - [손상된 블록을 탐지하고 처리하는 프로세스](interview/hadoop/hdfs_block_scanner.md)
