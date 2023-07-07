@@ -226,6 +226,7 @@
 
 ### 2-6. common sense
   - [MVC Pattern](interview/computer_science/mvc_pattern.md)
+  - [SOLID 원칙](interview/computer_science/solid.md)
   - 객체지향의 DTO, DAO, VO 개념 용어
   - Idempotence(멱등성)
   - 테스트 도구와 절차
