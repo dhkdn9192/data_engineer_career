@@ -135,6 +135,8 @@
   - Deployment
   - Service
   - Namespace
+  - [PV/PVC](https://kimjingo.tistory.com/153)
+  - [CR/CRD](https://frozenpond.tistory.com/111)
 
 
 ### 1-4. AWS
