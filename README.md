@@ -3,16 +3,16 @@
   <img src="img/banner.png" alt="banner" width="90%">
 </p>
 
-데이터 엔지니어 직무와 관련된 지식, 기술질문 등을 정리한 레포입니다.
+데이터 엔지니어 직무와 관련된 지식, 기술질문 등을 정리합니다.
 
 기술블로그(https://dhkdn9192.github.io) 로도 올리고 있습니다.
 
 
 ## Table of Contents
 - [1. Data Engineering](#1-data-engineering)
-  - [1-1. Apache Hadoop](#1-1-apache-hadoop)
-  - [1-2. Apache Spark](#1-2-apache-spark)
-  - [1-3. Apache Kafka](#1-3-apache-kafka)
+  - [1-1. Hadoop](#1-1-hadoop)
+  - [1-2. Spark](#1-2-spark)
+  - [1-3. Kafka](#1-3-kafka)
   - [1-4. ELK Stack](#1-4-elk-stack)
   - [1-5. etc](#1-5-etc)
 - [2. Cloud Computing](#2-cloud-computing)
@@ -34,7 +34,7 @@
 
 ## 1. Data Engineering
 
-### 1-1. Apache Hadoop
+### 1-1. Hadoop
 - [HDFS의 replication-factor를 3->5로 변경하면 최대 몇 번의 장애까지 견딜 수 있는가?](de/hadoop/hdfs_replication_and_fault_tolerance.md)
 - JournalNode의 장애 허용 개수
 - [YARN이 도입된 이유](de/hadoop/why_use_yarn.md)
@@ -55,7 +55,7 @@
 - WebHDFS와 HttpFS의 차이점 ([link](https://stackoverflow.com/questions/31580832/hdfs-put-vs-webhdfs))
 - HDFS Federation - Namespace, Block storage, Block pools 개념의 도입 ([link](https://xlos.tistory.com/1555))
 
-### 1-2. Apache Spark
+### 1-2. Spark
 - [Apache Spark](bigdata_components/hadoop_ecosystem/spark)
 - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
 - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
@@ -76,7 +76,7 @@
 - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
 - Spark bucketing이란?
  
-### 1-3. Apache Kafka
+### 1-3. Kafka
 - [Kafka의 partition은 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
 - [Kafka Streams Topology](interview/hadoop/kafka_streams_topology.md)
 - [Kafka에서 Zookeeper의 역할](interview/hadoop/zookeeper_role_in_kafka.md)
@@ -94,7 +94,7 @@
 - [Logstash](bigdata_components/elk_stack/logstash)
 - [es의 ingest pipeline을 이용한 전처리](https://danawalab.github.io/elastic/2020/09/04/ElasticSearch-IngestPipeLine.html)
 
-### 1-5. etc
+### 1-5. Etc
 - Apache Hive
   - [Partition, Bucket, Index](interview/hadoop/hive_partition_bucket_index.md)
   - Why isn't the metastore in hdfs?
