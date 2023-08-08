@@ -10,19 +10,22 @@
 
 ## Table of Contents
 - [1. Data Engineering](#1-data-engineering)
-  - [1-1. Hadoop Ecosystem](#1-1-hadoop-ecosystem)
-  - [1-2. ELK Stack](#1-2-elk-stack)
-  - [1-3. Kubernetes and Docker](#1-3-kubernetes-and-docker)
-  - [1-4. AWS](#1-4-aws)
-- [2. Computer Science](#2-computer-science)
-  - [2-1. Operation System](#2-1-operation-system)
-  - [2-2. Database](#2-2-database)
-  - [2-3. Network](#2-3-network)
-  - [2-4. Programming Language](#2-4-programming-language)
-  - [2-5. Data Structure and Algorithm](#2-5-data-structure-and-algorithm)
-  - [2-6. common sense](#2-6-common-sense)
-- [3. GoF Design Pattern and Architecture Pattern](#3-gof-design-pattern-and-architecture-pattern)
-- [4. Designing Data-Intensive Application](#4-designing-data-intensive-application)
+  - [1-1. Apache Hadoop](#1-1-apache-hadoop)
+  - [1-2. Apache Spark](#1-2-apache-spark)
+  - [1-3. Apache Kafka](#1-3-apache-kafka)
+  - [1-4. ELK Stack](#1-4-elk-stack)
+  - [1-5. etc](#1-5-etc)
+- [2. Cloud Computing](#2-cloud-computing)
+  - [2-1. Docker and k8s](#2-1-docker-and-k8s)
+  - [2-2. AWS](#2-2-aws)
+- [3. Computer Science](#3-computer-science)
+  - [3-1. Operation System](#3-1-operation-system)
+  - [3-2. Database](#3-2-database)
+  - [3-3. Network](#3-3-network)
+  - [3-4. Programming Language](#3-4-programming-language)
+  - [3-5. Data Structure and Algorithm](#3-5-data-structure-and-algorithm)
+  - [3-6. common sense](#3-6-common-sense)
+- [4. Back-end](#4-back-end)
 - [5. ETC](#5-etc)
 
 
@@ -31,86 +34,89 @@
 
 ## 1. Data Engineering
 
-### 1-1. Hadoop Ecosystem
-- Apache Hadoop
-  - [HDFS의 replication-factor를 3->5로 변경하면 최대 몇 번의 장애까지 견딜 수 있는가?](de/hadoop/hdfs_replication_and_fault_tolerance.md)
-  - JournalNode의 장애 허용 개수
-  - [YARN이 도입된 이유](de/hadoop/why_use_yarn.md)
-  - [HA consensus of HDFS](de/hadoop/hdfs_ha_and_consensus.md)
-  - [손상된 블록을 탐지하고 처리하는 프로세스](de/hadoop/hdfs_block_scanner.md)
-  - [HDFS의 read/write/replication 절차](de/hadoop/hdfs_read_write_replication.md)
-  - [Parquet와 칼럼 기반 스토리지](de/hadoop/parquet_and_column_based_storage.md)
-  - Parquet의 압축 알고리즘
-  - [Standby Namenode vs Secondary Namenode](de/hadoop/standbynn_secondarynn.md)
-  - [YARN scheduler](de/hadoop/yarn_scheduler.md)
-  - Erasure Coding 원리 ([link](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=redhattt&logNo=221386458958))
-  - RDBMS의 SQL과 Hadoop MapReduce의 차이점
-  - MapReduce spilling
-  - Hadoop 서버의 vm.swappiness 설정
-  - 클라이언트에서 hdfs write를 위한 옵션을 설정하려면 어떤 xml 설정파일을 수정해야될까?
-  - [클러스터로 구성된 서비스를 무중단으로 업데이트하려면?(Rolling Restart)](https://docs.cloudera.com/documentation/enterprise/5-16-x/topics/cm_mc_rolling_restart.html)
-  - [WebHDFS와 HttpFS의 차이점](https://stackoverflow.com/questions/31580832/hdfs-put-vs-webhdfs)
-  - [HDFS Federation - Namespace, Block storage, Block pools 개념의 도입](https://xlos.tistory.com/1555)
-- [Kerberos](bigdata_components/hadoop_ecosystem/kerberos.md)
+### 1-1. Apache Hadoop
+- [HDFS의 replication-factor를 3->5로 변경하면 최대 몇 번의 장애까지 견딜 수 있는가?](de/hadoop/hdfs_replication_and_fault_tolerance.md)
+- JournalNode의 장애 허용 개수
+- [YARN이 도입된 이유](de/hadoop/why_use_yarn.md)
+- [HA consensus of HDFS](de/hadoop/hdfs_ha_and_consensus.md)
+- [손상된 블록을 탐지하고 처리하는 프로세스](de/hadoop/hdfs_block_scanner.md)
+- [HDFS의 read/write/replication 절차](de/hadoop/hdfs_read_write_replication.md)
+- [Parquet와 칼럼 기반 스토리지](de/hadoop/parquet_and_column_based_storage.md)
+- Parquet의 압축 알고리즘
+- [Standby Namenode vs Secondary Namenode](de/hadoop/standbynn_secondarynn.md)
+- [YARN scheduler](de/hadoop/yarn_scheduler.md)
+- [Secured Hadoop - Kerberos](de/hadoop/kerberos.md)
+- Erasure Coding 원리 ([link](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=redhattt&logNo=221386458958))
+- RDBMS의 SQL과 Hadoop MapReduce의 차이점
+- MapReduce spilling
+- Hadoop 서버의 vm.swappiness 설정
+- 클라이언트에서 hdfs write를 위한 옵션을 설정하려면 어떤 xml 설정파일을 수정해야될까?
+- 클러스터로 구성된 서비스를 무중단으로 업데이트하려면?(Rolling Restart) ([link](https://docs.cloudera.com/documentation/enterprise/5-16-x/topics/cm_mc_rolling_restart.html))
+- WebHDFS와 HttpFS의 차이점 ([link](https://stackoverflow.com/questions/31580832/hdfs-put-vs-webhdfs))
+- HDFS Federation - Namespace, Block storage, Block pools 개념의 도입 ([link](https://xlos.tistory.com/1555))
+
+### 1-2. Apache Spark
 - [Apache Spark](bigdata_components/hadoop_ecosystem/spark)
-  - [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
-  - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
-  - [Spark Executor의 메모리 구조](interview/hadoop/spark_executor_memory_structure.md)
-  - [PySpark에서 Scala UDF / Python UDF 성능 비교](interview/hadoop/pyspark_udf.md)
-  - [언어별 Spark API 성능 차이](interview/hadoop/spark_scala_vs_python.md)
-  - [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
-  - [RDD Aggregation: groupByKey vs reduceByKey](interview/hadoop/rdd_groupbykey_reducebykey.md)
-  - [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
-  - [Spark access first n rows: take() vs limit()](interview/hadoop/spark_access_first_n_rows.md)
-  - [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
-  - [Spark의 memoryOverhead 설정과 OutOfMemoryError](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/spark_executor_memory_structure.md#memoryoverhead-%EC%98%B5%EC%85%98)
-  - spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
-  - Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
-  - Java 직렬화 vs Kryo 직렬화
-  - ORC, Parquet 등 Spark에서 사용할 수 있는 데이터 소스 포맷과 압축 알고리즘
-  - k8s에서 Spark Job을 수행한다면 종료 후 로그는 어떻게 확인해야될까? (Spark History Server? AWS S3 logging?)
-  - Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
-  - Spark bucketing이란?
-- Apache Flink
-  - 배치처리와 스트림처리
-- Apache Druid
-  - Druid의 주요 특징
-  - Druid의 아키텍처
-- Apache HBase
-  - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
-  - Region Server architecture
-  - Time series Row key design: Salting, Empty region
-  - Region's locality
+- [RDD, DataFrame, Dataset](interview/hadoop/rdd_df_ds.md)
+- [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
+- [Spark Executor의 메모리 구조](interview/hadoop/spark_executor_memory_structure.md)
+- [PySpark에서 Scala UDF / Python UDF 성능 비교](interview/hadoop/pyspark_udf.md)
+- [언어별 Spark API 성능 차이](interview/hadoop/spark_scala_vs_python.md)
+- [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
+- [RDD Aggregation: groupByKey vs reduceByKey](interview/hadoop/rdd_groupbykey_reducebykey.md)
+- [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
+- [Spark access first n rows: take() vs limit()](interview/hadoop/spark_access_first_n_rows.md)
+- [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
+- [Spark의 memoryOverhead 설정과 OutOfMemoryError](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/spark_executor_memory_structure.md#memoryoverhead-%EC%98%B5%EC%85%98)
+- spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
+- Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
+- Java 직렬화 vs Kryo 직렬화
+- ORC, Parquet 등 Spark에서 사용할 수 있는 데이터 소스 포맷과 압축 알고리즘
+- k8s에서 Spark Job을 수행한다면 종료 후 로그는 어떻게 확인해야될까? (Spark History Server? AWS S3 logging?)
+- Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
+- Spark bucketing이란?
+ 
+### 1-3. Apache Kafka
+- [Kafka의 partition은 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
+- [Kafka Streams Topology](interview/hadoop/kafka_streams_topology.md)
+- [Kafka에서 Zookeeper의 역할](interview/hadoop/zookeeper_role_in_kafka.md)
+- [Kafka + Spark Streaming : 2가지 Integration 방법 비교](interview/hadoop/kafka_sparkstreaming_integration.md)
+- [Kafka + Spark Streaming : 파티션 수와 컨슈머 수 정하기](interview/hadoop/kafka_partitions_and_consumers.md)
+- [Kafka의 exactly-once delivery](interview/hadoop/kafka_exactly_once.md)
+- [Burrow와 Telegraf로 Kafka Lag 모니터링하기](https://blog.voidmainvoid.net/279)
+- ISR (In Sync Replica)
+- Kafka의 Controller Broker(KafkaController)란 무엇인가? ([link](https://devidea.tistory.com/71))
+- [dead letter queue](https://devidea.tistory.com/111)
+
+### 1-4. ELK Stack
+- [Elasticsearch](bigdata_components/elk_stack/elasticsearch)
+  - [성능 튜닝하기 : Shard, Replica의 개수와 사이즈 등](https://www.slideshare.net/deview/2d1elasticsearch)
+- [Logstash](bigdata_components/elk_stack/logstash)
+- [es의 ingest pipeline을 이용한 전처리](https://danawalab.github.io/elastic/2020/09/04/ElasticSearch-IngestPipeLine.html)
+
+### 1-5. etc
 - Apache Hive
   - [Partition, Bucket, Index](interview/hadoop/hive_partition_bucket_index.md)
   - Why isn't the metastore in hdfs?
   - Which is faster, SORT BY or ORDER BY in HiveQL?
   - What is HCatalog?
   - Hive UDF란?
-- Apache Impala
-  - Impala with parquet에서 스키마 변경을 위한 PARQUET_FALLBACK_SCHEMA_RESOLUTION 옵션
-- Apache Kafka
-  - [Kafka의 partition은 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
-  - [Kafka Streams Topology](interview/hadoop/kafka_streams_topology.md)
-  - [Kafka에서 Zookeeper의 역할](interview/hadoop/zookeeper_role_in_kafka.md)
-  - [Kafka + Spark Streaming : 2가지 Integration 방법 비교](interview/hadoop/kafka_sparkstreaming_integration.md)
-  - [Kafka + Spark Streaming : 파티션 수와 컨슈머 수 정하기](interview/hadoop/kafka_partitions_and_consumers.md)
-  - [Kafka의 exactly-once delivery](interview/hadoop/kafka_exactly_once.md)
-  - [Burrow와 Telegraf로 Kafka Lag 모니터링하기](https://blog.voidmainvoid.net/279)
-  - ISR (In Sync Replica)
-  - Kafka의 Controller Broker(KafkaController)란 무엇인가? ([link](https://devidea.tistory.com/71))
-  - [dead letter queue](https://devidea.tistory.com/111)
-- Apache Oozie
-  - Oozie를 사용하면서 불편했던 점들
+- Apache HBase
+  - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
+  - Region Server architecture
+  - Time series Row key design: Salting, Empty region
+  - Region's locality
+- Apache Flink
+  - 배치처리와 스트림처리
+- Apache Druid
+  - Druid의 주요 특징
+  - Druid의 아키텍처
 - Apache Airflow
   - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
   - Celery 개념과 Celery Excutor
-- [Apache SeaTunnel](https://seatunnel.apache.org/)
+- Apache SeaTunnel ([link](https://seatunnel.apache.org/))
   - Sqoop, Logstash, Fluentd, Kafka Connect를 모두 대체할 수 있을까?
-- CDH setup
-  - [~~Set up Virtual Box~~](bigdata_components/cloudera/setup_virtual_box.md)
-  - [~~Install Cloudera Manager~~](bigdata_components/cloudera/install_cloudera_manager.md)
-- Common Questions
+- 데이터 엔지니어 면접 질문 모음
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
   - [Top 20 Apache Spark Interview Questions 2019](interview/top_bigdata_questions/top_20_apache_spark_interview_questions_2019.md)
@@ -118,20 +124,21 @@
   - [Hadoop MapReduce Interview Questions In 2020](interview/top_bigdata_questions/hadoop_mapreduce_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](interview/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
   - [Lambda architecture](https://gyrfalcon.tistory.com/entry/%EB%9E%8C%EB%8B%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-Lambda-Architecture)
+- ~~CDH setup~~
+  - [~~Set up Virtual Box~~](bigdata_components/cloudera/setup_virtual_box.md)
+  - [~~Install Cloudera Manager~~](bigdata_components/cloudera/install_cloudera_manager.md)
 
 
-### 1-2. ELK Stack
-- [Elasticsearch](bigdata_components/elk_stack/elasticsearch)
-  - [성능 튜닝하기 : Shard, Replica의 개수와 사이즈 등](https://www.slideshare.net/deview/2d1elasticsearch)
-- [Logstash](bigdata_components/elk_stack/logstash)
-- [es의 ingest pipeline을 이용한 전처리](https://danawalab.github.io/elastic/2020/09/04/ElasticSearch-IngestPipeLine.html)
+<br>
 
 
-### 1-3. Kubernetes and Docker
+## 2. Cloud Computing
+
+### 2-1. Docker and k8s
 - Docker
   - [Container vs VM](interview/k8s_docker/container_vs_vm.md)
   - Difference between Docker and process
-- Kubernetes Cluster
+- Kubernetes
   - Pod
   - Replica Set
   - Deployment
@@ -141,8 +148,7 @@
   - [CR/CRD](https://frozenpond.tistory.com/111)
   - [HPA](https://medium.com/dtevangelist/k8s-kubernetes%EC%9D%98-hpa%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81-auto-scaling-2fc6aca61c26)
 
-
-### 1-4. AWS
+### 2-2. AWS
 - Amazon EC2
   - [VPC, Subnet, Network ACL, NAT Gateway](https://medium.com/harrythegreat/aws-%EA%B0%80%EC%9E%A5%EC%89%BD%EA%B2%8C-vpc-%EA%B0%9C%EB%85%90%EC%9E%A1%EA%B8%B0-71eef95a7098)
   - [AMI](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/AMIs.html)
@@ -159,9 +165,9 @@
 <br>
 
 
-## 2. Computer Science
+## 3. Computer Science
 
-### 2-1. Operation System
+### 3-1. Operation System
   - [멀티스레드와 멀티프로세스](interview/computer_science/multithread_multiprocess.md)
   - [교착상태(deadlock)의 발생조건](interview/computer_science/deadlock.md)
   - [다익스트라의 은행원 알고리즘](interview/computer_science/banker_algorithm.md)
@@ -178,7 +184,7 @@
   - [Context Switching이 진행되는 단계](interview/computer_science/context_switching.md)
   - 하이퍼스레딩과 코어 수
 
-### 2-2. Database
+### 3-2. Database
   - [데이터 무결성 (Data Integrity)](interview/database/data_integrity.md)
   - [데이터베이스 인덱스](interview/database/database_index.md)
   - [데이터베이스 정규화](interview/database/normalization.md)
@@ -190,13 +196,13 @@
   - PostgreSQL vs MariaDB
   - MongoDB 고가용성 아키텍처
 
-### 2-3. Network
+### 3-3. Network
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
   - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
   - [HTTP 요청 메소드: GET과 POST의 차이](interview/computer_science/http_request_method.md)
   - [웹 브라우저가 웹 페이지의 이미지를 보여주기까지의 과정](https://goodgid.github.io/HTTP-Communicate-Process/)
 
-### 2-4. Programming Language
+### 3-4. Programming Language
   - Java
     - [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
     - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
@@ -214,7 +220,7 @@
   - Python
     - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
 
-### 2-5. Data Structure and Algorithm
+### 3-5. Data Structure and Algorithm
   - Array vs Linked List
   - Stack and Queue
     - Stack으로 Queue 구현하기
@@ -229,7 +235,7 @@
   - Recursion
   - Dynamic Programming
 
-### 2-6. common sense
+### 3-6. common sense
   - [MVC Pattern](interview/computer_science/mvc_pattern.md)
   - [SOLID 원칙](interview/computer_science/solid.md)
   - 객체지향의 DTO, DAO, VO 개념 용어
@@ -238,16 +244,12 @@
   - 트래픽/트랜잭션량 측정
   - Singleton 패턴을 사용하는 이유
 
-<br>
-
-## 3. GoF Design Pattern and Architecture Pattern
-GoF란 1995년에 출간된 "Design Patterns of Reusable Object-Oriented Software"라는 책의 저자들(Erich Gamma, Richard Helm, Ralph Johnson, John Vlissdes)를 의미한다.
 
 <br>
 
-## 4. Designing Data-Intensive Application
-데이터 중심 애플리케이션 설계
-  - OLTP와 OLAP
+
+## 4. Back-end
+
 
 <br>
 
