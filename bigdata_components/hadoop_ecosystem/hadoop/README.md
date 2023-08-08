@@ -1,3 +1,0 @@
-# Hadoop
-
-- [webhdfs](webhdfs.md)
