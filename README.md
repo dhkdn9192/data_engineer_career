@@ -105,6 +105,8 @@
 - Apache Airflow
   - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
   - Celery 개념과 Celery Excutor
+- [Apache SeaTunnel](https://seatunnel.apache.org/)
+  - Sqoop, Logstash, Fluentd, Kafka Connect를 모두 대체할 수 있을까?
 - CDH setup
   - [~~Set up Virtual Box~~](bigdata_components/cloudera/setup_virtual_box.md)
   - [~~Install Cloudera Manager~~](bigdata_components/cloudera/install_cloudera_manager.md)
