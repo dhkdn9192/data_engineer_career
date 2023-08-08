@@ -59,7 +59,7 @@ Zookeeper는 Hadoop HA 구성에서 노드 감시와 격리제어를 수행한�
 Zookeeper는 leader-folower 구조를 갖는다.
 클러스터 시작 시, 한 대의 leader를 선출한다. (leader가 다운되면 나머지 노드 중에서 새로운 leader 선출)
 
-![zookeeper architecture](img/zookeeper_architecture.png)
+![zookeeper architecture](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/zookeeper_architecture.png)
 * 이미지 출처: https://cwiki.apache.org/confluence/display/ZOOKEEPER/ProjectDescription
 
 
@@ -108,7 +108,7 @@ standby-NameNode는 지속적으로 JournalNode로부터 edits 파일을 취득�
 또한, 디스크 상의 fsimage 파일을 edits 적용 후의 내용으로 갱신하고, 교체할 checkpoint 처리도 담당한다.
 즉, standby-NameNode로 HA를 구성한 경우엔 Secondary NameNode를 사용하지 않는다.
 
-![quorum journal manager](img/quorum-journal-manager.png)
+![quorum journal manager](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/quorum-journal-manager.png)
 * 이미지 출처: https://hadoopabcd.wordpress.com/2015/02/19/hdfs-cluster-high-availability/
 
 
@@ -119,7 +119,7 @@ HA 클러스터 운영을 위해서는 클러스터 상태를 감시하여 장�
 ZKFC는 NameNode를 정기적으로 감시하여 상황에 따라 active-standby를 교체하여 Failover를 발생시킨다.
 NameNode의 API 호출 방식으로 헬스 체크와 상태 변경을 수행하며, API 호출로도 active 노드가 정상적으로 정지되지 않으면 Fencing 처리를 수행한다.
 
-![zkfc_for_namnode_ha](img/zkfc_for_namnode_ha.png)
+![zkfc_for_namnode_ha](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/zkfc_for_namnode_ha.png)
 * 이미지 출처: https://hadoopabcd.wordpress.com/2015/02/19/hdfs-cluster-high-availability/
 
 
