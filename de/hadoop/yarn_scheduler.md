@@ -13,7 +13,7 @@ YARN의 ```yarn-site.xml``` 설정파일에서 ```yarn.resourcemanager.scheduler
 
 
 
-![yarn_schedulers](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/yarn_schedulers.png)
+![yarn_schedulers](img/yarn_schedulers.png)
 
 
 ## FIFO Scheduler
