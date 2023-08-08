@@ -25,7 +25,7 @@
 칼럼 기반 스토리지는 분석 애플리케이션에서 보다 효과적이고 더 빠른 분석이 가능하며 더 적은 디스크 공간을 차지한다.
 
 
-![file_format_rowbased_vs_columnbased](img/file_format_rowbased_vs_columnbased.png)
+![file_format_rowbased_vs_columnbased](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/file_format_rowbased_vs_columnbased.png)
 
 
 ## RCFile
@@ -61,7 +61,7 @@ ORC는 구조화된 데이터를 저장하는 효율적인 방식의 칼럼 기�
 row group에는 칼럼당 한 column chunk가 포함된다.
 column chunk는 하나 이상의 page로 구성된다.
 
-![parquet_architecture](img/parquet_architecture.png)
+![parquet_architecture](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/parquet_architecture.png)
 
 
 
