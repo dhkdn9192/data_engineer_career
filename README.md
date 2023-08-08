@@ -38,10 +38,10 @@
   - [HA consensus of HDFS](de/hadoop/hdfs_ha_and_consensus.md)
   - [손상된 블록을 탐지하고 처리하는 프로세스](de/hadoop/hdfs_block_scanner.md)
   - [Parquet와 칼럼 기반 스토리지](de/hadoop/parquet_and_column_based_storage.md)
+  - [Standby Namenode vs Secondary Namenode](de/hadoop/standbynn_secondarynn.md)
   - JournalNode의 장애 허용 개수
   - Hadoop 3.x의 Erasure Coding 원리 ([link](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=redhattt&logNo=221386458958))
   - Parquet의 압축 알고리즘
-  - [Standby Namenode vs Secondary Namenode](interview/hadoop/standbynn_secondarynn.md)
   - [YARN scheduler](interview/hadoop/yarn_scheduler.md)
   - [HDFS의 read/write/replication 절차](interview/hadoop/hdfs_read_write_replication.md)
   - RDBMS의 SQL과 Hadoop MapReduce의 차이점
