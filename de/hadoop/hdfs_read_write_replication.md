@@ -8,7 +8,7 @@
 
 ## Read Operation
 
-![hdfs_read_process](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/hdfs_read_process.PNG)
+![hdfs_read_process](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/hdfs_read_process.PNG)
 
 1. 클라이언트가 **DistributeFileSystem**의 인스턴스인 **FileSystem** 객체의 open() 메소드를 호출하여 원하는 파일을 연다.
 2. **DistributeFileSystem**는 파일의 첫 번째 블록 위치를 파악하기 위해 RPC를 사용하여 NameNode를 호출한다. NameNode는 블록의 복제본을 가진 DataNode들의 주소 리스트를 반환한다.
@@ -25,7 +25,7 @@
 
 ## Write Operation
 
-![hdfs_write_process](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/hdfs_write_process.PNG)
+![hdfs_write_process](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/hdfs_write_process.PNG)
 
 1. 클라이언트는 **DistributedFileSystem**의 create() 메소드를 호출하여 파일을 생성한다.
 2. **DistributedFileSystem**은 RPC를 사용하여 NameNode를 호출하여 파일시스템의 네임스페이스에 새로운 파일을 생성하도록 한다. 이떄 블록에 대한 정보는 보내지 않는다.
@@ -43,7 +43,7 @@
 
 ## Replication
 
-![hdfs_replication_process](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/hdfs_replication_process.PNG)
+![hdfs_replication_process](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/hdfs_replication_process.PNG)
 
 하둡의 복제폰 배치 전략
 
