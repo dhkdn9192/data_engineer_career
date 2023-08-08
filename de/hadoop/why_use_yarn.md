@@ -41,12 +41,12 @@ YARN이 도입되기 전 Hadoop/MapReduce에서 JobTracker, TaskTracker의 역�
 
 ### 2.2. YARN의 리소스 일괄 관리
 YARN의 ResourceManager로 클러스터 리소스를 일괄 관리하므로 분산 처리 프레임워크들은 RM에게 리소스를 할당받는다.
-![yarn_before_after](img/yarn_before_after.png)
+![yarn_before_after](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/yarn_before_after.png)
 * 이미지 출처 : https://www.quora.com/What-is-Apache-Hadoop-YARN
 
 ### 2.3. YARN의 job 실행 흐름
 YARN에서 job이 실행되는 흐름을 구조적으로 보여주면 다음과 같다.
-![yarn_job_flow](img/yarn_job_flow.png)
+![yarn_job_flow](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/yarn_job_flow.png)
 * 이미지 출처 : https://www.quora.com/What-is-Apache-Hadoop-YARN
 
 1. 클라이언트가 job을 실행하기 위해 ResourceManager에 요청한다.
@@ -57,7 +57,7 @@ YARN에서 job이 실행되는 흐름을 구조적으로 보여주면 다음과 
 
 ### 2.4. YARN의 구조
 
-![yarn_architecture](img/yarn_architecture.png)
+![yarn_architecture](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/hadoop/img/yarn_architecture.png)
 * 이미지 출처 : https://www.quora.com/What-is-Apache-Hadoop-YARN
 
 ### 2.5. YARN의 가용성
