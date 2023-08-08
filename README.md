@@ -37,7 +37,7 @@
   - JournalNode의 장애 허용 개수
   - Hadoop 3.x의 Erasure Coding 원리 ([link](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=redhattt&logNo=221386458958))
   - [YARN이 도입된 이유](de/hadoop/why_use_yarn.md)
-  - [HA consensus of HDFS](interview/hadoop/hdfs_ha_and_consensus.md)
+  - [HA consensus of HDFS](de/hadoop/hdfs_ha_and_consensus.md)
   - [손상된 블록을 탐지하고 처리하는 프로세스](interview/hadoop/hdfs_block_scanner.md)
   - [Parquet와 칼럼 기반 스토리지](interview/hadoop/parquet_and_column_based_storage.md)
   - Parquet의 압축 알고리즘
