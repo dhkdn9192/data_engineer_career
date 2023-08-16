@@ -31,8 +31,6 @@ df.repartition(5, col("NAME")).coalesce(2)
 
 
 
-<br>
-
 ## Reference
 - 도서 "스파크 완벽 가이드", 한빛미디어, 빌 체임버스, 마테이 자하리아 지음
 
