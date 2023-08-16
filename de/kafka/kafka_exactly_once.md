@@ -1,8 +1,6 @@
 # Kafka's exactly-once delivery
 
 
-<br>
-
 ## 1. Messaging sementics
 카프카와 같은 메시징 시스템은 특정 수준의 메시지 보증 전략을 가지고 있다.
 - **at-most-once** : 실패나 타임아웃 등이 발생하면 메시지를 버릴 수 있다. 데이터가 일부 누락되더라도 영향이 없는 경우엔 대량처리 및 짧은 주기의 전송 서비스에 유용할 수 있다.
@@ -11,8 +9,6 @@
 
 exactly-once가 가장 이상적인 메시지 처리 방식이지만 난이도와 비용으로 인해 at-least-once로 타협하는 경우가 보편적이다. Kafka의 경우 at-least-once를 보장하며 일정 버전 이후에서만 옵션을 통해 exactly-once를 적용할 수 있다.
 
-
-<br>
 
 
 ## 2. Kafka의 at-least-once 구현
@@ -25,18 +21,15 @@ Kafka의 경우 Producer가 메시지를 전송하고 나서 Broker로부터 ack
 
 
 
-<br>
-
-
 
 ## 3. Kafka에서 메시지가 중복 처리되는 경우
 
 Kafka에서 메시지들은 순차적으로 증가하는 offset 값을 가지고 순서대로 추가된다. 
-<img src = "https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/kafka_sequence_of_offset.png" width="500px">
+<img src = "https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/kafka/img/kafka_sequence_of_offset.png" width="500px">
 
 
 Producer는 Kafka에 메시지를 입력하고, Consumer는 메시지를 읽어 DB 등의 저장소에 저장한다. 이 경우 다음과 같은 파이프라인이 형성된다.
-<img src = "https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/kafka_producer_to_consumer_pipeline.png" width="600px">
+<img src = "https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/kafka/img/kafka_producer_to_consumer_pipeline.png" width="600px">
 
 
 위의 파이프라인에서 메시지가 중복 처리되는 경우, 즉 at-least-once에 해당하는 경우는 다음과 같이 2가지가 있다.
@@ -52,8 +45,6 @@ Producer는 Kafka에 메시지를 입력하고, Consumer는 메시지를 읽어 
 - 예시) Spark Streaming의 Receiver 기반 모델에서 WAL을 사용하는 경우
 
 
-
-<br>
 
 
 
@@ -154,20 +145,14 @@ baseOffset: 17 lastOffset: 17 count: 1 baseSequence: -1 lastSequence: -1 produce
 
 
 
-<br>
-
 
 
 ## 5. Consumer side의 exactly-once 구현
 
 - Consumer에서 메시지를 읽고 나서 **DB에 저장하는 단계**와 **offset을 갱신하는 단계** 사이에서 장애가 발생할 경우에 메시지 중복 처리가 발생한다.
-- [Kafka + Spark Streaming Integration의 Receiver-based Approach](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/kafka_sparkstreaming_integration.md) 의 예시에선 Receiver와 WAL을 제거하고 directStream 및 자체 offset checkpoint (with HDFS/HBase)를 사용하여 동일 메시지를 중복으로 읽지 않도록 할 수 있다. (자세한 건 링크 참조)
+- [Kafka + Spark Streaming Integration의 Receiver-based Approach](https://github.com/dhkdn9192/data_engineer_career/blob/master/de/spark/kafka_sparkstreaming_integration.md) 의 예시에선 Receiver와 WAL을 제거하고 directStream 및 자체 offset checkpoint (with HDFS/HBase)를 사용하여 동일 메시지를 중복으로 읽지 않도록 할 수 있다. (자세한 건 링크 참조)
 
 
-
-
-
-<br>
 
 
 
@@ -178,9 +163,6 @@ baseOffset: 17 lastOffset: 17 count: 1 baseSequence: -1 lastSequence: -1 produce
 - 파이프라인 전체에 대해 exactly-once를 지원하려면 Kafka 외부의 애플리케이션단에서도 중복 처리 이슈까지 해결되어야 한다. (예: Spark Streaming의 Receiver-based Approach 이슈)
 - 데이터 처리에 있어 동일 데이터의 중복이 허용되지 않는 경우엔 exactly-once가 필수적이나, 그렇지 않은 경우에는 기존의 at-least-once를 사용하면 된다.
 
-
-
-<br>
 
 
 
