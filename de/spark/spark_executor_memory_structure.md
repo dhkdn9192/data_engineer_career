@@ -2,7 +2,7 @@
 
 Spark 1.6 이상부턴 메모리 관리가 ```UnifiedMemoryManager``` class에 의해 이뤄진다.
 
-![executor_memory_distribution](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/spark_executor_memory_distribution.png)
+![executor_memory_distribution](https://github.com/dhkdn9192/data_engineer_career/blob/master/de/spark/img/spark_executor_memory_distribution.png)
 
 - 위 이미지에선 spark.memory.fraction이 0.75로 표기되나, 현재 Spark 2.x 및 3.x에선 0.6이 default 값이다.
   - https://spark.apache.org/docs/latest/configuration.html#memory-management 
