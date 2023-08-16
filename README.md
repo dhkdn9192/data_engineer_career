@@ -56,7 +56,7 @@
 
 
 ### 1-2. Spark
-- [Coursera 강좌 : Big Data Analysis with Scala and Spark](de/spark/coursera_spark_lecture)
+- [Coursera 강좌 "Big Data Analysis with Scala and Spark"](de/spark/coursera_spark_lecture)
 - [RDD, DataFrame, Dataset](de/spark/rdd_df_ds.md)
 - [SparkContext and SparkSession](de/spark/sparkcontext_sparksession.md)
 - [Spark Executor의 메모리 구조](de/spark/spark_executor_memory_structure.md)
