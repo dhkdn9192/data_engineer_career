@@ -33,8 +33,6 @@
 - 일반적으로 뮤텍스는 프로세스 내부에서만 공유되는 반면 세마포어는 여러 개의 프로세스에서 접근이 가능하다는 차이점이 있다.
 
 
-<br>
-
 ## Reference
 
 - https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4
