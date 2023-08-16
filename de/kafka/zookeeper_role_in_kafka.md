@@ -1,12 +1,4 @@
-# Kafka에서 Zookeeper의 역할
-
-
-
-<br>
-
-
-
-## Zookeeper in Kafka
+## Kafka에서 Zookeeper가 수행하는 역할
 
 Kafka는 2.8.0 이전 버전까지는 공통적으로 Zookeeper를 코디네이트 도구로 사용한다. Zookeeper가 Kafka에서 수행하는 역할은 크게 5가지이다.
 
@@ -23,19 +15,11 @@ Kafka는 2.8.0 이전 버전까지는 공통적으로 Zookeeper를 코디네이�
 
 
 
-<br>
-
-
-
 ## Zookeeper 최적화
 
 - 대부분의 경우, 8GB RAM이면 Zookeeper를 구동하기에 충분하다.
 - Zookeeper를 위한 CPU 코어를 할당함으로써 Context Switching 이슈가 발생하지 않도록 한다.
 - SSD를 사용하여 Disk write latency를 낮춘다.
-
-
-
-<br>
 
 
 
