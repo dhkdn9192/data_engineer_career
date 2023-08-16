@@ -149,16 +149,16 @@
 
 ### 2-2. AWS
 - Amazon EC2
-  - [VPC, Subnet, Network ACL, NAT Gateway](https://medium.com/harrythegreat/aws-%EA%B0%80%EC%9E%A5%EC%89%BD%EA%B2%8C-vpc-%EA%B0%9C%EB%85%90%EC%9E%A1%EA%B8%B0-71eef95a7098)
-  - [AMI](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/AMIs.html)
-  - [Load Balancer](https://medium.com/harrythegreat/aws-%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-9fd0955f859e)
+  - VPC, Subnet, Network ACL, NAT Gateway ([link](https://medium.com/harrythegreat/aws-%EA%B0%80%EC%9E%A5%EC%89%BD%EA%B2%8C-vpc-%EA%B0%9C%EB%85%90%EC%9E%A1%EA%B8%B0-71eef95a7098))
+  - AMI ([link](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/AMIs.html))
+  - Load Balancer ([link](https://medium.com/harrythegreat/aws-%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-9fd0955f859e))
 - Amazon S3
-  - [S3 vs EFS vs EBS](https://seohyun0120.tistory.com/entry/AWS-EBS-vs-EFS-vs-S3-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EC%96%B4%EB%8A%90-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%EB%A5%BC-%EC%8D%A8%EC%95%BC%ED%95%A0%EA%B9%8C)
-  - [s3, s3n, s3a 차이점](https://swalloow.github.io/aws-emr-s3-spark/)
+  - S3 vs EFS vs EBS ([link](https://seohyun0120.tistory.com/entry/AWS-EBS-vs-EFS-vs-S3-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EC%96%B4%EB%8A%90-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%EB%A5%BC-%EC%8D%A8%EC%95%BC%ED%95%A0%EA%B9%8C))
+  - s3, s3n, s3a 차이점 ([link](https://swalloow.github.io/aws-emr-s3-spark/))
 - Amazon Redshift
-  - [Amazon Redshift가 지원하지 않는 것들](interview/aws/redshift_does_not_support.md)
+  - [Amazon Redshift가 지원하지 않는 것들](cloud/aws/redshift_does_not_support.md)
 - Amazon EMR
-  - [Node Types: Master, Core, Task Nodes](https://docs.aws.amazon.com/ko_kr/emr/latest/ManagementGuide/emr-master-core-task-nodes.html)
+  - Node Types: Master, Core, Task Nodes ([link](https://docs.aws.amazon.com/ko_kr/emr/latest/ManagementGuide/emr-master-core-task-nodes.html))
 
 
 <br>
