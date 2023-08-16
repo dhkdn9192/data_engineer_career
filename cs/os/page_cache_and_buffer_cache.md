@@ -17,11 +17,6 @@ Swap:           31G          0B         31G
 - **Buffer cache in Page cache** : 과거에는 버퍼 캐시와 페이지 캐시에서 데이터가 이중 캐시되는 문제가 있었다. 리눅스 2.4버전부터 버퍼 캐시가 페이지 캐시 안에 포함됨으로써 문제를 해결하였다.
 
 
-
-<br>
-
-
-
 ## Reference
 
 - https://dhkoo.github.io/2019/03/08/cache
