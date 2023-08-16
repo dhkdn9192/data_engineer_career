@@ -46,7 +46,6 @@
 - 즉, 교착상태에 빠질 가능성이 없는 **안정상태**이므로 B 또는 C에게 대출을 해주어야 한다
 
 
-<br>
 
 ## Reference
 - https://an-onymous.tistory.com/entry/%EC%9D%80%ED%96%89%EC%9B%90-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
