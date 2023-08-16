@@ -38,12 +38,6 @@ KVcharacters.collect()
 
 
 
-
-
-<br>
-
-
-
 ## groupByKey
 
 ```scala
@@ -56,10 +50,6 @@ KVcharacters.groupByKey().map(row => (row._1, row._2.reduce(addFunc))).collect()
 - 이 경우, 크게 치우쳐진 키가 있다면(skewness) **일부 파티션에 값이 몰려서 OutOfMemory**가 발생할 수 있다.
 - 따라서 groupByKey는 각 키에 대한 값의 크기가 일정하고 executor 메모리에서 처리 가능한 수준일 경우에만 사용해야 한다.
 - 보통 groupByKey의 대안으로 reduceByKey를 사용한다.
-
-
-
-<br>
 
 
 
@@ -78,13 +68,9 @@ KVcharacters.reduceByKey(addFunc).collect()
 - reduceByKey는 작업 부하를 줄이는데 적합하며, 결과의 순서가 중요한 작업에는 적합하지 않다.
 
 
-
-
-
-<br>
-
+![spark_groupbykey_vs_reducebykey](https://github.com/dhkdn9192/data_engineer_career/blob/master/de/spark/img/spark_groupbykey_vs_reducebykey.png)
 
 
 ## Reference
-
 - 도서 "스파크 완벽 가이드", 한빛미디어, 빌 체임버스, 마테이 자하리아 지음
+- https://sparkbyexamples.com/spark/spark-groupbykey/
