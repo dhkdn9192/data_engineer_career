@@ -66,6 +66,7 @@
 - [repartition과 coalesce의 차이점](de/spark/difference_between_repartition_and_coalesce_in_spark.md)
 - [Spark access first n rows: take() vs limit()](de/spark/spark_access_first_n_rows.md)
 - [효율적인 DataFrame Join 전략](de/spark/spark_join_strategy.md)
+- [Kafka + Spark Streaming : 2가지 Integration 방법 비교](de/spark/kafka_sparkstreaming_integration.md)
 - spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
 - Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
 - Java 직렬화 vs Kryo 직렬화
@@ -75,10 +76,9 @@
 - Spark bucketing이란?
  
 ### 1-3. Kafka
-- [Kafka의 partition은 많을 수록 좋을까?](interview/hadoop/kafka_too_many_partitions.md)
-- [Kafka Streams Topology](interview/hadoop/kafka_streams_topology.md)
-- [Kafka에서 Zookeeper의 역할](interview/hadoop/zookeeper_role_in_kafka.md)
-- [Kafka + Spark Streaming : 2가지 Integration 방법 비교](interview/hadoop/kafka_sparkstreaming_integration.md)
+- [Kafka의 partition은 많을 수록 좋을까?](de/kafka/kafka_too_many_partitions.md)
+- [Kafka Streams Topology](de/kafka/kafka_streams_topology.md)
+- [Kafka에서 Zookeeper의 역할](de/kafka/zookeeper_role_in_kafka.md)
 - [Kafka + Spark Streaming : 파티션 수와 컨슈머 수 정하기](interview/hadoop/kafka_partitions_and_consumers.md)
 - [Kafka의 exactly-once delivery](interview/hadoop/kafka_exactly_once.md)
 - [Burrow와 Telegraf로 Kafka Lag 모니터링하기](https://blog.voidmainvoid.net/279)
