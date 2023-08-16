@@ -1,4 +1,4 @@
-# Kafka 메시지를 효율적으로 읽으려면
+# 효율적인 Kafka consume
 
 
 
