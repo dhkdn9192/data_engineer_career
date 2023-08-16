@@ -59,11 +59,11 @@
 - [SparkContext and SparkSession](de/spark/sparkcontext_sparksession.md)
 - [Spark Executor의 메모리 구조](de/spark/spark_executor_memory_structure.md)
 - [언어에 따른 Spark 성능 차이(Spark API, UDF 등)](de/spark/spark_performance_with_language.md)
-- [RDD 커스텀 파티셔닝](interview/hadoop/rdd_custom_partitioning.md)
-- [RDD Aggregation: groupByKey vs reduceByKey](interview/hadoop/rdd_groupbykey_reducebykey.md)
-- [repartition과 coalesce의 차이점](interview/hadoop/difference_between_repartition_and_coalesce_in_spark.md)
-- [Spark access first n rows: take() vs limit()](interview/hadoop/spark_access_first_n_rows.md)
-- [효율적인 DataFrame Join 전략](interview/hadoop/spark_join_strategy.md)
+- [RDD 커스텀 파티셔닝](de/spark/rdd_custom_partitioning.md)
+- [RDD Aggregation: groupByKey vs reduceByKey](de/spark/rdd_groupbykey_reducebykey.md)
+- [repartition과 coalesce의 차이점](de/spark/difference_between_repartition_and_coalesce_in_spark.md)
+- [Spark access first n rows: take() vs limit()](de/spark/spark_access_first_n_rows.md)
+- [효율적인 DataFrame Join 전략](de/spark/spark_join_strategy.md)
 - [Spark의 memoryOverhead 설정과 OutOfMemoryError](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/spark_executor_memory_structure.md#memoryoverhead-%EC%98%B5%EC%85%98)
 - spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
 - Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
