@@ -88,7 +88,9 @@
 
 ### 1-4. ELK Stack
 - Elasticsearch
-  - [Elasticsearch 기본](de/elk/elasticsearch_basic.md)
+  - [기본 개념과 구조](de/elk/elasticsearch_basic.md)
+  - [How to Set up](de/elk/es01_setup.md)
+  - [REST API](de/elk/es02_rest_api.md)
   - ES 성능 튜닝하기 : Shard, Replica의 개수와 사이즈 등 ([link](https://www.slideshare.net/deview/2d1elasticsearch))
 - [Logstash](bigdata_components/elk_stack/logstash)
 - [es의 ingest pipeline을 이용한 전처리](https://danawalab.github.io/elastic/2020/09/04/ElasticSearch-IngestPipeLine.html)
