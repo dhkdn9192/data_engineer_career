@@ -55,7 +55,7 @@ LRU는 각 페이지에 대해 가장 최근에 참조된 시간을 기준으로
 - 끝에서 세번쨰 참조 시간인 t3를 비교할 경우, A의 t3가 더 최근과 가까우므로 LRU-3에선 "A > B"로 가치평가한다.
 
 <p align="center">
-  <img src="img/lru_k.png" alt="lru_k" width="30%">
+  <img src="https://github.com/dhkdn9192/data_engineer_should_know/blob/master/cs/os/img/lru_k.png" alt="lru_k" width="30%">
 </p>
 
 
@@ -76,7 +76,7 @@ clock hand가 빠르게 돌고 있다면 OS가 과부하 상태일 수 있다.
 대표적인 LRU 계열의 알고리즘으로, UNIX OS에서 많이 사용하는 방식이다.
 
 <p align="center">
-  <img src="img/clock_algorithm.png" alt="clock_algorithm" width="70%">
+  <img src="https://github.com/dhkdn9192/data_engineer_should_know/blob/master/cs/os/img/clock_algorithm.png" alt="clock_algorithm" width="70%">
 </p>
 
 
@@ -113,8 +113,6 @@ LFU 알고리즘과 반대로, 참조 횟수가 가장 많은 페이지를 교�
 LFU와 MFU는 실제 사용에 잘 쓰이지 않는다.
 
 
-
-<br>
 
 ## Reference
 - https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%EA%B5%90%EC%B2%B4_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
