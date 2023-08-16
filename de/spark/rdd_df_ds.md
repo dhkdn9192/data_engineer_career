@@ -4,18 +4,19 @@
 
 #### RDD
 - Resilient Distributed Datasets
-- It is Read-only partition collection of records. 
-- in-memory computations on large clusters in a fault-tolerant manner. (speed up)
+- 데이터 레코드들에 대한 읽기 전용 파티션 집합
+- 클러스터 환경에서 in-memory 방식으로 계산을 수행하여 빠르고 fault-tolerant를 지원함
 
 #### DataFrame
-- Unlike an RDD, data organized into named columns. (For example a table in a relational database.)
-- an immutable distributed collection of data. 
-- impose a structure onto a distributed collection of data, allowing higher-level abstraction.
+- RDD와는 달리, 칼럼 기반으로 데이터가 구조화됨 (관계형 DB의 테이블처럼)
+- immutable한 분산 데이터 콜랙션
+- 분산된 데이터 콜랙션을 구조화하여 높은 수중의 추상화가 가능함
 
 #### Dataset
-- extension of DataFrame API 
-- provides **type-safe**, **object-oriented** programming interface. 
-- takes advantage of Spark’s Catalyst optimizer by exposing expressions and data fields to a query planner.
+- extension of DataFrame API
+- DataFrame API의 확장판
+- **type-safe** 하며, **객체지향** 프로그래밍 인터페이스를 제공
+- 쿼리 플래너에 expression, data fields를 노출함으로써 Spark Catalyst optimizer의 이점을 얻을 수 있다.
 
 
 ## Spark Release
