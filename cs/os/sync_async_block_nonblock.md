@@ -19,40 +19,39 @@ sync와 async는 요청한 작업의 완료 여부를 신경쓰는 주체가 어
 
 ## IBM I/O Model
 <p align="center">
-  <img src="img/ibm_io_model_matrix.png" alt="ibm_io_model_matrix" width="50%">
+  <img src="https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/os/img/ibm_io_model_matrix.png" alt="ibm_io_model_matrix" width="50%">
 </p>
 
 
 ## 1. Synchronous Blocking
 <p align="center">
-  <img src="img/sync_block.png" alt="sync_block" width="50%">
+  <img src="https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/os/img/sync_block.png" alt="sync_block" width="50%">
 </p>
 
 
 ## 2. Synchronous Non-Blocking
 <p align="center">
-  <img src="img/sync_nonblock.png" alt="sync_nonblock" width="50%">
+  <img src="https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/os/img/sync_nonblock.png" alt="sync_nonblock" width="50%">
 </p>
 
 
 ## 3. Asynchronous Blocking
 <p align="center">
-  <img src="img/async_block.png" alt="async_block" width="50%">
+  <img src="https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/os/img/async_block.png" alt="async_block" width="50%">
 </p>
 
 
 ## 4. Asynchronous Non-Blocking
 <p align="center">
-  <img src="img/async_nonblock.png" alt="async_nonblock" width="50%">
+  <img src="https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/os/img/async_nonblock.png" alt="async_nonblock" width="50%">
 </p>
 
 
 ## Final matrix
 <p align="center">
-  <img src="img/sync_async_block_nonblock_matrix.png" alt="sync_async_block_nonblock_matrix" width="60%">
+  <img src="https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/os/img/sync_async_block_nonblock_matrix.png" alt="sync_async_block_nonblock_matrix" width="60%">
 </p>
 
-<br>
 
 
 ## References
