@@ -100,7 +100,5 @@ SJF 스케줄링을 선점 형태로 수정한 방식.
 Aging 등의 방식으로 대기 시간이 긴 프로세스를 높은 우선순위 큐에 올려 기아 상태를 막을 수 있다.
 
 
-<br>
-
 ## Reference
 - https://ko.wikipedia.org/wiki/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81_(%EC%BB%B4%ED%93%A8%ED%8C%85)
