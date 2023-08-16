@@ -6,15 +6,11 @@ Spark에서 join을 수행하는 경우는 크게 두 가지로 나눌 수 있�
 
 
 
-<br>
-
-
-
 ## 1. Sort Merge Join
 
 
 
-![data_engineer_should_know/sort_merge_join.png at master · dhkdn9192/data_engineer_should_know (github.com)](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/sort_merge_join.png)
+![sort_merge_join](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/spark/img/sort_merge_join.png)
 
 
 
@@ -38,15 +34,12 @@ Spark에서 join을 수행하는 경우는 크게 두 가지로 나눌 수 있�
 
 
 
-<br>
-
-
 
 ## 2. Broadcast Join
 
 
 
-![data_engineer_should_know/broadcast_join.png at master · dhkdn9192/data_engineer_should_know (github.com)](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/broadcast_join.png)
+![broadcast_join](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/spark/img/broadcast_join.png)
 
 
 
@@ -68,9 +61,6 @@ Spark에서 join을 수행하는 경우는 크게 두 가지로 나눌 수 있�
 
 
 
-<br>
-
-
 
 ## 3. Shuffle Hash Join
 
@@ -84,9 +74,6 @@ Spark에서 join을 수행하는 경우는 크게 두 가지로 나눌 수 있�
 
 
 
-<br>
-
-
 
 ## 효율적인 Join을 방해하는 것들
 
@@ -98,18 +85,12 @@ Spark에서 join을 수행하는 경우는 크게 두 가지로 나눌 수 있�
 
 
 
-<br>
-
-
 
 ## Data Skewness를 해결하려면?
 
 - **Repartitioning** : 단순히 repartition을 수행하는 것으로 데이터를 파티션들에 더 골고루 분배할 수 있다.
 - **Key Salting** : 근본적으로 파티셔닝되는 칼럼 키값에 salting을 적용하여 키가 고르게 분배될 수 있도록 할 수 있다.
 
-
-
-<br>
 
 
 
