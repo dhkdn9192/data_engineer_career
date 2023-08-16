@@ -3,7 +3,7 @@
 logstash 개념과 설치, 실무 프로젝트 코드 정리
 
 - [consumer](logstash_basic/consumer) : kafka-consumer logstash 디렉토리
-- [producer](logstash_basic/producer)) : kafka-producer logstash 디렉토리
+- [producer](logstash_basic/producer) : kafka-producer logstash 디렉토리
 
 ## Basic Concept
 
