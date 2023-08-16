@@ -26,7 +26,7 @@
   - [3-5. Data Structure and Algorithm](#3-5-data-structure-and-algorithm)
   - [3-6. common sense](#3-6-common-sense)
 - [4. Back-end](#4-back-end)
-- [5. ETC](#5-etc)
+- [5. Fields of study](#5-fields-of-study)
 
 
 <br>
@@ -253,18 +253,20 @@
 <br>
 
 
-## 5. ETC
+## 5. Fields of study
 
 기타 읽을거리 및 관심있는 연구주제, 토이 프로젝트 등
 
-- [Anomaly Detection](fields_of_study/anomaly_detection)
-- Churn Prediction
-- NLP
-- Recommender System
-- ideas
+- 읽을거리
+  - [The future of the data engineer (part 1)](fields_of_study/articles/the-future-of-the-data-engineer-part-i.md)
+- 연구주제
+  - [Anomaly Detection](fields_of_study/anomaly_detection)
+  - Churn Prediction
+  - NLP
+  - Recommender System
+- 아이디어
   - PySpark 클러스터 환경에서 각 노드별 python package 일괄 관리 툴
   - Apache Nutch의 streaming 버전, Spark 기반의 웹 크롤러
-- [The future of the data engineer (part 1)](articles/the-future-of-the-data-engineer-part-i.md)
 
 <br>
 
