@@ -31,7 +31,7 @@ Kafka를 단순한 메시징 큐가 아닌 데이터 처리 프로세서로 사�
 - 카프카 스트림즈는 카프카에 저장된 데이터를 처리하고 분석하기 위한 클라이언트 라이브러리이다.
 - Spark Streaming이나 Storm과 같이 스트림 처리를 하는 프로세서들이 서로 연결되어 Topology를 만들어서 처리하는 API이다.
 
-<img src = "https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/kafka_streams_topology.jpeg" width="400px">
+<img src = "https://github.com/dhkdn9192/data_engineer_career/blob/master/de/kafka/img/kafka_streams_topology.jpeg" width="400px">
 
 
 
@@ -64,7 +64,7 @@ Kafka를 단순한 메시징 큐가 아닌 데이터 처리 프로세서로 사�
 - 각 태스크에는 입력 스트림(카프카 토픽) 파티션들이 할당된다.
 - 스레드 개수를 지정하여 효과적으로 병렬처리를 수행할 수 있으며 1개의 스레드는 1개 이상의 태스크를 처리한다.
 
-<img src = "https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/kafka_streams_architecture.jpg" width="500px">
+<img src = "https://github.com/dhkdn9192/data_engineer_career/blob/master/de/kafka/img/kafka_streams_architecture.jpg" width="500px">
 
 
 
