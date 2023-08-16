@@ -6,9 +6,8 @@
 프로세스가 자원을 얻지 못해 다음 처리를 하지 못하는 상태. 
 시스템적으로 한정된 자원을 여러 곳에서 사용하려고 할 때 발생한다.
 
-![deadlock](img/deadlock.png)
+![deadlock](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/os/img/deadlock.png)
 
-<br>
 
 ## 교착상태 발생 조건
 
@@ -21,7 +20,6 @@
 #### 4. 환형대기 (Circle Wait)
 - 각 프로세스가 순환적으로 다음 프로세스가 요구하는 자원을 점유함
 
-<br>
 
 ## 교착상태 해결 방법
 
@@ -44,7 +42,6 @@
 - 대부분의 시스템에서 교착상태는 잘 일어나지 않는다.
 - 교착상태를 예방/회피/탐지/복구 하는 데에 비용이 많이 들기 때문에 이를 내버려둔다.
 
-<br>
 
 ## Reference
 
