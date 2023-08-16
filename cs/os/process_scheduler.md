@@ -4,7 +4,7 @@
 
 ## 프로세스의 상태
 
-![process_status](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/process_status_changes.png)
+![process_status](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/os/img/process_status_changes.png)
 
 - **New** : 프로세스가 메인 메모리에 할당된다.
 - **Ready** : 할당된 프로세스가 실행되기 위한 모든 준비를 마친다.
@@ -26,7 +26,7 @@ CPU는 문맥교환을 위해서 수행 중인 프로세스에서 나갈 때, �
 
 ## 프로세스 큐
 
-![process_queues](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/process_queues.png)
+![process_queues](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/os/img/process_queues.png)
 
 #### Job Queue
 
@@ -78,10 +78,6 @@ I/O 장치 점유를 기다리는 프로세스들의 큐. I/O 장치 별로 큐�
 - Degree of Multiprogramming 을 제어 (실행 중인 프로세스 수 제어)
 - 메모리에 너무 많은 프로세스가 올라가는 것을 조절하는 스케줄러
 - 프로세스의 상태 : ```Ready``` -> ```Suspended```
-
-
-
-<br>
 
 
 
