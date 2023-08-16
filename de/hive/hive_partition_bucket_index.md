@@ -83,8 +83,7 @@ to give extra structure to the data that may be used for more efficient queries.
 
 
 ## Partition vs Bucketing
-![apache-hive-partitioning-vs-bucketing](img/apache-hive-partitioning-vs-bucketing.jpg)
-
+![apache_hive_partitioning_vs_bucketing](https://github.com/dhkdn9192/data_engineer_career/blob/master/de/hive/img/apache-hive-partitioning-vs-bucketing.jpg)
 
 
 
