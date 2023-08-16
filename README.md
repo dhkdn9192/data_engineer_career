@@ -54,7 +54,7 @@
 - HDFS Federation - Namespace, Block storage, Block pools 개념의 도입 ([link](https://xlos.tistory.com/1555))
 
 ### 1-2. Spark
-- [Apache Spark](bigdata_components/hadoop_ecosystem/spark)
+- [Coursera 강좌 : Big Data Analysis with Scala and Spark](de/spark/coursera_spark_lecture)
 - [RDD, DataFrame, Dataset](de/spark/rdd_df_ds.md)
 - [SparkContext and SparkSession](de/spark/sparkcontext_sparksession.md)
 - [Spark Executor의 메모리 구조](de/spark/spark_executor_memory_structure.md)
