@@ -98,13 +98,13 @@
 
 ### 1-5. Etc
 - Apache Hive
-  - [Partition, Bucket, Index](interview/hadoop/hive_partition_bucket_index.md)
+  - [Partition, Bucket, Index](de/hive/hive_partition_bucket_index.md)
   - Why isn't the metastore in hdfs?
   - Which is faster, SORT BY or ORDER BY in HiveQL?
   - What is HCatalog?
   - Hive UDF란?
 - Apache HBase
-  - [Major Compaction vs Minor Compaction](interview/hadoop/hbase_compaction.md)
+  - [Major Compaction vs Minor Compaction](de/hbase/hbase_compaction.md)
   - Region Server architecture
   - Time series Row key design: Salting, Empty region
   - Region's locality
