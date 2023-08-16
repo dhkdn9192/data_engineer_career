@@ -79,7 +79,7 @@
 - [Kafka의 partition은 많을 수록 좋을까?](de/kafka/kafka_too_many_partitions.md)
 - [Kafka Streams Topology](de/kafka/kafka_streams_topology.md)
 - [Zookeeper가 Kafka에서 수행하는 역할](de/kafka/zookeeper_role_in_kafka.md)
-- [효율적인 Kafka consume 방법 (파티션 수와 컨슈머 수 정하기)](de/kafka/kafka_partitions_and_consumers.md)
+- [효율적인 Kafka consume 방법 (파티션 수와 컨슈머 수의 관계)](de/kafka/kafka_partitions_and_consumers.md)
 - [exactly-once delivery](de/kafka/kafka_exactly_once.md)
 - Burrow와 Telegraf로 Kafka Lag 모니터링하기 ([link](https://blog.voidmainvoid.net/279))
 - ISR (In Sync Replica)
