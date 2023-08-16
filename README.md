@@ -55,7 +55,7 @@
 
 ### 1-2. Spark
 - [Apache Spark](bigdata_components/hadoop_ecosystem/spark)
-- [RDD, DataFrame, Dataset](de/hadoop/rdd_df_ds.md)
+- [RDD, DataFrame, Dataset](de/spark/rdd_df_ds.md)
 - [SparkContext and SparkSession](interview/hadoop/sparkcontext_sparksession.md)
 - [Spark Executor의 메모리 구조](interview/hadoop/spark_executor_memory_structure.md)
 - [PySpark에서 Scala UDF / Python UDF 성능 비교](interview/hadoop/pyspark_udf.md)
