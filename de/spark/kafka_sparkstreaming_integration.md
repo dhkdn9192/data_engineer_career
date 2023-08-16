@@ -6,8 +6,6 @@ Spark Streaming과 Kafka를 연동하는 방법에는 크게 2가지가 있다.
 - Direct Approach (No Receivers)
 
 
-<br>
-
 
 ## 1. Receiver-based Approach
 
@@ -20,22 +18,14 @@ Spark Streaming과 Kafka를 연동하는 방법에는 크게 2가지가 있다.
 
 
 
-![kafka_sparkstreaming_receiver_approach](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/kafka_sparkstreaming_receiver_approach.png)
+![kafka_sparkstreaming_receiver_approach](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/spark/img/kafka_sparkstreaming_receiver_approach.png)
 
-
-
-<br>
 
 Receiver-based Approach는 데이터의 손실은 막을 수 있지만 장애가 발생하면 데이터가 두 번 이상 중복으로 처리될 수 있다는 문제가 있다. 즉, **at-least-once** 방식이다.
 
 1. Receiver가 WAL에 기록을 완료한 뒤 Zookeeper의 offset을 업데이트하기 전에 장애가 발생
 2. Receiver는 다시 Kafka를 consume 할 때 Zookeeper의 업데이트되지 않은 offset을 참조
 3. 이렇게 읽어온 데이터는 이미 WAL에 기록되어 있으므로 같은 데이터를 두 번 처리하게 됨
-
-
-
-
-<br>
 
 
 ## 2. Direct Approach (No Receivers)
@@ -48,7 +38,7 @@ Receiver-based Approach는 데이터의 손실은 막을 수 있지만 장애가
 
 
 
-![kafka_sparkstreaming_direct_approach](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/kafka_sparkstreaming_direct_approach.png)
+![kafka_sparkstreaming_direct_approach](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/spark/img/kafka_sparkstreaming_direct_approach.png)
 
 
 
@@ -56,11 +46,6 @@ Receiver-based Approach는 데이터의 손실은 막을 수 있지만 장애가
 
 - 전통적으로 Zookeeper를 사용하는 Kafka 모니터링 도구에서 Spark Streaming이 consume하고 있는 offset을 볼 수 없다. offset을 Zookeeper에 기록하지 않고 checkpoint를 통해 자체적으로 관리하기 때문이다.
 
-
-
-
-
-<br>
 
 
 
