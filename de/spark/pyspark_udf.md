@@ -38,7 +38,7 @@ PySpark Job이 동작할 때 UDF를 호출할 경우, UDF가 어떤 언어로 �
 - **Spark Scala UDF** : Scala는 Spark의 네이티브 언어이므로, JVM에서 동작 가능하도록 컴파일된다. 따라서 빠르게 프로세싱된다.
 - **PySpark UDF** : 컴파일 과정은 Scala->Python->Scala 에 좌우된다. JVM은 UDF를 사용할 수 있도록 변환하기 위해 Serialization/Deserialization 과정을 거쳐 JVM 외부의 Python 프로세스와 통신해야 한다. 따라서 UDF 사용에 많은 비용이 든다.
 
-![data_engineer_should_know/spark_udf_architecture.png at master · dhkdn9192/data_engineer_should_know (github.com)](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/hadoop/img/spark_udf_architecture.png)
+![spark_udf_architecture](https://github.com/dhkdn9192/data_engineer_career/blob/master/de/spark/img/spark_udf_architecture.png)
 
 
 <br>
