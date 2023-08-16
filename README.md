@@ -79,12 +79,12 @@
 - [Kafka의 partition은 많을 수록 좋을까?](de/kafka/kafka_too_many_partitions.md)
 - [Kafka Streams Topology](de/kafka/kafka_streams_topology.md)
 - [Kafka에서 Zookeeper의 역할](de/kafka/zookeeper_role_in_kafka.md)
-- [Kafka + Spark Streaming : 파티션 수와 컨슈머 수 정하기](interview/hadoop/kafka_partitions_and_consumers.md)
-- [Kafka의 exactly-once delivery](interview/hadoop/kafka_exactly_once.md)
-- [Burrow와 Telegraf로 Kafka Lag 모니터링하기](https://blog.voidmainvoid.net/279)
+- [Kafka + Spark Streaming : 파티션 수와 컨슈머 수 정하기](de/kafka/kafka_partitions_and_consumers.md)
+- [Kafka의 exactly-once delivery](de/kafka/kafka_exactly_once.md)
+- Burrow와 Telegraf로 Kafka Lag 모니터링하기 ([link](https://blog.voidmainvoid.net/279))
 - ISR (In Sync Replica)
 - Kafka의 Controller Broker(KafkaController)란 무엇인가? ([link](https://devidea.tistory.com/71))
-- [dead letter queue](https://devidea.tistory.com/111)
+- dead letter queue ([link](https://devidea.tistory.com/111))
 
 ### 1-4. ELK Stack
 - [Elasticsearch](bigdata_components/elk_stack/elasticsearch)
