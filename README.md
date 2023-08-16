@@ -135,7 +135,7 @@
 
 ### 2-1. Docker and k8s
 - Docker
-  - [Container vs VM](interview/k8s_docker/container_vs_vm.md)
+  - [Container vs VM](cloud/docker/container_vs_vm.md)
   - Difference between Docker and process
 - Kubernetes
   - Pod
@@ -143,9 +143,9 @@
   - Deployment
   - Service
   - Namespace
-  - [PV/PVC](https://kimjingo.tistory.com/153)
-  - [CR/CRD](https://frozenpond.tistory.com/111)
-  - [HPA](https://medium.com/dtevangelist/k8s-kubernetes%EC%9D%98-hpa%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81-auto-scaling-2fc6aca61c26)
+  - PV/PVC ([link](https://kimjingo.tistory.com/153))
+  - CR/CRD ([link](https://frozenpond.tistory.com/111))
+  - HPA ([link](https://medium.com/dtevangelist/k8s-kubernetes%EC%9D%98-hpa%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81-auto-scaling-2fc6aca61c26))
 
 ### 2-2. AWS
 - Amazon EC2
