@@ -2,16 +2,12 @@
 
 - 핵심키워드 :  ```hypervisor```, ```docker```, ```virtual box```
 
-<br>
-
 
 
 ## Container Architecture
 
 
-
-![container_architecture_diagram](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/k8s_docker/img/container_architecture_diagram.png)
-
+![container_architecture_diagram](https://github.com/dhkdn9192/data_engineer_career/blob/master/cloud/docker/img/container_architecture_diagram.png)
 
 
 - 컨테이너는 호스트 OS의 커널 위에 빌드되어 **호스트 OS와 커널을 공유**한다.
@@ -20,17 +16,9 @@
 - 컨테이너 이미지의 생성/배포가 용이하고 k8s를 이용한 오케스트레이션이 가능하다.
 
 
-
-<br>
-
-
-
 ## Virtual Machine Artchitecture
 
-
-
-![vm_architecture_diagram](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/k8s_docker/img/vm_architecture_diagram.png)
-
+![vm_architecture_diagram](https://github.com/dhkdn9192/data_engineer_career/blob/master/cloud/docker/img/vm_architecture_diagram.png)
 
 
 - 컨테이너와 달리, VM은 커널을 포함하는 완전한 게스트 OS가 실행된다.
@@ -38,16 +26,9 @@
 - 완전한 게스트 OS 이미지가 올라가므로 용량을 많이 차지하고 무겁고 느리다.
 
 
-<br>
-
-
 ## Docker vs VM
 
-![docker_vs_vm](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/k8s_docker/img/docker_vs_vm.png)
-
-
-
-<br>
+![docker_vs_vm](https://github.com/dhkdn9192/data_engineer_career/blob/master/cloud/docker/img/docker_vs_vm.png)
 
 
 
