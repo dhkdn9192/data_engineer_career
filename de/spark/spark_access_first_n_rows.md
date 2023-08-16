@@ -62,8 +62,6 @@ Spark Dataset의 주요 함수 ```limit(n)```, ```head(n)```, ```first()```, ```
 | take(n) | alias for head(n) |
 
 
-<br>
-
 ## Reference
 - https://stackoverflow.com/questions/46832394/spark-access-first-n-rows-take-vs-limit
 - https://stackoverflow.com/questions/35869884/more-than-one-hour-to-execute-pyspark-sql-dataframe-take4/35870245#35870245
