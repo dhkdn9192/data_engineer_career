@@ -52,6 +52,8 @@
 - 클러스터로 구성된 서비스를 무중단으로 업데이트하려면?(Rolling Restart) ([link](https://docs.cloudera.com/documentation/enterprise/5-16-x/topics/cm_mc_rolling_restart.html))
 - WebHDFS와 HttpFS의 차이점 ([link](https://stackoverflow.com/questions/31580832/hdfs-put-vs-webhdfs))
 - HDFS Federation - Namespace, Block storage, Block pools 개념의 도입 ([link](https://xlos.tistory.com/1555))
+- [~~How to set up Cloudera Hadoop~~](de/hadoop/cloudera_hadoop/README.md)
+
 
 ### 1-2. Spark
 - [Coursera 강좌 : Big Data Analysis with Scala and Spark](de/spark/coursera_spark_lecture)
@@ -120,9 +122,6 @@
   - [Hadoop MapReduce Interview Questions In 2020](interview/top_bigdata_questions/hadoop_mapreduce_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](interview/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
   - [Lambda architecture](https://gyrfalcon.tistory.com/entry/%EB%9E%8C%EB%8B%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-Lambda-Architecture)
-- ~~CDH setup~~
-  - [~~Set up Virtual Box~~](bigdata_components/cloudera/setup_virtual_box.md)
-  - [~~Install Cloudera Manager~~](bigdata_components/cloudera/install_cloudera_manager.md)
 
 
 <br>
