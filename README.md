@@ -203,7 +203,7 @@
 - Stack and Queue
   - Stack으로 Queue 구현하기
 - [Tree](cs/ds_algorithm/tree.md)
-  - [Binary Search Tree (BST)](cs/ds_algorithm/binary_search_tree.md)
+  - [Binary Search Tree (BST)](cs/ds_algorithm/binary_search_tree.md), ([notebook](cs/ds_algorithm/binary_search_tree.ipynb))
   - AVL Tree
   - Heap
 - [Hash Table](cs/ds_algorithm/hash_table.md)
