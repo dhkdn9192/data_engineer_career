@@ -23,9 +23,8 @@
   - [3-2. Database](#3-2-database)
   - [3-3. Network](#3-3-network)
   - [3-4. Data Structure and Algorithm](#3-4-data-structure-and-algorithm)
-- [4. Programming](#4-programming)
-  - [4-1. Languages](#4-1-languages)
-  - [4-2. Common](#4-2-common)
+  - [3-5. Programming Languages](#3-5-programming-languages)
+  - [3-6. common](#3-6-common)
 - [5. Back-end](#5-back-end)
 - [6. Fields of study](#6-fields-of-study)
 
@@ -215,13 +214,7 @@
 - Dynamic Programming
 
 
-
-<br>
-
-
-## 4. Programming
-
-### 4-1. Languages
+### 3-5. Programming Languages
 - Java
   - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
   - [GC 정리](interview/computer_science/gc.md)
@@ -240,9 +233,9 @@
 - Python
   - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
 
-### 4-2. Common
-객체지향프로그래밍, 디자인패턴, 아키텍처패턴, 개발방법론, 소프트웨어공학 등
 
+### 3-6. common
+객체지향프로그래밍, 디자인패턴, 아키텍처패턴, 개발방법론, 소프트웨어공학 등
 - OOP
   - 캡슐화
   - 상속
@@ -259,7 +252,7 @@
 <br>
 
 
-## 5. Back-end
+## 4. Back-end
 - [MVC Pattern](be/mvc_pattern.md)
 - DTO, DAO, VO
 
@@ -267,7 +260,7 @@
 <br>
 
 
-## 6. Fields of study
+## 5. Fields of study
 
 기타 읽을거리 및 관심있는 연구주제, 토이 프로젝트 등
 
