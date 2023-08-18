@@ -118,13 +118,13 @@
 - Apache SeaTunnel ([link](https://seatunnel.apache.org/))
   - Sqoop, Logstash, Fluentd, Kafka Connect를 모두 대체할 수 있을까?
 - 데이터 엔지니어 면접 질문 모음
-  - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](interview/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
-  - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](interview/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
-  - [Top 20 Apache Spark Interview Questions 2019](interview/top_bigdata_questions/top_20_apache_spark_interview_questions_2019.md)
-  - [Top 62 Data Engineer Interview Questions & Answers](interview/top_bigdata_questions/top_62_data_engineer_interview_questions.md)
-  - [Hadoop MapReduce Interview Questions In 2020](interview/top_bigdata_questions/hadoop_mapreduce_interview_questions_in_2020.md)
-  - [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](interview/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
-  - [Lambda architecture](https://gyrfalcon.tistory.com/entry/%EB%9E%8C%EB%8B%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-Lambda-Architecture)
+  - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](de/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
+  - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](de/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
+  - [Top 20 Apache Spark Interview Questions 2019](de/top_bigdata_questions/top_20_apache_spark_interview_questions_2019.md)
+  - [Top 62 Data Engineer Interview Questions & Answers](de/top_bigdata_questions/top_62_data_engineer_interview_questions.md)
+  - [Hadoop MapReduce Interview Questions In 2020](de/top_bigdata_questions/hadoop_mapreduce_interview_questions_in_2020.md)
+  - [Top Hadoop Interview Questions To Prepare In 2020 – Apache Hive](de/top_bigdata_questions/top_hadoop_interview_questions-hive.md)
+  - Lambda architecture ([link](https://gyrfalcon.tistory.com/entry/%EB%9E%8C%EB%8B%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-Lambda-Architecture))
 
 
 <br>
