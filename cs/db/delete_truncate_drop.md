@@ -29,8 +29,6 @@
 - 사용 : ```DROP TABLE my_table;```
 
 
-<br>
-
 ## Reference
 - https://kjk3071.tistory.com/entry/DB-MySQL-Truncate%EA%B3%BC-Delete
 - https://lee-mandu.tistory.com/476
