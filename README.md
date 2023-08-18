@@ -243,7 +243,7 @@
     - 메소드 오버라이딩
   - 다형성
     - 메소드 오버로딩
-  - [객체지향의 5원칙: SOLID 원칙](cs/common/oop_solid.md)
+  - [객체지향 5원칙: SOLID](cs/common/oop_solid.md)
 - Idempotence(멱등성)
 - 테스트 도구와 절차
 - 트래픽/트랜잭션량 측정
