@@ -23,7 +23,7 @@
   - [3-2. Database](#3-2-database)
   - [3-3. Network](#3-3-network)
   - [3-4. Data Structure and Algorithm](#3-4-data-structure-and-algorithm)
-  - [3-5. Programming Languages](#3-5-programming-languages)
+  - [3-5. Programming Language](#3-5-programming-language)
   - [3-6. common](#3-6-common)
 - [5. Back-end](#5-back-end)
 - [6. Fields of study](#6-fields-of-study)
@@ -214,7 +214,7 @@
 - Dynamic Programming
 
 
-### 3-5. Programming Languages
+### 3-5. Programming Language
 - Java
   - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
   - [GC 정리](interview/computer_science/gc.md)
