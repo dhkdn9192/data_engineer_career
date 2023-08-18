@@ -1,6 +1,7 @@
 # 이진탐색트리 (Binary Search Tree)
 
-![BSTSearch](img/BSTSearch.png)
+![BSTSearch](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/ds_algorithm/img/BSTSearch.png)
+
 
 ## 이진탐색트리의 특징
 - 각 노드에 값이 있다.
@@ -100,8 +101,6 @@ def insert_node(self, node, data):
 
 이러한 문제를 보완삭제 단계에서 트리의 균형을 보완하는 AVL Tree 등이 존재한다.
 
-
-<br>
 
 
 ## Reference
