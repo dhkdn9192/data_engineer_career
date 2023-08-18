@@ -22,8 +22,8 @@
   - [3-1. Operation System](#3-1-operation-system)
   - [3-2. Database](#3-2-database)
   - [3-3. Network](#3-3-network)
-  - [3-4. Programming Language](#3-4-programming-language)
-  - [3-5. Data Structure and Algorithm](#3-5-data-structure-and-algorithm)
+  - [3-4. Data Structure and Algorithm](#3-4-data-structure-and-algorithm)
+  - [3-5. Programming Language](#3-5-programming-language)
   - [3-6. common sense](#3-6-common-sense)
 - [4. Back-end](#4-back-end)
 - [5. Fields of study](#5-fields-of-study)
@@ -194,12 +194,27 @@
   - [Top 50 SQL Interview Questions](cs/db/top_50_sql_interview_questions.md)
 
 ### 3-3. Network
-  - [TCP and UDP](interview/computer_science/tcp_udp.md)
-  - [TCP's 3-way handshake, 4-way handshake](interview/computer_science/tcp_handshake.md)
-  - [HTTP 요청 메소드: GET과 POST의 차이](interview/computer_science/http_request_method.md)
-  - [웹 브라우저가 웹 페이지의 이미지를 보여주기까지의 과정](https://goodgid.github.io/HTTP-Communicate-Process/)
+  - [TCP and UDP](cs/network/tcp_udp.md)
+  - [TCP's 3-way handshake, 4-way handshake](cs/network/tcp_handshake.md)
+  - [HTTP 요청 메소드: GET과 POST의 차이](cs/network/http_request_method.md)
+  - 웹 브라우저가 웹 페이지의 이미지를 보여주기까지의 과정 ([link](https://goodgid.github.io/HTTP-Communicate-Process/))
 
-### 3-4. Programming Language
+### 3-4. Data Structure and Algorithm
+  - Array vs Linked List
+  - Stack and Queue
+    - Stack으로 Queue 구현하기
+  - [Tree](interview/algorithm/tree.md)
+    - [Binary Search Tree (BST)](interview/algorithm/binary_search_tree.md)
+    - AVL Tree
+    - Heap
+  - [Hash Table](interview/computer_science/hash_table.md)
+  - Graph
+    - [Dijkstra algorithm](interview/algorithm/dijkstra_shortest_path.md)
+  - [Sorting](interview/algorithm/sorting_algorithm.md)
+  - Recursion
+  - Dynamic Programming
+
+### 3-5. Programming Language
   - Java
     - [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
     - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
@@ -216,21 +231,6 @@
     - 케이스 클래스 (case class)
   - Python
     - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
-
-### 3-5. Data Structure and Algorithm
-  - Array vs Linked List
-  - Stack and Queue
-    - Stack으로 Queue 구현하기
-  - [Tree](interview/algorithm/tree.md)
-    - [Binary Search Tree (BST)](interview/algorithm/binary_search_tree.md)
-    - AVL Tree
-    - Heap
-  - [Hash Table](interview/computer_science/hash_table.md)
-  - Graph
-    - [Dijkstra algorithm](interview/algorithm/dijkstra_shortest_path.md)
-  - [Sorting](interview/algorithm/sorting_algorithm.md)
-  - Recursion
-  - Dynamic Programming
 
 ### 3-6. common sense
   - [MVC Pattern](interview/computer_science/mvc_pattern.md)
