@@ -241,8 +241,15 @@
   - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
 
 ### 4-2. Common
-- [MVC Pattern](interview/computer_science/mvc_pattern.md)
-- [SOLID 원칙](interview/computer_science/solid.md)
+객체지향프로그래밍, 디자인패턴, 아키텍처패턴, 개발방법론, 소프트웨어공학 등
+
+- OOP
+  - 캡슐화
+  - 상속
+    - 메소드 오버라이딩
+  - 다형성
+    - 메소드 오버로딩
+  - [객체지향의 5원칙: SOLID 원칙](interview/computer_science/solid.md)
 - Idempotence(멱등성)
 - 테스트 도구와 절차
 - 트래픽/트랜잭션량 측정
@@ -253,6 +260,7 @@
 
 
 ## 5. Back-end
+- [MVC Pattern](interview/computer_science/mvc_pattern.md)
 - DTO, DAO, VO
 
 
