@@ -2,8 +2,6 @@
 
 - 핵심 키워드 : ```StringBuffer```, ```StringBuilder```
 
-<br>
-
 
 
 ## Java의 String
@@ -28,8 +26,6 @@ myQuery += "limit 100; ";
 | **200**     | "select * from atable limit 100;" |
 
 
-
-<br>
 
 
 
@@ -57,7 +53,6 @@ StringBuffer나 StringBuilder는 String과는 달리 **새로운 객체를 생�
 
 
 
-<br>
 
 ## StringBuffer vs StringBuilder
 
@@ -65,8 +60,6 @@ StringBuffer나 StringBuilder는 String과는 달리 **새로운 객체를 생�
 - StringBuilder는 단일 thread에서의 안전성만 보전하므로 여러개의 thread가 접근하면 문제가 발생할 수 있다.
 
 
-
-<br>
 
 
 
@@ -78,9 +71,6 @@ StringBuffer나 StringBuilder는 String과는 달리 **새로운 객체를 생�
 
 
 
-
-
-<br>
 
 ## Reference
 
