@@ -25,8 +25,8 @@
   - [3-4. Data Structure and Algorithm](#3-4-data-structure-and-algorithm)
   - [3-5. Programming Language](#3-5-programming-language)
   - [3-6. common](#3-6-common)
-- [5. Back-end](#5-back-end)
-- [6. Fields of study](#6-fields-of-study)
+- [4. Back-end](#4-back-end)
+- [5. Fields of study](#5-fields-of-study)
 
 
 <br>
