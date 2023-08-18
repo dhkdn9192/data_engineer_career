@@ -18,7 +18,7 @@ Spark Streaming과 Kafka를 연동하는 방법에는 크게 2가지가 있다.
 
 
 
-![kafka_sparkstreaming_receiver_approach](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/spark/img/kafka_sparkstreaming_receiver_approach.png)
+![kafka_sparkstreaming_receiver_approach](https://github.com/dhkdn9192/data_engineer_career/blob/master/de/spark/img/kafka_sparkstreaming_receiver_approach.png)
 
 
 Receiver-based Approach는 데이터의 손실은 막을 수 있지만 장애가 발생하면 데이터가 두 번 이상 중복으로 처리될 수 있다는 문제가 있다. 즉, **at-least-once** 방식이다.
@@ -38,7 +38,7 @@ Receiver-based Approach는 데이터의 손실은 막을 수 있지만 장애가
 
 
 
-![kafka_sparkstreaming_direct_approach](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/de/spark/img/kafka_sparkstreaming_direct_approach.png)
+![kafka_sparkstreaming_direct_approach](https://github.com/dhkdn9192/data_engineer_career/blob/master/de/spark/img/kafka_sparkstreaming_direct_approach.png)
 
 
 
