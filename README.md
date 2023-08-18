@@ -23,8 +23,7 @@
   - [3-2. Database](#3-2-database)
   - [3-3. Network](#3-3-network)
   - [3-4. Data Structure and Algorithm](#3-4-data-structure-and-algorithm)
-  - [3-5. Programming Language](#3-5-programming-language)
-  - [3-6. common sense](#3-6-common-sense)
+  - [3-5. Programming](#3-5-programming)
 - [4. Back-end](#4-back-end)
 - [5. Fields of study](#5-fields-of-study)
 
@@ -167,79 +166,78 @@
 ## 3. Computer Science
 
 ### 3-1. Operation System
-  - [멀티스레드와 멀티프로세스](cs/os/multithread_multiprocess.md)
-  - [교착상태(deadlock)의 발생조건](cs/os/deadlock.md)
-  - [다익스트라의 은행원 알고리즘](cs/os/banker_algorithm.md)
-  - [세마포어와 뮤텍스](cs/os/semaphore_and_mutex.md)
-  - [프로세스 스케줄러](cs/os/process_scheduler.md)
-  - [CPU 스케줄링 알고리즘](cs/os/cpu_scheduling.md)
-  - [페이지 교체 알고리즘](cs/os/page_replacement_algorithm.md)
-  - [페이징과 세그먼테이션, 그리도 단편화](cs/os/paging_segmentation.md)
-  - [Big-endian, Little-endian](cs/os/big_endian_little_endian.md)
-  - [캐시 메모리와 버퍼 메모리](cs/os/difference_between_cache_and_buffer.md)
-  - [페이지 캐시와 버퍼 캐시](cs/os/page_cache_and_buffer_cache.md)
-  - [Polling과 Interrupt](cs/os/polling_and_interrupt.md)  
-  - [Sync와 Async, Blocking과 Non-blocking](cs/os/sync_async_block_nonblock.md)
-  - [Context Switching이 진행되는 단계](cs/os/context_switching.md)
-  - 하이퍼스레딩과 코어 수
+- [멀티스레드와 멀티프로세스](cs/os/multithread_multiprocess.md)
+- [교착상태(deadlock)의 발생조건](cs/os/deadlock.md)
+- [다익스트라의 은행원 알고리즘](cs/os/banker_algorithm.md)
+- [세마포어와 뮤텍스](cs/os/semaphore_and_mutex.md)
+- [프로세스 스케줄러](cs/os/process_scheduler.md)
+- [CPU 스케줄링 알고리즘](cs/os/cpu_scheduling.md)
+- [페이지 교체 알고리즘](cs/os/page_replacement_algorithm.md)
+- [페이징과 세그먼테이션, 그리도 단편화](cs/os/paging_segmentation.md)
+- [Big-endian, Little-endian](cs/os/big_endian_little_endian.md)
+- [캐시 메모리와 버퍼 메모리](cs/os/difference_between_cache_and_buffer.md)
+- [페이지 캐시와 버퍼 캐시](cs/os/page_cache_and_buffer_cache.md)
+- [Polling과 Interrupt](cs/os/polling_and_interrupt.md)  
+- [Sync와 Async, Blocking과 Non-blocking](cs/os/sync_async_block_nonblock.md)
+- [Context Switching이 진행되는 단계](cs/os/context_switching.md)
+- 하이퍼스레딩과 코어 수
 
 ### 3-2. Database
-  - [데이터 무결성 (Data Integrity)](cs/db/data_integrity.md)
-  - [데이터베이스 인덱스](cs/db/database_index.md)
-  - [데이터베이스 정규화](cs/db/normalization.md)
-  - [파티셔닝과 샤딩의 차이](cs/db/partitioning_vs_sharding.md)
-  - [트랜잭션과 ACID](cs/db/transaction_acid.md)
-  - [DDL / DML / DCL / TCL](cs/db/ddl_dml_dcl_tcl.md)
-  - [DELETE / TRUNCATE / DROP](cs/db/delete_truncate_drop.md)
-  - [Top 50 SQL Interview Questions](cs/db/top_50_sql_interview_questions.md)
+- [데이터 무결성 (Data Integrity)](cs/db/data_integrity.md)
+- [데이터베이스 인덱스](cs/db/database_index.md)
+- [데이터베이스 정규화](cs/db/normalization.md)
+- [파티셔닝과 샤딩의 차이](cs/db/partitioning_vs_sharding.md)
+- [트랜잭션과 ACID](cs/db/transaction_acid.md)
+- [DDL / DML / DCL / TCL](cs/db/ddl_dml_dcl_tcl.md)
+- [DELETE / TRUNCATE / DROP](cs/db/delete_truncate_drop.md)
+- [Top 50 SQL Interview Questions](cs/db/top_50_sql_interview_questions.md)
 
 ### 3-3. Network
-  - [TCP and UDP](cs/network/tcp_udp.md)
-  - [TCP's 3-way handshake, 4-way handshake](cs/network/tcp_handshake.md)
-  - [HTTP 요청 메소드: GET과 POST의 차이](cs/network/http_request_method.md)
-  - 웹 브라우저가 웹 페이지의 이미지를 보여주기까지의 과정 ([link](https://goodgid.github.io/HTTP-Communicate-Process/))
+- [TCP and UDP](cs/network/tcp_udp.md)
+- [TCP's 3-way handshake, 4-way handshake](cs/network/tcp_handshake.md)
+- [HTTP 요청 메소드: GET과 POST의 차이](cs/network/http_request_method.md)
+- 웹 브라우저가 웹 페이지의 이미지를 보여주기까지의 과정 ([link](https://goodgid.github.io/HTTP-Communicate-Process/))
 
 ### 3-4. Data Structure and Algorithm
-  - Array vs Linked List
-  - Stack and Queue
-    - Stack으로 Queue 구현하기
-  - [Tree](cs/ds_algorithm/tree.md)
-    - [Binary Search Tree (BST)](cs/ds_algorithm/binary_search_tree.md)
-    - AVL Tree
-    - Heap
-  - [Hash Table](cs/ds_algorithm/hash_table.md)
-  - Graph
-    - [Dijkstra algorithm](cs/ds_algorithm/dijkstra_shortest_path.md)
-  - [Sorting](cs/ds_algorithm/sorting_algorithm.md)
-  - Recursion
-  - Dynamic Programming
+- Array vs Linked List
+- Stack and Queue
+  - Stack으로 Queue 구현하기
+- [Tree](cs/ds_algorithm/tree.md)
+  - [Binary Search Tree (BST)](cs/ds_algorithm/binary_search_tree.md)
+  - AVL Tree
+  - Heap
+- [Hash Table](cs/ds_algorithm/hash_table.md)
+- Graph
+  - [Dijkstra algorithm](cs/ds_algorithm/dijkstra_shortest_path.md)
+- [Sorting](cs/ds_algorithm/sorting_algorithm.md)
+- Recursion
+- Dynamic Programming
 
-### 3-5. Programming Language
-  - Java
-    - [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
-    - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
-    - [GC 정리](interview/computer_science/gc.md)
-    - [Java 메모리 누수](interview/computer_science/understanding_memory_leaks_in_java.md)
-    - [On-heap과 Off-heap](interview/computer_science/java_onheap_offheap.md)
-    - [String 대신 StringBuffer, StringBuilder를 쓰는 이유](interview/computer_science/java_string_stringbuffer_stringbuilder.md)
-    - static 선언과 GC
-    - Primitive type, Reference type, Wrapper class
-  - Scala
-    - [Scala의 함수형 프로그래밍 성질](interview/computer_science/scala_functional_programming.md)
-    - [Scala의 pass-by-name](https://stackoverflow.com/questions/9508051/function-parameter-types-and)
-    - 동반 객체 (Companion Object)
-    - 케이스 클래스 (case class)
-  - Python
-    - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
+### 3-5. Programming
+- [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
+- [MVC Pattern](interview/computer_science/mvc_pattern.md)
+- [SOLID 원칙](interview/computer_science/solid.md)
+- 객체지향의 DTO, DAO, VO 개념 용어
+- Idempotence(멱등성)
+- 테스트 도구와 절차
+- 트래픽/트랜잭션량 측정
+- Singleton 패턴을 사용하는 이유
+- Java  
+  - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
+  - [GC 정리](interview/computer_science/gc.md)
+  - [Java 메모리 누수](interview/computer_science/understanding_memory_leaks_in_java.md)
+  - [On-heap과 Off-heap](interview/computer_science/java_onheap_offheap.md)
+  - [String 대신 StringBuffer, StringBuilder를 쓰는 이유](interview/computer_science/java_string_stringbuffer_stringbuilder.md)
+  - static 선언과 GC
+  - Primitive type, Reference type, Wrapper class
+- Scala
+  - [Scala의 함수형 프로그래밍 성질](interview/computer_science/scala_functional_programming.md)
+  - Scala의 pass-by-name ([link](https://stackoverflow.com/questions/9508051/function-parameter-types-and))
+  - 동반 객체 (Companion Object)
+  - 케이스 클래스 (case class)
+- Python
+  - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
 
-### 3-6. common sense
-  - [MVC Pattern](interview/computer_science/mvc_pattern.md)
-  - [SOLID 원칙](interview/computer_science/solid.md)
-  - 객체지향의 DTO, DAO, VO 개념 용어
-  - Idempotence(멱등성)
-  - 테스트 도구와 절차
-  - 트래픽/트랜잭션량 측정
-  - Singleton 패턴을 사용하는 이유
 
 
 <br>
