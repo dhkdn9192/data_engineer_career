@@ -184,16 +184,14 @@
   - 하이퍼스레딩과 코어 수
 
 ### 3-2. Database
-  - [데이터 무결성 (Data Integrity)](interview/database/data_integrity.md)
-  - [데이터베이스 인덱스](interview/database/database_index.md)
-  - [데이터베이스 정규화](interview/database/normalization.md)
-  - [파티셔닝과 샤딩의 차이](interview/database/partitioning_vs_sharding.md)
-  - [트랜잭션과 ACID](interview/database/transaction_acid.md)
-  - [DDL / DML / DCL / TCL](interview/database/ddl_dml_dcl_tcl.md)
-  - [DELETE / TRUNCATE / DROP](interview/database/delete_truncate_drop.md)
-  - [Top 50 SQL Interview Questions](interview/database/top_50_sql_interview_questions.md)
-  - PostgreSQL vs MariaDB
-  - MongoDB 고가용성 아키텍처
+  - [데이터 무결성 (Data Integrity)](cs/db/data_integrity.md)
+  - [데이터베이스 인덱스](cs/db/database_index.md)
+  - [데이터베이스 정규화](cs/db/normalization.md)
+  - [파티셔닝과 샤딩의 차이](cs/db/partitioning_vs_sharding.md)
+  - [트랜잭션과 ACID](cs/db/transaction_acid.md)
+  - [DDL / DML / DCL / TCL](cs/db/ddl_dml_dcl_tcl.md)
+  - [DELETE / TRUNCATE / DROP](cs/db/delete_truncate_drop.md)
+  - [Top 50 SQL Interview Questions](cs/db/top_50_sql_interview_questions.md)
 
 ### 3-3. Network
   - [TCP and UDP](interview/computer_science/tcp_udp.md)
