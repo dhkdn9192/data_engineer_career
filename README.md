@@ -203,14 +203,14 @@
   - Array vs Linked List
   - Stack and Queue
     - Stack으로 Queue 구현하기
-  - [Tree](interview/algorithm/tree.md)
-    - [Binary Search Tree (BST)](interview/algorithm/binary_search_tree.md)
+  - [Tree](cs/ds_algorithm/tree.md)
+    - [Binary Search Tree (BST)](cs/ds_algorithm/binary_search_tree.md)
     - AVL Tree
     - Heap
-  - [Hash Table](interview/computer_science/hash_table.md)
+  - [Hash Table](cs/ds_algorithm/hash_table.md)
   - Graph
-    - [Dijkstra algorithm](interview/algorithm/dijkstra_shortest_path.md)
-  - [Sorting](interview/algorithm/sorting_algorithm.md)
+    - [Dijkstra algorithm](cs/ds_algorithm/dijkstra_shortest_path.md)
+  - [Sorting](cs/ds_algorithm/sorting_algorithm.md)
   - Recursion
   - Dynamic Programming
 
