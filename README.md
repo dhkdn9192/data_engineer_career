@@ -260,7 +260,7 @@
 
 
 ## 5. Back-end
-- [MVC Pattern](interview/computer_science/mvc_pattern.md)
+- [MVC Pattern](be/mvc_pattern.md)
 - DTO, DAO, VO
 
 
