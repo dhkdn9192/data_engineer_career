@@ -216,16 +216,16 @@
 
 ### 3-5. Programming Language
 - Java
-  - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
-  - [GC 정리](interview/computer_science/gc.md)
+  - [JVM, JIT Compiler, GC](cs/language/java/jvm.md)
+  - [GC 정리](cs/language/java/gc.md)
   - ZGC란
-  - [Java 메모리 누수](interview/computer_science/understanding_memory_leaks_in_java.md)
-  - [On-heap과 Off-heap](interview/computer_science/java_onheap_offheap.md)
-  - [String 대신 StringBuffer, StringBuilder를 쓰는 이유](interview/computer_science/java_string_stringbuffer_stringbuilder.md)
+  - [Java 메모리 누수](cs/language/java/understanding_memory_leaks_in_java.md)
+  - [On-heap과 Off-heap](cs/language/java/java_onheap_offheap.md)
+  - [String 대신 StringBuffer, StringBuilder를 쓰는 이유](cs/language/java/java_string_stringbuffer_stringbuilder.md)
+  - [인터페이스와 추상클래스의 차이, 그리고 다형성](cs/language/java/interface_vs_abstract_class.md)
+  - 싱글톤 패턴
   - static 선언과 GC
   - Primitive type, Reference type, Wrapper class
-  - [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
-  - 싱글톤 패턴
 - Scala
   - [Scala의 함수형 프로그래밍 성질](interview/computer_science/scala_functional_programming.md)
   - Scala의 pass-by-name ([link](https://stackoverflow.com/questions/9508051/function-parameter-types-and))
