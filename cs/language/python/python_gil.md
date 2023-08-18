@@ -52,7 +52,6 @@ object "foo"를 서로 다른 두 thread가 상호배제 없이 동시에 접근
 - 따라서 Python은 interpreter에 대해 mutex를 걸어 동시에 한 thread만이 python object에 접근할 수 있도록 lock을 거는 방식을 선택했다.
 
 
-<br>
 
 ## Reference
 - https://dgkim5360.tistory.com/entry/understanding-the-global-interpreter-lock-of-cpython
