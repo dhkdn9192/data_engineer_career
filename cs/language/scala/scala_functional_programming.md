@@ -9,7 +9,6 @@ Scala는 Java와 같은 JVM 언어지만 함수형 프로그래밍 패러다임�
 
 
 
-<br>
 
 
 
@@ -38,9 +37,6 @@ Scala는 Java와 같은 JVM 언어지만 함수형 프로그래밍 패러다임�
 
   
 
-
-
-<br>
 
 
 
@@ -94,9 +90,6 @@ Scala는 Java와 같은 JVM 언어지만 함수형 프로그래밍 패러다임�
 
 
 
-<br>
-
-
 
 ## 3. Expression Only
 
@@ -130,11 +123,6 @@ Scala는 Java와 같은 JVM 언어지만 함수형 프로그래밍 패러다임�
   
 
 
-
-<br>
-
-
-
 ## 4. First-class and Higher-order Functions
 
 - First-class functions란 함수를 마치 값, 변수, 데이터 구조처럼 저장할 수 있는 것을 의미한다.
@@ -148,9 +136,6 @@ Scala는 Java와 같은 JVM 언어지만 함수형 프로그래밍 패러다임�
   ```
 
 
-
-
-<br>
 
 
 
