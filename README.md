@@ -209,7 +209,7 @@
 - [Hash Table](cs/ds_algorithm/hash_table.md)
 - Graph
   - [Dijkstra algorithm](cs/ds_algorithm/dijkstra_shortest_path.md)
-- [Sorting](cs/ds_algorithm/sorting_algorithm.md)
+- [Sorting](cs/ds_algorithm/sorting_algorithm.md), ([notebook](cs/ds_algorithm/sorting_algorithm.ipynb))
 - Recursion
 - Dynamic Programming
 
