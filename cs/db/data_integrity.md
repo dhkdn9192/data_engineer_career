@@ -33,7 +33,5 @@
 주민등록번호 칼럼에 알파벳이 입력되거나 NOT NULL 옵션의 칼럼에 NULL 값이 입력되지 않도록 도메인 무결성이 규정되어야 한다.
 
 
-<br>
-
 ## Reference
 - https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%AC%B4%EA%B2%B0%EC%84%B1
