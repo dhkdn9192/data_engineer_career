@@ -11,7 +11,7 @@ JVM은 Java와 OS 사이의 중재자 역할을 하며,  **Java가 OS에 상관�
 
 JVM은 크게 Class Loader, Execution Engine, Runtime Data Area, Java Native Interface 로 구성된다.
 
-![jvm-architecture](img/jvm-architecture.png)
+![jvm_architecture](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/language/java/img/jvm-architecture.png)
 
 
 ### Class Loader
@@ -70,7 +70,7 @@ JIT 컴파일러는 두 가지의 방식을 혼합한 방식으로 생각할 수
 
 ## Java Heap Memory
 
-![java_heap_architectur](img/JVM-memory-structure2.png)
+![JVM-memory-structure2](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/language/java/img/JVM-memory-structure2.png)
 
 ### Generation GCs
 메모리에 올라가는 객체들은 대부분 짧은 기간 동안만 살아있다가 제거되며, 일부는 오래 생존하다가 제거된다. 이러한 두 가지 유형의 객체들을 효율적으로 GC 처리하기 위해 HotSpot VM에서는 메모리를 Youn/Old 두 개의 물리적인 공간으로 나누었다. 이를 Generational GC 방식의 운영이라 한다.
@@ -109,8 +109,6 @@ Garbage Collection(GC)가 수행되면 GC thread를 제외한 모든 thread를 �
 - stop-the-world에 의해 Java 애플리케이션이 상대적으로 길게 멈추므로 성능과 안정성에 큰 영향을 준다
 
 
-
-<br>
 
 
 ## Reference
