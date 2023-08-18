@@ -7,7 +7,7 @@
 - 양쪽 모두 상대편에 대한 초기 순차일련변호를 얻을 수 있도록 한다
 
 
-![tcp_3way_handshake](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/tcp_3way_handshake.png)
+![tcp_3way_handshake](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/network/img/tcp_3way_handshake.png)
 
 #### step 1
 - A클라이언트는 B서버에 접속을 요청하는 SYN 패킷을 보낸다
@@ -28,7 +28,7 @@
 - 3-Way handshake는 TCP의 연결을 초기화 할 때 사용한다면, 4-Way handshake는 세션을 종료하기 위해 수행되는 절차이다
 
 
-![tcp_4way_handshake](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/tcp_4way_handshake.png)
+![tcp_4way_handshake](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/network/img/tcp_4way_handshake.png)
 
 #### step 1
 - 클라이언트가 연결을 종료하겠다는 FIN플래그를 전송한다
@@ -50,8 +50,6 @@
 - 이러한 현상에 대비하여 Client는 Server로부터 FIN을 수신하더라도 일정시간(디폴트 240초) 동안 세션을 남겨놓고 잉여 패킷을 기다리는 과정을 거치게 되는데 이 과정을 ```TIME_WAIT``` 라고 한다
 
 
-
-<br>
 
 ## Reference
 - https://mindnet.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-22%ED%8E%B8-TCP-3-WayHandshake-4-WayHandshake
