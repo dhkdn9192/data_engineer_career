@@ -22,7 +22,7 @@
 - 데이터 입력, 수정, 삭제 시 항상 정렬 상태를 유지한다.
 - 비 클러스형 인덱스보다 검색 속도는 더 빠르다. 하지만 데이터의 입력. 수정, 삭제는 느리다.
 
-![clustered_index](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/database/img/clustered_index.png)
+![clustered_index](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/db/img/clustered_index.png)
 
 
 
@@ -34,7 +34,7 @@
 - 인덱스 자체의 리프 페이지는 데이터가 아니라 데이터가 위치하는 포인터(RID)이기 때문에 클러스터형보다 검색 속도는 더 느리지만 데이터의 입력, 수정, 삭제는 더 빠르다.
 - 인덱스를 생성할 때 데이터 페이지는 그냥 둔 상태에서 별도의 인덱스 페이지를 따로 만들기 때문에 용량을 더 차지한다
 
-![nonclustered_index](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/database/img/nonclustered_index.png)
+![nonclustered_index](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/db/img/nonclustered_index.png)
 
 
 
@@ -61,15 +61,15 @@
 - B-tree는 이진트리를 확장한 구조로, 각 노드가 가질 수 있는 자식 노드의 최대 수가 2보다 큰 트리구조다.
 - B-tree의 구조는 최상단의 Root Node와 중간 노드인 Branch Node, 가장 아래의 Leaf Node로 구성된다.
 
-![b_tree_architecture](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/database/img/b_tree_architecture.png)
+![b_tree_architecture](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/db/img/b_tree_architecture.png)
 
 - 검색할 값을 데이터와 일일이 비교하는 것은 비효율적이므로, B-tree는 데이터를 항상 정렬된 상태로 보관한다.
 
-![sorted_data_in_btree](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/database/img/sorted_data_in_btree.png)
+![sorted_data_in_btree](https://github.com/dhkdn9192/data_engineer_career/blob/master/cd/db/img/sorted_data_in_btree.png)
 
 - B-tree의 내부 노드는 자식 노드의 수를 정해진 범위 안에서 변경할 수 있다. 즉, 삽입/삭제가 발생하면 해당 범위의 자식 노드 수를 만족시키기 위해 노드끼리 합쳐지거나 분리되며 재균형 과정을 이룬다.
 
-![balanced_tree](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/database/img/balanced_tree.png)
+![balanced_tree](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/db/img/balanced_tree.png)
 
 - 균형 상태를 항상 유지하므로 B-tree는 어느 데이터에 대해서든 O(log n)의 동일한 속도로 균일하게 빠른 탐색을 할 수 있다.
 - 반면 재균형 과정으로 인해 삽입/삭제 연산에 대해서는 성능이 떨어진다.
@@ -81,7 +81,7 @@
 - B+tree는 B-tree를 확장한 개념이다.
 - B-tree가 internal 또는 브랜치 노드에 key와 data를 담을 수 있는 반면, B+tree는 브랜치 노드에 key만 담아두고, data는 담지 않는다. 오직 리프 노드에만 key와 data를 저장하고, 리프 노드끼리 Linked list로 연결되어 있다. 
 
-![bplus_tree](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/database/img/bplus_tree.png)
+![bplus_tree](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/db/img/bplus_tree.png)
 
 - 리프 노드를 제외하고 데이터를 담아두지 않기 때문에 메모리를 더 확보함으로써 더 많은 key들을 수용할 수 있다. 
 - 하나의 노드에 더 많은 key들을 담을 수 있기에 트리의 높이는 더 낮아진다.(cache hit를 높일 수 있음)
