@@ -88,10 +88,6 @@ public class Tiger extends Predator implements Barkable {
 - 연관없는 클래스들을 공통 인터페이스로 묶어주고 싶은 경우
 
 
-## 다형성 (Polymorphism)
-다형성이란 같은 자료형에 여러 가지 객체를 대입하여 다양한 결과를 얻어내는 성질을 의미한다. 
-대표적으로 오버로딩이 있다.
-
 
 ## Reference
 - https://wikidocs.net/217
