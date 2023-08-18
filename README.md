@@ -255,7 +255,7 @@
 
 ## 4. Back-end
 - [MVC Pattern](be/mvc_pattern.md)
-- DTO, DAO, VO
+- DAO, DTO, VO, BO, Entity, Service
 
 
 <br>
