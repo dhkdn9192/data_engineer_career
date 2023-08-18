@@ -14,7 +14,7 @@
   - [1-2. Spark](#1-2-spark)
   - [1-3. Kafka](#1-3-kafka)
   - [1-4. ELK Stack](#1-4-elk-stack)
-  - [1-5. etc](#1-5-etc)
+  - [1-5. others](#1-5-others)
 - [2. Cloud Computing](#2-cloud-computing)
   - [2-1. Docker and k8s](#2-1-docker-and-k8s)
   - [2-2. AWS](#2-2-aws)
@@ -95,7 +95,7 @@
 - Logstash
   - [기본 개념과 구조](de/elk/logstash_basic.md)
 
-### 1-5. Etc
+### 1-5. others
 - Apache Hive
   - [Partition, Bucket, Index](de/hive/hive_partition_bucket_index.md)
   - Why isn't the metastore in hdfs?
