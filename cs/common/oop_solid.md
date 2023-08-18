@@ -176,7 +176,7 @@ class SystemMonitor:
 여러 하위 타입을 가진 객체를 사용하는 클라이언트의 예시를 생각해보자.
 * LSP가 지켜진다면 하위 클래스들은 부모 클래스가 정의한 계약을 따를 것이다.
 * 즉, 클라이언트 클래스는 주의를 기울이지 않고도 모든 하위 클래스의 인스턴스로도 작업할 수 있어야 한다. 
-![image](https://github.com/dhkdn9192/data_engineer_should_know/assets/11307388/1258eb40-8eb4-4f6a-9263-ba438646147b)
+![image](https://github.com/dhkdn9192/data_engineer_career/assets/11307388/1258eb40-8eb4-4f6a-9263-ba438646147b)
 
 
 
