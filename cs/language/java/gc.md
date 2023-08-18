@@ -10,8 +10,6 @@ GC가 발생하는 예시로, Java의 String 연산을 빈번하게 수행하면
 
 
 
-<br>
-
 
 
 ## 2. JVM의 Runtime Data Area
@@ -26,7 +24,7 @@ JVM의 Runtime Data Area는 다음과 같이 크게 5가지 요소로 구성된�
 
 
 
-![jvm_runtime_data_area](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/jvm_runtime_data_area_simple.png)
+![jvm_runtime_data_area](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/language/java/img/jvm_runtime_data_area_simple.png)
 
 
 
@@ -49,11 +47,9 @@ Runtime Data Area는 크게 Heap과 Non-heap으로 구분할 수 있다. Non-hea
 
 JVM의 Runtime Data Area를 좀 더 구체화하면 아래 이미지와 같다.
 
-![jvm_runatime_data_area_each_thread](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/jvm_runtime_data_area_each_thread.png)
+![jvm_runatime_data_area_each_thread](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/language/java/img/jvm_runtime_data_area_each_thread.png)
 
 
-
-<br>
 
 
 
@@ -61,7 +57,7 @@ JVM의 Runtime Data Area를 좀 더 구체화하면 아래 이미지와 같다.
 
 JVM Heap 메모리 구조는 크게 Young 영역(eden, survivor1, survivor2)과 Old 영역으로 구분된다. (Perm 영역은 JDK8부터는 사라진다)
 
-![heap_memory_structure](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/JVM-memory-structure2.png)
+![heap_memory_structure](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/language/java/img/JVM-memory-structure2.png)
 
 
 
@@ -78,9 +74,6 @@ GC 작업은 Heap 메모리 상에서 사용하지 않는 메모리를 인식하
 
 
 
-<br>
-
-
 
 ## 4. GC의 종류
 
@@ -89,8 +82,6 @@ GC 작업은 Heap 메모리 상에서 사용하지 않는 메모리를 인식하
 - Full GC : 전체 영역에서 발생하는 GC
 
 
-
-<br>
 
 
 
@@ -133,7 +124,7 @@ JDK에선 아래와 같은 5가지 GC 방식을 지원한다.
 
 
 
-![serial_gc_and_parallel_gc](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/serial_gc_and_parallel_gc.png)
+![serial_gc_and_parallel_gc](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/language/java/img/serial_gc_and_parallel_gc.png)
 
 
 
@@ -168,7 +159,7 @@ JDK에선 아래와 같은 5가지 GC 방식을 지원한다.
 
 
 
-![cms_collector_process](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/cms_collector_process.png)
+![cms_collector_process](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/language/java/img/cms_collector_process.png)
 
 
 
@@ -198,13 +189,10 @@ JDK에선 아래와 같은 5가지 GC 방식을 지원한다.
 
 
 
-![g1gc_heap_layout](https://github.com/dhkdn9192/data_engineer_should_know/blob/master/interview/computer_science/img/g1gc_heap_layout.png)
+![g1gc_heap_layout](https://github.com/dhkdn9192/data_engineer_career/blob/master/cs/language/java/img/g1gc_heap_layout.png)
 
 
 
-
-
-<br>
 
 
 
