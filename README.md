@@ -227,12 +227,12 @@
   - static 선언과 GC
   - Primitive type, Reference type, Wrapper class
 - Scala
-  - [Scala의 함수형 프로그래밍 성질](interview/computer_science/scala_functional_programming.md)
+  - [Scala의 함수형 프로그래밍 성질](cs/language/scala/scala_functional_programming.md)
   - Scala의 pass-by-name ([link](https://stackoverflow.com/questions/9508051/function-parameter-types-and))
   - 동반 객체 (Companion Object)
   - 케이스 클래스 (case class)
 - Python
-  - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
+  - [GIL(Global Interpreter Lock)](cs/language/python/python_gil.md)
 
 
 ### 3-6. common
