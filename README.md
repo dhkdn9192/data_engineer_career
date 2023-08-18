@@ -24,6 +24,8 @@
   - [3-3. Network](#3-3-network)
   - [3-4. Data Structure and Algorithm](#3-4-data-structure-and-algorithm)
 - [4. Programming](#4-programming)
+  - [4-1. Languages](#4-1-languages)
+  - [4-2. Common](#4-2-common)
 - [5. Back-end](#5-back-end)
 - [6. Fields of study](#6-fields-of-study)
 
@@ -219,31 +221,32 @@
 
 ## 4. Programming
 
-- Programming Languages
-  - Java
-    - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
-    - [GC 정리](interview/computer_science/gc.md)
-    - [Java 메모리 누수](interview/computer_science/understanding_memory_leaks_in_java.md)
-    - [On-heap과 Off-heap](interview/computer_science/java_onheap_offheap.md)
-    - [String 대신 StringBuffer, StringBuilder를 쓰는 이유](interview/computer_science/java_string_stringbuffer_stringbuilder.md)
-    - static 선언과 GC
-    - Primitive type, Reference type, Wrapper class
-    - [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
-    - 싱글톤 패턴
-  - Scala
-    - [Scala의 함수형 프로그래밍 성질](interview/computer_science/scala_functional_programming.md)
-    - Scala의 pass-by-name ([link](https://stackoverflow.com/questions/9508051/function-parameter-types-and))
-    - 동반 객체 (Companion Object)
-    - 케이스 클래스 (case class)
-  - Python
-    - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
-- 공통
-  - [MVC Pattern](interview/computer_science/mvc_pattern.md)
-  - [SOLID 원칙](interview/computer_science/solid.md)
-  - Idempotence(멱등성)
-  - 테스트 도구와 절차
-  - 트래픽/트랜잭션량 측정
-  - Lambda architecture ([link](https://gyrfalcon.tistory.com/entry/%EB%9E%8C%EB%8B%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-Lambda-Architecture))
+### 4-1. Languages
+- Java
+  - [JVM, JIT Compiler, GC](interview/computer_science/jvm.md)
+  - [GC 정리](interview/computer_science/gc.md)
+  - [Java 메모리 누수](interview/computer_science/understanding_memory_leaks_in_java.md)
+  - [On-heap과 Off-heap](interview/computer_science/java_onheap_offheap.md)
+  - [String 대신 StringBuffer, StringBuilder를 쓰는 이유](interview/computer_science/java_string_stringbuffer_stringbuilder.md)
+  - static 선언과 GC
+  - Primitive type, Reference type, Wrapper class
+  - [인터페이스와 추상클래스의 차이, 그리고 다형성](interview/computer_science/interface_vs_abstract_class.md)
+  - 싱글톤 패턴
+- Scala
+  - [Scala의 함수형 프로그래밍 성질](interview/computer_science/scala_functional_programming.md)
+  - Scala의 pass-by-name ([link](https://stackoverflow.com/questions/9508051/function-parameter-types-and))
+  - 동반 객체 (Companion Object)
+  - 케이스 클래스 (case class)
+- Python
+  - [GIL(Global Interpreter Lock)](interview/computer_science/python_gil.md)
+
+### 4-2. Common
+- [MVC Pattern](interview/computer_science/mvc_pattern.md)
+- [SOLID 원칙](interview/computer_science/solid.md)
+- Idempotence(멱등성)
+- 테스트 도구와 절차
+- 트래픽/트랜잭션량 측정
+- Lambda architecture ([link](https://gyrfalcon.tistory.com/entry/%EB%9E%8C%EB%8B%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-Lambda-Architecture))
 
 
 <br>
