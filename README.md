@@ -118,6 +118,10 @@
   - Celery 개념과 Celery Excutor
 - Apache SeaTunnel ([link](https://seatunnel.apache.org/))
   - Sqoop, Logstash, Fluentd, Kafka Connect를 모두 대체할 수 있을까?
+- Apache Doris ([link](https://doris.apache.org/))
+  - Apache Doris is a new-generation open-source real-time data warehouse based on MPP architecture, with easier use and higher performance for big data analytics.
+- Apache StreamPark ([link](https://streampark.apache.org/))
+  - Make stream processing easier! easy-to-use streaming application development framework and operation platform
 - 데이터 엔지니어 면접 질문 모음
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](de/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](de/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
