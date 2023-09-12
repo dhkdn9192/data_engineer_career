@@ -140,7 +140,7 @@
 - Docker
   - [Container vs VM](cloud/docker/container_vs_vm.md)
   - Difference between Docker and process
-- Kubernetes
+- Kubernetes ([link](https://subicura.com/2019/05/19/kubernetes-basic-1.html))
   - Pod
   - Replica Set
   - Deployment
