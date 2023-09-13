@@ -67,4 +67,38 @@
   kubectl apply -f resourcedefinition.yaml
   ```
 
+## [파드(Pod)](https://kubernetes.io/ko/docs/concepts/workloads/pods/)
+<img width="814" alt="image" src="https://github.com/dhkdn9192/data_engineer_career/assets/11307388/41ae4db9-521f-4372-9fae-53f75850aa29">
 
+* 파드(Pod) 는 쿠버네티스에서 생성하고 관리할 수 있는 배포 가능한 가장 작은 컴퓨팅 단위이다.
+* 파드는 하나 이상의 컨테이너(일반적으로 Docker)를 가진다.
+* 같은 파드의 컨테이너들은 같은 스토리지와 네트워크를 공유하며 서로 localhost로 접근 가능하다.
+* 파드 예제
+  * nginx:1.14.2 이미지를 실행하는 컨테이너로 구성된 파드
+  ```yaml
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: nginx
+  spec:
+    containers:
+    - name: nginx
+      image: nginx:1.14.2
+      ports:
+      - containerPort: 80
+  ```
+  * 위의 정의된 파드를 실행하려면
+  ```bash
+  kubectl apply -f https://k8s.io/examples/pods/simple-pod.yaml
+  ```
+
+
+## [레플리카셋(ReplicaSet)](https://kubernetes.io/ko/docs/concepts/workloads/controllers/replicaset/)
+* 레플리카셋은 파드가 항상 일정한 복제본 수를 유지하도록 관리하며, 파드를 생성하고 개수를 유지하기 위해 반드시 필요한 오브젝트이다.
+* 파드의 복제본 개수, 생성할 파드의 템플릿 등의 설정값을 갖는다.
+* 보통 디플로이먼트 등 다른 오브젝트에 의해서 레플리카셋이 사용된다.
+<img width="814" alt="image" src="https://github.com/dhkdn9192/data_engineer_career/assets/11307388/b344e68f-b603-433c-9653-2d0d3ac0fff1">
+
+
+## Reference
+* https://subicura.com/2019/05/19/kubernetes-basic-1.html
