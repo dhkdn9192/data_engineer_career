@@ -122,6 +122,7 @@
   - Apache Doris is a new-generation open-source real-time data warehouse based on MPP architecture, with easier use and higher performance for big data analytics.
 - Apache StreamPark ([link](https://streampark.apache.org/))
   - Make stream processing easier! easy-to-use streaming application development framework and operation platform
+- dbt ([link](https://www.getdbt.com/))
 - 데이터 엔지니어 면접 질문 모음
   - [Top 50 Hadoop Interview Questions You Must Prepare In 2020](de/top_bigdata_questions/top_50_hadoop_interview_questions_in_2020.md)
   - [Top Hadoop Interview Questions To Prepare In 2020 – HDFS](de/top_bigdata_questions/top_hadoop_interview_questions_in_2020_hdfs.md)
@@ -252,6 +253,7 @@
 - 테스트 도구와 절차
 - 트래픽/트랜잭션량 측정
 - Lambda architecture ([link](https://gyrfalcon.tistory.com/entry/%EB%9E%8C%EB%8B%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-Lambda-Architecture))
+- ETL과 ELT
 
 
 <br>
