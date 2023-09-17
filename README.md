@@ -142,13 +142,11 @@
   - [Container vs VM](cloud/docker/container_vs_vm.md)
   - Difference between Docker and process
 - Kubernetes ([link](https://subicura.com/2019/05/19/kubernetes-basic-1.html))
-  - Pod
-  - Replica Set
+  - [기본개념과 용어](cloud/k8s/k8s_basic.md)
   - Deployment
   - Service
   - Namespace
   - PV/PVC ([link](https://kimjingo.tistory.com/153))
-  - CR/CRD ([link](https://frozenpond.tistory.com/111))
   - HPA ([link](https://medium.com/dtevangelist/k8s-kubernetes%EC%9D%98-hpa%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81-auto-scaling-2fc6aca61c26))
 
 ### 2-2. AWS
