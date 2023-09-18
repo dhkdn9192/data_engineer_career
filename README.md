@@ -5,8 +5,6 @@
 
 데이터 엔지니어 직무와 관련된 지식, 기술질문 등을 정리합니다.
 
-기술블로그(https://dhkdn9192.github.io) 로도 올리고 있습니다.
-
 
 ## Table of Contents
 - [1. Data Engineering](#1-data-engineering)
