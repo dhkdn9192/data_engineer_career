@@ -111,6 +111,7 @@
 - Apache Druid
   - Druid의 주요 특징
   - Druid의 아키텍처
+  - Query granularities와 쿼리 부하 사이의 관계 ([link](https://druid.apache.org/docs/latest/querying/granularities/)) 
 - Apache Airflow
   - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
   - Celery 개념과 Celery Excutor
