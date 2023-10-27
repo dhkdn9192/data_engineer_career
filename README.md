@@ -116,6 +116,7 @@
   - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
   - Celery 개념과 Celery Excutor
   - schedule_interval과 execution_date 의 난해함 ([link](https://blog.bsk.im/2021/03/21/apache-airflow-aip-39/))
+  - catchup 설정과 주의사항 ([link](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html#catchup))
 - Apache SeaTunnel ([link](https://seatunnel.apache.org/))
   - Sqoop, Logstash, Fluentd, Kafka Connect를 모두 대체할 수 있을까?
 - Apache Doris ([link](https://doris.apache.org/))
