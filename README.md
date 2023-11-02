@@ -112,7 +112,7 @@
   - Druid의 주요 특징
   - Druid의 아키텍처
   - Query granularities와 쿼리 부하 사이의 관계 ([link](https://druid.apache.org/docs/latest/querying/granularities/))
-  - HLL(HyperLogLog) Sketch와 유니크 원소 갯수 (cardinality) 추정 ([link](https://d2.naver.com/helloworld/711301))
+  - HLL(HyperLogLog) Sketch와 유니크 원소 갯수 (cardinality) 추정 ([link1](https://d2.naver.com/helloworld/711301), [link2](https://druid.apache.org/docs/latest/development/extensions-core/datasketches-hll/))
 - Apache Airflow
   - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
   - Celery 개념과 Celery Excutor
