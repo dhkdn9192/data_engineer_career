@@ -3,7 +3,7 @@
 ![image](https://github.com/dhkdn9192/data_engineer_career/assets/11307388/e1de9d06-a699-43f0-81cb-b013def19275)
 
 * 마틴 클레프만 지음 / 정재부, 김영준, 이도경 옮김 / 위키북스
-* 도서 참고자료 github : https://github.com/ept/ddia-references
+* 챕터별 참고문헌 : https://github.com/ept/ddia-references
 * 노마드코더 책 추천 영상 : https://www.youtube.com/watch?v=IhrKUObq9Ug
 
 
