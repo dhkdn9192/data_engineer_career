@@ -7,7 +7,7 @@
 
 ## Part 1 - 데이터 시스템의 기초
 
-1. [신뢰할 수 있고 확장 가능하며 유지보수하기 쉬운 애플리케이션](ㅇㅇㅇ)
+1. [신뢰할 수 있고 확장 가능하며 유지보수하기 쉬운 애플리케이션](fields_of_study/book_data_intensive/ch01_reliable_scalable_maintainable_app.md)
 2. [데이터 모델과 질의 언어](ㅁㅎㄷㅎ)
 3. [저장소와 검색]()
 4. [부호화와 발전]()
