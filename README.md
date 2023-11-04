@@ -273,11 +273,11 @@
 
 - 읽을거리
   - [The future of the data engineer (part 1)](fields_of_study/articles/the-future-of-the-data-engineer-part-i.md)
+- 도서학습
+  - [데이터 중심 애플리케이션 설계](fields_of_study/book_data_intensive/README.md)
 - 연구주제
   - [Anomaly Detection](fields_of_study/anomaly_detection)
-  - Churn Prediction
-  - NLP
-  - Recommender System
+  - Churn Prediction, NLP, Recommender System, etc
 - 아이디어
   - PySpark 클러스터 환경에서 각 노드별 python package 일괄 관리 툴
   - Apache Nutch의 streaming 버전, Spark 기반의 웹 크롤러
