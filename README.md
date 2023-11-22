@@ -160,7 +160,7 @@
 - Amazon S3
   - S3 vs EFS vs EBS ([link](https://seohyun0120.tistory.com/entry/AWS-EBS-vs-EFS-vs-S3-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EC%96%B4%EB%8A%90-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%EB%A5%BC-%EC%8D%A8%EC%95%BC%ED%95%A0%EA%B9%8C))
   - s3, s3n, s3a 차이점 ([link](https://swalloow.github.io/aws-emr-s3-spark/))
-  - MinIO와 S3 호환
+  - MinIO와 S3 호환 ([link1](https://city-man.tistory.com/36), [link2](https://shuu.tistory.com/145))
 - Amazon Redshift
   - [Amazon Redshift가 지원하지 않는 것들](cloud/aws/redshift_does_not_support.md)
 - Amazon EMR
