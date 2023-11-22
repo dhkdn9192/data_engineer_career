@@ -84,6 +84,7 @@
 - Kafka의 Controller Broker(KafkaController)란 무엇인가? ([link](https://devidea.tistory.com/71))
 - dead letter queue ([link](https://devidea.tistory.com/111))
 - [Kafka Connect overview](de/kafka/kafka_connect_overview.md)
+- Debezium CDC
 
 ### 1-4. ELK Stack
 - Elasticsearch
