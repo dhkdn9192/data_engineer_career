@@ -3,8 +3,8 @@
 ![image](https://github.com/dhkdn9192/data_engineer_career/assets/11307388/89f5201a-d1e7-42e6-92df-731c04338323)
 
 해당 도서를 학습하고 요약 정리한다.
-* 도서 url : https://www.yes24.com/Product/Goods/59566585
 * 노마드코더 책 추천영상 : https://www.youtube.com/watch?v=IhrKUObq9Ug
+* 스터디 github repo : https://github.com/bok-study/designing-data-intensive-applications
 
 
 ## Part 1. 데이터 시스템의 기초
