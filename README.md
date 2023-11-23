@@ -104,6 +104,7 @@
   - Which is faster, SORT BY or ORDER BY in HiveQL?
   - What is HCatalog?
   - Hive UDF란?
+  - Hive의 View와 Table
 - Apache HBase
   - [Major Compaction vs Minor Compaction](de/hbase/hbase_compaction.md)
   - Region Server architecture
