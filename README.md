@@ -282,7 +282,7 @@
 - 읽을거리
   - [The future of the data engineer (part 1)](fields_of_study/articles/the-future-of-the-data-engineer-part-i.md)
 - 도서학습
-  - [데이터 중심 애플리케이션 설계 (bok-study/designing-data-intensive-applications)](https://github.com/bok-study/designing-data-intensive-applications)
+  - [데이터 중심 애플리케이션 설계](fields_of_study/books/designing_data_intensive_applications)
 - 연구주제
   - [Anomaly Detection](fields_of_study/anomaly_detection)
   - Churn Prediction, NLP, Recommender System, etc
