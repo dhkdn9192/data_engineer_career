@@ -257,6 +257,7 @@
   - 다형성
     - 메소드 오버로딩
   - [객체지향 5원칙: SOLID](cs/common/oop_solid.md)
+  - 객체-관계 매핑 (Object Relational Mapping, ORM) ([link](https://gmlwjd9405.github.io/2019/02/01/orm.html))
 - Idempotence(멱등성)
 - 테스트 도구와 절차
 - 트래픽/트랜잭션량 측정
