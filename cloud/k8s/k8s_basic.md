@@ -114,7 +114,7 @@ spec:
 
 
 ### 8) [Secret](https://kubernetes.io/ko/docs/concepts/configuration/secret/)
-* Secret은 암호, 토큰 또는 키와 같은 소량의 중요한 데이터를 포함하는 오브젝트이다.
+* Secret은 암호, 토큰 또는 키와 같은 소량의 중요한 데이터를 포함하는 오브젝트이다.
 * ConfigMap과 유사하지만 민감한 정보나 기밀 데이터를 보관하는 용도로 사용한다.
 
 
