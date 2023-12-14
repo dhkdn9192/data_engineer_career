@@ -12,7 +12,10 @@
   - [1-2. Spark](#1-2-spark)
   - [1-3. Kafka](#1-3-kafka)
   - [1-4. ELK Stack](#1-4-elk-stack)
-  - [1-5. others](#1-5-others)
+  - [1-5. Airflow](#1-5-airflow)
+  - [1-6. Hive](#1-6-hive)
+  - [1-7. DataHub](#1-7-datahub)
+  - [1-8. others](#1-8-others)
 - [2. Cloud Computing](#2-cloud-computing)
   - [2-1. Docker and k8s](#2-1-docker-and-k8s)
   - [2-2. AWS](#2-2-aws)
@@ -97,31 +100,35 @@
 - Logstash
   - [기본 개념과 구조](de/elk/logstash_basic.md)
 
-### 1-5. others
-- Apache Hive
-  - [Partition, Bucket, Index](de/hive/hive_partition_bucket_index.md)
-  - Why isn't the metastore in hdfs?
-  - Which is faster, SORT BY or ORDER BY in HiveQL?
-  - What is HCatalog?
-  - Hive UDF란?
-  - Hive의 View와 Table
+### 1-5. Airflow
+- Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
+- Celery 개념과 Celery Excutor
+- schedule_interval과 execution_date 의 난해함 ([link](https://blog.bsk.im/2021/03/21/apache-airflow-aip-39/))
+- catchup 설정과 주의사항 ([link](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html#catchup))
+
+### 1-6. Hive
+- HiveServer2 ([link](https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Overview))
+- Hive Design and Architecture ([link](https://cwiki.apache.org/confluence/display/hive/design))
+- Hive ACID ([link](https://cwiki.apache.org/confluence/display/hive/hive+transactions))
+- Hive Replication ([link](https://cwiki.apache.org/confluence/display/Hive/Replication))
+- Hive Query Planner and Optimizer ([link](https://cwiki.apache.org/confluence/display/Hive/Cost-based+optimization+in+Hive))
+- [Partition, Bucket, Index](de/hive/hive_partition_bucket_index.md)
+- Which is faster, SORT BY or ORDER BY in HiveQL?
+- What is HCatalog?
+- Hive UDF란?
+- Hive의 View와 Table
+- HiveQL Merge Into
+
+### 1-7. DataHub
+- 데이터 거버넌스란 무엇이고 왜 필요한가? ([link](https://datahubproject.io/docs/quickstart))
+
+### 1-8. others
 - Apache HBase
   - [Major Compaction vs Minor Compaction](de/hbase/hbase_compaction.md)
-  - Region Server architecture
-  - Time series Row key design: Salting, Empty region
-  - Region's locality
 - Apache Flink
-  - 배치처리와 스트림처리
 - Apache Druid
-  - Druid의 주요 특징
-  - Druid의 아키텍처
   - Query granularities와 쿼리 부하 사이의 관계 ([link](https://druid.apache.org/docs/latest/querying/granularities/))
   - HLL(HyperLogLog) Sketch와 유니크 원소 갯수 (cardinality) 추정 ([link1](https://d2.naver.com/helloworld/711301), [link2](https://druid.apache.org/docs/latest/development/extensions-core/datasketches-hll/))
-- Apache Airflow
-  - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
-  - Celery 개념과 Celery Excutor
-  - schedule_interval과 execution_date 의 난해함 ([link](https://blog.bsk.im/2021/03/21/apache-airflow-aip-39/))
-  - catchup 설정과 주의사항 ([link](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html#catchup))
 - Apache SeaTunnel ([link](https://seatunnel.apache.org/))
   - Sqoop, Logstash, Fluentd, Kafka Connect를 모두 대체할 수 있을까?
 - Apache Doris ([link](https://doris.apache.org/))
@@ -148,12 +155,8 @@
 ### 2-1. Docker and k8s
 - Docker
   - [Container vs VM](cloud/docker/container_vs_vm.md)
-  - Difference between Docker and process
 - Kubernetes ([link](https://subicura.com/2019/05/19/kubernetes-basic-1.html))
   - [기본개념과 용어](cloud/k8s/k8s_basic.md)
-  - Deployment
-  - Service
-  - Namespace
   - PV/PVC ([link](https://kimjingo.tistory.com/153))
   - HPA ([link](https://medium.com/dtevangelist/k8s-kubernetes%EC%9D%98-hpa%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81-auto-scaling-2fc6aca61c26))
 
@@ -193,7 +196,6 @@
 - [Polling과 Interrupt](cs/os/polling_and_interrupt.md)  
 - [Sync와 Async, Blocking과 Non-blocking](cs/os/sync_async_block_nonblock.md)
 - [Context Switching이 진행되는 단계](cs/os/context_switching.md)
-- 하이퍼스레딩과 코어 수
 
 ### 3-2. Database
 - [데이터 무결성 (Data Integrity)](cs/db/data_integrity.md)
@@ -271,6 +273,7 @@
 ## 4. Back-end
 - [MVC Pattern](be/mvc_pattern.md)
 - DAO, DTO, VO, BO, Entity, Service
+- Java Spring
 
 
 <br>
@@ -286,10 +289,6 @@
   - [데이터 중심 애플리케이션 설계](fields_of_study/books/designing_data_intensive_applications)
 - 연구주제
   - [Anomaly Detection](fields_of_study/anomaly_detection)
-  - Churn Prediction, NLP, Recommender System, etc
-- 아이디어
-  - PySpark 클러스터 환경에서 각 노드별 python package 일괄 관리 툴
-  - Apache Nutch의 streaming 버전, Spark 기반의 웹 크롤러
 
 <br>
 
