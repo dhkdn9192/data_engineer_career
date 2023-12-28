@@ -8,6 +8,15 @@ Hadoop 3.x 이전까지 HDFS는 replica들을 생성하는 것으로 fault toler
 데이터 블록의 복제본을 만들어 여러 데이터노드에 저장하는 것이다.
 복제본의 개수는 replication factor(기본값은 3)로 정한다.
 
+데이터노드 중 임의의 `n`개 노드가 사용 불가능한 상황이 되었을 때, 
+모든 데이터 블록의 복제본이 서로 다른 `replication-factor` 수 만큼의 노드에 존재하고
+`n < replication-factor` 조건을 만족한다면 어느 복제본도 유실되지 않는다.
+
+임의의 노드 `(replication-factor - 1)` 개까지는 다운되더라도 모든 복제본은 최소한 하나의 노드에는 존재한다는 것이 보장된다.
+하지만 `n >= replication-factor` 이면 데이터 블록의 모든 복제본이 유실되는 경우가 생길 수 있다.
+
+즉, `replication-factor = 3`이면 2번, `replication-factor = 5`이면 4번 까지의 장애를 허용할 수 있는 것이다.
+
 
 ## 2. Rack Awareness
 네임노드는 복제본들을 저장할 때 rack awareness까지 고려한 정책을 따른다.
