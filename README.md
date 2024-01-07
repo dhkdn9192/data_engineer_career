@@ -246,6 +246,8 @@
   - 케이스 클래스 (case class)
 - Python
   - [GIL(Global Interpreter Lock)](cs/language/python/python_gil.md)
+- Kotlin
+  - [Kotlin in acion 스터디](https://github.com/dhkdn9192/kotlin-in-action)
 
 
 ### 3-6. common
