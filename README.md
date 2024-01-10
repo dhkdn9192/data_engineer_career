@@ -103,6 +103,7 @@
 - Celery 개념과 Celery Excutor
 - schedule_interval과 execution_date 의 난해함 ([link](https://blog.bsk.im/2021/03/21/apache-airflow-aip-39/))
 - catchup 설정과 주의사항 ([link](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html#catchup))
+- airflow dataset과 Data-aware scheduling ([link](https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/datasets.html))
 
 ### 1-6. Hive
 - HiveServer2 ([link](https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Overview))
