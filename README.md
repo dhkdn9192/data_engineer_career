@@ -14,8 +14,9 @@
   - [1-4. ELK Stack](#1-4-elk-stack)
   - [1-5. Airflow](#1-5-airflow)
   - [1-6. Hive](#1-6-hive)
-  - [1-7. DataHub](#1-7-datahub)
-  - [1-8. others](#1-8-others)
+  - [1-7. Trino](#1-7-trino)
+  - [1-8. DataHub](#1-8-datahub)
+  - [1-9. others](#1-9-others)
 - [2. Cloud Computing](#2-cloud-computing)
   - [2-1. Docker and k8s](#2-1-docker-and-k8s)
   - [2-2. AWS](#2-2-aws)
@@ -118,10 +119,13 @@
 - Hive의 View와 Table
 - HiveQL Merge Into
 
-### 1-7. DataHub
+### 1-7. Trino
+- [Trino The Definitive Guide](de/trino/trino-definitive-guide/README.md)
+
+### 1-8. DataHub
 - 데이터 거버넌스란 무엇이고 왜 필요한가? ([link](https://datahubproject.io/docs/quickstart))
 
-### 1-8. others
+### 1-9. others
 - Apache HBase
   - [Major Compaction vs Minor Compaction](de/hbase/hbase_compaction.md)
 - Apache Flink
