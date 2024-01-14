@@ -3,9 +3,9 @@
 ![image](https://github.com/dhkdn9192/data_engineer_career/assets/11307388/e7b7aceb-3f39-45ef-a0df-e27dbb1d7472)
 
 
-* Trino 완벽 가이드 - 도서 학습 및 정리
+* "Trino 완벽 가이드" 도서를 학습하고 요약 정리한다.
 * 도서 정보 url : https://trino.io/trino-the-definitive-guide.html
-* 아직 국내에 번역본은 안 나온 듯
+* (아직 국내에 번역본은 안 나온 듯)
 
 ## Part 1. Getting Started with Trino
 
