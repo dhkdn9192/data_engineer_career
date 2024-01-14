@@ -290,7 +290,7 @@
 
 - 읽을거리
   - [The future of the data engineer (part 1)](fields_of_study/articles/the-future-of-the-data-engineer-part-i.md)
-  - 데이터 플랫폼: 스타트업에서 이커머스 최강자로의 진화 ([link](https://medium.com/coupang-engineering/big-data-platform-evolving-from-start-up-to-big-tech-company-26f9fcb9c13))
+  - 쿠팡 빅데이터 플랫폼의 진화, 그리고 향후 발전 방향 ([link](https://medium.com/coupang-engineering/big-data-platform-evolving-from-start-up-to-big-tech-company-26f9fcb9c13))
 - 도서학습
   - [데이터 중심 애플리케이션 설계](fields_of_study/books/designing_data_intensive_applications)
   - [Trino The Definitive Guide](de/trino/trino-definitive-guide)
