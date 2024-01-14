@@ -120,7 +120,7 @@
 - HiveQL Merge Into
 
 ### 1-7. Trino
-- [Trino The Definitive Guide](de/trino/trino-definitive-guide/README.md)
+- [Trino The Definitive Guide](de/trino/trino-definitive-guide)
 
 ### 1-8. DataHub
 - 데이터 거버넌스란 무엇이고 왜 필요한가? ([link](https://datahubproject.io/docs/quickstart))
@@ -290,8 +290,10 @@
 
 - 읽을거리
   - [The future of the data engineer (part 1)](fields_of_study/articles/the-future-of-the-data-engineer-part-i.md)
+  - 데이터 플랫폼: 스타트업에서 이커머스 최강자로의 진화 ([link](https://medium.com/coupang-engineering/big-data-platform-evolving-from-start-up-to-big-tech-company-26f9fcb9c13))
 - 도서학습
   - [데이터 중심 애플리케이션 설계](fields_of_study/books/designing_data_intensive_applications)
+  - [Trino The Definitive Guide](de/trino/trino-definitive-guide)
 - 연구주제
   - [Anomaly Detection](fields_of_study/anomaly_detection)
 
