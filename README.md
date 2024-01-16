@@ -276,9 +276,8 @@
 
 
 ## 4. Back-end
-- [MVC Pattern](be/mvc_pattern.md)
+- [Java Spring 스터디](https://github.com/dhkdn9192/hello-spring/tree/main)
 - DAO, DTO, VO, BO, Entity, Service
-- Java Spring
 
 
 <br>
