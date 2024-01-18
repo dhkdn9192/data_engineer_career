@@ -46,9 +46,6 @@
 - [Standby Namenode vs Secondary Namenode](de/hadoop/standbynn_secondarynn.md)
 - [YARN scheduler](de/hadoop/yarn_scheduler.md)
 - [Secured Hadoop - Kerberos](de/hadoop/kerberos.md)
-- MapReduce spilling
-- Hadoop 서버의 vm.swappiness 설정
-- 클라이언트에서 hdfs write를 위한 옵션을 설정하려면 어떤 xml 설정파일을 수정해야될까?
 - 클러스터로 구성된 서비스를 무중단으로 업데이트하려면?(Rolling Restart) ([link](https://docs.cloudera.com/documentation/enterprise/5-16-x/topics/cm_mc_rolling_restart.html))
 - WebHDFS와 HttpFS의 차이점 ([link](https://stackoverflow.com/questions/31580832/hdfs-put-vs-webhdfs))
 - HDFS Federation - Namespace, Block storage, Block pools 개념의 도입 ([link](https://xlos.tistory.com/1555))
@@ -69,10 +66,6 @@
 - [Kafka + Spark Streaming : 2가지 Integration 방법 비교](de/spark/kafka_sparkstreaming_integration.md)
 - spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
 - Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
-- Java 직렬화 vs Kryo 직렬화
-- ORC, Parquet 등 Spark에서 사용할 수 있는 데이터 소스 포맷과 압축 알고리즘
-- k8s에서 Spark Job을 수행한다면 종료 후 로그는 어떻게 확인해야될까? (Spark History Server? AWS S3 logging?)
-- Spark Job에 과도하게 많은 Memory/CPU를 할당해주면 무슨 일이 일어날까?
 - Spark bucketing이란?
  
 ### 1-3. Kafka
