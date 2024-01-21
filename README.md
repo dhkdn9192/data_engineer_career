@@ -93,6 +93,7 @@
   - [기본 개념과 구조](de/elk/logstash_basic.md)
 
 ### 1-5. Airflow
+- [Dynamic DAG 생성하기](de/airflow/dynamic_dag_generation.md)
 - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
 - Celery 개념과 Celery Excutor
 - schedule_interval과 execution_date 의 난해함 ([link](https://blog.bsk.im/2021/03/21/apache-airflow-aip-39/))
