@@ -246,6 +246,7 @@
   - 케이스 클래스 (case class)
 - Python
   - [GIL(Global Interpreter Lock)](cs/language/python/python_gil.md)
+  - 데이터 클래스 (ataclasses) ([link](https://velog.io/@sawol/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%81%B4%EB%9E%98%EC%8A%A4dataclasses))
 - Kotlin
   - [Kotlin in acion 스터디](https://github.com/dhkdn9192/kotlin-in-action)
 
