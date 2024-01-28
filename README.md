@@ -94,6 +94,7 @@
 
 ### 1-5. Airflow
 - [Dynamic DAG 생성하기](de/airflow/dynamic_dag_generation.md)
+- [execution_date와 DAG 실행시간 이해하기](de/airflow/understanding_execution_date.md)
 - Executor Types: Local vs Remote ([link](https://airflow.apache.org/docs/apache-airflow/stable/executor/index.html))
 - Celery 개념과 Celery Excutor
 - schedule_interval과 execution_date 의 난해함 ([link](https://blog.bsk.im/2021/03/21/apache-airflow-aip-39/))
