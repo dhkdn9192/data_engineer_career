@@ -114,6 +114,7 @@
 - Hive UDF란?
 - Hive의 View와 Table
 - HiveQL Merge Into
+- STORED AS의 INPUTFORMAT, OUTPUTFORMAT, SERDE ([link1](https://stackoverflow.com/questions/42416236/what-is-the-difference-between-inputformat-outputformat-stored-as-in-hive), [link2](https://stackoverflow.com/questions/44443697/difference-between-stored-as-inputformat-outputformat-and-stored-as-in-hive))
 
 ### 1-7. Trino
 - [Trino The Definitive Guide](de/trino/trino-definitive-guide)
