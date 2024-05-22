@@ -81,6 +81,7 @@
 - [Kafka Connect overview](de/kafka/kafka_connect_overview.md)
 - Schema Registry
 - Debezium CDC
+- Mirror Maker 2를 이용한 Kafka 클러스터간 토픽 복제 ([link](https://velog.io/@bw1611/Kafka-%EB%AF%B8%EB%9F%AC%EB%A9%94%EC%9D%B4%EC%BB%A42))
 
 ### 1-4. ELK Stack
 - Elasticsearch
