@@ -49,6 +49,7 @@
 - 클러스터로 구성된 서비스를 무중단으로 업데이트하려면?(Rolling Restart) ([link](https://docs.cloudera.com/documentation/enterprise/5-16-x/topics/cm_mc_rolling_restart.html))
 - WebHDFS와 HttpFS의 차이점 ([link](https://stackoverflow.com/questions/31580832/hdfs-put-vs-webhdfs))
 - HDFS Federation - Namespace, Block storage, Block pools 개념의 도입 ([link](https://xlos.tistory.com/1555))
+- [Service RPC port 설정이 필요한 경우](de/hadoop/service_rpc_port.md)
 - [~~How to set up Cloudera Hadoop~~](de/hadoop/cloudera_hadoop/README.md)
 
 
