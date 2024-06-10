@@ -1,4 +1,3 @@
-![image](https://github.com/dhkdn9192/data_engineer_career/assets/11307388/5e7d1362-4226-4068-a50b-a3c039c60538)
 <p align="center">
   <img src="img/banner.png" alt="banner" width="90%">
 </p>
