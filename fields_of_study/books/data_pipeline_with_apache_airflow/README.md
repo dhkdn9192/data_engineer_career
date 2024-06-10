@@ -1,4 +1,4 @@
-# Apache Airflow 기반의 데이터 파이프라인 : 에어플로 중심의 워크플로 구축에서 커스텀 컴포넌트 개발 및 배포, 관리까지
+# Apache Airflow 기반의 데이터 파이프라인
 
 ![image](https://github.com/dhkdn9192/data_engineer_career/assets/11307388/e342a58e-fc0f-412a-a1b0-6d51ddb19360)
 
