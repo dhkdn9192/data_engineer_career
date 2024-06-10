@@ -6,15 +6,27 @@
 * 도서 예제코드 레포: https://github.com/K9Ns/data-pipelines-with-apache-airflow
 
 ## Part 1. 기본편
-* [ch01. Apache Airflow 살펴보기](ch01.md)
-* ch02. Airflow DAG의 구조
-* ch03. Airflow의 스케줄링
-* ch04. Airflow 콘텍스트를 사용하여 태스크 템플릿 작업하기
-* ch05. 태스크 간 의존성 정의하기
+* [Chapter 01. Apache Airflow 살펴보기](ch01.md)
+* Chapter 02. Airflow DAG의 구조
+* Chapter 03. Airflow의 스케줄링
+* Chapter 04. Airflow 콘텍스트를 사용하여 태스크 템플릿 작업하기
+* Chapter 05. 태스크 간 의존성 정의하기
 
 ## Part 2. 중급편
-* ch06. 워크플로 트리거
-* ch07. 외부 시스템과 통신하기
-* ch08. 커스텀 컴포넌트 빌드
-* ch09. 테스트하기
-* ch10. 컨테이너에서 태스크 실행하기
+* Chapter 06. 워크플로 트리거
+* Chapter 07. 외부 시스템과 통신하기
+* Chapter 08. 커스텀 컴포넌트 빌드
+* Chapter 09. 테스트하기
+* Chapter 10. 컨테이너에서 태스크 실행하기
+
+## Part 3. Airflow 실습
+* Chapter 11. 모범 사례
+* Chapter 12. 운영환경에서 Airflow 관리
+* Chapter 13. Airflow 보안
+* Chapter 14. 프로젝트: 뉴욕에서 가장 빠른 길 찾기
+
+## Part 4. 클라우드에서의 Airflow
+* Chapter 15. 클라우드에서의 Airflow
+* Chapter 16. AWS에서의 Airflow
+* Chapter 17. Azure에서의 Airflow
+* Chapter 18. GCP에서의 Airflow
