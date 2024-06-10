@@ -6,7 +6,7 @@
 * 도서 예제코드 레포: https://github.com/K9Ns/data-pipelines-with-apache-airflow
 
 ## Part 1. 기본편
-* [ch01. Apache Airflow 살펴보기](fields_of_study/books/data_pipeline_with_apache_airflow/ch01.md)
+* [ch01. Apache Airflow 살펴보기](ch01.md)
 * ch02. Airflow DAG의 구조
 * ch03. Airflow의 스케줄링
 * ch04. Airflow 콘텍스트를 사용하여 태스크 템플릿 작업하기
