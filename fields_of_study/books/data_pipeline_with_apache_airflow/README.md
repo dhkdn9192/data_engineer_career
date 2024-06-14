@@ -7,7 +7,7 @@
 
 ## Part 1. 기본편
 * [Chapter 01. Apache Airflow 살펴보기](ch01.md)
-* Chapter 02. Airflow DAG의 구조
+* [Chapter 02. Airflow DAG의 구조](ch02.md)
 * Chapter 03. Airflow의 스케줄링
 * Chapter 04. Airflow 콘텍스트를 사용하여 태스크 템플릿 작업하기
 * Chapter 05. 태스크 간 의존성 정의하기
