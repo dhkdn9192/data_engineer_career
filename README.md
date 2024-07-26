@@ -65,6 +65,7 @@
 - spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
 - Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
 - Spark bucketing이란?
+- Spark 3.0 버전대부터 추가된 AQE(Adaptive Query Execution)가 기존 Spark SQL 옵티마이저와 다른 점
  
 ### 1-3. Kafka
 - [Kafka의 partition은 많을 수록 좋을까?](de/kafka/kafka_too_many_partitions.md)
