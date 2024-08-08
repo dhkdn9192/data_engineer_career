@@ -111,6 +111,7 @@
 - Hive Replication ([link](https://cwiki.apache.org/confluence/display/Hive/Replication))
 - Hive Query Planner and Optimizer ([link](https://cwiki.apache.org/confluence/display/Hive/Cost-based+optimization+in+Hive))
 - [Partition, Bucket, Index](de/hive/hive_partition_bucket_index.md)
+- Bucketing vs Partitioning ([link](https://spidyweb.tistory.com/290))
 - Which is faster, SORT BY or ORDER BY in HiveQL?
 - What is HCatalog?
 - Hive UDF란?
