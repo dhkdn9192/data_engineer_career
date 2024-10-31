@@ -102,6 +102,8 @@
 - Airflow dataset과 Data-aware scheduling ([link](https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/datasets.html))
 - Airflow의 Trigger와 Sensor, ExternalTaskSensor 의 기능
 - Sensor에서 deferrable, reschedule 방식의 차이 ([link](https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/deferring.html))
+- Sensor의 poke, reschedule 모드의 차이 ([link](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/sensors.html))
+- 커스텀 operator에 jinja templates 적용하기 - template_fields ([link1](https://louisdev.tistory.com/29), [link2](https://brownbears.tistory.com/588))
 - [(도서학습) Apache Airflow 기반의 데이터 파이프라인](fields_of_study/books/data_pipeline_with_apache_airflow/README.md)
 
 ### 1-6. Hive
