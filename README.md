@@ -13,7 +13,8 @@
   - [1-4. ELK Stack](#1-4-elk-stack)
   - [1-5. Airflow](#1-5-airflow)
   - [1-6. Hive](#1-6-hive)
-  - [1-7. others](#1-9-others)
+  - [1-7. Iceberg](#1-7-iceberg)
+  - [1-8. others](#1-8-others)
 - [2. Cloud Computing](#2-cloud-computing)
   - [2-1. Docker and k8s](#2-1-docker-and-k8s)
   - [2-2. AWS](#2-2-aws)
@@ -121,7 +122,10 @@
 - HiveQL Merge Into
 - STORED AS의 INPUTFORMAT, OUTPUTFORMAT, SERDE ([link1](https://stackoverflow.com/questions/42416236/what-is-the-difference-between-inputformat-outputformat-stored-as-in-hive), [link2](https://stackoverflow.com/questions/44443697/difference-between-stored-as-inputformat-outputformat-and-stored-as-in-hive))
 
-### 1-7. others
+### 1-7. Iceberg
+- [(도서학습) Apache Iceberg The Definitive Guide](de/iceberg/book_apache_iceberg_the_definitive_guide/README.md)
+
+### 1-8. others
 - Trino
   - [Trino The Definitive Guide](de/trino/trino-definitive-guide)  
 - DataHub
