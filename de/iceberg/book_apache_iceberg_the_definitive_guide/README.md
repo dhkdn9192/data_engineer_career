@@ -7,7 +7,7 @@
 
 ## Part 1. Fundamentals of Apache Iceberg
 * Chapter 01. Introduction to Apache Iceberg
-* Chapter 02. The Archtecture of Apache Iceberg
+* [Chapter 02. The Archtecture of Apache Iceberg](ch02.md)
 * Chapter 03. Lifecycle of Write and Read Queries
 * Chapter 04. Optimizing the Performance of Iceberg Tables
 * Chapter 05. Iceberg Catalogs
