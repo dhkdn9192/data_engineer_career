@@ -59,6 +59,7 @@
 - [Spark access first n rows: take() vs limit()](de/spark/spark_access_first_n_rows.md)
 - [효율적인 DataFrame Join 전략](de/spark/spark_join_strategy.md)
 - [Kafka + Spark Streaming : 2가지 Integration 방법 비교](de/spark/kafka_sparkstreaming_integration.md)
+- Stateful vs Stateless Streaming in Spark Streaming ([link](https://www.sparkcodehub.com/spark-stateful-vs-stateless-streaming))
 - spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
 - Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
 - Spark bucketing이란?
@@ -118,7 +119,6 @@
 
 ### 1-99. others
 - [(도서학습) 데이터 중심 애플리케이션 설계](fields_of_study/books/designing_data_intensive_applications)
-- Stateful vs Stateless Streaming in Spark Streaming ([link](https://www.sparkcodehub.com/spark-stateful-vs-stateless-streaming))
 - ELK Stack
   - [Elasticsearch](de/elk/elasticsearch_basic.md)
     - [How to Set up](de/elk/es01_setup.md)
