@@ -118,6 +118,7 @@
 
 ### 1-99. others
 - [(도서학습) 데이터 중심 애플리케이션 설계](fields_of_study/books/designing_data_intensive_applications)
+- Stateful vs Stateless Streaming in Spark Streaming ([link](https://www.sparkcodehub.com/spark-stateful-vs-stateless-streaming))
 - ELK Stack
   - [Elasticsearch](de/elk/elasticsearch_basic.md)
     - [How to Set up](de/elk/es01_setup.md)
