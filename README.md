@@ -86,6 +86,8 @@
 
 ### 1-5. Iceberg
 - [(도서학습) Apache Iceberg The Definitive Guide](de/iceberg/book_apache_iceberg_the_definitive_guide/README.md)
+- 테이블 브랜치 분기/머지를 이용한 WAP 패턴
+  - 브랜치 변경에도 스키마 수정은 적용되지 않음
 - Incremental processing
 
 ### 1-6. Airflow
