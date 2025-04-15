@@ -60,6 +60,7 @@
 - [효율적인 DataFrame Join 전략](de/spark/spark_join_strategy.md)
 - [Kafka + Spark Streaming : 2가지 Integration 방법 비교](de/spark/kafka_sparkstreaming_integration.md)
 - Stateful vs Stateless Streaming in Spark Streaming ([link](https://www.sparkcodehub.com/spark-stateful-vs-stateless-streaming))
+- Speculative Execution ([link1](https://kb.databricks.com/scala/understanding-speculative-execution), [link2](https://quackstudy.tistory.com/entry/Spark-%EC%8A%A4%ED%8C%8C%ED%81%AC-%EC%BA%90%EC%8B%9C))
 - spark.executor.memoryOverhead와 spark.memory.offHeap.size 설정은 어떻게 다른가?
 - Project Tungsten의 주요 Spark 성능 개선 사항은 무엇인가?
 - Spark bucketing이란?
