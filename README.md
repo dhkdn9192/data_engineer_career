@@ -136,8 +136,8 @@
 - Apache HBase
   - [Major Compaction vs Minor Compaction](de/hbase/hbase_compaction.md)
 - Apache Flink
-  - (flink watermark [link](https://westlife0615.tistory.com/573))
-  - (tumbling time window [link](https://westlife0615.tistory.com/681))
+  - flink watermark ([link](https://westlife0615.tistory.com/573))
+  - tumbling time window ([link](https://westlife0615.tistory.com/681))
 - Apache Druid
   - Query granularities와 쿼리 부하 사이의 관계 ([link](https://druid.apache.org/docs/latest/querying/granularities/))
   - HLL(HyperLogLog) Sketch와 유니크 원소 갯수 (cardinality) 추정 ([link1](https://d2.naver.com/helloworld/711301), [link2](https://druid.apache.org/docs/latest/development/extensions-core/datasketches-hll/))
